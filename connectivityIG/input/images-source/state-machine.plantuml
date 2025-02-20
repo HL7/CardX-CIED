@@ -1,0 +1,30 @@
+@startuml
+title Connectivity State Machine
+
+state ImplantAndSetup{
+[*] -> DeviceImplanted
+DeviceImplanted -down-> MonitorPaired
+MonitorPaired -down-> Connected
+}
+
+DeviceImplanted -> NotApplicableOrNonWireless
+
+state ClinicConfigWorkflow {
+Snoozed : Patient away from monitor
+Snoozed : Clinic temp removes from disconnected list
+Suspended : Remote transmissions suspended for patient
+Connected -down-> Snoozed
+Connected -down-> Suspended
+}
+ClinicConfigWorkflow -> Connected
+
+state DisconnectedWorkflow {
+DisconnectedWithoutImpactedSchedule : Disconnected, no upcoming transmissions
+DisconnectedWithoutImpactedSchedule : Defined by patient transmission scheduling window
+DisconnectedWithImpactedSchedule : Upcoming transmission or transmission missed
+Connected -down-> DisconnectedWithoutImpactedSchedule 
+Connected -down-> DisconnectedWithImpactedSchedule
+}
+DisconnectedWorkflow -> Connected
+
+@enduml
