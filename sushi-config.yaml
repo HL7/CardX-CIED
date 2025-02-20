@@ -16,9 +16,9 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 publisher:
-  name: Andy Iverson
-  # url: http://example.org/example-publisher
-  email: andy.iverson@medtronic.com
+  name: HL7 International / Clinical Interoperability Council
+  url: http://www.hl7.org/Special/committees/cic
+  email: ciclist@lists.hl7.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
