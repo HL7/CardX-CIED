@@ -1,0 +1,10 @@
+{
+    "package-id":"hl7.fhir.uv.cardx-cied",
+    "version": "0.1.0",
+    "path": "http://hl7.org/fhir/uv/cardx-cied",
+    "status": "preview",
+    "sequence": "STU1",
+    "milestone": true,
+    "desc": "Continuous Integration Build (latest in version control)",
+    "mode": "milestone"
+}
