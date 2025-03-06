@@ -17,5 +17,5 @@ Patient connectivity to remote monitoring is critical for the success of an RM p
 ### Nominal Workflow
 
 ### Data Structure
-{% include img.html img="data-model.png" caption="CIED Connectivity Data Model" %} 
+{% include img.html img="data-model1.png" caption="CIED Connectivity Data Model" %} 
 
