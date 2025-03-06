@@ -14,7 +14,6 @@ Description: "The overall system connectivity status as calculated by the CIED m
 * cied-connectivity#suspended "Patient has been temporarily removed from the disconnected state. This is not intended to be an actionable status."
 * cied-connectivity#inactive "Patient has been permanently removed from disconnected status."
 * cied-connectivity#unenrolled "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
-* cied-connectivity#undeterminted "Connectivity status has not been defined or cannot be calculated"
 
 ValueSet: cied-connectivity-dates
 Id: cied-connectivity-dates-vs
@@ -54,7 +53,12 @@ Title: "CIED Connectivity Status Values"
 * #next-transmission-date "Date of the next scheduled transmission"
     "The date of the next scheduled interrogated device transmission"
 * #observation-cied-connectivity "FHIR CIED Connectivity Status Profile"
-
+* #bedside-device "Bedside Monitor"
+    "Standalone device, not intended to provide monitoring while on the go"	
+* #mobile-monitor "Mobile App"	
+    "App based monitor"	
+* #portable-device "Portable Device"	
+    "Standalone device, with battery capacity to provide monitoring while on the go"
 
 
 

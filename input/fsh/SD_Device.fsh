@@ -27,3 +27,18 @@ MDC_IDC_DEV_TYPE - if using type, can include MDC_IDC enums in a valueset. Do we
 * gateway MS
 
 // 09-jan-2025 - device association resource will be used to associated CIED and patient. In the future it will be used for device/lead associations. Assumption as of date is that a profile is not needed
+
+Instance: uc1-cied-device
+InstanceOf: CIEDDevice  
+Description: "An example CIED device for CIED connectivity example 1."
+* udiCarrier[0].deviceIdentifier = "123456789"
+* udiCarrier[0].issuer = "http://hl7.org/fhir/NamingSystem/gs1"
+* udiCarrier[0].jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+//* udiCarrier[0].carrierAIDC = "123456789"
+* udiCarrier[0].carrierHRF = "123456"
+//* udiCarrier[0].entryType = "barcode"
+* manufacturer = "CIED Manufacturer"
+* serialNumber = "123456789"
+* modelNumber = "ICDExample1"
+* type = IDCO#753666
+
