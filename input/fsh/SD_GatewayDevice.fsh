@@ -24,3 +24,18 @@ MDC_IDC_DEV_TYPE - if using type, can include MDC_IDC enums in a valueset. Do we
 * serialNumber MS
 * modelNumber MS
 * type MS
+
+Instance: uc1-gateway-device
+InstanceOf: GatewayDevice   
+Description: "An example CIED monitor for CIED connectivity example 1."
+* udiCarrier[0].deviceIdentifier = "123456789" 
+* udiCarrier[0].issuer = "http://hl7.org/fhir/NamingSystem/gs1"
+* udiCarrier[0].jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+// * udiCarrier[0].carrierAIDC = "123456789"
+* udiCarrier[0].carrierHRF = "123456"
+// * udiCarrier[0].entryType = "barcode"
+* manufacturer = "CIED Manufacturer"
+* serialNumber = "123456789"
+* modelNumber = "Bedside Monitor 1"
+* type = cied-connectivity#bedside-device
+

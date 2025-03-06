@@ -1,6 +1,6 @@
 Profile: CIEDConnectivityStatus
 Parent: Observation
-Title: "DRAFT - CIED Connectivity Status"
+Title: "CIED Connectivity Observation Profile"
 Description: "
 Profile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.
 "
@@ -72,4 +72,35 @@ Profile of the observation resource to present the most recent connectivity stat
 * component[nextTransmission].value[x] only dateTime
 
 
-// create example
+// create examples
+// UC 1 - middleware queries patient connectivity information at 6:00 AM
+// To do - time zone offset?
+// To do - note about manufacturer action
+Instance: uc1-connectivity1
+InstanceOf: CIEDConnectivityStatus
+Description: "Use case 1, connectivity status 1"
+//* status = lookupURL#final
+* code = cied-connectivity#observation-cied-connectivity
+* category = cied-connectivity#observation-cied-connectivity
+* device = Reference(uc1-cied-device)
+* effectiveDateTime = 2025-02-15T06:15:00.000Z
+* subject = Reference(uc1-patient)
+* status = http://hl7.org/fhir/ValueSet/observation-status#final
+* note[0].text = "Patient has a bedside monitor that may be unplugged."
+* code = cied-connectivity#observation-cied-connectivity
+* category = cied-connectivity#observation-cied-connectivity  
+* component[connectivityStatus].code = cied-connectivity#disconnected
+* component[connectivityModifier].code = cied-connectivity#inactive
+* component[transmissionDisabled].valueBoolean = false
+* component[lastCiedConnectivityDate].code = cied-connectivity#last-cied-connectivity-time
+* component[lastCiedConnectivityDate].valueDateTime = 2025-02-15T06:00:00.000Z 
+* component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
+* component[lastMonitorConnectivityDate].valueDateTime = 2025-02-15T06:00:00.000Z
+* component[lastTransmission].code = cied-connectivity#last-transmission-date
+* component[lastTransmission].valueDateTime = 2025-02-15T06:00:00.000Z
+* component[nextTransmission].code = cied-connectivity#next-transmission-date
+* component[nextTransmission].valueDateTime = 2025-02-15T06:00:00.000Z
+
+
+
+

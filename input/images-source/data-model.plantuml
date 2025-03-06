@@ -60,12 +60,26 @@ entity "Observation - Connectivity Status" as Connectivity {
     nextTransmission : BackboneElement (0..1)
 }
 
+entity "Encounter" as Encounter {
+  *id : string <<generated>>
+  --
+  identifier : Identifier: (1..*)
+  status : Code (1..1)
+  type: CodeableConcept (1..*)
+  subject: Reference(Patient) (1..1) 
+  participant: Reference(Device) (1..*)
+  actualPeriod: Period (0..1)
+  plannedStartDate (0..1)
+}
+
 Connectivity |o..|| Patient
 Connectivity ||..|| cied
 cied |o..|| monitor
 devassoc ||..|| cied
 devassoc ||..o| Patient
 devassoc ||..o| monitor
-
+Encounter ||..|| Patient
+Encounter ||..|| cied
+Encounter ||..|| monitor
 
 @enduml
