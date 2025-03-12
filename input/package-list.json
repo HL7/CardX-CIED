@@ -1,8 +1,8 @@
 {
     "package-id": "hl7.fhir.uv.cardx-cied",
-    "title": "CardX CIED Connectivity IG",
+    "title": "CardX - Cardiac Implantable Electronic Devices",
     "canonical": "http://hl7.org/fhir/uv/cardx-cied",
-    "introduction": "An implementation guide designed to facilitate the exchange of CIED Connectivity data.",
+    "introduction": "An implementation guide designed to facilitate the exchange of Cardiac Implantable Electronic Device Data.",
     "list": [
             {
             "version": "1.0.1",

@@ -6,7 +6,7 @@
     "status" : "release",
     "sequence" : "Releases",
     "first" : true,
-    "title" : "CIED Connectivity Status",
+    "title" : "CardX - Cardiac Implantable Electronic Devices",
     "ci-build" : "http://build.fhir.org/ig/HL7/cardx-cied",
     "category" : "Care Management",
     "introduction" : "Implementation guide to communicate cardiac implantable electronic devices connectivity status."
