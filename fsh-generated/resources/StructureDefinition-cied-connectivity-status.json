@@ -1,0 +1,308 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cied-connectivity-status",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status",
+  "name": "CIEDConnectivityStatus",
+  "title": "CIED Connectivity Observation Profile",
+  "status": "draft",
+  "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.\n",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "observation-cied-connectivity",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "observation-cied-connectivity",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.device",
+        "path": "Observation.device",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "CIED Connectivity Components",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:connectivityStatus",
+        "path": "Observation.component",
+        "sliceName": "connectivityStatus",
+        "short": "Connectivity status as determined by the manufacturer.",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:connectivityStatus.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-vs"
+        }
+      },
+      {
+        "id": "Observation.component:connectivityModifier",
+        "path": "Observation.component",
+        "sliceName": "connectivityModifier",
+        "short": "Additional information related to the connectivity status.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:connectivityModifier.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-modifier-vs"
+        }
+      },
+      {
+        "id": "Observation.component:transmissionDisabled",
+        "path": "Observation.component",
+        "sliceName": "transmissionDisabled",
+        "short": "Indicates whether transmissions have been disabled on the CIED or not.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:transmissionDisabled.code",
+        "path": "Observation.component.code",
+        "short": "Disabled",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "transmission-disabled",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:transmissionDisabled.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:lastCiedConnectivityDate",
+        "path": "Observation.component",
+        "sliceName": "lastCiedConnectivityDate",
+        "short": "The timestamp of the most recent communication between the CIED and monitor.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:lastCiedConnectivityDate.code",
+        "path": "Observation.component.code",
+        "short": "CIED to monitor communication",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "last-cied-connectivity-time",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:lastCiedConnectivityDate.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:lastMonitorConnectivityDate",
+        "path": "Observation.component",
+        "sliceName": "lastMonitorConnectivityDate",
+        "short": "The timestamp of the most recent communication from the monitor to the remote monitoring platform.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:lastMonitorConnectivityDate.code",
+        "path": "Observation.component.code",
+        "short": "Monitor to remote monitoring communication",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "last-monitor-connectivity-time",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:lastMonitorConnectivityDate.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:lastTransmission",
+        "path": "Observation.component",
+        "sliceName": "lastTransmission",
+        "short": "The date of the most recent interrogated device transmission",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:lastTransmission.code",
+        "path": "Observation.component.code",
+        "short": "The date of the most recent interrogated device transmission",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "last-transmission-date",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:lastTransmission.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:nextTransmission",
+        "path": "Observation.component",
+        "sliceName": "nextTransmission",
+        "short": "The date of the next scheduled interrogated device transmission",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:nextTransmission.code",
+        "path": "Observation.component.code",
+        "short": "The date of the next scheduled interrogated device transmission",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "next-transmission-date",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:nextTransmission.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

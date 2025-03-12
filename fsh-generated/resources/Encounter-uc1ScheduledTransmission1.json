@@ -1,0 +1,30 @@
+{
+  "resourceType": "Encounter",
+  "id": "uc1ScheduledTransmission1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/remote-encounter"
+    ]
+  },
+  "participant": [
+    {
+      "actor": {
+        "reference": "Device/uc1CiedDevice"
+      }
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "754053",
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDCO"
+        }
+      ]
+    }
+  ],
+  "status": "planned",
+  "subject": {
+    "reference": "Patient/uc1Patient"
+  }
+}

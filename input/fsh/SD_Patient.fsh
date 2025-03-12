@@ -1,6 +1,6 @@
 Profile: CIEDPatient
 Parent: Patient
-Id: CIEDPatient
+Id: cied-patient
 Title: "Cardiovascular Implantable Electronic Device Patient Profile"
 Description: "An CIED profile of the Patient resource."
 * identifier MS
@@ -10,12 +10,15 @@ Description: "An CIED profile of the Patient resource."
 * address MS
 * managingOrganization MS
 
+/*
+Mapping: fhir-patient-to-idco
+*/
 
 /*
-Use Case 1
+Use Case 1 narrative description
 
 */
-Instance: uc1-patient
+Instance: uc1Patient
 InstanceOf: CIEDPatient
 Description: "An example CIED patient for CIED connectivity example 1."
 * name

@@ -1,0 +1,117 @@
+{
+  "resourceType": "Observation",
+  "id": "uc1Connectivity1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "observation-cied-connectivity",
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Patient has a bedside monitor that may be unplugged."
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "disconnected",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "inactive",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "transmission-disabled",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueBoolean": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "last-cied-connectivity-time",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-02-15T06:00:00.000Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "last-monitor-connectivity-time",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-02-15T06:00:00.000Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "last-transmission-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-02-15T06:00:00.000Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "next-transmission-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-02-15T06:00:00.000Z"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "observation-cied-connectivity",
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+      }
+    ]
+  },
+  "device": {
+    "reference": "Device/uc1CiedDevice"
+  },
+  "effectiveDateTime": "2025-02-15T06:15:00.000Z",
+  "subject": {
+    "reference": "Patient/uc1Patient"
+  },
+  "status": "final"
+}

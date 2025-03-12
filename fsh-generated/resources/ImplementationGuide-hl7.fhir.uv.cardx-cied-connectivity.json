@@ -1,0 +1,262 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.uv.cardx-cied-connectivity",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied-connectivity",
+  "version": "0.1.0",
+  "name": "CIEDconnectivityCardX",
+  "title": "CardX CIED Connectivity",
+  "status": "draft",
+  "publisher": "HL7 International / Clinical Interoperability Council",
+  "contact": [
+    {
+      "name": "HL7 International / Clinical Interoperability Council",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic"
+        },
+        {
+          "system": "email",
+          "value": "ciclist@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.uv.cardx-cied-connectivity",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/gateway-device"
+        },
+        "name": "Cardiovascular Implantable Electronic Device Monitor Profile",
+        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nMDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n\nOpen Items:\nMDC_IDC_DEV_TYPE - if using type, can include MDC_IDC enums in a valueset. Do we want to also allow SNOMED?\n\n**Each Device must have:**\n- a patient\n- a manufacturer\n- a UDI or device serial number\n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-patient"
+        },
+        "name": "Cardiovascular Implantable Electronic Device Patient Profile",
+        "description": "An CIED profile of the Patient resource.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-device"
+        },
+        "name": "Cardiovascular Implantable Electronic Device Profile",
+        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nMDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n\nOpen Items:\nMDC_IDC_DEV_TYPE - if using type, can include MDC_IDC enums in a valueset. Do we want to also allow SNOMED?\n\n**Each Device must have:**\n- a patient\n- a manufacturer\n- a UDI or device serial number\n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/CardXCiedServerCapabilityStatement"
+        },
+        "name": "CardX CIED Connectivity Server CapabilityStatement",
+        "description": "CardX CIED Connectivity Server CapabilityStatement",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cied-connectivity-dates-vs"
+        },
+        "name": "CIED Connectivity Dates and Timestamps",
+        "description": "The relevant dates and times related to CIED connectivity, scheduling, and transmission",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-connectivity-status"
+        },
+        "name": "CIED Connectivity Observation Profile",
+        "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.\n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cied-connectivity-state-vs"
+        },
+        "name": "CIED Connectivity Status Value Set",
+        "description": "The overall system connectivity status as calculated by the CIED manufacturer",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cied-connectivity-state-modifier-vs"
+        },
+        "name": "CIED Connectivity Status Value Set",
+        "description": "The overall system connectivity status as calculated by the CIED manufacturer",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cied-connectivity"
+        },
+        "name": "CIED Connectivity Status Values",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/remote-encounter"
+        },
+        "name": "CIED Remote Transmission Encounter Profile",
+        "description": "An CIED Remote Transmission profile of the Encounter resource.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/IDCO"
+        },
+        "name": "IDCO - IEEE-11073-10103",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/11073-10103-DeviceType"
+        },
+        "name": "IEEE 11073-10103 Device Type",
+        "description": "The type of device as defined by IEEE 11073-10103",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/11073-10103-SessionType"
+        },
+        "name": "IEEE 11073-10103 Session Type",
+        "description": "The type of session as defined by IEEE 11073-10103",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Device/uc1CiedDevice"
+        },
+        "name": "uc1CiedDevice",
+        "description": "An example CIED device for CIED connectivity example 1.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Device/uc1CIEDMonitor"
+        },
+        "name": "uc1CIEDMonitor",
+        "description": "An example CIED monitor for CIED connectivity example 1.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/gateway-device"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/uc1Connectivity1"
+        },
+        "name": "uc1Connectivity1",
+        "description": "Use case 1, connectivity status 1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Patient/uc1Patient"
+        },
+        "name": "uc1Patient",
+        "description": "An example CIED patient for CIED connectivity example 1.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Encounter/uc1ScheduledTransmission1"
+        },
+        "name": "uc1ScheduledTransmission1",
+        "description": "Example encounter for scheduled transmission",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/remote-encounter"
+        ]
+      }
+    ],
+    "page": {
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "title": "Home",
+          "generation": "markdown",
+          "name": "index.html",
+          "sourceUrl": "index.html"
+        },
+        {
+          "title": "Background",
+          "generation": "markdown",
+          "name": "Background.html",
+          "sourceUrl": "Background.html"
+        },
+        {
+          "title": "Connectivity Status",
+          "generation": "markdown",
+          "name": "connectivity-status.html",
+          "sourceUrl": "connectivity-status.html"
+        },
+        {
+          "title": "Profiles",
+          "generation": "markdown",
+          "name": "profiles.html",
+          "sourceUrl": "profiles.html"
+        },
+        {
+          "title": "User Stories",
+          "generation": "markdown",
+          "name": "user-stories.html",
+          "sourceUrl": "user-stories.html"
+        }
+      ],
+      "name": "toc.html",
+      "sourceUrl": "toc.html"
+    },
+    "parameter": [
+      {
+        "code": {
+          "code": "copyrightyear",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "2024+"
+      },
+      {
+        "code": {
+          "code": "releaselabel",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "ci-build"
+      },
+      {
+        "code": {
+          "code": "path-history",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://hl7.org/fhir/uv/cardx-cied/history.html"
+      }
+    ]
+  }
+}
