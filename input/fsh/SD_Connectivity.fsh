@@ -1,5 +1,6 @@
 Profile: CIEDConnectivityStatus
 Parent: Observation
+Id: cied-connectivity-status
 Title: "CIED Connectivity Observation Profile"
 Description: "
 Profile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.
@@ -76,15 +77,15 @@ Profile of the observation resource to present the most recent connectivity stat
 // UC 1 - middleware queries patient connectivity information at 6:00 AM
 // To do - time zone offset?
 // To do - note about manufacturer action
-Instance: uc1-connectivity1
+Instance: uc1Connectivity1
 InstanceOf: CIEDConnectivityStatus
 Description: "Use case 1, connectivity status 1"
 //* status = lookupURL#final
 * code = cied-connectivity#observation-cied-connectivity
 * category = cied-connectivity#observation-cied-connectivity
-* device = Reference(uc1-cied-device)
+* device = Reference(uc1CiedDevice)
 * effectiveDateTime = 2025-02-15T06:15:00.000Z
-* subject = Reference(uc1-patient)
+* subject = Reference(uc1Patient)
 * status = http://hl7.org/fhir/ValueSet/observation-status#final
 * note[0].text = "Patient has a bedside monitor that may be unplugged."
 * code = cied-connectivity#observation-cied-connectivity

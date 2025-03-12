@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cied-patient",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient",
+  "name": "CIEDPatient",
+  "title": "Cardiovascular Implantable Electronic Device Patient Profile",
+  "status": "draft",
+  "description": "An CIED profile of the Patient resource.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "mustSupport": true
+      }
+    ]
+  }
+}

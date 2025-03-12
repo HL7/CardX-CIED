@@ -27,6 +27,10 @@ The following Profiles and have been defined for this implementation guide.
             <td><a href="StructureDefinition-CIEDPatient.html">CIED Patient</a></td>
             <td>Patient data elements as defined by the Implantable Device Cardiac Observation IG.</td>
           </tr>
+          <tr>
+            <td><a href="StructureDefinition-CIEDMonitor.html">CIED Monitor</a></td>
+            <td>CIED Monitor data elements</td>
+          </tr>
         </tbody>
     </table>
 </div>

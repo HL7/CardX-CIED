@@ -1,0 +1,82 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "IDCO",
+  "id": "IDCO",
+  "title": "IDCO - IEEE-11073-10103",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDCO",
+  "concept": [
+    {
+      "code": "753665",
+      "display": "Pacemaker",
+      "definition": "A battery powered implantable device that uses low voltage pulses to stimulate the heart when it is beating too slow."
+    },
+    {
+      "code": "753666",
+      "display": "Defibrillator",
+      "definition": "A battery powered implantable device that uses high voltage energy to shock the heart when it is beating too fast and mostly includes pacemaker functionality."
+    },
+    {
+      "code": "753667",
+      "display": "Cardiac Resynchronization Therapy - Defibrillator",
+      "definition": "A battery powered implantable device that uses low voltage pulses to stimulate the ventricles of the heart in multiple locations to increase blood pumping efficiency and also includes pacemaker and defibrillator functionality."
+    },
+    {
+      "code": "753668",
+      "display": "Cardiac Resynchronization Therapy - Pacemaker",
+      "definition": "A battery powered implantable device that uses low voltage pulses to stimulate the ventricles of the heart in multiple locations to increase blood pumping efficiency and also includes pacemaker functionality."
+    },
+    {
+      "code": "753669",
+      "display": "Implantable Diagnostic Monitor",
+      "definition": "A battery powered implantable device that monitors and records cardiac activity and does not deliver any therapy."
+    },
+    {
+      "code": "753670",
+      "display": "Other",
+      "definition": "A device type other than those included in the nomenclature."
+    },
+    {
+      "code": "754049",
+      "display": "Implant",
+      "definition": "An indicator that the data was acquired at the time of the surgical implant."
+    },
+    {
+      "code": "754050",
+      "display": "In Clinic",
+      "definition": "An indicator that the data was acquired when the patient was in a hospital or clinic."
+    },
+    {
+      "code": "754051",
+      "display": "Remote",
+      "definition": "An indicator that the data was acquired while the patient was outside a hospital or clinic."
+    },
+    {
+      "code": "754052",
+      "display": "Remote Device Initiated",
+      "definition": "An indicator that the data was acquired while the patient was outside a hospital or clinic using transmission equipment and because of a condition the device detected."
+    },
+    {
+      "code": "754053",
+      "display": "Remote Scheduled",
+      "definition": "An indicator that the data was acquired while the patient was outside a hospital or clinic using transmission equipment and at a time that was planned in advance."
+    },
+    {
+      "code": "754054",
+      "display": "Remote Patient Initiated",
+      "definition": "An indicator that the data was acquired while the patient was outside a hospital or clinic using transmission equipment and because of an action by the patient at a time that was not planned in advance."
+    },
+    {
+      "code": "754055",
+      "display": "Other",
+      "definition": "An interrogation session type not currently defined within the nomenclature."
+    },
+    {
+      "code": "754056",
+      "display": "Unknown",
+      "definition": "An indicator showing that the session type is unknown for the interrogation session."
+    }
+  ],
+  "count": 14
+}

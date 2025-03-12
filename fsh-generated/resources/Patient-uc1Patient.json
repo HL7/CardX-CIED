@@ -1,0 +1,47 @@
+{
+  "resourceType": "Patient",
+  "id": "uc1Patient",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+    ]
+  },
+  "name": [
+    {
+      "given": [
+        "John",
+        "Test"
+      ],
+      "family": "ICDPatient"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "value": "123456789",
+      "system": "urn:oid:1.2.36.146.595.217.0.2"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "111-555-4444",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "james.icdpatient@emailservice.com"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "1234 Main Street"
+      ],
+      "use": "home",
+      "city": "Springfield",
+      "state": "IL",
+      "postalCode": "12345"
+    }
+  ]
+}

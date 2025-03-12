@@ -1,6 +1,6 @@
 Profile: CIEDEncounter
 Parent: Encounter
-Id: RemoteEncounter
+Id: remote-encounter
 Title: "CIED Remote Transmission Encounter Profile"
 Description: "An CIED Remote Transmission profile of the Encounter resource."
 * identifier MS
@@ -11,11 +11,11 @@ Description: "An CIED Remote Transmission profile of the Encounter resource."
 * subject only Reference(CIEDPatient)
 * participant 1..* MS
 
-Instance: uc1-scheduled-transmission-1
+Instance: uc1ScheduledTransmission1
 InstanceOf: CIEDEncounter
 Description: "Example encounter for scheduled transmission"
 Usage: #example
 * status = http://hl7.org/fhir/encounter-status#planned
-* subject = Reference(uc1-patient)
-* participant.actor = Reference(uc1-cied-device)
+* subject = Reference(uc1Patient)
+* participant.actor = Reference(uc1CiedDevice)
 * type = IDCO#754053

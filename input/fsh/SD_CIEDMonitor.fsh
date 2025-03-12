@@ -1,6 +1,6 @@
-Profile: GatewayDevice
+Profile: CIEDMonitor
 Parent: Device
-Id: GatewayDevice
+Id: gateway-device
 Title: "Cardiovascular Implantable Electronic Device Monitor Profile"
 Description: "
 The following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.
@@ -25,8 +25,8 @@ MDC_IDC_DEV_TYPE - if using type, can include MDC_IDC enums in a valueset. Do we
 * modelNumber MS
 * type MS
 
-Instance: uc1-gateway-device
-InstanceOf: GatewayDevice   
+Instance: uc1CIEDMonitor
+InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 1."
 * udiCarrier[0].deviceIdentifier = "123456789" 
 * udiCarrier[0].issuer = "http://hl7.org/fhir/NamingSystem/gs1"

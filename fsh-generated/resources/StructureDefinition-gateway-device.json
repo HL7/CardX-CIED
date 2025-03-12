@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "gateway-device",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/gateway-device",
+  "name": "CIEDMonitor",
+  "title": "Cardiovascular Implantable Electronic Device Monitor Profile",
+  "status": "draft",
+  "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nMDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n\nOpen Items:\nMDC_IDC_DEV_TYPE - if using type, can include MDC_IDC enums in a valueset. Do we want to also allow SNOMED?\n\n**Each Device must have:**\n- a patient\n- a manufacturer\n- a UDI or device serial number\n",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Device",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device.udiCarrier",
+        "path": "Device.udiCarrier",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.manufacturer",
+        "path": "Device.manufacturer",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.serialNumber",
+        "path": "Device.serialNumber",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.modelNumber",
+        "path": "Device.modelNumber",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.type",
+        "path": "Device.type",
+        "mustSupport": true
+      }
+    ]
+  }
+}

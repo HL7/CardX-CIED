@@ -1,0 +1,146 @@
+[
+  {
+    "outputFile": "CapabilityStatement-CardXCiedServerCapabilityStatement.json",
+    "fshName": "CardXCiedServerCapabilityStatement",
+    "fshType": "Instance",
+    "fshFile": "DEF_CapabilityStatement.fsh",
+    "startLine": 35,
+    "endLine": 76
+  },
+  {
+    "outputFile": "CodeSystem-IDCO.json",
+    "fshName": "IDCO",
+    "fshType": "CodeSystem",
+    "fshFile": "VS_11073-10103.fsh",
+    "startLine": 27,
+    "endLine": 56
+  },
+  {
+    "outputFile": "CodeSystem-cied-connectivity.json",
+    "fshName": "cied-connectivity",
+    "fshType": "CodeSystem",
+    "fshFile": "VS_connectivity.fsh",
+    "startLine": 29,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Device-uc1CIEDMonitor.json",
+    "fshName": "uc1CIEDMonitor",
+    "fshType": "Instance",
+    "fshFile": "SD_CIEDMonitor.fsh",
+    "startLine": 28,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Device-uc1CiedDevice.json",
+    "fshName": "uc1CiedDevice",
+    "fshType": "Instance",
+    "fshFile": "SD_Device.fsh",
+    "startLine": 31,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Encounter-uc1ScheduledTransmission1.json",
+    "fshName": "uc1ScheduledTransmission1",
+    "fshType": "Instance",
+    "fshFile": "SD_Encounter.fsh",
+    "startLine": 14,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Observation-uc1Connectivity1.json",
+    "fshName": "uc1Connectivity1",
+    "fshType": "Instance",
+    "fshFile": "SD_Connectivity.fsh",
+    "startLine": 80,
+    "endLine": 103
+  },
+  {
+    "outputFile": "Patient-uc1Patient.json",
+    "fshName": "uc1Patient",
+    "fshType": "Instance",
+    "fshFile": "SD_Patient.fsh",
+    "startLine": 21,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-cied-connectivity-status.json",
+    "fshName": "CIEDConnectivityStatus",
+    "fshType": "Profile",
+    "fshFile": "SD_Connectivity.fsh",
+    "startLine": 1,
+    "endLine": 73
+  },
+  {
+    "outputFile": "StructureDefinition-cied-device.json",
+    "fshName": "CIEDDevice",
+    "fshType": "Profile",
+    "fshFile": "SD_Device.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-cied-patient.json",
+    "fshName": "CIEDPatient",
+    "fshType": "Profile",
+    "fshFile": "SD_Patient.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-gateway-device.json",
+    "fshName": "CIEDMonitor",
+    "fshType": "Profile",
+    "fshFile": "SD_CIEDMonitor.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-remote-encounter.json",
+    "fshName": "CIEDEncounter",
+    "fshType": "Profile",
+    "fshFile": "SD_Encounter.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-11073-10103-DeviceType.json",
+    "fshName": "11073-10103-DeviceType",
+    "fshType": "ValueSet",
+    "fshFile": "VS_11073-10103.fsh",
+    "startLine": 3,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-11073-10103-SessionType.json",
+    "fshName": "11073-10103-SessionType",
+    "fshType": "ValueSet",
+    "fshFile": "VS_11073-10103.fsh",
+    "startLine": 14,
+    "endLine": 25
+  },
+  {
+    "outputFile": "ValueSet-cied-connectivity-dates-vs.json",
+    "fshName": "cied-connectivity-dates",
+    "fshType": "ValueSet",
+    "fshFile": "VS_connectivity.fsh",
+    "startLine": 20,
+    "endLine": 27
+  },
+  {
+    "outputFile": "ValueSet-cied-connectivity-state-modifier-vs.json",
+    "fshName": "cied-connectivity-state-modifier",
+    "fshType": "ValueSet",
+    "fshFile": "VS_connectivity.fsh",
+    "startLine": 11,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-cied-connectivity-state-vs.json",
+    "fshName": "cied-connectivity-state",
+    "fshType": "ValueSet",
+    "fshFile": "VS_connectivity.fsh",
+    "startLine": 3,
+    "endLine": 9
+  }
+]

@@ -1,3 +1,5 @@
+// To Do: review use of valuesets vs codesystems as noted in warnings
+
 ValueSet: cied-connectivity-state
 Id: cied-connectivity-state-vs
 Title: "CIED Connectivity Status Value Set"

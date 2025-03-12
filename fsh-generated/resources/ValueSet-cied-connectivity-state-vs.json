@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "cied-connectivity-state",
+  "id": "cied-connectivity-state-vs",
+  "title": "CIED Connectivity Status Value Set",
+  "description": "The overall system connectivity status as calculated by the CIED manufacturer",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity",
+        "concept": [
+          {
+            "code": "not-applicable",
+            "display": "Connectivity states are not applicable for this device. E.g. device is not compatible with remote monitoring or requires patient initiated interrogations"
+          },
+          {
+            "code": "connected",
+            "display": "Communication has been successful within the expected time period."
+          },
+          {
+            "code": "disconnected",
+            "display": "Communication has not occurred within the expected time period."
+          }
+        ]
+      }
+    ]
+  }
+}
