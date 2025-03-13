@@ -76,7 +76,7 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  CardX Background: background.html
+  CardX Background: Background.html
   Connectivity Status: connectivity-status.html
   Profiles: profiles.html
   Artifacts: artifacts.html
