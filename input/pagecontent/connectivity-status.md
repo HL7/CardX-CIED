@@ -24,6 +24,25 @@ This use case is centered around facilitating workflows to get patients connecte
 * Next scheduled transmission
 * Free text containing any additional information the manufacturer might have about the patient, device, or guidance to reestablish connectivity
 
+### Examples
+**To Do:** Create a list of example, determine how comprehensive it should be. Not all examples will need sample data.
+#### Connected patient
+
+#### Patient with manual transmission
+
+#### Inactive patient
+
+#### Disconnected patient...
+
+### Actors
+#### Connectivity Data Producer
+The data producer is a manufacturers CIED remote monitoring platform. The manufacturer typically manages an IoT platform to connect cardiac monitors with the remote monitoring platform and manufacturers CIED devices.
+
+A secondary use case is a middleware vendor who consumes the data from a manufacturer and passes that information through to another software system such as an Electronic Health Record.
+
+#### Connectivity Data Consumer
+The data producer is a healthcare provider software system responsible for managing disconnected workflows. These software are often used because they are manufacturer agnostic and may be an Electronic Health Record or CIED specific middleware vendor.
+
 ### Workflow
 {% include img.html img="connectivity-sequence.png" caption="CIED Connectivity Sequence Diagram" %} 
 
