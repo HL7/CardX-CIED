@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "DEF_CapabilityStatement.fsh",
     "startLine": 35,
-    "endLine": 76
+    "endLine": 78
   },
   {
     "outputFile": "CodeSystem-IDCO.json",
@@ -52,8 +52,8 @@
     "fshName": "uc1Connectivity1",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 80,
-    "endLine": 103
+    "startLine": 85,
+    "endLine": 110
   },
   {
     "outputFile": "Patient-uc1Patient.json",
@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "SD_Connectivity.fsh",
     "startLine": 1,
-    "endLine": 73
+    "endLine": 78
   },
   {
     "outputFile": "StructureDefinition-cied-device.json",
@@ -80,20 +80,20 @@
     "endLine": 27
   },
   {
+    "outputFile": "StructureDefinition-cied-monitor.json",
+    "fshName": "CIEDMonitor",
+    "fshType": "Profile",
+    "fshFile": "SD_CIEDMonitor.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
     "outputFile": "StructureDefinition-cied-patient.json",
     "fshName": "CIEDPatient",
     "fshType": "Profile",
     "fshFile": "SD_Patient.fsh",
     "startLine": 1,
     "endLine": 11
-  },
-  {
-    "outputFile": "StructureDefinition-gateway-device.json",
-    "fshName": "CIEDMonitor",
-    "fshType": "Profile",
-    "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 1,
-    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-remote-encounter.json",

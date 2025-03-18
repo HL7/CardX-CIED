@@ -27,20 +27,25 @@ Profile of the observation resource to present the most recent connectivity stat
 * component ^short = "CIED Connectivity Components"
 * component contains
     connectivityStatus 1..1 and
-    connectivityModifier 0..1 and
+    // TO DO - review modifier. Evaluate 0..*. i.e. inactive, setup not complete
+    connectivityModifier 0..* and
     transmissionDisabled 0..1 and
     lastCiedConnectivityDate 0..1 and
     lastMonitorConnectivityDate 0..1 and
     lastTransmission 0..1 and
     nextTransmission 0..1
 * component[connectivityStatus] MS
-* component[connectivityStatus] ^short = "Connectivity status as determined by the manufacturer."
+* component[connectivityStatus] ^short = "The overall system connectivity status as calculated by the CIED manufacturer"
 * component[connectivityStatus].code MS
-* component[connectivityStatus].code from cied-connectivity-state-vs 
+* component[connectivityStatus].code = cied-connectivity#connectivity-status
+* component[connectivityStatus].value[x] only CodeableConcept
+* component[connectivityStatus].value[x] from cied-connectivity-state-vs 
 * component[connectivityModifier] MS
-* component[connectivityModifier] ^short = "Additional information related to the connectivity status."
+* component[connectivityModifier] ^short = "Additional modifiers to connectivity status as calculated by the CIED manufacturer"
 * component[connectivityModifier].code MS
-* component[connectivityModifier].code from cied-connectivity-state-modifier-vs
+* component[connectivityModifier].code = cied-connectivity#connectivity-modifier
+* component[connectivityModifier].value[x] only CodeableConcept
+* component[connectivityModifier].value[x] from cied-connectivity-state-modifier-vs
 * component[transmissionDisabled] MS
 * component[transmissionDisabled] ^short = "Indicates whether transmissions have been disabled on the CIED or not."
 * component[transmissionDisabled].code MS
@@ -90,8 +95,10 @@ Description: "Use case 1, connectivity status 1"
 * note[0].text = "Patient has a bedside monitor that may be unplugged."
 * code = cied-connectivity#observation-cied-connectivity
 * category = cied-connectivity#observation-cied-connectivity  
-* component[connectivityStatus].code = cied-connectivity#disconnected
-* component[connectivityModifier].code = cied-connectivity#inactive
+* component[connectivityStatus].code = cied-connectivity#connectivity-status
+* component[connectivityStatus].valueCodeableConcept = cied-connectivity#disconnected
+* component[connectivityModifier].code = cied-connectivity#connectivity-modifier
+* component[connectivityModifier].valueCodeableConcept = cied-connectivity#inactive
 * component[transmissionDisabled].valueBoolean = false
 * component[lastCiedConnectivityDate].code = cied-connectivity#last-cied-connectivity-time
 * component[lastCiedConnectivityDate].valueDateTime = 2025-02-15T06:00:00.000Z 

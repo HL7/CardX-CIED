@@ -3,8 +3,8 @@
   "status": "draft",
   "name": "cied-connectivity-state-modifier",
   "id": "cied-connectivity-state-modifier-vs",
-  "title": "CIED Connectivity Status Value Set",
-  "description": "The overall system connectivity status as calculated by the CIED manufacturer",
+  "title": "CIED Connectivity Status Modifier Value Set",
+  "description": "Additional modifiers to connectivity status as calculated by the CIED manufacturer",
   "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-modifier-vs",
   "compose": {
     "include": [

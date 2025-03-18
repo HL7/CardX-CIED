@@ -118,7 +118,7 @@
         "id": "Observation.component:connectivityStatus",
         "path": "Observation.component",
         "sliceName": "connectivityStatus",
-        "short": "Connectivity status as determined by the manufacturer.",
+        "short": "The overall system connectivity status as calculated by the CIED manufacturer",
         "min": 1,
         "max": "1",
         "mustSupport": true
@@ -126,6 +126,23 @@
       {
         "id": "Observation.component:connectivityStatus.code",
         "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "connectivity-status",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:connectivityStatus.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-vs"
@@ -135,14 +152,31 @@
         "id": "Observation.component:connectivityModifier",
         "path": "Observation.component",
         "sliceName": "connectivityModifier",
-        "short": "Additional information related to the connectivity status.",
+        "short": "Additional modifiers to connectivity status as calculated by the CIED manufacturer",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "mustSupport": true
       },
       {
         "id": "Observation.component:connectivityModifier.code",
         "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "connectivity-modifier",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:connectivityModifier.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-modifier-vs"
