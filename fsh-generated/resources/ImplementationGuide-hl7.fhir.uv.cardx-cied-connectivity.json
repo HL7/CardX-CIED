@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied-connectivity",
   "version": "0.1.0",
   "name": "CIEDconnectivityCardX",
-  "title": "CardX CIED Connectivity",
+  "title": "CardX - Cardiac Implantable Electronic Devices",
   "status": "draft",
   "publisher": "HL7 International / Clinical Interoperability Council",
   "contact": [
@@ -41,7 +41,7 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/gateway-device"
+          "reference": "StructureDefinition/cied-monitor"
         },
         "name": "Cardiovascular Implantable Electronic Device Monitor Profile",
         "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nMDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n\nOpen Items:\nMDC_IDC_DEV_TYPE - if using type, can include MDC_IDC enums in a valueset. Do we want to also allow SNOMED?\n\n**Each Device must have:**\n- a patient\n- a manufacturer\n- a UDI or device serial number\n",
@@ -89,15 +89,15 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/cied-connectivity-state-vs"
+          "reference": "ValueSet/cied-connectivity-state-modifier-vs"
         },
-        "name": "CIED Connectivity Status Value Set",
-        "description": "The overall system connectivity status as calculated by the CIED manufacturer",
+        "name": "CIED Connectivity Status Modifier Value Set",
+        "description": "Additional modifiers to connectivity status as calculated by the CIED manufacturer",
         "isExample": false
       },
       {
         "reference": {
-          "reference": "ValueSet/cied-connectivity-state-modifier-vs"
+          "reference": "ValueSet/cied-connectivity-state-vs"
         },
         "name": "CIED Connectivity Status Value Set",
         "description": "The overall system connectivity status as calculated by the CIED manufacturer",
@@ -160,7 +160,7 @@
         "description": "An example CIED monitor for CIED connectivity example 1.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/gateway-device"
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
         ]
       },
       {

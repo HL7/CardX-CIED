@@ -222,8 +222,30 @@
                   "valueCode": "SHOULD"
                 }
               ],
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
               "name": "subject",
-              "definition": "http://hl7.org/fhir/SearchParameter/Observation-category",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-subject",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
               "type": "token"
             },
             {
@@ -233,8 +255,8 @@
                   "valueCode": "SHOULD"
                 }
               ],
-              "name": "code",
-              "definition": "http://hl7.org/fhir/SearchParameter/Observation-code",
+              "name": "combo-value-concept",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept",
               "type": "token"
             }
           ],

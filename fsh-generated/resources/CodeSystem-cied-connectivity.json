@@ -8,6 +8,14 @@
   "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity",
   "concept": [
     {
+      "code": "connectivity-status",
+      "display": "The overall system connectivity status as calculated by the CIED manufacturer"
+    },
+    {
+      "code": "connectivity-modifier",
+      "display": "Additional modifiers to connectivity status as calculated by the CIED manufacturer"
+    },
+    {
       "code": "setup-not-completed",
       "display": "Setup not completed",
       "definition": "Device/monitor setup has not been completed. E.g. pending initial setup or there is no device/monitor association"
@@ -41,11 +49,6 @@
       "code": "unenrolled",
       "display": "Unenrolled",
       "definition": "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
-    },
-    {
-      "code": "undeterminted",
-      "display": "Undetermined",
-      "definition": "Connectivity status has not been defined or cannot be calculated"
     },
     {
       "code": "transmission-disabled",
@@ -92,5 +95,5 @@
       "definition": "Standalone device, with battery capacity to provide monitoring while on the go"
     }
   ],
-  "count": 17
+  "count": 18
 }

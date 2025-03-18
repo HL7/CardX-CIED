@@ -10,8 +10,8 @@ Description: "The overall system connectivity status as calculated by the CIED m
 
 ValueSet: cied-connectivity-state-modifier
 Id: cied-connectivity-state-modifier-vs
-Title: "CIED Connectivity Status Value Set"
-Description: "The overall system connectivity status as calculated by the CIED manufacturer"
+Title: "CIED Connectivity Status Modifier Value Set"
+Description: "Additional modifiers to connectivity status as calculated by the CIED manufacturer"
 * cied-connectivity#setup-not-completed "Device/monitor setup has not been completed. E.g. pending initial setup or there is no device/monitor association"
 * cied-connectivity#suspended "Patient has been temporarily removed from the disconnected state. This is not intended to be an actionable status."
 * cied-connectivity#inactive "Patient has been permanently removed from disconnected status."
@@ -28,6 +28,8 @@ Description: "The relevant dates and times related to CIED connectivity, schedul
 
 CodeSystem: cied-connectivity
 Title: "CIED Connectivity Status Values"
+* #connectivity-status "The overall system connectivity status as calculated by the CIED manufacturer"
+* #connectivity-modifier "Additional modifiers to connectivity status as calculated by the CIED manufacturer"
 * #setup-not-completed "Setup not completed"
     "Device/monitor setup has not been completed. E.g. pending initial setup or there is no device/monitor association"
 * #not-applicable "N/A"
@@ -42,8 +44,6 @@ Title: "CIED Connectivity Status Values"
     "Patient has been permanently removed from the disconnected status."
 * #unenrolled "Unenrolled"
     "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
-* #undeterminted "Undetermined"
-    "Connectivity status has not been defined or cannot be calculated"
 * #transmission-disabled "Disabled"
     "Indicates whether transmissions have been disabled on the CIED or not."
 * #last-cied-connectivity-time "CIED to monitor"

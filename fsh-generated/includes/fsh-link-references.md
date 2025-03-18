@@ -1,11 +1,11 @@
-[CIEDMonitor]: StructureDefinition-gateway-device.html
+[CIEDMonitor]: StructureDefinition-cied-monitor.html
 [CIEDPatient]: StructureDefinition-cied-patient.html
 [CIEDDevice]: StructureDefinition-cied-device.html
 [CardXCiedServerCapabilityStatement]: CapabilityStatement-CardXCiedServerCapabilityStatement.html
 [cied-connectivity-dates]: ValueSet-cied-connectivity-dates-vs.html
 [CIEDConnectivityStatus]: StructureDefinition-cied-connectivity-status.html
-[cied-connectivity-state]: ValueSet-cied-connectivity-state-vs.html
 [cied-connectivity-state-modifier]: ValueSet-cied-connectivity-state-modifier-vs.html
+[cied-connectivity-state]: ValueSet-cied-connectivity-state-vs.html
 [cied-connectivity]: CodeSystem-cied-connectivity.html
 [CIEDEncounter]: StructureDefinition-remote-encounter.html
 [IDCO]: CodeSystem-IDCO.html

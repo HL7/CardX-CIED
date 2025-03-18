@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "gateway-device",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/gateway-device",
+  "id": "cied-monitor",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor",
   "name": "CIEDMonitor",
   "title": "Cardiovascular Implantable Electronic Device Monitor Profile",
   "status": "draft",

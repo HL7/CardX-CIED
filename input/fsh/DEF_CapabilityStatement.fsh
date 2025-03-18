@@ -72,5 +72,9 @@ Usage: #definition
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Observation-identifier, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHOULD)
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/Observation-code, #token, #SHOULD)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHOULD)
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHOULD)
+* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
+* insert SupportSearchParam(combo-value-concept, http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept, #token, #SHOULD)
+
+// TO DO - go through and review token vs codeable concept etc.
