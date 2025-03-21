@@ -30,13 +30,13 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.address",
-        "path": "Patient.address",
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
         "mustSupport": true
       },
       {
-        "id": "Patient.managingOrganization",
-        "path": "Patient.managingOrganization",
+        "id": "Patient.address",
+        "path": "Patient.address",
         "mustSupport": true
       }
     ]
