@@ -22,10 +22,11 @@ This use case is centered around facilitating workflows to get patients connecte
 * Whether or not transmissions have been disabled on the device
 * Most recent transmission
 * Next scheduled transmission
-* Free text containing any additional information the manufacturer might have about the patient, device, or guidance to reestablish connectivity
+* Free text containing any additional information the manufacturer might have about the patient, device, or guidance to reestablish connectivity 
 
 ### Examples
 **To Do:** Create a list of example, determine how comprehensive it should be. Not all examples will need sample data.
+
 #### Connected patient
 
 #### Patient with manual transmission
