@@ -61,6 +61,8 @@ entity "Observation - Connectivity Status" as Connectivity {
     transmissionDisabled : BackboneElement(0..1) 
     lastCiedConnectivityDate : BackboneElement (0..1)
     lastMonitorConnectivityDate : BackboneElement (0..1)
+    nextCiedConnectivityDate : BackboneElement (0..1)
+    nextMonitorConnectivityDate : BackboneElement (0..1)
     lastTransmission : BackboneElement (0..1)
     nextTransmission : BackboneElement (0..1)
 }
