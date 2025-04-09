@@ -17,6 +17,7 @@
       {
         "id": "Observation.status",
         "path": "Observation.status",
+        "patternCode": "final",
         "mustSupport": true
       },
       {
