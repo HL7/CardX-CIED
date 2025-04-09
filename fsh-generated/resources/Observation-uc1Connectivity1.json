@@ -8,7 +8,7 @@
   },
   "note": [
     {
-      "text": "Patient has a bedside monitor that may be unplugged."
+      "text": "The patient is listed as inactive in the system after being disconnected for more than 90 days."
     }
   ],
   "category": [
@@ -100,7 +100,7 @@
           }
         ]
       },
-      "valueDateTime": "2025-02-20"
+      "valueDateTime": "2025-02-21"
     },
     {
       "code": {
@@ -111,7 +111,7 @@
           }
         ]
       },
-      "valueDateTime": "2025-02-20"
+      "valueDateTime": "2025-02-21"
     },
     {
       "code": {
@@ -133,7 +133,7 @@
           }
         ]
       },
-      "valueDateTime": "2025-02-20"
+      "valueDateTime": "2025-02-21"
     }
   ],
   "code": {
