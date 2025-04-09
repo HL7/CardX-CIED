@@ -20,8 +20,8 @@
     "fshName": "cied-connectivity",
     "fshType": "CodeSystem",
     "fshFile": "VS_connectivity.fsh",
-    "startLine": 29,
-    "endLine": 63
+    "startLine": 39,
+    "endLine": 77
   },
   {
     "outputFile": "Device-uc1CIEDMonitor.json",
@@ -52,8 +52,8 @@
     "fshName": "uc1Connectivity1",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 85,
-    "endLine": 110
+    "startLine": 101,
+    "endLine": 126
   },
   {
     "outputFile": "Patient-uc1Patient.json",
@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "SD_Patient.fsh",
     "startLine": 21,
-    "endLine": 42
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-cied-connectivity-status.json",
@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "SD_Connectivity.fsh",
     "startLine": 1,
-    "endLine": 78
+    "endLine": 94
   },
   {
     "outputFile": "StructureDefinition-cied-device.json",
@@ -125,7 +125,7 @@
     "fshType": "ValueSet",
     "fshFile": "VS_connectivity.fsh",
     "startLine": 20,
-    "endLine": 27
+    "endLine": 29
   },
   {
     "outputFile": "ValueSet-cied-connectivity-state-modifier-vs.json",
@@ -142,5 +142,13 @@
     "fshFile": "VS_connectivity.fsh",
     "startLine": 3,
     "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-cied-monitor-types-vs.json",
+    "fshName": "cied-monitor-types",
+    "fshType": "ValueSet",
+    "fshFile": "VS_connectivity.fsh",
+    "startLine": 31,
+    "endLine": 37
   }
 ]

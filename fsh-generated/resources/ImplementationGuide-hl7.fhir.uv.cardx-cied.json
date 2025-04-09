@@ -1,9 +1,9 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.uv.cardx-cied-connectivity",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied-connectivity",
+  "id": "hl7.fhir.uv.cardx-cied",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied",
   "version": "0.1.0",
-  "name": "CIEDconnectivityCardX",
+  "name": "CardXCIED",
   "title": "CardX - Cardiac Implantable Electronic Devices",
   "status": "draft",
   "publisher": "HL7 International / Clinical Interoperability Council",
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "packageId": "hl7.fhir.uv.cardx-cied-connectivity",
+  "packageId": "hl7.fhir.uv.cardx-cied",
   "fhirVersion": [
     "5.0.0"
   ],
@@ -108,6 +108,14 @@
           "reference": "CodeSystem/cied-connectivity"
         },
         "name": "CIED Connectivity Status Values",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cied-monitor-types-vs"
+        },
+        "name": "CIED Monitor Types",
+        "description": "The type of CIED monitor",
         "isExample": false
       },
       {

@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "cied-monitor-types",
+  "id": "cied-monitor-types-vs",
+  "title": "CIED Monitor Types",
+  "description": "The type of CIED monitor",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-monitor-types-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity",
+        "concept": [
+          {
+            "code": "bedside-device",
+            "display": "Standalone device, not intended to provide monitoring while on the go"
+          },
+          {
+            "code": "mobile-monitor",
+            "display": "App based monitor"
+          },
+          {
+            "code": "portable-device",
+            "display": "Standalone device, with battery capacity to provide monitoring while on the go"
+          }
+        ]
+      }
+    ]
+  }
+}

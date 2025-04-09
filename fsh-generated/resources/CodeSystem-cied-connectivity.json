@@ -57,13 +57,23 @@
     },
     {
       "code": "last-cied-connectivity-time",
-      "display": "CIED to monitor",
+      "display": "Last CIED to monitor",
       "definition": "The timestamp of the most recent communication between the CIED and monitor."
     },
     {
       "code": "last-monitor-connectivity-time",
-      "display": "Monitor to Remote Monitoring Software",
+      "display": "Last Monitor to Remote Monitoring Software",
       "definition": "The timestamp of the most recent communication from the monitor to the remote monitoring platform."
+    },
+    {
+      "code": "next-cied-connectivity-date",
+      "display": "Next CIED to monitor",
+      "definition": "The date of the next expected communication between the CIED and monitor."
+    },
+    {
+      "code": "next-monitor-connectivity-date",
+      "display": "Next monitor to Remote Monitoring Software",
+      "definition": "The date of the next expected communication from the monitor to the remote monitoring platform."
     },
     {
       "code": "last-transmission-date",
@@ -95,5 +105,5 @@
       "definition": "Standalone device, with battery capacity to provide monitoring while on the go"
     }
   ],
-  "count": 18
+  "count": 20
 }
