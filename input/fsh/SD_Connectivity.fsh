@@ -1,7 +1,7 @@
 Profile: CIEDConnectivityStatus
 Parent: Observation
 Id: cied-connectivity-status
-Title: "CIED Connectivity Observation Profile"
+Title: "Observation - CIED Connectivity"
 Description: "
 Profile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.
 "

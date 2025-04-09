@@ -28,6 +28,7 @@ This use case is centered around facilitating workflows to get patients connecte
 **To Do:** Create a list of example, determine how comprehensive it should be. Not all examples will need sample data.
 
 #### Connected patient
+Connected patient example...
 
 #### Patient with manual transmission
 
