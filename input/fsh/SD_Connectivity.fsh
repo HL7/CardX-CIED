@@ -97,7 +97,7 @@ Description: "Use case 1, connectivity status 1"
 * effectiveDateTime = 2025-02-15T06:15:00.000Z
 * subject = Reference(uc1Patient)
 * status = http://hl7.org/fhir/ValueSet/observation-status#final
-* note[0].text = "Patient has a bedside monitor that may be unplugged."
+* note[0].text = "The patient is listed as inactive in the system after being disconnected for more than 90 days."
 * code = cied-connectivity#observation-cied-connectivity
 * category = cied-connectivity#observation-cied-connectivity  
 * component[connectivityStatus].code = cied-connectivity#connectivity-status
@@ -110,13 +110,13 @@ Description: "Use case 1, connectivity status 1"
 * component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
 * component[lastMonitorConnectivityDate].valueDateTime = 2024-02-15T06:00:00.000Z
 * component[nextCiedConnectivityDate].code = cied-connectivity#next-cied-connectivity-date
-* component[nextCiedConnectivityDate].valueDateTime = 2025-02-20
+* component[nextCiedConnectivityDate].valueDateTime = 2025-02-21
 * component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
-* component[nextMonitorConnectivityDate].valueDateTime = 2025-02-20
+* component[nextMonitorConnectivityDate].valueDateTime = 2025-02-21
 * component[lastTransmission].code = cied-connectivity#last-transmission-date
 * component[lastTransmission].valueDateTime = 2024-02-15T06:00:00.000Z
 * component[nextTransmission].code = cied-connectivity#next-transmission-date
-* component[nextTransmission].valueDateTime = 2025-02-20
+* component[nextTransmission].valueDateTime = 2025-02-21
 
 
 

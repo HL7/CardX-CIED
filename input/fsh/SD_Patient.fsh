@@ -21,7 +21,7 @@ Description: "An example CIED patient for CIED connectivity example 1."
   * given[1] = "Test"
   * family = "ICDPatient"
 * identifier.use = http://hl7.org/fhir/identifier-use#usual
-* identifier.value = "123456789"
+* identifier.value = "ICD123456789"
 * identifier.type = http://hl7.org/fhir/ValueSet/v2-0203#MR
 * identifier.assigner.display = "Acme Devices"
 * identifier.system = "urn:oid:1.2.36.146.595.217.0.2"
