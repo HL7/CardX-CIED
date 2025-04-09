@@ -28,16 +28,16 @@
     "fshName": "uc1CIEDMonitor",
     "fshType": "Instance",
     "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 28,
-    "endLine": 40
+    "startLine": 20,
+    "endLine": 30
   },
   {
     "outputFile": "Device-uc1CiedDevice.json",
     "fshName": "uc1CiedDevice",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 31,
-    "endLine": 43
+    "startLine": 35,
+    "endLine": 46
   },
   {
     "outputFile": "Encounter-uc1ScheduledTransmission1.json",
@@ -52,16 +52,16 @@
     "fshName": "uc1Connectivity1",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 101,
-    "endLine": 126
+    "startLine": 92,
+    "endLine": 119
   },
   {
     "outputFile": "Patient-uc1Patient.json",
     "fshName": "uc1Patient",
     "fshType": "Instance",
     "fshFile": "SD_Patient.fsh",
-    "startLine": 21,
-    "endLine": 43
+    "startLine": 16,
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-cied-connectivity-status.json",
@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "SD_Connectivity.fsh",
     "startLine": 1,
-    "endLine": 94
+    "endLine": 90
   },
   {
     "outputFile": "StructureDefinition-cied-device.json",
@@ -77,7 +77,7 @@
     "fshType": "Profile",
     "fshFile": "SD_Device.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-cied-monitor.json",
@@ -85,7 +85,7 @@
     "fshType": "Profile",
     "fshFile": "SD_CIEDMonitor.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 18
   },
   {
     "outputFile": "StructureDefinition-cied-patient.json",
@@ -93,7 +93,7 @@
     "fshType": "Profile",
     "fshFile": "SD_Patient.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 10
   },
   {
     "outputFile": "StructureDefinition-remote-encounter.json",

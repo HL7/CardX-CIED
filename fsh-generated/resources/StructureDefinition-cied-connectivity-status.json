@@ -20,18 +20,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category",
-        "path": "Observation.category",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "observation-cied-connectivity",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
-            }
-          ]
-        }
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "patternCodeableConcept": {

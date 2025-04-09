@@ -17,8 +17,19 @@
   ],
   "identifier": [
     {
+      "assigner": {
+        "display": "Acme Devices"
+      },
       "use": "usual",
       "value": "123456789",
+      "type": {
+        "coding": [
+          {
+            "code": "MR",
+            "system": "http://hl7.org/fhir/ValueSet/v2-0203"
+          }
+        ]
+      },
       "system": "urn:oid:1.2.36.146.595.217.0.2"
     }
   ],
@@ -27,10 +38,6 @@
       "system": "phone",
       "value": "111-555-4444",
       "use": "mobile"
-    },
-    {
-      "system": "email",
-      "value": "james.icdpatient@emailservice.com"
     }
   ],
   "address": [

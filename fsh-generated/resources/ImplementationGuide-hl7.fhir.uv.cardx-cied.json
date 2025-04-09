@@ -44,7 +44,7 @@
           "reference": "StructureDefinition/cied-monitor"
         },
         "name": "Cardiovascular Implantable Electronic Device Monitor Profile",
-        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nMDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n\nOpen Items:\nMDC_IDC_DEV_TYPE - if using type, can include MDC_IDC enums in a valueset. Do we want to also allow SNOMED?\n\n**Each Device must have:**\n- a patient\n- a manufacturer\n- a UDI or device serial number\n",
+        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
         "isExample": false
       },
       {
@@ -60,7 +60,7 @@
           "reference": "StructureDefinition/cied-device"
         },
         "name": "Cardiovascular Implantable Electronic Device Profile",
-        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nMDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n\nOpen Items:\nMDC_IDC_DEV_TYPE - if using type, can include MDC_IDC enums in a valueset. Do we want to also allow SNOMED?\n\n**Each Device must have:**\n- a patient\n- a manufacturer\n- a UDI or device serial number\n",
+        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
         "isExample": false
       },
       {

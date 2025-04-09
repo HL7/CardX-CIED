@@ -24,7 +24,14 @@
       ]
     }
   ],
-  "manufacturer": "CIED Manufacturer",
+  "gateway": [
+    {
+      "reference": {
+        "reference": "Device/uc1CIEDMonitor"
+      }
+    }
+  ],
+  "manufacturer": "ACME Devices",
   "serialNumber": "123456789",
   "modelNumber": "ICDExample1"
 }

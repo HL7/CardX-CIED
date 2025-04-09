@@ -6,6 +6,11 @@
       "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
     ]
   },
+  "note": [
+    {
+      "text": "Patient has a bedside monitor that may be unplugged."
+    }
+  ],
   "category": [
     {
       "coding": [
@@ -14,11 +19,6 @@
           "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
         }
       ]
-    }
-  ],
-  "note": [
-    {
-      "text": "Patient has a bedside monitor that may be unplugged."
     }
   ],
   "component": [
@@ -78,7 +78,7 @@
           }
         ]
       },
-      "valueDateTime": "2025-02-15T06:00:00.000Z"
+      "valueDateTime": "2024-02-15T06:00:00.000Z"
     },
     {
       "code": {
@@ -89,7 +89,29 @@
           }
         ]
       },
-      "valueDateTime": "2025-02-15T06:00:00.000Z"
+      "valueDateTime": "2024-02-15T06:00:00.000Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "next-cied-connectivity-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-02-20"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "next-monitor-connectivity-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-02-20"
     },
     {
       "code": {
@@ -100,7 +122,7 @@
           }
         ]
       },
-      "valueDateTime": "2025-02-15T06:00:00.000Z"
+      "valueDateTime": "2024-02-15T06:00:00.000Z"
     },
     {
       "code": {
@@ -111,7 +133,7 @@
           }
         ]
       },
-      "valueDateTime": "2025-02-15T06:00:00.000Z"
+      "valueDateTime": "2025-02-20"
     }
   ],
   "code": {
