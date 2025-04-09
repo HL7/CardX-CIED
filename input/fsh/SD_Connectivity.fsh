@@ -8,8 +8,6 @@ Profile of the observation resource to present the most recent connectivity stat
 * status MS
 * code MS
 * code = cied-connectivity#observation-cied-connectivity
-* category = cied-connectivity#observation-cied-connectivity
-// not mandating category, search optional
 * device 1..1 MS 
 * device only Reference(CIEDDevice)
 * effective[x] only dateTime
@@ -66,7 +64,6 @@ Profile of the observation resource to present the most recent connectivity stat
 * component[lastMonitorConnectivityDate].code ^short = "Monitor to remote monitoring communication"
 * component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
 * component[lastMonitorConnectivityDate].value[x] only dateTime
-
 * component[nextCiedConnectivityDate] MS
 * component[nextCiedConnectivityDate] ^short = "The timestamp of the next expected communication between the CIED and monitor."
 * component[nextCiedConnectivityDate].code MS
@@ -79,7 +76,6 @@ Profile of the observation resource to present the most recent connectivity stat
 * component[nextMonitorConnectivityDate].code ^short = "Next monitor to remote monitoring communication"
 * component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
 * component[nextMonitorConnectivityDate].value[x] only dateTime
-
 * component[lastTransmission] MS
 * component[lastTransmission] ^short = "The date of the most recent interrogated device transmission"
 * component[lastTransmission].code MS
@@ -93,17 +89,10 @@ Profile of the observation resource to present the most recent connectivity stat
 * component[nextTransmission].code = cied-connectivity#next-transmission-date
 * component[nextTransmission].value[x] only dateTime
 
-
-// create examples
-// UC 1 - middleware queries patient connectivity information at 6:00 AM
-// To do - time zone offset?
-// To do - note about manufacturer action
 Instance: uc1Connectivity1
 InstanceOf: CIEDConnectivityStatus
 Description: "Use case 1, connectivity status 1"
-//* status = lookupURL#final
 * code = cied-connectivity#observation-cied-connectivity
-* category = cied-connectivity#observation-cied-connectivity
 * device = Reference(uc1CiedDevice)
 * effectiveDateTime = 2025-02-15T06:15:00.000Z
 * subject = Reference(uc1Patient)
@@ -117,13 +106,17 @@ Description: "Use case 1, connectivity status 1"
 * component[connectivityModifier].valueCodeableConcept = cied-connectivity#inactive
 * component[transmissionDisabled].valueBoolean = false
 * component[lastCiedConnectivityDate].code = cied-connectivity#last-cied-connectivity-time
-* component[lastCiedConnectivityDate].valueDateTime = 2025-02-15T06:00:00.000Z 
+* component[lastCiedConnectivityDate].valueDateTime = 2024-02-15T06:00:00.000Z 
 * component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
-* component[lastMonitorConnectivityDate].valueDateTime = 2025-02-15T06:00:00.000Z
+* component[lastMonitorConnectivityDate].valueDateTime = 2024-02-15T06:00:00.000Z
+* component[nextCiedConnectivityDate].code = cied-connectivity#next-cied-connectivity-date
+* component[nextCiedConnectivityDate].valueDateTime = 2025-02-20
+* component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
+* component[nextMonitorConnectivityDate].valueDateTime = 2025-02-20
 * component[lastTransmission].code = cied-connectivity#last-transmission-date
-* component[lastTransmission].valueDateTime = 2025-02-15T06:00:00.000Z
+* component[lastTransmission].valueDateTime = 2024-02-15T06:00:00.000Z
 * component[nextTransmission].code = cied-connectivity#next-transmission-date
-* component[nextTransmission].valueDateTime = 2025-02-15T06:00:00.000Z
+* component[nextTransmission].valueDateTime = 2025-02-20
 
 
 
