@@ -8,6 +8,7 @@ Profile of the observation resource to present the most recent connectivity stat
 * status MS
 * code MS
 * code = cied-connectivity#observation-cied-connectivity
+* status = http://hl7.org/fhir/ValueSet/observation-status#final
 * device 1..1 MS 
 * device only Reference(CIEDDevice)
 * effective[x] only dateTime

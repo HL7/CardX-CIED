@@ -136,6 +136,7 @@
       "valueDateTime": "2025-02-21"
     }
   ],
+  "status": "final",
   "code": {
     "coding": [
       {
@@ -150,6 +151,5 @@
   "effectiveDateTime": "2025-02-15T06:15:00.000Z",
   "subject": {
     "reference": "Patient/uc1Patient"
-  },
-  "status": "final"
+  }
 }
