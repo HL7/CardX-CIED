@@ -276,6 +276,68 @@
         ]
       },
       {
+        "id": "Observation.component:nextCiedConnectivityDate",
+        "path": "Observation.component",
+        "sliceName": "nextCiedConnectivityDate",
+        "short": "The timestamp of the next expected communication between the CIED and monitor.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:nextCiedConnectivityDate.code",
+        "path": "Observation.component.code",
+        "short": "Next CIED to monitor communication",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "next-cied-connectivity-date",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:nextCiedConnectivityDate.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:nextMonitorConnectivityDate",
+        "path": "Observation.component",
+        "sliceName": "nextMonitorConnectivityDate",
+        "short": "The timestamp of the next expected communication from the monitor to the remote monitoring platform.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:nextMonitorConnectivityDate.code",
+        "path": "Observation.component.code",
+        "short": "Next monitor to remote monitoring communication",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "next-monitor-connectivity-date",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:nextMonitorConnectivityDate.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
         "id": "Observation.component:lastTransmission",
         "path": "Observation.component",
         "sliceName": "lastTransmission",

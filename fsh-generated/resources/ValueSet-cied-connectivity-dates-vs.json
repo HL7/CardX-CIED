@@ -20,6 +20,14 @@
             "display": "The timestamp of the most recent communication from the monitor to the remote monitoring platform."
           },
           {
+            "code": "next-cied-connectivity-date",
+            "display": "The date of the next expected communication between the CIED and monitor."
+          },
+          {
+            "code": "next-monitor-connectivity-date",
+            "display": "The date of the next expected communication from the monitor to the remote monitoring platform."
+          },
+          {
             "code": "last-transmission-date",
             "display": "The date of the most recent interrogated device transmission"
           },

@@ -32,6 +32,8 @@ Profile of the observation resource to present the most recent connectivity stat
     transmissionDisabled 0..1 and
     lastCiedConnectivityDate 0..1 and
     lastMonitorConnectivityDate 0..1 and
+    nextCiedConnectivityDate 0..1 and
+    nextMonitorConnectivityDate 0..1 and
     lastTransmission 0..1 and
     nextTransmission 0..1
 * component[connectivityStatus] MS
@@ -64,6 +66,20 @@ Profile of the observation resource to present the most recent connectivity stat
 * component[lastMonitorConnectivityDate].code ^short = "Monitor to remote monitoring communication"
 * component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
 * component[lastMonitorConnectivityDate].value[x] only dateTime
+
+* component[nextCiedConnectivityDate] MS
+* component[nextCiedConnectivityDate] ^short = "The timestamp of the next expected communication between the CIED and monitor."
+* component[nextCiedConnectivityDate].code MS
+* component[nextCiedConnectivityDate].code ^short = "Next CIED to monitor communication"
+* component[nextCiedConnectivityDate].code = cied-connectivity#next-cied-connectivity-date
+* component[nextCiedConnectivityDate].value[x] only dateTime
+* component[nextMonitorConnectivityDate] MS
+* component[nextMonitorConnectivityDate] ^short = "The timestamp of the next expected communication from the monitor to the remote monitoring platform."
+* component[nextMonitorConnectivityDate].code MS
+* component[nextMonitorConnectivityDate].code ^short = "Next monitor to remote monitoring communication"
+* component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
+* component[nextMonitorConnectivityDate].value[x] only dateTime
+
 * component[lastTransmission] MS
 * component[lastTransmission] ^short = "The date of the most recent interrogated device transmission"
 * component[lastTransmission].code MS

@@ -3,9 +3,9 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.uv.cardx-cied-connectivity
+id: hl7.fhir.uv.cardx-cied
 canonical: http://hl7.org/fhir/uv/cardx-cied
-name: CIED-connectivity-CardX
+name: CardX-CIED
 title: CardX - Cardiac Implantable Electronic Devices
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown

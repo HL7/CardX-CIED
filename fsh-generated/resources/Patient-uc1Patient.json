@@ -43,5 +43,6 @@
       "state": "IL",
       "postalCode": "12345"
     }
-  ]
+  ],
+  "birthDate": "1970-01-01"
 }
