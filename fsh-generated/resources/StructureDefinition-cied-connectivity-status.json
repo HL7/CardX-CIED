@@ -3,7 +3,7 @@
   "id": "cied-connectivity-status",
   "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status",
   "name": "CIEDConnectivityStatus",
-  "title": "CIED Connectivity Observation Profile",
+  "title": "Observation - CIED Connectivity",
   "status": "draft",
   "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.\n",
   "fhirVersion": "5.0.0",
