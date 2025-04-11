@@ -81,14 +81,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cied-connectivity-status"
-        },
-        "name": "CIED Connectivity Observation Profile",
-        "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.\n",
-        "isExample": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/cied-connectivity-state-modifier-vs"
         },
         "name": "CIED Connectivity Status Modifier Value Set",
@@ -130,7 +122,7 @@
         "reference": {
           "reference": "CodeSystem/IDCO"
         },
-        "name": "IDCO - IEEE-11073-10103",
+        "name": "IDC - IEEE-11073-10103",
         "isExample": false
       },
       {
@@ -147,6 +139,14 @@
         },
         "name": "IEEE 11073-10103 Session Type",
         "description": "The type of session as defined by IEEE 11073-10103",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-connectivity-status"
+        },
+        "name": "Observation - CIED Connectivity",
+        "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.\n",
         "isExample": false
       },
       {

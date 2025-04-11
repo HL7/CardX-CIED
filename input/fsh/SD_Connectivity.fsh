@@ -34,6 +34,9 @@ Profile of the observation resource to present the most recent connectivity stat
     nextCiedConnectivityDate 0..1 and
     nextMonitorConnectivityDate 0..1 and
     lastTransmission 0..1 and
+    // nextRemoteScheduledInterrogationSession
+    //lastRemoteInterrogationSession
+
     nextTransmission 0..1
 * component[connectivityStatus] MS
 * component[connectivityStatus] ^short = "The overall system connectivity status as calculated by the CIED manufacturer"
