@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "IDCO",
-  "id": "IDCO",
-  "title": "IDC - IEEE-11073-10103",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDCO",
+  "name": "IDC",
+  "id": "IDC",
+  "title": "ISO/IEEE-11073-10103",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC",
   "concept": [
     {
       "code": "753665",

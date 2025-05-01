@@ -51,11 +51,6 @@
       "definition": "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
     },
     {
-      "code": "transmission-disabled",
-      "display": "Disabled",
-      "definition": "Indicates whether transmissions have been disabled on the CIED or not."
-    },
-    {
       "code": "last-cied-connectivity-time",
       "display": "Last CIED to monitor",
       "definition": "The timestamp of the most recent communication between the CIED and monitor."
@@ -78,12 +73,12 @@
     {
       "code": "last-transmission-date",
       "display": "Date the last transmission was sent",
-      "definition": "The date of the most recent interrogated device transmission"
+      "definition": "The date of the most recent remote interrogated device transmission with a personal montior"
     },
     {
       "code": "next-transmission-date",
       "display": "Date of the next scheduled transmission",
-      "definition": "The date of the next scheduled interrogated device transmission"
+      "definition": "The date of the next scheduled remote interrogated device transmission"
     },
     {
       "code": "observation-cied-connectivity",
@@ -105,5 +100,5 @@
       "definition": "Standalone device, with battery capacity to provide monitoring while on the go"
     }
   ],
-  "count": 20
+  "count": 19
 }

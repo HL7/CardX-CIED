@@ -29,8 +29,8 @@ This use case is centered around facilitating workflows to get patients connecte
 * Next scheduled transmission
 * Free text containing any additional information the manufacturer might have about the patient, device, or guidance to reestablish connectivity 
 
-### Examples
-**To Do:** Create a list of example, determine how comprehensive it should be. Not all examples will need sample data.
+### User Stories
+Create a list of example, determine how comprehensive it should be. Not all examples will need sample data.
 * Create table that shows relationship between codes and modifiers
 * can consider small table for each example showing what the data elements should be
 * Include blank modifiers in examples

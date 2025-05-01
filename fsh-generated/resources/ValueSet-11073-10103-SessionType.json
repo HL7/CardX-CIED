@@ -9,7 +9,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDCO",
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC",
         "concept": [
           {
             "code": "754049",
