@@ -35,11 +35,15 @@ Create a list of example, determine how comprehensive it should be. Not all exam
 * can consider small table for each example showing what the data elements should be
 * Include blank modifiers in examples
 
-#### Connected patient
-* A connected patient will have CIED and monitor connectivity timestamps displaying expected behavior. The patient will appear as connected and will not present on a clinics disconnected list.
+#### Patient is Connected - Communication has been successful within the expected time period.
+Adam, a patient implanted with an ICD, has a bedside monitor positioned on a night stand next to his bed. Every night while he sleeps, his ICD connects to his bedside monitor and transmits to his device manaufacturers remote monitoring platform. Adam displays as connected in the remote monitoring software and shows that his device and monitor connected the previous day. Adam will not appear on his clinics disconnected list.
+
+#### Disconnected patient
+* Would appear on Disconnect List
+* Triaged by device clinician to restore connection or to move to appropriate connectivity modifier list
 
 #### Patient with manual transmission
-* Patients whose CIED does not support remote monitoring will display information related to when they transmit information and their connectivity will always display N/A.
+Sally, a patient implanted with a leadless pacemaker, has a device which is unable to send remote transmissions automatically. The manufacturer provided Sally with a reader head that she uses to manually transmit her pacemaker data to the manufacturers remote monitoring system at regular intervals. Because her device is requires manual transmissions, she will never appear on the disconnected list and her status will always display not applicable (N/A).
 
 #### Inactive patient
 * Would appear on Disconnected List 
@@ -47,10 +51,6 @@ Create a list of example, determine how comprehensive it should be. Not all exam
 - Manual transmission connectivity modifier
 - Inactive (Patient still has transmitter, but does not want to be continuously monitored or send intermittently. Clinic visits only.)
 - Deactivate (patient death or patient declines RM)
-
-#### Disconnected patient
-* Would appear on Disconnect List
-* Triaged by device clinician to restore connection or to move to appropriate connectivity modifier list
 
 #### Setup not completed
 * Would appear on Disconnect List
