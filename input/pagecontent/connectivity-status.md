@@ -31,6 +31,9 @@ This use case is centered around facilitating workflows to get patients connecte
 
 ### Examples
 **To Do:** Create a list of example, determine how comprehensive it should be. Not all examples will need sample data.
+* Create table that shows relationship between codes and modifiers
+* can consider small table for each example showing what the data elements should be
+* Include blank modifiers in examples
 
 #### Connected patient
 * A connected patient will have CIED and monitor connectivity timestamps displaying expected behavior. The patient will appear as connected and will not present on a clinics disconnected list.
@@ -39,7 +42,7 @@ This use case is centered around facilitating workflows to get patients connecte
 * Patients whose CIED does not support remote monitoring will display information related to when they transmit information and their connectivity will always display N/A.
 
 #### Inactive patient
-* Would appear on Disconnect List 
+* Would appear on Disconnected List 
 * Triage by device clinician- to restore connection or moving patient to appropriate connectivity modifier list 
 - Manual transmission connectivity modifier
 - Inactive (Patient still has transmitter, but does not want to be continuously monitored or send intermittently. Clinic visits only.)
@@ -56,6 +59,9 @@ This use case is centered around facilitating workflows to get patients connecte
 #### Suspended 
 * Patients may inform their clinic that they are travelling or otherwise away from their monitor. Some remote monitoring platforms allow for clinincians to temporarily remove the patients from the disconnected list.
 * Would not appear on Disconnected List. A status of diconnected with a suspended modifier indicates that this is expected behavior.
+
+### Unenrolled - Verify if this is needed
+* Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued and should no longer appear on the disconnected list.
 
 ### Actors
 #### Connectivity Data Producer
