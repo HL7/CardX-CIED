@@ -8,9 +8,9 @@
 [cied-connectivity]: CodeSystem-cied-connectivity.html
 [cied-monitor-types]: ValueSet-cied-monitor-types-vs.html
 [CIEDEncounter]: StructureDefinition-remote-encounter.html
-[IDCO]: CodeSystem-IDCO.html
 [11073-10103-DeviceType]: ValueSet-11073-10103-DeviceType.html
 [11073-10103-SessionType]: ValueSet-11073-10103-SessionType.html
+[IDC]: CodeSystem-IDC.html
 [CIEDConnectivityStatus]: StructureDefinition-cied-connectivity-status.html
 [uc1CiedDevice]: Device-uc1CiedDevice.html
 [uc1CIEDMonitor]: Device-uc1CIEDMonitor.html

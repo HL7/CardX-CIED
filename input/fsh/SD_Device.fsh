@@ -42,5 +42,5 @@ Description: "An example CIED device for CIED connectivity example 1."
 * manufacturer = "ACME Devices"
 * serialNumber = "123456789"
 * modelNumber = "ICDExample1"
-* type = IDCO#753666
+* type = IDC#753666
 * gateway = Reference(uc1CIEDMonitor)

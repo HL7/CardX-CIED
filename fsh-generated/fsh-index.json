@@ -8,8 +8,8 @@
     "endLine": 78
   },
   {
-    "outputFile": "CodeSystem-IDCO.json",
-    "fshName": "IDCO",
+    "outputFile": "CodeSystem-IDC.json",
+    "fshName": "IDC",
     "fshType": "CodeSystem",
     "fshFile": "VS_11073-10103.fsh",
     "startLine": 27,
@@ -21,7 +21,7 @@
     "fshType": "CodeSystem",
     "fshFile": "VS_connectivity.fsh",
     "startLine": 39,
-    "endLine": 77
+    "endLine": 75
   },
   {
     "outputFile": "Device-uc1CIEDMonitor.json",
@@ -52,8 +52,8 @@
     "fshName": "uc1Connectivity1",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 96,
-    "endLine": 123
+    "startLine": 85,
+    "endLine": 111
   },
   {
     "outputFile": "Patient-uc1Patient.json",
@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "SD_Connectivity.fsh",
     "startLine": 1,
-    "endLine": 94
+    "endLine": 83
   },
   {
     "outputFile": "StructureDefinition-cied-device.json",

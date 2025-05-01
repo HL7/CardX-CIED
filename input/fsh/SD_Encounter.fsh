@@ -18,4 +18,4 @@ Usage: #example
 * status = http://hl7.org/fhir/encounter-status#planned
 * subject = Reference(uc1Patient)
 * participant.actor = Reference(uc1CiedDevice)
-* type = IDCO#754053
+* type = IDC#754053

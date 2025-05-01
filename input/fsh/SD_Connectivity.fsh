@@ -26,18 +26,13 @@ Profile of the observation resource to present the most recent connectivity stat
 * component ^short = "CIED Connectivity Components"
 * component contains
     connectivityStatus 1..1 and
-    // TO DO - review modifier. Evaluate 0..*. i.e. inactive, setup not complete
     connectivityModifier 0..* and
-    transmissionDisabled 0..1 and
     lastCiedConnectivityDate 0..1 and
     lastMonitorConnectivityDate 0..1 and
     nextCiedConnectivityDate 0..1 and
     nextMonitorConnectivityDate 0..1 and
-    lastTransmission 0..1 and
-    // nextRemoteScheduledInterrogationSession
-    //lastRemoteInterrogationSession
-
-    nextTransmission 0..1
+    lastRemoteInterrogationSession 0..1 and
+    nextRemoteInterrogationSession 0..1
 * component[connectivityStatus] MS
 * component[connectivityStatus] ^short = "The overall system connectivity status as calculated by the CIED manufacturer"
 * component[connectivityStatus].code MS
@@ -50,12 +45,6 @@ Profile of the observation resource to present the most recent connectivity stat
 * component[connectivityModifier].code = cied-connectivity#connectivity-modifier
 * component[connectivityModifier].value[x] only CodeableConcept
 * component[connectivityModifier].value[x] from cied-connectivity-state-modifier-vs
-* component[transmissionDisabled] MS
-* component[transmissionDisabled] ^short = "Indicates whether transmissions have been disabled on the CIED or not."
-* component[transmissionDisabled].code MS
-* component[transmissionDisabled].code ^short = "Disabled"
-* component[transmissionDisabled].code = cied-connectivity#transmission-disabled
-* component[transmissionDisabled].value[x] only boolean
 * component[lastCiedConnectivityDate] MS
 * component[lastCiedConnectivityDate] ^short = "The timestamp of the most recent communication between the CIED and monitor."
 * component[lastCiedConnectivityDate].code MS
@@ -80,18 +69,18 @@ Profile of the observation resource to present the most recent connectivity stat
 * component[nextMonitorConnectivityDate].code ^short = "Next monitor to remote monitoring communication"
 * component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
 * component[nextMonitorConnectivityDate].value[x] only dateTime
-* component[lastTransmission] MS
-* component[lastTransmission] ^short = "The date of the most recent interrogated device transmission"
-* component[lastTransmission].code MS
-* component[lastTransmission].code ^short = "The date of the most recent interrogated device transmission"
-* component[lastTransmission].code = cied-connectivity#last-transmission-date
-* component[lastTransmission].value[x] only dateTime
-* component[nextTransmission] MS
-* component[nextTransmission] ^short = "The date of the next scheduled interrogated device transmission"
-* component[nextTransmission].code MS
-* component[nextTransmission].code ^short = "The date of the next scheduled interrogated device transmission"
-* component[nextTransmission].code = cied-connectivity#next-transmission-date
-* component[nextTransmission].value[x] only dateTime
+* component[lastRemoteInterrogationSession] MS
+* component[lastRemoteInterrogationSession] ^short = "The date of the most recent remote interrogated device transmission with a personal monitor"
+* component[lastRemoteInterrogationSession].code MS
+* component[lastRemoteInterrogationSession].code ^short = "The date of the most recent remote interrogated device transmission with a personal monitor"
+* component[lastRemoteInterrogationSession].code = cied-connectivity#last-transmission-date
+* component[lastRemoteInterrogationSession].value[x] only dateTime
+* component[nextRemoteInterrogationSession] MS
+* component[nextRemoteInterrogationSession] ^short = "The date of the next scheduled remote interrogated device transmission"
+* component[nextRemoteInterrogationSession].code MS
+* component[nextRemoteInterrogationSession].code ^short = "The date of the next scheduled remote interrogated device transmission"
+* component[nextRemoteInterrogationSession].code = cied-connectivity#next-transmission-date
+* component[nextRemoteInterrogationSession].value[x] only dateTime
 
 Instance: uc1Connectivity1
 InstanceOf: CIEDConnectivityStatus
@@ -108,7 +97,6 @@ Description: "Use case 1, connectivity status 1"
 * component[connectivityStatus].valueCodeableConcept = cied-connectivity#disconnected
 * component[connectivityModifier].code = cied-connectivity#connectivity-modifier
 * component[connectivityModifier].valueCodeableConcept = cied-connectivity#inactive
-* component[transmissionDisabled].valueBoolean = false
 * component[lastCiedConnectivityDate].code = cied-connectivity#last-cied-connectivity-time
 * component[lastCiedConnectivityDate].valueDateTime = 2024-02-15T06:00:00.000Z 
 * component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
@@ -117,10 +105,10 @@ Description: "Use case 1, connectivity status 1"
 * component[nextCiedConnectivityDate].valueDateTime = 2025-02-21
 * component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
 * component[nextMonitorConnectivityDate].valueDateTime = 2025-02-21
-* component[lastTransmission].code = cied-connectivity#last-transmission-date
-* component[lastTransmission].valueDateTime = 2024-02-15T06:00:00.000Z
-* component[nextTransmission].code = cied-connectivity#next-transmission-date
-* component[nextTransmission].valueDateTime = 2025-02-21
+* component[lastRemoteInterrogationSession].code = cied-connectivity#last-transmission-date
+* component[lastRemoteInterrogationSession].valueDateTime = 2024-02-15T06:00:00.000Z
+* component[nextRemoteInterrogationSession].code = cied-connectivity#next-transmission-date
+* component[nextRemoteInterrogationSession].valueDateTime = 2025-02-21
 
 
 

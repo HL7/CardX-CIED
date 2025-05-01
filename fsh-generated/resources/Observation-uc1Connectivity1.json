@@ -62,17 +62,6 @@
       "code": {
         "coding": [
           {
-            "code": "transmission-disabled",
-            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
-          }
-        ]
-      },
-      "valueBoolean": false
-    },
-    {
-      "code": {
-        "coding": [
-          {
             "code": "last-cied-connectivity-time",
             "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
           }

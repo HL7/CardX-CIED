@@ -172,37 +172,6 @@
         }
       },
       {
-        "id": "Observation.component:transmissionDisabled",
-        "path": "Observation.component",
-        "sliceName": "transmissionDisabled",
-        "short": "Indicates whether transmissions have been disabled on the CIED or not.",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:transmissionDisabled.code",
-        "path": "Observation.component.code",
-        "short": "Disabled",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "transmission-disabled",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:transmissionDisabled.value[x]",
-        "path": "Observation.component.value[x]",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
         "id": "Observation.component:lastCiedConnectivityDate",
         "path": "Observation.component",
         "sliceName": "lastCiedConnectivityDate",
@@ -327,18 +296,18 @@
         ]
       },
       {
-        "id": "Observation.component:lastTransmission",
+        "id": "Observation.component:lastRemoteInterrogationSession",
         "path": "Observation.component",
-        "sliceName": "lastTransmission",
-        "short": "The date of the most recent interrogated device transmission",
+        "sliceName": "lastRemoteInterrogationSession",
+        "short": "The date of the most recent remote interrogated device transmission with a personal monitor",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:lastTransmission.code",
+        "id": "Observation.component:lastRemoteInterrogationSession.code",
         "path": "Observation.component.code",
-        "short": "The date of the most recent interrogated device transmission",
+        "short": "The date of the most recent remote interrogated device transmission with a personal monitor",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -349,7 +318,7 @@
         }
       },
       {
-        "id": "Observation.component:lastTransmission.value[x]",
+        "id": "Observation.component:lastRemoteInterrogationSession.value[x]",
         "path": "Observation.component.value[x]",
         "type": [
           {
@@ -358,18 +327,18 @@
         ]
       },
       {
-        "id": "Observation.component:nextTransmission",
+        "id": "Observation.component:nextRemoteInterrogationSession",
         "path": "Observation.component",
-        "sliceName": "nextTransmission",
-        "short": "The date of the next scheduled interrogated device transmission",
+        "sliceName": "nextRemoteInterrogationSession",
+        "short": "The date of the next scheduled remote interrogated device transmission",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:nextTransmission.code",
+        "id": "Observation.component:nextRemoteInterrogationSession.code",
         "path": "Observation.component.code",
-        "short": "The date of the next scheduled interrogated device transmission",
+        "short": "The date of the next scheduled remote interrogated device transmission",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -380,7 +349,7 @@
         }
       },
       {
-        "id": "Observation.component:nextTransmission.value[x]",
+        "id": "Observation.component:nextRemoteInterrogationSession.value[x]",
         "path": "Observation.component.value[x]",
         "type": [
           {

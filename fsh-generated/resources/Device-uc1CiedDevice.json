@@ -19,7 +19,7 @@
       "coding": [
         {
           "code": "753666",
-          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDCO"
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC"
         }
       ]
     }

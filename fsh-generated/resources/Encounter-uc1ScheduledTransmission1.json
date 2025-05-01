@@ -18,7 +18,7 @@
       "coding": [
         {
           "code": "754053",
-          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDCO"
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC"
         }
       ]
     }
