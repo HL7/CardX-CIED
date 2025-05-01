@@ -3,7 +3,6 @@
 High quality, effective and safe remote monitoring relies on patient connectivity.  The rapid management of disconnected patients is vital to ensure continuity of routine follow-up and to timely measure alerts that signal unexpected device behavior or important clinical events. The responsibility to maintain a connected status primarily lies with both the patient and the device clinic. It is essential that every reasonable effort is made by the clinic to contact disconnected patients and restore their connection to RM.
 Cardiac implantable electronic device (CIED) manufacturers serve as collaborative partners, potentially offering assistance by notifying patients directly about disconnections and providing technical support to help restore the connection. This process is time-intensive. Establishing reconnection involves contacting the patient and troubleshooting any issues. This can be effectively carried out by adequately trained clinical or non-clinical staff; however, those staff need time allocated to that task and need readily available data to know who is disconnected, why they may be disconnected and to prioritize which patients need to be reconnected most urgently. 
 
-
 Patient connectivity can be disrupted for a variety of reasons including:
 * Bedside monitor unplugged
 * Patient not being near the bedside monitor during scheduled transmission
@@ -38,7 +37,7 @@ Create a list of example, determine how comprehensive it should be. Not all exam
 #### Patient is Connected - Communication has been successful within the expected time period.
 Adam, a patient implanted with an ICD, has a bedside monitor positioned on a night stand next to his bed. Every night while he sleeps, his ICD connects to his bedside monitor and transmits to his device manaufacturers remote monitoring platform. Adam displays as connected in the remote monitoring software and shows that his device and monitor connected the previous day. Adam will not appear on his clinics disconnected list.
 
-#### Disconnected patient
+#### Patient is disconnected - Communication has not occurred within the expected time period.
 * Would appear on Disconnect List
 * Triaged by device clinician to restore connection or to move to appropriate connectivity modifier list
 
