@@ -17,7 +17,6 @@ The task of managing disconnected patients is further complicated by the varying
 In the current state, there is no reliable method for device clinics, CIED data management systems, or CIED manufacturers to effective manage patients who are disconnected from remote monitoring. Through this use case, we plan to develop FHIR profiles to allow device clinics, CIED data management systems, and CIED manufacturers to calculate a devices connectivity status and provide supporting context on-the-fly using FHIR servers. This will also enable support for various software workflows and approaches by clinicians.
 This use case focuses on optimizing workflows to reconnect patients to remote monitoring. The FHIR profiles are designed to provide the user with comprehensive context and information available from the manufacturer systems, enabling efficient management of patient connectivity 
 
-
 This use case is centered around facilitating workflows to get patients connected to remote monitoring. The FHIR profiles are meant to provide the user with as much context and information as is available in the manufacturer systems. 
 * The last time the monitor connected to the remote monitoring platform
 * The last time the CIED connected to the monitor (if supported by device)
@@ -29,22 +28,18 @@ This use case is centered around facilitating workflows to get patients connecte
 * Free text containing any additional information the manufacturer might have about the patient, device, or guidance to reestablish connectivity 
 
 ### User Stories
-Create a list of example, determine how comprehensive it should be. Not all examples will need sample data.
-* Create table that shows relationship between codes and modifiers
-* can consider small table for each example showing what the data elements should be
-* Include blank modifiers in examples
 
 #### Patient is Connected - Communication has been successful within the expected time period.
-Adam, a patient implanted with an ICD, has a bedside monitor positioned on a night stand next to his bed. Every night while he sleeps, his ICD connects to his bedside monitor and transmits to his device manaufacturers remote monitoring platform. Adam displays as connected in the remote monitoring software and shows that his device and monitor connected the previous day. Adam will not appear on his clinics disconnected list.
+Adam, a patient implanted with a dual chamber ICD for primary prevention of sudden cardiac death. Adam has a bedside monitor positioned on a night stand next to his bed which facilitates communication between his device and the device manufacturers remote monitoring platform. His device connects to his monitor every 14 days to look for transmission scheduling updates, and again when a transmission is scheduled. The device is also able to wake up and initiate a connection with his monitor when an alert is detected. His device delivered an ICD for ventricular fibrillation 60 days ago which triggered a successful alert transmission. His device and monitor last connected to the remote monitoring platform 5 days ago and his next scheduled transmission is in 14 days. Adam displays as connected in the remote monitoring software and shows that his device and monitor connected 5 days ago and his next scheduled transmisssion is in 14 days. Adam will not appear on his clinics disconnected list.
 
 #### Patient is disconnected - Communication has not occurred within the expected time period.
-* Would appear on Disconnect List
-* Triaged by device clinician to restore connection or to move to appropriate connectivity modifier list
+John, a patient with an ICM, has an app based monitor on his phone. John changed the app permissions on his phone 5 days ago and it no longer connects to his ICM device to transmit data. The remote monitoring software used to manage John and his device displays him being disconnected after 4 days and his clinic contacts him to reestablish connectivity.
 
 #### Patient with manual transmission
 Sally, a patient implanted with a leadless pacemaker, has a device which is unable to send remote transmissions automatically. The manufacturer provided Sally with a reader head that she uses to manually transmit her pacemaker data to the manufacturers remote monitoring system at regular intervals. Because her device is requires manual transmissions, she will never appear on the disconnected list and her status will always display not applicable (N/A).
 
 #### Inactive patient
+
 * Would appear on Disconnected List 
 * Triage by device clinician- to restore connection or moving patient to appropriate connectivity modifier list 
 - Manual transmission connectivity modifier
