@@ -4,6 +4,7 @@ ValueSet: 11073-10103-DeviceType
 Id: 11073-10103-DeviceType
 Title: "IEEE 11073-10103 Device Type"
 Description: "The type of device as defined by IEEE 11073-10103"
+* ^experimental = false
 * IDC#753665 "Pacemaker"
 * IDC#753666 "Defibrillator"
 * IDC#753667 "Cardiac Resynchronization Therapy - Defibrillator"
@@ -15,6 +16,7 @@ ValueSet: 11073-10103-SessionType
 Id: 11073-10103-SessionType
 Title: "IEEE 11073-10103 Session Type"
 Description: "The type of session as defined by IEEE 11073-10103"
+* ^experimental = false
 * IDC#754049 "Implant"
 * IDC#754050 "In Clinic"
 * IDC#754051 "Remote"
@@ -26,6 +28,10 @@ Description: "The type of session as defined by IEEE 11073-10103"
 
 CodeSystem: IDC
 Title: "ISO/IEEE-11073-10103"
+Description: "ISO/IEEE-11073-10103 - Implantable Device Cardiac nomenclature."
+* ^caseSensitive = true
+* ^experimental = false
+* ^status = #active
 * #753665 "Pacemaker"
     "A battery powered implantable device that uses low voltage pulses to stimulate the heart when it is beating too slow."
 * #753666 "Defibrillator"

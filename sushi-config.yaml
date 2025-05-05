@@ -11,7 +11,7 @@ title: CardX - Cardiac Implantable Electronic Devices
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2024+
+copyrightYear: 2025+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
@@ -78,9 +78,8 @@ menu:
   Home: index.html
   CardX Background: Background.html
   Connectivity Status: connectivity-status.html
-  Profiles: profiles.html
   Artifacts: artifacts.html
-  Capabiliity Statement: CapabilityStatement-CardXCiedServerCapabilityStatement.html
+  Capabiliity Statement: CapabilityStatement-cied-data-sender.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

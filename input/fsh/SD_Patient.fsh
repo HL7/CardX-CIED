@@ -20,9 +20,9 @@ Description: "An example CIED patient for CIED connectivity example 1."
   * given[0] = "John"
   * given[1] = "Test"
   * family = "ICDPatient"
-* identifier[0].use = http://hl7.org/fhir/identifier-use#official
+* identifier[0].use = #official
 * identifier[0].value = "ICD123456789"
-* identifier[0].type = http://hl7.org/fhir/ValueSet/v2-0203#MR
+* identifier[0].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
 * identifier[0].assigner.display = "Acme Devices"
 * identifier[1].use = http://hl7.org/fhir/identifier-use#usual
 * identifier[1].value = "ICD123456789"

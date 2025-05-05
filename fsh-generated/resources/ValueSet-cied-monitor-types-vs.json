@@ -6,6 +6,7 @@
   "title": "CIED Monitor Types",
   "description": "The type of CIED monitor",
   "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-monitor-types-vs",
+  "experimental": false,
   "compose": {
     "include": [
       {

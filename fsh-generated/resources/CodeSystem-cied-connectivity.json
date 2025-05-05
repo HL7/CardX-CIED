@@ -1,10 +1,11 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "cied-connectivity",
   "id": "cied-connectivity",
   "title": "CIED Connectivity Status Values",
+  "description": "Codes system for CIED connectivity and monitor device types",
   "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity",
   "concept": [
     {
@@ -100,5 +101,7 @@
       "definition": "Standalone device, with battery capacity to provide monitoring while on the go"
     }
   ],
+  "caseSensitive": true,
+  "experimental": false,
   "count": 19
 }

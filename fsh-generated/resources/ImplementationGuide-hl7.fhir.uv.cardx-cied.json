@@ -65,10 +65,10 @@
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/CardXCiedServerCapabilityStatement"
+          "reference": "CapabilityStatement/cied-data-sender"
         },
-        "name": "CardX CIED Connectivity Server CapabilityStatement",
-        "description": "CardX CIED Connectivity Server CapabilityStatement",
+        "name": "CardX CIED Connectivity Server Capability Statement",
+        "description": "This capability statement describes the requirements for systems that make CIED Connectivity data available.",
         "isExample": false
       },
       {
@@ -100,6 +100,7 @@
           "reference": "CodeSystem/cied-connectivity"
         },
         "name": "CIED Connectivity Status Values",
+        "description": "Codes system for CIED connectivity and monitor device types",
         "isExample": false
       },
       {
@@ -139,6 +140,7 @@
           "reference": "CodeSystem/IDC"
         },
         "name": "ISO/IEEE-11073-10103",
+        "description": "ISO/IEEE-11073-10103 - Implantable Device Cardiac nomenclature.",
         "isExample": false
       },
       {
@@ -228,12 +230,6 @@
           "sourceUrl": "connectivity-status.html"
         },
         {
-          "title": "Profiles",
-          "generation": "markdown",
-          "name": "profiles.html",
-          "sourceUrl": "profiles.html"
-        },
-        {
           "title": "User Stories",
           "generation": "markdown",
           "name": "user-stories.html",
@@ -249,7 +245,7 @@
           "code": "copyrightyear",
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
-        "value": "2024+"
+        "value": "2025+"
       },
       {
         "code": {

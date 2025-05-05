@@ -1,8 +1,9 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "CardXCiedServerCapabilityStatement",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/CapabilityStatement/CardXCiedServerCapabilityStatement",
-  "title": "CardX CIED Connectivity Server CapabilityStatement",
+  "id": "cied-data-sender",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/CapabilityStatement/cied-data-sender",
+  "title": "CardX CIED Connectivity Server Capability Statement",
+  "description": "CardX CIED Connectivity Server CapabilityStatement",
   "rest": [
     {
       "security": {
@@ -17,7 +18,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/uv/cardx-cied-connectivity/StructureDefinition/CIEDPatient"
+            "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/CIEDPatient"
           ],
           "_supportedProfile": [
             {
@@ -116,7 +117,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/uv/cardx-cied-connectivity/StructureDefinition/CIEDDevice"
+            "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/CIEDDevice"
           ],
           "_supportedProfile": [
             {
@@ -171,7 +172,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/uv/cardx-cied-connectivity/StructureDefinition/CIEDConnectivityStatus"
+            "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/CIEDConnectivityStatus"
           ],
           "_supportedProfile": [
             {
@@ -204,17 +205,6 @@
             }
           ],
           "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "identifier",
-              "definition": "http://hl7.org/fhir/SearchParameter/Observation-identifier",
-              "type": "token"
-            },
             {
               "extension": [
                 {
@@ -271,8 +261,7 @@
     "xml",
     "json"
   ],
-  "name": "CIECConnectivityServerCapabilityStatement",
-  "description": "CardX CIED Connectivity Server CapabilityStatement",
+  "name": "CIEDConnectivityServerCapabilityStatement",
   "status": "draft",
   "date": "2025-02-25",
   "kind": "requirements",
