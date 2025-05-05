@@ -6,6 +6,7 @@
   "title": "CIED Connectivity Dates and Timestamps",
   "description": "The relevant dates and times related to CIED connectivity, scheduling, and transmission",
   "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-dates-vs",
+  "experimental": false,
   "compose": {
     "include": [
       {

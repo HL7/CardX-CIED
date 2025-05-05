@@ -1,10 +1,11 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "IDC",
   "id": "IDC",
   "title": "ISO/IEEE-11073-10103",
+  "description": "ISO/IEEE-11073-10103 - Implantable Device Cardiac nomenclature.",
   "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC",
   "concept": [
     {
@@ -78,5 +79,7 @@
       "definition": "An indicator showing that the session type is unknown for the interrogation session."
     }
   ],
+  "caseSensitive": true,
+  "experimental": false,
   "count": 14
 }

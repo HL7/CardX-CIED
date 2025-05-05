@@ -20,7 +20,7 @@ MDC_IDC_DEV_MFG
 
 Mapping: device-to-ieee-11073-10103
 Source: CIEDDevice
-Target: "IEEE 11073-10103"
+Target: "IEEE-11073-10103"
 Id: device-to-ieee-11073-10103
 Description: "Mapping of the CIEDDevice resource to the IEEE 11073-10103 standard."
 * udiCarrier.deviceIdentifier -> "MDC_IDC_DEV_UNIQUE_ID"

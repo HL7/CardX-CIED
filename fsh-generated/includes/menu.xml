@@ -20,12 +20,9 @@
     <a href="connectivity-status.html">Connectivity Status</a>
   </li>
   <li>
-    <a href="profiles.html">Profiles</a>
-  </li>
-  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="CapabilityStatement-CardXCiedServerCapabilityStatement.html">Capabiliity Statement</a>
+    <a href="CapabilityStatement-cied-data-sender.html">Capabiliity Statement</a>
   </li>
 </ul>

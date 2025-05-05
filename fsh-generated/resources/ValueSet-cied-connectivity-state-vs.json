@@ -6,6 +6,7 @@
   "title": "CIED Connectivity Status Value Set",
   "description": "The overall system connectivity status as calculated by the CIED manufacturer",
   "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-vs",
+  "experimental": false,
   "compose": {
     "include": [
       {

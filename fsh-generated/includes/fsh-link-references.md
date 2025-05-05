@@ -1,7 +1,7 @@
 [CIEDMonitor]: StructureDefinition-cied-monitor.html
 [CIEDPatient]: StructureDefinition-cied-patient.html
 [CIEDDevice]: StructureDefinition-cied-device.html
-[CardXCiedServerCapabilityStatement]: CapabilityStatement-CardXCiedServerCapabilityStatement.html
+[cied-data-sender]: CapabilityStatement-cied-data-sender.html
 [cied-connectivity-dates]: ValueSet-cied-connectivity-dates-vs.html
 [cied-connectivity-state-modifier]: ValueSet-cied-connectivity-state-modifier-vs.html
 [cied-connectivity-state]: ValueSet-cied-connectivity-state-vs.html

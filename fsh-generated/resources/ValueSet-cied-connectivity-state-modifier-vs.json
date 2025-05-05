@@ -6,6 +6,7 @@
   "title": "CIED Connectivity Status Modifier Value Set",
   "description": "Additional modifiers to connectivity status as calculated by the CIED manufacturer",
   "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-modifier-vs",
+  "experimental": false,
   "compose": {
     "include": [
       {

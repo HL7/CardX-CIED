@@ -10,7 +10,7 @@
   "mapping": [
     {
       "identity": "device-to-ieee-11073-10103",
-      "uri": "IEEE 11073-10103",
+      "uri": "IEEE-11073-10103",
       "comment": "Mapping of the CIEDDevice resource to the IEEE 11073-10103 standard."
     }
   ],
