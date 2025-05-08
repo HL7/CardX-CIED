@@ -6,6 +6,7 @@
   "title": "IEEE 11073-10103 Device Type",
   "description": "The type of device as defined by IEEE 11073-10103",
   "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/11073-10103-DeviceType",
+  "experimental": false,
   "compose": {
     "include": [
       {

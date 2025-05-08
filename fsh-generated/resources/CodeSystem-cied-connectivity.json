@@ -52,6 +52,11 @@
       "definition": "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
     },
     {
+      "code": "transferred",
+      "display": "Transferred",
+      "definition": "The patient has been transfered to another remote monitoring clinic."
+    },
+    {
       "code": "last-cied-connectivity-time",
       "display": "Last CIED to monitor",
       "definition": "The timestamp of the most recent communication between the CIED and monitor."
@@ -103,5 +108,5 @@
   ],
   "caseSensitive": true,
   "experimental": false,
-  "count": 19
+  "count": 20
 }

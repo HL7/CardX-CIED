@@ -16,6 +16,7 @@ MDC_IDC_DEV_MFG
 * serialNumber MS
 * modelNumber MS
 * type MS
+* type from cied-monitor-types
 
 Instance: uc1CIEDMonitor
 InstanceOf: CIEDMonitor   

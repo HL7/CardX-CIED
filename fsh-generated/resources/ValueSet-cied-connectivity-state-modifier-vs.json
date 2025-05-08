@@ -27,6 +27,10 @@
           {
             "code": "unenrolled",
             "display": "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
+          },
+          {
+            "code": "transferred",
+            "display": "The patient has been transfered to another remote monitoring clinic."
           }
         ]
       }
