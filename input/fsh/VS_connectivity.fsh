@@ -18,6 +18,7 @@ Description: "Additional modifiers to connectivity status as calculated by the C
 * cied-connectivity#suspended "Patient has been temporarily removed from the disconnected state. This is not intended to be an actionable status."
 * cied-connectivity#inactive "Patient has been permanently removed from disconnected status."
 * cied-connectivity#unenrolled "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
+* cied-connectivity#transferred "The patient has been transfered to another remote monitoring clinic."
 
 ValueSet: cied-connectivity-dates
 Id: cied-connectivity-dates-vs
@@ -62,6 +63,8 @@ Description: "Codes system for CIED connectivity and monitor device types"
     "Patient has been permanently removed from the disconnected status."
 * #unenrolled "Unenrolled"
     "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
+* #transferred "Transferred"
+    "The patient has been transfered to another remote monitoring clinic."
 * #last-cied-connectivity-time "Last CIED to monitor"
     "The timestamp of the most recent communication between the CIED and monitor."   
 * #last-monitor-connectivity-time "Last Monitor to Remote Monitoring Software"

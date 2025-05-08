@@ -12,24 +12,24 @@
     "fshName": "IDC",
     "fshType": "CodeSystem",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 27,
-    "endLine": 60
+    "startLine": 29,
+    "endLine": 62
   },
   {
     "outputFile": "CodeSystem-cied-connectivity.json",
     "fshName": "cied-connectivity",
     "fshType": "CodeSystem",
     "fshFile": "VS_connectivity.fsh",
-    "startLine": 43,
-    "endLine": 83
+    "startLine": 44,
+    "endLine": 86
   },
   {
     "outputFile": "Device-uc1CIEDMonitor.json",
     "fshName": "uc1CIEDMonitor",
     "fshType": "Instance",
     "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 20,
-    "endLine": 30
+    "startLine": 21,
+    "endLine": 31
   },
   {
     "outputFile": "Device-uc1CiedDevice.json",
@@ -85,7 +85,7 @@
     "fshType": "Profile",
     "fshFile": "SD_CIEDMonitor.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-cied-patient.json",
@@ -109,23 +109,23 @@
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
     "startLine": 3,
-    "endLine": 12
+    "endLine": 13
   },
   {
     "outputFile": "ValueSet-11073-10103-SessionType.json",
     "fshName": "11073-10103-SessionType",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 14,
-    "endLine": 25
+    "startLine": 15,
+    "endLine": 27
   },
   {
     "outputFile": "ValueSet-cied-connectivity-dates-vs.json",
     "fshName": "cied-connectivity-dates",
     "fshType": "ValueSet",
     "fshFile": "VS_connectivity.fsh",
-    "startLine": 22,
-    "endLine": 32
+    "startLine": 23,
+    "endLine": 33
   },
   {
     "outputFile": "ValueSet-cied-connectivity-state-modifier-vs.json",
@@ -133,7 +133,7 @@
     "fshType": "ValueSet",
     "fshFile": "VS_connectivity.fsh",
     "startLine": 12,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "ValueSet-cied-connectivity-state-vs.json",
@@ -148,7 +148,7 @@
     "fshName": "cied-monitor-types",
     "fshType": "ValueSet",
     "fshFile": "VS_connectivity.fsh",
-    "startLine": 34,
-    "endLine": 41
+    "startLine": 35,
+    "endLine": 42
   }
 ]
