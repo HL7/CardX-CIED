@@ -7,6 +7,7 @@
 [cied-connectivity-state]: ValueSet-cied-connectivity-state-vs.html
 [cied-connectivity]: CodeSystem-cied-connectivity.html
 [cied-monitor-types]: ValueSet-cied-monitor-types-vs.html
+[ciedPatientIdentifier]: ValueSet-cied-patient-identifier.html
 [CIEDEncounter]: StructureDefinition-remote-encounter.html
 [11073-10103-DeviceType]: ValueSet-11073-10103-DeviceType.html
 [11073-10103-SessionType]: ValueSet-11073-10103-SessionType.html

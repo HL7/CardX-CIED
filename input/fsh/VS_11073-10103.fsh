@@ -1,5 +1,13 @@
 // To Do: add Context free code + display for:
 // Device Type
+ValueSet: ciedPatientIdentifier
+Id: cied-patient-identifier
+Title: "CIED Patient Identifier"
+Description: "Identifiers which can be used to identify CIED patients."
+* include codes from system http://hl7.org/fhir/ValueSet/identifier-type
+* IDC#idco-pid "Identifier used in IDCO PID HL7 Segment"
+
+
 ValueSet: 11073-10103-DeviceType
 Id: 11073-10103-DeviceType
 Title: "IEEE 11073-10103 Device Type"
@@ -60,3 +68,6 @@ Description: "ISO/IEEE-11073-10103 - Implantable Device Cardiac nomenclature."
     "An interrogation session type not currently defined within the nomenclature."
 * #754056 "Unknown"
     "An indicator showing that the session type is unknown for the interrogation session."
+// additional code for patient identifier specified by IDCO IG
+* #idco-pid "Identifier used in IDCO PID HL7 Segment"
+    "IDCO specifies a combination of model and serial number as model:model-number/serial:serial-number"

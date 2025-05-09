@@ -77,9 +77,14 @@
       "code": "754056",
       "display": "Unknown",
       "definition": "An indicator showing that the session type is unknown for the interrogation session."
+    },
+    {
+      "code": "idco-pid",
+      "display": "Identifier used in IDCO PID HL7 Segment",
+      "definition": "IDCO specifies a combination of model and serial number as model:model-number/serial:serial-number"
     }
   ],
   "caseSensitive": true,
   "experimental": false,
-  "count": 14
+  "count": 15
 }

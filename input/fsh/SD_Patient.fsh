@@ -4,6 +4,7 @@ Id: cied-patient
 Title: "Cardiovascular Implantable Electronic Device Patient Profile"
 Description: "An CIED profile of the Patient resource."
 * identifier MS
+* identifier.type from cied-patient-identifier (extensible)
 * name MS
 * telecom MS
 * birthDate MS

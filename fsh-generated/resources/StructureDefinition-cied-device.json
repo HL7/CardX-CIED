@@ -53,7 +53,7 @@
         "mapping": [
           {
             "identity": "device-to-ieee-11073-10103",
-            "map": "MDC_IDC_DEV_MFG"
+            "map": "_MDC_IDC_ENUM_MFG.EnumerationCode"
           }
         ]
       },
