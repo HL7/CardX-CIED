@@ -113,6 +113,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/cied-patient-identifier"
+        },
+        "name": "CIED Patient Identifier",
+        "description": "Identifiers which can be used to identify CIED patients.",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/remote-encounter"
         },
         "name": "CIED Remote Transmission Encounter Profile",

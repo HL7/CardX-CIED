@@ -20,6 +20,14 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.identifier.type",
+        "path": "Patient.identifier.type",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-patient-identifier"
+        }
+      },
+      {
         "id": "Patient.name",
         "path": "Patient.name",
         "mustSupport": true

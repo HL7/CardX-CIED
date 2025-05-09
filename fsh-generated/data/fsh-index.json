@@ -12,8 +12,8 @@
     "fshName": "IDC",
     "fshType": "CodeSystem",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 29,
-    "endLine": 62
+    "startLine": 37,
+    "endLine": 73
   },
   {
     "outputFile": "CodeSystem-cied-connectivity.json",
@@ -60,8 +60,8 @@
     "fshName": "uc1Patient",
     "fshType": "Instance",
     "fshFile": "SD_Patient.fsh",
-    "startLine": 16,
-    "endLine": 40
+    "startLine": 17,
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-cied-connectivity-status.json",
@@ -93,7 +93,7 @@
     "fshType": "Profile",
     "fshFile": "SD_Patient.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 11
   },
   {
     "outputFile": "StructureDefinition-remote-encounter.json",
@@ -108,16 +108,16 @@
     "fshName": "11073-10103-DeviceType",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 3,
-    "endLine": 13
+    "startLine": 11,
+    "endLine": 21
   },
   {
     "outputFile": "ValueSet-11073-10103-SessionType.json",
     "fshName": "11073-10103-SessionType",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 15,
-    "endLine": 27
+    "startLine": 23,
+    "endLine": 35
   },
   {
     "outputFile": "ValueSet-cied-connectivity-dates-vs.json",
@@ -150,5 +150,13 @@
     "fshFile": "VS_connectivity.fsh",
     "startLine": 35,
     "endLine": 42
+  },
+  {
+    "outputFile": "ValueSet-cied-patient-identifier.json",
+    "fshName": "ciedPatientIdentifier",
+    "fshType": "ValueSet",
+    "fshFile": "VS_11073-10103.fsh",
+    "startLine": 3,
+    "endLine": 8
   }
 ]

@@ -326,16 +326,16 @@
         ]
       },
       {
-        "id": "Observation.component:nextRemoteInterrogationSession",
+        "id": "Observation.component:nextScheduledRemoteInterrogationSession",
         "path": "Observation.component",
-        "sliceName": "nextRemoteInterrogationSession",
+        "sliceName": "nextScheduledRemoteInterrogationSession",
         "short": "The date of the next scheduled remote interrogated device transmission",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:nextRemoteInterrogationSession.code",
+        "id": "Observation.component:nextScheduledRemoteInterrogationSession.code",
         "path": "Observation.component.code",
         "short": "The date of the next scheduled remote interrogated device transmission",
         "patternCodeableConcept": {
@@ -348,7 +348,7 @@
         }
       },
       {
-        "id": "Observation.component:nextRemoteInterrogationSession.value[x]",
+        "id": "Observation.component:nextScheduledRemoteInterrogationSession.value[x]",
         "path": "Observation.component.value[x]",
         "type": [
           {
