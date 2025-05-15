@@ -3,7 +3,7 @@
   "id": "cied-patient",
   "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient",
   "name": "CIEDPatient",
-  "title": "Cardiovascular Implantable Electronic Device Patient Profile",
+  "title": "Patient - CIED Patient Profile",
   "status": "draft",
   "description": "An CIED profile of the Patient resource.",
   "fhirVersion": "5.0.0",

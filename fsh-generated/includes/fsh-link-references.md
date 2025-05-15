@@ -1,6 +1,3 @@
-[CIEDMonitor]: StructureDefinition-cied-monitor.html
-[CIEDPatient]: StructureDefinition-cied-patient.html
-[CIEDDevice]: StructureDefinition-cied-device.html
 [cied-data-sender]: CapabilityStatement-cied-data-sender.html
 [cied-connectivity-dates]: ValueSet-cied-connectivity-dates-vs.html
 [cied-connectivity-state-modifier]: ValueSet-cied-connectivity-state-modifier-vs.html
@@ -8,13 +5,14 @@
 [cied-connectivity]: CodeSystem-cied-connectivity.html
 [cied-monitor-types]: ValueSet-cied-monitor-types-vs.html
 [ciedPatientIdentifier]: ValueSet-cied-patient-identifier.html
-[CIEDEncounter]: StructureDefinition-remote-encounter.html
+[CIEDDevice]: StructureDefinition-cied-device.html
+[CIEDMonitor]: StructureDefinition-cied-monitor.html
 [11073-10103-DeviceType]: ValueSet-11073-10103-DeviceType.html
 [11073-10103-SessionType]: ValueSet-11073-10103-SessionType.html
 [IDC]: CodeSystem-IDC.html
 [CIEDConnectivityStatus]: StructureDefinition-cied-connectivity-status.html
+[CIEDPatient]: StructureDefinition-cied-patient.html
 [uc1CiedDevice]: Device-uc1CiedDevice.html
 [uc1CIEDMonitor]: Device-uc1CIEDMonitor.html
 [uc1Connectivity1]: Observation-uc1Connectivity1.html
 [uc1Patient]: Patient-uc1Patient.html
-[uc1ScheduledTransmission1]: Encounter-uc1ScheduledTransmission1.html

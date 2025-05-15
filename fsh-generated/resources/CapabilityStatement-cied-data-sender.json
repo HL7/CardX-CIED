@@ -61,50 +61,6 @@
               "name": "identifier",
               "definition": "http://hl7.org/fhir/SearchParameter/Patient-identifier",
               "type": "token"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "name": "family",
-              "definition": "hhttp://hl7.org/fhir/SearchParameter/individual-family",
-              "type": "string"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "name": "given",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-given",
-              "type": "string"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "name": "birthdate",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-birthdate",
-              "type": "date"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "name": "gender",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-gender",
-              "type": "token"
             }
           ],
           "type": "Patient"
@@ -154,12 +110,56 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "SHOULD"
                 }
               ],
-              "name": "identifier",
-              "definition": "http://hl7.org/fhir/SearchParameter/Device-identifier",
+              "name": "manufacturer",
+              "definition": "http://hl7.org/fhir/SearchParameter/Device-manufacturer",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "model",
+              "definition": "http://hl7.org/fhir/SearchParameter/Device-model",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "udi-di",
+              "definition": "http://hl7.org/fhir/SearchParameter/Device-udi-di",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "type",
+              "definition": "http://hl7.org/fhir/SearchParameter/Device-type",
               "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "serial-number",
+              "definition": "http://hl7.org/fhir/SearchParameter/Device-serial-number",
+              "type": "string"
             }
           ],
           "type": "Device"
@@ -248,6 +248,17 @@
               "name": "combo-value-concept",
               "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept",
               "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
+              "type": "date"
             }
           ],
           "type": "Observation"
