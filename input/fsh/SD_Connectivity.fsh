@@ -3,7 +3,9 @@ Parent: Observation
 Id: cied-connectivity-status
 Title: "Observation - CIED Connectivity"
 Description: "
-Profile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.
+Profile of the observation resource to present the most recent connectivity status and associated information for a CIED/Monitor pair.
+
+CIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. The connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. A single observation will be returned for every CIED/monitor pair.
 "
 * status MS
 * code MS
@@ -31,8 +33,8 @@ Profile of the observation resource to present the most recent connectivity stat
     lastMonitorConnectivityDate 0..1 and
     nextCiedConnectivityDate 0..1 and
     nextMonitorConnectivityDate 0..1 and
-    lastRemoteInterrogationSession 0..1 and
-    nextScheduledRemoteInterrogationSession 0..1
+    lastRemoteInterrogationDate 0..1 and
+    nextScheduledRemoteInterrogationDate 0..1
 * component[connectivityStatus] MS
 * component[connectivityStatus] ^short = "The overall system connectivity status as calculated by the CIED manufacturer"
 * component[connectivityStatus].code MS
@@ -69,18 +71,18 @@ Profile of the observation resource to present the most recent connectivity stat
 * component[nextMonitorConnectivityDate].code ^short = "Next monitor to remote monitoring communication"
 * component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
 * component[nextMonitorConnectivityDate].value[x] only dateTime
-* component[lastRemoteInterrogationSession] MS
-* component[lastRemoteInterrogationSession] ^short = "The date of the most recent remote interrogated device transmission with a personal monitor"
-* component[lastRemoteInterrogationSession].code MS
-* component[lastRemoteInterrogationSession].code ^short = "The date of the most recent remote interrogated device transmission with a personal monitor"
-* component[lastRemoteInterrogationSession].code = cied-connectivity#last-transmission-date
-* component[lastRemoteInterrogationSession].value[x] only dateTime
-* component[nextScheduledRemoteInterrogationSession] MS
-* component[nextScheduledRemoteInterrogationSession] ^short = "The date of the next scheduled remote interrogated device transmission"
-* component[nextScheduledRemoteInterrogationSession].code MS
-* component[nextScheduledRemoteInterrogationSession].code ^short = "The date of the next scheduled remote interrogated device transmission"
-* component[nextScheduledRemoteInterrogationSession].code = cied-connectivity#next-transmission-date
-* component[nextScheduledRemoteInterrogationSession].value[x] only dateTime
+* component[lastRemoteInterrogationDate] MS
+* component[lastRemoteInterrogationDate] ^short = "The date of the most recent remote device interrogation with a personal monitor"
+* component[lastRemoteInterrogationDate].code MS
+* component[lastRemoteInterrogationDate].code ^short = "The date of the most recent remote device interrogation with a personal monitor"
+* component[lastRemoteInterrogationDate].code = cied-connectivity#last-interrogation-date
+* component[lastRemoteInterrogationDate].value[x] only dateTime
+* component[nextScheduledRemoteInterrogationDate] MS
+* component[nextScheduledRemoteInterrogationDate] ^short = "The date of the next scheduled remote device interrogation"
+* component[nextScheduledRemoteInterrogationDate].code MS
+* component[nextScheduledRemoteInterrogationDate].code ^short = "The date of the next scheduled remote device interrogation"
+* component[nextScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
+* component[nextScheduledRemoteInterrogationDate].value[x] only dateTime
 
 Instance: uc1Connectivity1
 InstanceOf: CIEDConnectivityStatus
@@ -105,10 +107,10 @@ Description: "Use case 1, connectivity status 1"
 * component[nextCiedConnectivityDate].valueDateTime = 2025-02-21
 * component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
 * component[nextMonitorConnectivityDate].valueDateTime = 2025-02-21
-* component[lastRemoteInterrogationSession].code = cied-connectivity#last-transmission-date
-* component[lastRemoteInterrogationSession].valueDateTime = 2024-02-15T06:00:00.000Z
-* component[nextScheduledRemoteInterrogationSession].code = cied-connectivity#next-transmission-date
-* component[nextScheduledRemoteInterrogationSession].valueDateTime = 2025-02-21
+* component[lastRemoteInterrogationDate].code = cied-connectivity#last-interrogation-date
+* component[lastRemoteInterrogationDate].valueDateTime = 2024-02-15T06:00:00.000Z
+* component[nextScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
+* component[nextScheduledRemoteInterrogationDate].valueDateTime = 2025-02-21
 
 
 

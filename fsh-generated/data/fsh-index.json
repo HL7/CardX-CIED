@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "DEF_CapabilityStatement.fsh",
     "startLine": 35,
-    "endLine": 80
+    "endLine": 81
   },
   {
     "outputFile": "CodeSystem-IDC.json",
@@ -40,20 +40,12 @@
     "endLine": 46
   },
   {
-    "outputFile": "Encounter-uc1ScheduledTransmission1.json",
-    "fshName": "uc1ScheduledTransmission1",
-    "fshType": "Instance",
-    "fshFile": "SD_Encounter.fsh",
-    "startLine": 14,
-    "endLine": 21
-  },
-  {
     "outputFile": "Observation-uc1Connectivity1.json",
     "fshName": "uc1Connectivity1",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 85,
-    "endLine": 111
+    "startLine": 87,
+    "endLine": 113
   },
   {
     "outputFile": "Patient-uc1Patient.json",
@@ -69,7 +61,7 @@
     "fshType": "Profile",
     "fshFile": "SD_Connectivity.fsh",
     "startLine": 1,
-    "endLine": 83
+    "endLine": 85
   },
   {
     "outputFile": "StructureDefinition-cied-device.json",
@@ -94,14 +86,6 @@
     "fshFile": "SD_Patient.fsh",
     "startLine": 1,
     "endLine": 11
-  },
-  {
-    "outputFile": "StructureDefinition-remote-encounter.json",
-    "fshName": "CIEDEncounter",
-    "fshType": "Profile",
-    "fshFile": "SD_Encounter.fsh",
-    "startLine": 1,
-    "endLine": 12
   },
   {
     "outputFile": "ValueSet-11073-10103-DeviceType.json",

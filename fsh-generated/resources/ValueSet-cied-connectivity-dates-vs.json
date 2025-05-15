@@ -4,7 +4,7 @@
   "name": "cied-connectivity-dates",
   "id": "cied-connectivity-dates-vs",
   "title": "CIED Connectivity Dates and Timestamps",
-  "description": "The relevant dates and times related to CIED connectivity, scheduling, and transmission",
+  "description": "The relevant dates and times related to CIED connectivity, scheduling, and interrogation",
   "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-dates-vs",
   "experimental": false,
   "compose": {
@@ -29,12 +29,12 @@
             "display": "The date of the next expected communication from the monitor to the remote monitoring platform."
           },
           {
-            "code": "last-transmission-date",
-            "display": "The date of the most recent interrogated device transmission"
+            "code": "last-interrogation-date",
+            "display": "The date of the most recent remote device interrogation"
           },
           {
-            "code": "next-transmission-date",
-            "display": "The date of the next scheduled interrogated device transmission"
+            "code": "next-interrogation-date",
+            "display": "The date of the next scheduled remote device interrogation"
           }
         ]
       }

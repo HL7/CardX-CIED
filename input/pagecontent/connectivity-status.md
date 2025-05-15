@@ -5,7 +5,7 @@ Cardiac implantable electronic device (CIED) manufacturers serve as collaborativ
 
 Patient connectivity can be disrupted for a variety of reasons including:
 * Bedside monitor unplugged
-* Patient not being near the bedside monitor during scheduled transmission
+* Patient not being near the bedside monitor during scheduled remote device interrogation
 * Smartphone app permissions
 * Inadequate cellular signal or Wi-Fi connection
 * Technical issues in the CIED or Monitor
@@ -22,27 +22,26 @@ This use case is centered around facilitating workflows to get patients connecte
 * The last time the CIED connected to the monitor (if supported by device)
 * The connectivity status as calculated by the manufacturer
 * Additional context such as temporary removal from disconnected list (i.e. snoozed) or permanent removal due to a long period of inactivity
-* Whether or not transmissions have been disabled on the device
-* Most recent transmission
-* Next scheduled transmission
+* Most recent remote device interrogation
+* Next scheduled remote device interrogation
 * Free text containing any additional information the manufacturer might have about the patient, device, or guidance to reestablish connectivity 
 
 ### User Stories
 
 #### Patient is Connected - Communication has been successful within the expected time period.
-Adam, a patient implanted with a dual chamber ICD for primary prevention of sudden cardiac death. Adam has a bedside monitor positioned on a night stand next to his bed which facilitates communication between his device and the device manufacturers remote monitoring platform. His device connects to his monitor every 14 days to look for transmission scheduling updates, and again when a transmission is scheduled. The device is also able to wake up and initiate a connection with his monitor when an alert is detected. His device delivered an ICD for ventricular fibrillation 60 days ago which triggered a successful alert transmission. His device and monitor last connected to the remote monitoring platform 5 days ago and his next scheduled transmission is in 14 days. Adam displays as connected in the remote monitoring software and shows that his device and monitor connected 5 days ago and his next scheduled transmisssion is in 14 days. Adam will not appear on his clinics disconnected list.
+Adam, a patient implanted with a dual chamber ICD for primary prevention of sudden cardiac death. Adam has a bedside monitor positioned on a night stand next to his bed which facilitates communication between his device and the device manufacturers remote monitoring platform. His device connects to his monitor every 14 days to look for interrogation scheduling updates, and again when an interrogation is scheduled. The device is also able to wake up and initiate a connection with his monitor when an alert is detected. His device delivered an ICD for ventricular fibrillation 60 days ago which triggered a successful alert initiated interrogation. His device and monitor last connected to the remote monitoring platform 5 days ago and his next scheduled interrogation is in 14 days. Adam displays as connected in the remote monitoring software and shows that his device and monitor connected 5 days ago and his next scheduled transmisssion is in 14 days. Adam will not appear on his clinics disconnected list.
 
 #### Patient is disconnected - Communication has not occurred within the expected time period.
 John, a patient with an ICM, has an app based monitor on his phone. John changed the app permissions on his phone 5 days ago and it no longer connects to his ICM device to transmit data. The remote monitoring software used to manage John and his device displays him being disconnected after 4 days and his clinic contacts him to reestablish connectivity.
 
-#### Patient with manual transmission
-Sally, a patient implanted with a leadless pacemaker, has a device which is unable to send remote transmissions automatically. The manufacturer provided Sally with a reader head that she uses to manually transmit her pacemaker data to the manufacturers remote monitoring system at regular intervals. Because her device is requires manual transmissions, she will never appear on the disconnected list and her status will always display not applicable (N/A).
+#### Patient with manual remote device interrogations
+Sally, a patient implanted with a leadless pacemaker, has a device which is unable to send remote interrogations automatically. The manufacturer provided Sally with a reader head that she uses to manually transmit her pacemaker data to the manufacturers remote monitoring system at regular intervals. Because her device is requires manual interrogations, she will never appear on the disconnected list and her status will always display not applicable (N/A).
 
 #### Inactive patient
 
 * Would appear on Disconnected List 
 * Triage by device clinician- to restore connection or moving patient to appropriate connectivity modifier list 
-- Manual transmission connectivity modifier
+- Manual interrogation connectivity modifier
 - Inactive (Patient still has transmitter, but does not want to be continuously monitored or send intermittently. Clinic visits only.)
 - Deactivate (patient death or patient declines RM)
 

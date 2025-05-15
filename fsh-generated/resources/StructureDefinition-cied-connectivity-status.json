@@ -5,7 +5,7 @@
   "name": "CIEDConnectivityStatus",
   "title": "Observation - CIED Connectivity",
   "status": "draft",
-  "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.\n",
+  "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a CIED/Monitor pair.\n\nCIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. The connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. A single observation will be returned for every CIED/monitor pair.\n",
   "fhirVersion": "5.0.0",
   "kind": "resource",
   "abstract": false,
@@ -295,29 +295,29 @@
         ]
       },
       {
-        "id": "Observation.component:lastRemoteInterrogationSession",
+        "id": "Observation.component:lastRemoteInterrogationDate",
         "path": "Observation.component",
-        "sliceName": "lastRemoteInterrogationSession",
-        "short": "The date of the most recent remote interrogated device transmission with a personal monitor",
+        "sliceName": "lastRemoteInterrogationDate",
+        "short": "The date of the most recent remote device interrogation with a personal monitor",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:lastRemoteInterrogationSession.code",
+        "id": "Observation.component:lastRemoteInterrogationDate.code",
         "path": "Observation.component.code",
-        "short": "The date of the most recent remote interrogated device transmission with a personal monitor",
+        "short": "The date of the most recent remote device interrogation with a personal monitor",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "last-transmission-date",
+              "code": "last-interrogation-date",
               "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:lastRemoteInterrogationSession.value[x]",
+        "id": "Observation.component:lastRemoteInterrogationDate.value[x]",
         "path": "Observation.component.value[x]",
         "type": [
           {
@@ -326,29 +326,29 @@
         ]
       },
       {
-        "id": "Observation.component:nextScheduledRemoteInterrogationSession",
+        "id": "Observation.component:nextScheduledRemoteInterrogationDate",
         "path": "Observation.component",
-        "sliceName": "nextScheduledRemoteInterrogationSession",
-        "short": "The date of the next scheduled remote interrogated device transmission",
+        "sliceName": "nextScheduledRemoteInterrogationDate",
+        "short": "The date of the next scheduled remote device interrogation",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:nextScheduledRemoteInterrogationSession.code",
+        "id": "Observation.component:nextScheduledRemoteInterrogationDate.code",
         "path": "Observation.component.code",
-        "short": "The date of the next scheduled remote interrogated device transmission",
+        "short": "The date of the next scheduled remote device interrogation",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "next-transmission-date",
+              "code": "next-interrogation-date",
               "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:nextScheduledRemoteInterrogationSession.value[x]",
+        "id": "Observation.component:nextScheduledRemoteInterrogationDate.value[x]",
         "path": "Observation.component.value[x]",
         "type": [
           {

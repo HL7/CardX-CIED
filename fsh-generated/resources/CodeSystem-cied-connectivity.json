@@ -77,14 +77,14 @@
       "definition": "The date of the next expected communication from the monitor to the remote monitoring platform."
     },
     {
-      "code": "last-transmission-date",
-      "display": "Date the last transmission was sent",
-      "definition": "The date of the most recent remote interrogated device transmission with a personal montior"
+      "code": "last-interrogation-date",
+      "display": "Date the last remote device interrogation",
+      "definition": "The date of the most recent remote device interrogation with a personal montior"
     },
     {
-      "code": "next-transmission-date",
-      "display": "Date of the next scheduled transmission",
-      "definition": "The date of the next scheduled remote interrogated device transmission"
+      "code": "next-interrogation-date",
+      "display": "Date of the next scheduled remote device interrogation",
+      "definition": "The date of the next scheduled remote device interrogation"
     },
     {
       "code": "observation-cied-connectivity",

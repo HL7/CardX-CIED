@@ -41,30 +41,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/cied-monitor"
-        },
-        "name": "Cardiovascular Implantable Electronic Device Monitor Profile",
-        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
-        "isExample": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cied-patient"
-        },
-        "name": "Cardiovascular Implantable Electronic Device Patient Profile",
-        "description": "An CIED profile of the Patient resource.",
-        "isExample": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/cied-device"
-        },
-        "name": "Cardiovascular Implantable Electronic Device Profile",
-        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
-        "isExample": false
-      },
-      {
-        "reference": {
           "reference": "CapabilityStatement/cied-data-sender"
         },
         "name": "CardX CIED Connectivity Server Capability Statement",
@@ -76,7 +52,7 @@
           "reference": "ValueSet/cied-connectivity-dates-vs"
         },
         "name": "CIED Connectivity Dates and Timestamps",
-        "description": "The relevant dates and times related to CIED connectivity, scheduling, and transmission",
+        "description": "The relevant dates and times related to CIED connectivity, scheduling, and interrogation",
         "isExample": false
       },
       {
@@ -121,10 +97,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/remote-encounter"
+          "reference": "StructureDefinition/cied-device"
         },
-        "name": "CIED Remote Transmission Encounter Profile",
-        "description": "An CIED Remote Transmission profile of the Encounter resource.",
+        "name": "Device - Cardiovascular Implantable Electronic Device (CIED)",
+        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-monitor"
+        },
+        "name": "Device - CIED Monitor Profile",
+        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
         "isExample": false
       },
       {
@@ -156,7 +140,15 @@
           "reference": "StructureDefinition/cied-connectivity-status"
         },
         "name": "Observation - CIED Connectivity",
-        "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a communicating CIED.\n",
+        "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a CIED/Monitor pair.\n\nCIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. The connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. A single observation will be returned for every CIED/monitor pair.\n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-patient"
+        },
+        "name": "Patient - CIED Patient Profile",
+        "description": "An CIED profile of the Patient resource.",
         "isExample": false
       },
       {
@@ -201,17 +193,6 @@
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "Encounter/uc1ScheduledTransmission1"
-        },
-        "name": "uc1ScheduledTransmission1",
-        "description": "Example encounter for scheduled transmission",
-        "isExample": true,
-        "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/remote-encounter"
         ]
       }
     ],

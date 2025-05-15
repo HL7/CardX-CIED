@@ -57,17 +57,17 @@ This capability statement describes the requirements for systems that make CIED 
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Patient-identifier, #token, #SHALL)
-* insert SupportSearchParam(family, hhttp://hl7.org/fhir/SearchParameter/individual-family, #string, #SHOULD)
-* insert SupportSearchParam(given, http://hl7.org/fhir/SearchParameter/individual-given, #string, #SHOULD)
-* insert SupportSearchParam(birthdate, http://hl7.org/fhir/SearchParameter/individual-birthdate, #date, #SHOULD)
-* insert SupportSearchParam(gender, http://hl7.org/fhir/SearchParameter/individual-gender, #token, #SHOULD)
 
 // Device requirements
 * insert SupportResource(Device, #SHALL)
 * insert SupportProfile(http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/CIEDDevice, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
-* insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Device-identifier, #token, #SHALL)
+* insert SupportSearchParam(manufacturer, http://hl7.org/fhir/SearchParameter/Device-manufacturer, #string, #SHOULD)
+* insert SupportSearchParam(model, http://hl7.org/fhir/SearchParameter/Device-model, #string, #SHOULD)
+* insert SupportSearchParam(udi-di, http://hl7.org/fhir/SearchParameter/Device-udi-di, #string, #SHOULD)
+* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/Device-type, #token, #SHOULD)
+* insert SupportSearchParam(serial-number, http://hl7.org/fhir/SearchParameter/Device-serial-number, #string, #SHOULD)
 
 // Observation
 * insert SupportResource(Observation, #SHALL)
@@ -78,5 +78,6 @@ This capability statement describes the requirements for systems that make CIED 
 * insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHOULD)
 * insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
 * insert SupportSearchParam(combo-value-concept, http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept, #token, #SHOULD)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHOULD)
 
 // TO DO - go through and review token vs codeable concept etc.

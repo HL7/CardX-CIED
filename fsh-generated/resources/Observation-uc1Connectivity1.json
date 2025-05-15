@@ -106,7 +106,7 @@
       "code": {
         "coding": [
           {
-            "code": "last-transmission-date",
+            "code": "last-interrogation-date",
             "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
           }
         ]
@@ -117,7 +117,7 @@
       "code": {
         "coding": [
           {
-            "code": "next-transmission-date",
+            "code": "next-interrogation-date",
             "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
           }
         ]
