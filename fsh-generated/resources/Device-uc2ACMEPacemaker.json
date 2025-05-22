@@ -1,6 +1,6 @@
 {
   "resourceType": "Device",
-  "id": "uc1CiedDevice",
+  "id": "uc2ACMEPacemaker",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
@@ -27,11 +27,11 @@
   "gateway": [
     {
       "reference": {
-        "reference": "Device/uc1CIEDMonitor"
+        "reference": "uc2CIEDMonitor"
       }
     }
   ],
   "manufacturer": "ACME Devices",
-  "serialNumber": "123456789",
-  "modelNumber": "ICDExample1"
+  "serialNumber": "uc2ACMEPacemaker",
+  "modelNumber": "PacemakerExample2"
 }

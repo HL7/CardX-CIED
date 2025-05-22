@@ -92,15 +92,30 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * component[connectionInterval].code = cied-connectivity#connection-interval
 * component[connectionInterval].value[x] only integer
 
-Instance: uc1Connectivity1
+Instance: uc1ConnectivityACME
 InstanceOf: CIEDConnectivityStatus
-Description: "Use case 1, connectivity status 1"
+Description: "Use case 1 example"
 * code = cied-connectivity#observation-cied-connectivity
-* device = Reference(uc1CiedDevice)
-* effectiveDateTime = 2025-02-15T06:15:00.000Z
-* subject = Reference(uc1Patient)
+* device = Reference(uc1ACMEICD)
+* effectiveDateTime = 2025-05-19T08:00:00.000Z
+* subject = Reference(uc1ACMEPatient)
 * status = http://hl7.org/fhir/ValueSet/observation-status#final
-* note[0].text = "The patient is listed as inactive in the system after being disconnected for more than 90 days."
+* code = cied-connectivity#observation-cied-connectivity
+* category = cied-connectivity#observation-cied-connectivity  
+* component[connectivityStatus].code = cied-connectivity#connectivity-status
+* component[connectivityStatus].valueCodeableConcept = cied-connectivity#disconnected
+* component[connectivityModifier].code = cied-connectivity#connectivity-modifier
+* component[connectivityModifier].valueCodeableConcept = cied-connectivity#setup-not-completed
+
+Instance: uc2ConnectivityACME
+InstanceOf: CIEDConnectivityStatus
+Description: "Use case 2 ACME"
+* code = cied-connectivity#observation-cied-connectivity
+* device = Reference(uc2ACMEPacemaker)
+* effectiveDateTime = 2025-05-19T08:00:00.000Z
+* subject = Reference(uc2ACMEPatient)
+* status = http://hl7.org/fhir/ValueSet/observation-status#final
+* note[0].text = "The patient has been disconnected for more than 90 days and is listed as inactive."
 * code = cied-connectivity#observation-cied-connectivity
 * category = cied-connectivity#observation-cied-connectivity  
 * component[connectivityStatus].code = cied-connectivity#connectivity-status
@@ -108,20 +123,93 @@ Description: "Use case 1, connectivity status 1"
 * component[connectivityModifier].code = cied-connectivity#connectivity-modifier
 * component[connectivityModifier].valueCodeableConcept = cied-connectivity#inactive
 * component[lastCiedConnectivityDate].code = cied-connectivity#last-cied-connectivity-time
-* component[lastCiedConnectivityDate].valueDateTime = 2024-02-15T06:00:00.000Z 
+* component[lastCiedConnectivityDate].valueDateTime = 2025-02-19T06:00:00.000Z 
 * component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
-* component[lastMonitorConnectivityDate].valueDateTime = 2024-02-15T06:00:00.000Z
+* component[lastMonitorConnectivityDate].valueDateTime = 2025-02-19T06:00:00.000Z
 * component[nextCiedConnectivityDate].code = cied-connectivity#next-cied-connectivity-date
-* component[nextCiedConnectivityDate].valueDateTime = 2025-02-21
+* component[nextCiedConnectivityDate].valueDateTime = 2025-05-20
 * component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
-* component[nextMonitorConnectivityDate].valueDateTime = 2025-02-21
+* component[nextMonitorConnectivityDate].valueDateTime = 2025-05-20
 * component[lastRemoteInterrogationDate].code = cied-connectivity#last-interrogation-date
-* component[lastRemoteInterrogationDate].valueDateTime = 2024-02-15T06:00:00.000Z
+* component[lastRemoteInterrogationDate].valueDateTime = 2025-02-08T06:00:00.000Z
 * component[nextScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
-* component[nextScheduledRemoteInterrogationDate].valueDateTime = 2025-02-21
-* component[connectionInterval].code = cied-connectivity#connection-interval
-* component[connectionInterval].valueInteger = 1
+* component[nextScheduledRemoteInterrogationDate].valueDateTime = 2025-05-30
 
+Instance: uc3ConnectivityACME
+InstanceOf: CIEDConnectivityStatus
+Description: "Use case 3 ACME"
+* code = cied-connectivity#observation-cied-connectivity
+* device = Reference(uc3ACMEPacemaker)
+* effectiveDateTime = 2025-05-19T08:00:00.000Z
+* subject = Reference(uc3ACMEPatient)
+* status = http://hl7.org/fhir/ValueSet/observation-status#final
+* code = cied-connectivity#observation-cied-connectivity
+* category = cied-connectivity#observation-cied-connectivity  
+* component[connectivityStatus].code = cied-connectivity#connectivity-status
+* component[connectivityStatus].valueCodeableConcept = cied-connectivity#connected
+* component[lastCiedConnectivityDate].code = cied-connectivity#last-cied-connectivity-time
+* component[lastCiedConnectivityDate].valueDateTime = 2025-05-18T06:00:00.000Z 
+* component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
+* component[lastMonitorConnectivityDate].valueDateTime = 2025-05-19T06:00:00.000Z
+* component[nextCiedConnectivityDate].code = cied-connectivity#next-cied-connectivity-date
+* component[nextCiedConnectivityDate].valueDateTime = 2025-05-20
+* component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
+* component[nextMonitorConnectivityDate].valueDateTime = 2025-05-20
+* component[lastRemoteInterrogationDate].code = cied-connectivity#last-interrogation-date
+* component[lastRemoteInterrogationDate].valueDateTime = 2025-02-28T06:00:00.000Z
+* component[nextScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
+* component[nextScheduledRemoteInterrogationDate].valueDateTime = 2025-05-30
 
+Instance: uc4ConnectivityACME
+InstanceOf: CIEDConnectivityStatus
+Description: "Use case 4 ACME"
+* code = cied-connectivity#observation-cied-connectivity
+* device = Reference(uc4ACMEPacemaker)
+* effectiveDateTime = 2025-05-19T08:00:00.000Z
+* subject = Reference(uc4ACMEPatient)
+* status = http://hl7.org/fhir/ValueSet/observation-status#final
+* note[0].text = "The patient has been suspended from the disconnected list."
+* code = cied-connectivity#observation-cied-connectivity
+* category = cied-connectivity#observation-cied-connectivity  
+* component[connectivityStatus].code = cied-connectivity#connectivity-status
+* component[connectivityStatus].valueCodeableConcept = cied-connectivity#disconnected
+* component[connectivityModifier].code = cied-connectivity#connectivity-modifier
+* component[connectivityModifier].valueCodeableConcept = cied-connectivity#suspended
+* component[lastCiedConnectivityDate].code = cied-connectivity#last-cied-connectivity-time
+* component[lastCiedConnectivityDate].valueDateTime = 2025-04-25T06:00:00.000Z 
+* component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
+* component[lastMonitorConnectivityDate].valueDateTime = 2025-05-19T06:00:00.000Z
+* component[nextCiedConnectivityDate].code = cied-connectivity#next-cied-connectivity-date
+* component[nextCiedConnectivityDate].valueDateTime = 2025-05-20
+* component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
+* component[nextMonitorConnectivityDate].valueDateTime = 2025-05-20
+* component[lastRemoteInterrogationDate].code = cied-connectivity#last-interrogation-date
+* component[lastRemoteInterrogationDate].valueDateTime = 2025-02-28T06:00:00.000Z
+* component[nextScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
+* component[nextScheduledRemoteInterrogationDate].valueDateTime = 2025-05-30
 
-
+Instance: uc5ConnectivityACME
+InstanceOf: CIEDConnectivityStatus
+Description: "Use case 5 ACME"
+* code = cied-connectivity#observation-cied-connectivity
+* device = Reference(uc5ACMEPacemaker)
+* effectiveDateTime = 2025-05-19T08:00:00.000Z
+* subject = Reference(uc5ACMEPatient)
+* status = http://hl7.org/fhir/ValueSet/observation-status#final
+* note[0].text = "The patient has not connected for at least 10 days."
+* code = cied-connectivity#observation-cied-connectivity
+* category = cied-connectivity#observation-cied-connectivity  
+* component[connectivityStatus].code = cied-connectivity#connectivity-status
+* component[connectivityStatus].valueCodeableConcept = cied-connectivity#disconnected
+* component[lastCiedConnectivityDate].code = cied-connectivity#last-cied-connectivity-time
+* component[lastCiedConnectivityDate].valueDateTime = 2025-05-04T06:00:00.000Z 
+* component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
+* component[lastMonitorConnectivityDate].valueDateTime = 2025-05-04T06:00:00.000Z
+* component[nextCiedConnectivityDate].code = cied-connectivity#next-cied-connectivity-date
+* component[nextCiedConnectivityDate].valueDateTime = 2025-05-20
+* component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
+* component[nextMonitorConnectivityDate].valueDateTime = 2025-05-20
+* component[lastRemoteInterrogationDate].code = cied-connectivity#last-interrogation-date
+* component[lastRemoteInterrogationDate].valueDateTime = 2025-03-30T06:00:00.000Z
+* component[nextScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
+* component[nextScheduledRemoteInterrogationDate].valueDateTime = 2025-06-25

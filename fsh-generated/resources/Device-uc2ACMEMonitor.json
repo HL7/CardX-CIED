@@ -1,6 +1,6 @@
 {
   "resourceType": "Device",
-  "id": "uc1CIEDMonitor",
+  "id": "uc2ACMEMonitor",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
@@ -18,13 +18,13 @@
     {
       "coding": [
         {
-          "code": "bedside-device",
+          "code": "mobile-monitor",
           "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
         }
       ]
     }
   ],
   "manufacturer": "ACME Devices",
-  "serialNumber": "12341234",
-  "modelNumber": "Bedside Monitor 1"
+  "serialNumber": "uc2ACMEMonitor",
+  "modelNumber": "SmartApp Monitor 1"
 }

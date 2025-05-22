@@ -1,0 +1,73 @@
+{
+  "resourceType": "Observation",
+  "id": "uc1ConnectivityACME",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "observation-cied-connectivity",
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+        }
+      ]
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "connectivity-status",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "disconnected",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "connectivity-modifier",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "setup-not-completed",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "observation-cied-connectivity",
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+      }
+    ]
+  },
+  "device": {
+    "reference": "Device/uc1ACMEICD"
+  },
+  "effectiveDateTime": "2025-05-19T08:00:00.000Z",
+  "subject": {
+    "reference": "Patient/uc1ACMEPatient"
+  },
+  "status": "final"
+}

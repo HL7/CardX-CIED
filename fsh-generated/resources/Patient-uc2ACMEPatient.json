@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "uc1Patient",
+  "id": "uc2ACMEPatient",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
@@ -10,9 +10,9 @@
     {
       "given": [
         "John",
-        "Test"
+        "ACME"
       ],
-      "family": "ICDPatient"
+      "family": "Doe"
     }
   ],
   "identifier": [
@@ -21,7 +21,7 @@
         "display": "Acme Devices"
       },
       "use": "official",
-      "value": "ICD123456789",
+      "value": "ACME2222",
       "type": {
         "coding": [
           {
@@ -36,7 +36,7 @@
         "display": "Acme Devices"
       },
       "use": "usual",
-      "value": "ICD123456789",
+      "value": "ACME2222",
       "type": {
         "coding": [
           {
@@ -66,5 +66,5 @@
       "postalCode": "12345"
     }
   ],
-  "birthDate": "1970-01-01"
+  "birthDate": "1954-01-01"
 }

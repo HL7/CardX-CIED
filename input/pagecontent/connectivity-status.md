@@ -27,34 +27,22 @@ This use case is centered around facilitating workflows to get patients connecte
 * Free text containing any additional information the manufacturer might have about the patient, device, or guidance to reestablish connectivity 
 
 ### User Stories
+The following user stories have associated Example Instances included in the Implementation Guide and are representative of a 19-May-2025 query of a manufacturers FHIR server which supports the connectivity profiles.
 
-#### Patient is Connected - Communication has been successful within the expected time period.
-Adam, a patient implanted with a dual chamber ICD for primary prevention of sudden cardiac death. Adam has a bedside monitor positioned on a night stand next to his bed which facilitates communication between his device and the device manufacturers remote monitoring platform. His device connects to his monitor every 14 days to look for interrogation scheduling updates, and again when an interrogation is scheduled. The device is also able to wake up and initiate a connection with his monitor when an alert is detected. His device delivered an ICD for ventricular fibrillation 60 days ago which triggered a successful alert initiated interrogation. His device and monitor last connected to the remote monitoring platform 5 days ago and his next scheduled interrogation is in 14 days. Adam displays as connected in the remote monitoring software and shows that his device and monitor connected 5 days ago and his next scheduled transmisssion is in 14 days. Adam will not appear on his clinics disconnected list.
+#### Case 1 - Patient Receives a New Monitor That Has Not Been Setup
+Jim Doe is a 67-year-old male with a dual chamber ICD. The device was implanted for primary prevention for sudden cardiac death. Jim received a bedside monitor in the mail from his device manufacturer but he has not plugged the device in yet.
 
-#### Patient is disconnected - Communication has not occurred within the expected time period.
-John, a patient with an ICM, has an app based monitor on his phone. John changed the app permissions on his phone 5 days ago and it no longer connects to his ICM device to transmit data. The remote monitoring software used to manage John and his device displays him being disconnected after 4 days and his clinic contacts him to reestablish connectivity.
+#### Case 2 - Patient is Inactive Due to Lack of Connectivity
+John Doe, 71-year-old male with an ICD placed for secondary prevention. His last transmission date was 08-Feb-2025, last CIED connectivity time was 19-Feb-2025, and last monitor connectivity (monitor = portable device) connection was 19-Feb-2025. His next scheduled remote interrogation is 30-May-2025.
 
-#### Patient with manual remote device interrogations
-Sally, a patient implanted with a leadless pacemaker, has a device which is unable to send remote interrogations automatically. The manufacturer provided Sally with a reader head that she uses to manually transmit her pacemaker data to the manufacturers remote monitoring system at regular intervals. Because her device is requires manual interrogations, she will never appear on the disconnected list and her status will always display not applicable (N/A).
+#### Case 3 - Patient is Connected
+Jane Doe, 61-year-old female. Dual chamber pacemaker placed for sinus bradycardia. Last transmission date was 28-Feb-2025. Last CIED connectivity time was 18-May-2025. Last monitor connectivity (monitor = bedside device) was 19-May-2025 (connected as expected). Next scheduled remote interrogation is 30-May-2025.
 
-#### Inactive patient
+#### Case 4 - Patient Informs Clinic They Will be Away From Their Monitor
+Jane Doe, 61-year-old female. Dual chamber pacemaker placed for sinus bradycardia. Last transmission date was 28-Feb-2025. Patient notified device clinic that they are going on vacation. Last CIED connectivity time was 25-Apr-2025. Last monitor connectivity (monitor = bedside device) was 19-May-2025 (connected as expected at home, patient did not bring along on vacation). Next scheduled remote interrogation is 30-May-2025.
 
-* Would appear on Disconnected List 
-* Triage by device clinician- to restore connection or moving patient to appropriate connectivity modifier list 
-- Manual interrogation connectivity modifier
-- Inactive (Patient still has transmitter, but does not want to be continuously monitored or send intermittently. Clinic visits only.)
-- Deactivate (patient death or patient declines RM)
-
-#### Setup not completed
-* Would appear on Disconnect List
-* Triage by device clinician to reestablish connectivity
-
-#### Suspended 
-* Patients may inform their clinic that they are travelling or otherwise away from their monitor. Some remote monitoring platforms allow for clinincians to temporarily remove the patients from the disconnected list.
-* Would not appear on Disconnected List. A status of diconnected with a suspended modifier indicates that this is expected behavior.
-
-### Unenrolled - Verify if this is needed
-* Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued and should no longer appear on the disconnected list.
+#### Case 5 - Patient is Disconnected
+Jimmy Doe, 73-year-old male with a dual chamber pacemaker placed for complete heart block. Last transmission date was 30-Mar-2025. Last CIED connectivity time was 04-May-2025. Last monitor connectivity (monitor = bedside device) was 04-May-2025. Next scheduled remote interrogation is 25-Jun-2025. The manufacturer shows Jimmy as being disconnected if communication has not occured in 10 days.
 
 ### Actors
 #### Connectivity Data Producer

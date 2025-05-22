@@ -1,0 +1,37 @@
+{
+  "resourceType": "Device",
+  "id": "uc3ACMEPacemaker",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+    ]
+  },
+  "udiCarrier": [
+    {
+      "deviceIdentifier": "123456789",
+      "issuer": "http://hl7.org/fhir/NamingSystem/gs1",
+      "jurisdiction": "http://hl7.org/fhir/NamingSystem/fda-udi",
+      "carrierHRF": "123456"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "753665",
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC"
+        }
+      ]
+    }
+  ],
+  "gateway": [
+    {
+      "reference": {
+        "reference": "uc3CIEDMonitor"
+      }
+    }
+  ],
+  "manufacturer": "ACME Devices",
+  "serialNumber": "uc3ACMEPacemaker",
+  "modelNumber": "PacemakerExample3"
+}

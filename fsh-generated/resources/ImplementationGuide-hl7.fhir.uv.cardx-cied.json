@@ -1,11 +1,25 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.uv.cardx-cied",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
   "url": "http://hl7.org/fhir/uv/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "name": "CardXCIED",
   "title": "CardX - Cardiac Implantable Electronic Devices",
-  "status": "draft",
+  "status": "active",
   "publisher": "HL7 International / Clinical Interoperability Council",
   "contact": [
     {
@@ -161,9 +175,9 @@
       },
       {
         "reference": {
-          "reference": "Device/uc1CiedDevice"
+          "reference": "Device/uc1ACMEICD"
         },
-        "name": "uc1CiedDevice",
+        "name": "uc1ACMEICD",
         "description": "An example CIED device for CIED connectivity example 1.",
         "isExample": true,
         "profile": [
@@ -172,9 +186,9 @@
       },
       {
         "reference": {
-          "reference": "Device/uc1CIEDMonitor"
+          "reference": "Device/uc1ACMEMonitor"
         },
-        "name": "uc1CIEDMonitor",
+        "name": "uc1ACMEMonitor",
         "description": "An example CIED monitor for CIED connectivity example 1.",
         "isExample": true,
         "profile": [
@@ -183,10 +197,21 @@
       },
       {
         "reference": {
-          "reference": "Observation/uc1Connectivity1"
+          "reference": "Patient/uc1ACMEPatient"
         },
-        "name": "uc1Connectivity1",
-        "description": "Use case 1, connectivity status 1",
+        "name": "uc1ACMEPatient",
+        "description": "An example CIED patient for CIED connectivity example 1.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/uc1ConnectivityACME"
+        },
+        "name": "uc1ConnectivityACME",
+        "description": "Use case 1 example",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
@@ -194,13 +219,178 @@
       },
       {
         "reference": {
-          "reference": "Patient/uc1Patient"
+          "reference": "Device/uc2ACMEMonitor"
         },
-        "name": "uc1Patient",
-        "description": "An example CIED patient for CIED connectivity example 1.",
+        "name": "uc2ACMEMonitor",
+        "description": "An example CIED monitor for CIED connectivity example 2.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Device/uc2ACMEPacemaker"
+        },
+        "name": "uc2ACMEPacemaker",
+        "description": "An example CIED device for CIED connectivity example 2.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Patient/uc2ACMEPatient"
+        },
+        "name": "uc2ACMEPatient",
+        "description": "An example CIED patient for CIED connectivity example 2.",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/uc2ConnectivityACME"
+        },
+        "name": "uc2ConnectivityACME",
+        "description": "Use case 2 ACME",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Device/uc3ACMEMonitor"
+        },
+        "name": "uc3ACMEMonitor",
+        "description": "An example CIED monitor for CIED connectivity example 3.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Device/uc3ACMEPacemaker"
+        },
+        "name": "uc3ACMEPacemaker",
+        "description": "An example CIED device for CIED connectivity example 3.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Patient/uc3ACMEPatient"
+        },
+        "name": "uc3ACMEPatient",
+        "description": "An example CIED patient for CIED connectivity example 2.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/uc3ConnectivityACME"
+        },
+        "name": "uc3ConnectivityACME",
+        "description": "Use case 3 ACME",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Device/uc4ACMEMonitor"
+        },
+        "name": "uc4ACMEMonitor",
+        "description": "An example CIED monitor for CIED connectivity example 4.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Device/uc4ACMEPacemaker"
+        },
+        "name": "uc4ACMEPacemaker",
+        "description": "An example CIED device for CIED connectivity example 4.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Patient/uc4ACMEPatient"
+        },
+        "name": "uc4ACMEPatient",
+        "description": "An example CIED patient for CIED connectivity example 2.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/uc4ConnectivityACME"
+        },
+        "name": "uc4ConnectivityACME",
+        "description": "Use case 4 ACME",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Device/uc5ACMEMonitor"
+        },
+        "name": "uc5ACMEMonitor",
+        "description": "An example CIED monitor for CIED connectivity example 5.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Device/uc5ACMEPacemaker"
+        },
+        "name": "uc5ACMEPacemaker",
+        "description": "An example CIED device for CIED connectivity example 5.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Patient/uc5ACMEPatient"
+        },
+        "name": "uc5ACMEPatient",
+        "description": "An example CIED patient for CIED connectivity example 2.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/uc5ConnectivityACME"
+        },
+        "name": "uc5ConnectivityACME",
+        "description": "Use case 5 ACME",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
         ]
       }
     ],
@@ -249,7 +439,35 @@
           "code": "releaselabel",
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
-        "value": "ci-build"
+        "value": "STU 1 Ballot"
+      },
+      {
+        "code": {
+          "code": "apply-contact",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "true"
+      },
+      {
+        "code": {
+          "code": "apply-jurisdiction",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "true"
+      },
+      {
+        "code": {
+          "code": "apply-publisher",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "true"
+      },
+      {
+        "code": {
+          "code": "apply-version",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "true"
       },
       {
         "code": {

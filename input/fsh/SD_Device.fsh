@@ -32,7 +32,7 @@ Description: "Mapping of the CIEDDevice resource to the IEEE 11073-10103 standar
 
 // 09-jan-2025 - device association resource will be used to associated CIED and patient. In the future it will be used for device/lead associations. Assumption as of date is that a profile is not needed
 
-Instance: uc1CiedDevice
+Instance: uc1ACMEICD
 InstanceOf: CIEDDevice  
 Description: "An example CIED device for CIED connectivity example 1."
 * udiCarrier.deviceIdentifier = "123456789"
@@ -40,7 +40,58 @@ Description: "An example CIED device for CIED connectivity example 1."
 * udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
-* serialNumber = "123456789"
+* serialNumber = "uc1ACMEICD"
 * modelNumber = "ICDExample1"
 * type = IDC#753666
-* gateway = Reference(uc1CIEDMonitor)
+
+Instance: uc2ACMEPacemaker
+InstanceOf: CIEDDevice  
+Description: "An example CIED device for CIED connectivity example 2."
+* udiCarrier.deviceIdentifier = "123456789"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.carrierHRF = "123456"
+* manufacturer = "ACME Devices"
+* serialNumber = "uc2ACMEPacemaker"
+* modelNumber = "PacemakerExample2"
+* type = IDC#753666
+* gateway = Reference(uc2CIEDMonitor)
+
+Instance: uc3ACMEPacemaker
+InstanceOf: CIEDDevice  
+Description: "An example CIED device for CIED connectivity example 3."
+* udiCarrier.deviceIdentifier = "123456789"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.carrierHRF = "123456"
+* manufacturer = "ACME Devices"
+* serialNumber = "uc3ACMEPacemaker"
+* modelNumber = "PacemakerExample3"
+* type = IDC#753665
+* gateway = Reference(uc3CIEDMonitor)
+
+Instance: uc4ACMEPacemaker
+InstanceOf: CIEDDevice  
+Description: "An example CIED device for CIED connectivity example 4."
+* udiCarrier.deviceIdentifier = "123456789"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.carrierHRF = "123456"
+* manufacturer = "ACME Devices"
+* serialNumber = "uc4ACMEPacemaker"
+* modelNumber = "PacemakerExample4"
+* type = IDC#753665
+* gateway = Reference(uc4CIEDMonitor)
+
+Instance: uc5ACMEPacemaker
+InstanceOf: CIEDDevice  
+Description: "An example CIED device for CIED connectivity example 5."
+* udiCarrier.deviceIdentifier = "123456789"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.carrierHRF = "123456"
+* manufacturer = "ACME Devices"
+* serialNumber = "uc5ACMEPacemaker"
+* modelNumber = "PacemakerExample5"
+* type = IDC#753665
+* gateway = Reference(uc5CIEDMonitor)

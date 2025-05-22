@@ -1,16 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "uc1Connectivity1",
+  "id": "uc3ConnectivityACME",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
     ]
   },
-  "note": [
-    {
-      "text": "The patient is listed as inactive in the system after being disconnected for more than 90 days."
-    }
-  ],
   "category": [
     {
       "coding": [
@@ -34,25 +29,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "disconnected",
-            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
-          }
-        ]
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "connectivity-modifier",
-            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "inactive",
+            "code": "connected",
             "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
           }
         ]
@@ -67,7 +44,7 @@
           }
         ]
       },
-      "valueDateTime": "2024-02-15T06:00:00.000Z"
+      "valueDateTime": "2025-05-18T06:00:00.000Z"
     },
     {
       "code": {
@@ -78,7 +55,7 @@
           }
         ]
       },
-      "valueDateTime": "2024-02-15T06:00:00.000Z"
+      "valueDateTime": "2025-05-19T06:00:00.000Z"
     },
     {
       "code": {
@@ -89,7 +66,7 @@
           }
         ]
       },
-      "valueDateTime": "2025-02-21"
+      "valueDateTime": "2025-05-20"
     },
     {
       "code": {
@@ -100,7 +77,7 @@
           }
         ]
       },
-      "valueDateTime": "2025-02-21"
+      "valueDateTime": "2025-05-20"
     },
     {
       "code": {
@@ -111,7 +88,7 @@
           }
         ]
       },
-      "valueDateTime": "2024-02-15T06:00:00.000Z"
+      "valueDateTime": "2025-02-28T06:00:00.000Z"
     },
     {
       "code": {
@@ -122,18 +99,7 @@
           }
         ]
       },
-      "valueDateTime": "2025-02-21"
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "connection-interval",
-            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
-          }
-        ]
-      },
-      "valueInteger": 1
+      "valueDateTime": "2025-05-30"
     }
   ],
   "code": {
@@ -145,11 +111,11 @@
     ]
   },
   "device": {
-    "reference": "Device/uc1CiedDevice"
+    "reference": "Device/uc3ACMEPacemaker"
   },
-  "effectiveDateTime": "2025-02-15T06:15:00.000Z",
+  "effectiveDateTime": "2025-05-19T08:00:00.000Z",
   "subject": {
-    "reference": "Patient/uc1Patient"
+    "reference": "Patient/uc3ACMEPatient"
   },
   "status": "final"
 }
