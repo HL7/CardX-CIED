@@ -6,7 +6,7 @@
   "id": "IDC",
   "title": "ISO/IEEE-11073-10103",
   "description": "ISO/IEEE-11073-10103 - Implantable Device Cardiac nomenclature.",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC",
+  "url": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/IDC",
   "concept": [
     {
       "code": "753665",

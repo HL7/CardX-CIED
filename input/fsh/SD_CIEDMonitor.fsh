@@ -68,7 +68,7 @@ Description: "An example CIED monitor for CIED connectivity example 4."
 * modelNumber = "Bedside Monitor 5000"
 * type = cied-connectivity#bedside-device
 
-Instance: uc5ACMEMonitor
+Instance: uc5CIEDMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 5."
 * udiCarrier.deviceIdentifier = "12341234" 

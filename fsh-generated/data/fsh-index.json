@@ -12,8 +12,8 @@
     "fshName": "IDC",
     "fshType": "CodeSystem",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 37,
-    "endLine": 73
+    "startLine": 38,
+    "endLine": 74
   },
   {
     "outputFile": "CodeSystem-cied-connectivity.json",
@@ -80,20 +80,20 @@
     "endLine": 69
   },
   {
-    "outputFile": "Device-uc5ACMEMonitor.json",
-    "fshName": "uc5ACMEMonitor",
-    "fshType": "Instance",
-    "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 71,
-    "endLine": 81
-  },
-  {
     "outputFile": "Device-uc5ACMEPacemaker.json",
     "fshName": "uc5ACMEPacemaker",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
     "startLine": 86,
     "endLine": 97
+  },
+  {
+    "outputFile": "Device-uc5CIEDMonitor.json",
+    "fshName": "uc5CIEDMonitor",
+    "fshType": "Instance",
+    "fshFile": "SD_CIEDMonitor.fsh",
+    "startLine": 71,
+    "endLine": 81
   },
   {
     "outputFile": "Observation-uc1ConnectivityACME.json",
@@ -141,39 +141,39 @@
     "fshType": "Instance",
     "fshFile": "SD_Patient.fsh",
     "startLine": 17,
-    "endLine": 41
+    "endLine": 35
   },
   {
     "outputFile": "Patient-uc2ACMEPatient.json",
     "fshName": "uc2ACMEPatient",
     "fshType": "Instance",
     "fshFile": "SD_Patient.fsh",
-    "startLine": 43,
-    "endLine": 67
+    "startLine": 37,
+    "endLine": 55
   },
   {
     "outputFile": "Patient-uc3ACMEPatient.json",
     "fshName": "uc3ACMEPatient",
     "fshType": "Instance",
     "fshFile": "SD_Patient.fsh",
-    "startLine": 69,
-    "endLine": 93
+    "startLine": 57,
+    "endLine": 75
   },
   {
     "outputFile": "Patient-uc4ACMEPatient.json",
     "fshName": "uc4ACMEPatient",
     "fshType": "Instance",
     "fshFile": "SD_Patient.fsh",
-    "startLine": 95,
-    "endLine": 119
+    "startLine": 77,
+    "endLine": 95
   },
   {
     "outputFile": "Patient-uc5ACMEPatient.json",
     "fshName": "uc5ACMEPatient",
     "fshType": "Instance",
     "fshFile": "SD_Patient.fsh",
-    "startLine": 121,
-    "endLine": 145
+    "startLine": 97,
+    "endLine": 115
   },
   {
     "outputFile": "StructureDefinition-cied-connectivity-status.json",
@@ -212,16 +212,16 @@
     "fshName": "11073-10103-DeviceType",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 11,
-    "endLine": 21
+    "startLine": 12,
+    "endLine": 22
   },
   {
     "outputFile": "ValueSet-11073-10103-SessionType.json",
     "fshName": "11073-10103-SessionType",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 23,
-    "endLine": 35
+    "startLine": 24,
+    "endLine": 36
   },
   {
     "outputFile": "ValueSet-cied-connectivity-connection-interval-vs.json",
@@ -269,6 +269,6 @@
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
     "startLine": 3,
-    "endLine": 8
+    "endLine": 9
   }
 ]

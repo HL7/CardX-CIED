@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cied-patient",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient",
+  "url": "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-patient",
   "name": "CIEDPatient",
   "title": "Patient - CIED Patient Profile",
-  "status": "active",
+  "status": "draft",
   "description": "An CIED profile of the Patient resource.",
   "fhirVersion": "5.0.0",
   "kind": "resource",
@@ -24,7 +24,7 @@
         "path": "Patient.identifier.type",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-patient-identifier"
+          "valueSet": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/cied-patient-identifier"
         }
       },
       {

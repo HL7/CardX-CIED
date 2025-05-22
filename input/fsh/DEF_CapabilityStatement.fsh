@@ -44,7 +44,7 @@ This capability statement describes the requirements for systems that make CIED 
 * name = "CIEDConnectivityServerCapabilityStatement"
 * description = "CardX CIED Connectivity Server CapabilityStatement"
 * rest.mode = #server
-* status = #draft
+* status = #trial-use
 * date = "2025-02-25"
 * kind = #requirements
 * fhirVersion = #5.0.0
@@ -53,14 +53,14 @@ This capability statement describes the requirements for systems that make CIED 
 
 // Patient requirements
 * insert SupportResource(Patient, #SHALL)
-* insert SupportProfile(http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/CIEDPatient, #SHALL)
+* insert SupportProfile(https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-patient.html, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Patient-identifier, #token, #SHALL)
 
 // Device requirements
 * insert SupportResource(Device, #SHALL)
-* insert SupportProfile(http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/CIEDDevice, #SHALL)
+* insert SupportProfile(https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-device.html, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(manufacturer, http://hl7.org/fhir/SearchParameter/Device-manufacturer, #string, #SHOULD)
@@ -71,7 +71,7 @@ This capability statement describes the requirements for systems that make CIED 
 
 // Observation
 * insert SupportResource(Observation, #SHALL)
-* insert SupportProfile(http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/CIEDConnectivityStatus, #SHALL)
+* insert SupportProfile(https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-connectivity-status.html, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHOULD)

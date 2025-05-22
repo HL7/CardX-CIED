@@ -1,16 +1,16 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "11073-10103-DeviceType",
   "id": "11073-10103-DeviceType",
   "title": "IEEE 11073-10103 Device Type",
   "description": "The type of device as defined by IEEE 11073-10103",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/11073-10103-DeviceType",
+  "url": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/11073-10103-DeviceType",
   "experimental": false,
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC",
+        "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/IDC",
         "concept": [
           {
             "code": "753665",
