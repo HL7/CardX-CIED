@@ -32,6 +32,13 @@ Description: "The relevant dates and times related to CIED connectivity, schedul
 * cied-connectivity#last-interrogation-date "The date of the most recent remote device interrogation"
 * cied-connectivity#next-interrogation-date "The date of the next scheduled remote device interrogation"
 
+ValueSet: cied-connectivity-connection-interval
+Id: cied-connectivity-connection-interval-vs
+Title: "CIED Connectivity Connection Interval"
+Description: "The time interval in days between CIED and remote monitoring software communication"
+* ^experimental = false
+* cied-connectivity#connection-interval "The time interval in days between expected CIED and remote monitoring software communication"
+
 ValueSet: cied-monitor-types
 Id: cied-monitor-types-vs
 Title: "CIED Monitor Types"
@@ -84,6 +91,7 @@ Description: "Codes system for CIED connectivity and monitor device types"
     "App based monitor"	
 * #portable-device "Portable Device"	
     "Standalone device, with battery capacity to provide monitoring while on the go"
-
+* #connection-interval "Connection Interval"
+    "The time interval in days between expected CIED and remote monitoring software communication."
 
 

@@ -18,6 +18,7 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * subject MS 
 * subject only Reference(CIEDPatient)
 * note MS
+* note ^short = "Text describing why the patient is listed at a given status and/or steps that can be taken to restore connectivity"
 * component MS
 * component.code MS
 * component.value[x] MS
@@ -34,7 +35,8 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
     nextCiedConnectivityDate 0..1 and
     nextMonitorConnectivityDate 0..1 and
     lastRemoteInterrogationDate 0..1 and
-    nextScheduledRemoteInterrogationDate 0..1
+    nextScheduledRemoteInterrogationDate 0..1 and
+    connectionInterval 0..1
 * component[connectivityStatus] MS
 * component[connectivityStatus] ^short = "The overall system connectivity status as calculated by the CIED manufacturer"
 * component[connectivityStatus].code MS
@@ -83,6 +85,12 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * component[nextScheduledRemoteInterrogationDate].code ^short = "The date of the next scheduled remote device interrogation"
 * component[nextScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
 * component[nextScheduledRemoteInterrogationDate].value[x] only dateTime
+* component[connectionInterval] MS
+* component[connectionInterval] ^short = "The time interval in days between expected CIED and remote monitoring software communication"
+* component[connectionInterval].code MS
+* component[connectionInterval].code ^short = "The time interval in days between expected CIED and remote monitoring software communication"
+* component[connectionInterval].code = cied-connectivity#connection-interval
+* component[connectionInterval].value[x] only integer
 
 Instance: uc1Connectivity1
 InstanceOf: CIEDConnectivityStatus
@@ -111,6 +119,8 @@ Description: "Use case 1, connectivity status 1"
 * component[lastRemoteInterrogationDate].valueDateTime = 2024-02-15T06:00:00.000Z
 * component[nextScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
 * component[nextScheduledRemoteInterrogationDate].valueDateTime = 2025-02-21
+* component[connectionInterval].code = cied-connectivity#connection-interval
+* component[connectionInterval].valueInteger = 1
 
 
 

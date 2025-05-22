@@ -49,6 +49,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/cied-connectivity-connection-interval-vs"
+        },
+        "name": "CIED Connectivity Connection Interval",
+        "description": "The time interval in days between CIED and remote monitoring software communication",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/cied-connectivity-dates-vs"
         },
         "name": "CIED Connectivity Dates and Timestamps",
