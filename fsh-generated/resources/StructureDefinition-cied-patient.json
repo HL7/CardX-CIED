@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient",
   "name": "CIEDPatient",
   "title": "Patient - CIED Patient Profile",
-  "status": "draft",
+  "status": "active",
   "description": "An CIED profile of the Patient resource.",
   "fhirVersion": "5.0.0",
   "kind": "resource",

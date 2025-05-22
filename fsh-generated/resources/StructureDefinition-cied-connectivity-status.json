@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status",
   "name": "CIEDConnectivityStatus",
   "title": "Observation - CIED Connectivity",
-  "status": "draft",
+  "status": "active",
   "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a CIED/Monitor pair.\n\nCIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. The connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. A single observation will be returned for every CIED/monitor pair.\n",
   "fhirVersion": "5.0.0",
   "kind": "resource",

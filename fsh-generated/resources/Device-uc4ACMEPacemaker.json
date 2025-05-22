@@ -1,0 +1,37 @@
+{
+  "resourceType": "Device",
+  "id": "uc4ACMEPacemaker",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+    ]
+  },
+  "udiCarrier": [
+    {
+      "deviceIdentifier": "123456789",
+      "issuer": "http://hl7.org/fhir/NamingSystem/gs1",
+      "jurisdiction": "http://hl7.org/fhir/NamingSystem/fda-udi",
+      "carrierHRF": "123456"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "753665",
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC"
+        }
+      ]
+    }
+  ],
+  "gateway": [
+    {
+      "reference": {
+        "reference": "uc4CIEDMonitor"
+      }
+    }
+  ],
+  "manufacturer": "ACME Devices",
+  "serialNumber": "uc4ACMEPacemaker",
+  "modelNumber": "PacemakerExample4"
+}

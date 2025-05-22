@@ -18,7 +18,7 @@ MDC_IDC_DEV_MFG
 * type MS
 * type from cied-monitor-types
 
-Instance: uc1CIEDMonitor
+Instance: uc1ACMEMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 1."
 * udiCarrier.deviceIdentifier = "12341234" 
@@ -26,7 +26,54 @@ Description: "An example CIED monitor for CIED connectivity example 1."
 * udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
-* serialNumber = "12341234"
+* serialNumber = "uc1ACMEMonitor"
 * modelNumber = "Bedside Monitor 1"
 * type = cied-connectivity#bedside-device
 
+Instance: uc2ACMEMonitor
+InstanceOf: CIEDMonitor   
+Description: "An example CIED monitor for CIED connectivity example 2."
+* udiCarrier.deviceIdentifier = "12341234" 
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.carrierHRF = "123456"
+* manufacturer = "ACME Devices"
+* serialNumber = "uc2ACMEMonitor"
+* modelNumber = "SmartApp Monitor 1"
+* type = cied-connectivity#mobile-monitor
+
+Instance: uc3ACMEMonitor
+InstanceOf: CIEDMonitor   
+Description: "An example CIED monitor for CIED connectivity example 3."
+* udiCarrier.deviceIdentifier = "12341234" 
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.carrierHRF = "123456"
+* manufacturer = "ACME Devices"
+* serialNumber = "uc3ACMEMonitor"
+* modelNumber = "Bedside Monitor 3000"
+* type = cied-connectivity#bedside-device
+
+Instance: uc4ACMEMonitor
+InstanceOf: CIEDMonitor   
+Description: "An example CIED monitor for CIED connectivity example 4."
+* udiCarrier.deviceIdentifier = "12341234" 
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.carrierHRF = "123456"
+* manufacturer = "ACME Devices"
+* serialNumber = "uc4ACMEMonitor"
+* modelNumber = "Bedside Monitor 5000"
+* type = cied-connectivity#bedside-device
+
+Instance: uc5ACMEMonitor
+InstanceOf: CIEDMonitor   
+Description: "An example CIED monitor for CIED connectivity example 5."
+* udiCarrier.deviceIdentifier = "12341234" 
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.carrierHRF = "123456"
+* manufacturer = "ACME Devices"
+* serialNumber = "uc5ACMEMonitor"
+* modelNumber = "Magic Bedside Monitor"
+* type = cied-connectivity#bedside-device

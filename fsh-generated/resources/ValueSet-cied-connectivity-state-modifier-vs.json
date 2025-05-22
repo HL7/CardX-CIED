@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "cied-connectivity-state-modifier",
   "id": "cied-connectivity-state-modifier-vs",
   "title": "CIED Connectivity Status Modifier Value Set",

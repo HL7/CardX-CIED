@@ -1,0 +1,144 @@
+{
+  "resourceType": "Observation",
+  "id": "uc4ConnectivityACME",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+    ]
+  },
+  "note": [
+    {
+      "text": "The patient has been suspended from the disconnected list."
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "observation-cied-connectivity",
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+        }
+      ]
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "connectivity-status",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "disconnected",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "connectivity-modifier",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "suspended",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "last-cied-connectivity-time",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-04-25T06:00:00.000Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "last-monitor-connectivity-time",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-05-19T06:00:00.000Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "next-cied-connectivity-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-05-20"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "next-monitor-connectivity-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-05-20"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "last-interrogation-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-02-28T06:00:00.000Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "next-interrogation-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-05-30"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "observation-cied-connectivity",
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+      }
+    ]
+  },
+  "device": {
+    "reference": "Device/uc4ACMEPacemaker"
+  },
+  "effectiveDateTime": "2025-05-19T08:00:00.000Z",
+  "subject": {
+    "reference": "Patient/uc4ACMEPatient"
+  },
+  "status": "final"
+}

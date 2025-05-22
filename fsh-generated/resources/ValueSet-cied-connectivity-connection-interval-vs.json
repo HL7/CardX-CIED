@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "cied-connectivity-connection-interval",
   "id": "cied-connectivity-connection-interval-vs",
   "title": "CIED Connectivity Connection Interval",
