@@ -4,6 +4,7 @@ ValueSet: ciedPatientIdentifier
 Id: cied-patient-identifier
 Title: "CIED Patient Identifier"
 Description: "Identifiers which can be used to identify CIED patients."
+* ^experimental = false
 * include codes from system http://hl7.org/fhir/ValueSet/identifier-type
 * IDC#idco-pid "Identifier used in IDCO PID HL7 Segment"
 
