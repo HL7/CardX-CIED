@@ -1,16 +1,16 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "cied-connectivity-state-modifier",
   "id": "cied-connectivity-state-modifier-vs",
   "title": "CIED Connectivity Status Modifier Value Set",
   "description": "Additional modifiers to connectivity status as calculated by the CIED manufacturer",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-modifier-vs",
+  "url": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/cied-connectivity-state-modifier-vs",
   "experimental": false,
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity",
+        "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity",
         "concept": [
           {
             "code": "setup-not-completed",

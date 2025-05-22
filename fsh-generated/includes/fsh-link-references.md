@@ -28,7 +28,7 @@
 [uc4ACMEPatient]: Patient-uc4ACMEPatient.html
 [uc4CIEDMonitor]: Device-uc4CIEDMonitor.html
 [uc4ConnectivityACME]: Observation-uc4ConnectivityACME.html
-[uc5ACMEMonitor]: Device-uc5ACMEMonitor.html
 [uc5ACMEPacemaker]: Device-uc5ACMEPacemaker.html
 [uc5ACMEPatient]: Patient-uc5ACMEPatient.html
+[uc5CIEDMonitor]: Device-uc5CIEDMonitor.html
 [uc5ConnectivityACME]: Observation-uc5ConnectivityACME.html

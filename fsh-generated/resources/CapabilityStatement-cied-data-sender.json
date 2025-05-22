@@ -1,7 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "cied-data-sender",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/CapabilityStatement/cied-data-sender",
+  "url": "http://build.fhir.org/ig/HL7/cardx-cied/CapabilityStatement/cied-data-sender",
   "title": "CardX CIED Connectivity Server Capability Statement",
   "description": "CardX CIED Connectivity Server CapabilityStatement",
   "rest": [
@@ -18,7 +18,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/CIEDPatient"
+            "https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-patient.html"
           ],
           "_supportedProfile": [
             {
@@ -73,7 +73,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/CIEDDevice"
+            "https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-device.html"
           ],
           "_supportedProfile": [
             {
@@ -172,7 +172,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/CIEDConnectivityStatus"
+            "https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-connectivity-status.html"
           ],
           "_supportedProfile": [
             {
@@ -273,7 +273,7 @@
     "json"
   ],
   "name": "CIEDConnectivityServerCapabilityStatement",
-  "status": "draft",
+  "status": "trial-use",
   "date": "2025-02-25",
   "kind": "requirements",
   "fhirVersion": "5.0.0"

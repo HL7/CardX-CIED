@@ -1,18 +1,19 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "ciedPatientIdentifier",
   "id": "cied-patient-identifier",
   "title": "CIED Patient Identifier",
   "description": "Identifiers which can be used to identify CIED patients.",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-patient-identifier",
+  "url": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/cied-patient-identifier",
+  "experimental": false,
   "compose": {
     "include": [
       {
         "system": "http://hl7.org/fhir/ValueSet/identifier-type"
       },
       {
-        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC",
+        "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/IDC",
         "concept": [
           {
             "code": "idco-pid",

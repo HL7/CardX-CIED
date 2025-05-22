@@ -15,11 +15,11 @@
       "valueInteger": 2
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied",
-  "version": "1.0.0-ballot",
+  "url": "http://build.fhir.org/ig/HL7/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied",
+  "version": "0.1.0",
   "name": "CardXCIED",
   "title": "CardX - Cardiac Implantable Electronic Devices",
-  "status": "active",
+  "status": "draft",
   "publisher": "HL7 International / Clinical Interoperability Council",
   "contact": [
     {
@@ -181,7 +181,7 @@
         "description": "An example CIED device for CIED connectivity example 1.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-device"
         ]
       },
       {
@@ -192,7 +192,7 @@
         "description": "An example CIED patient for CIED connectivity example 1.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-patient"
         ]
       },
       {
@@ -203,7 +203,7 @@
         "description": "An example CIED connectivity status for CIED connectivity example 1.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-connectivity-status"
         ]
       },
       {
@@ -214,7 +214,7 @@
         "description": "An example CIED device for CIED connectivity example 2.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-device"
         ]
       },
       {
@@ -225,7 +225,7 @@
         "description": "An example CIED patient for CIED connectivity example 2.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-patient"
         ]
       },
       {
@@ -236,7 +236,7 @@
         "description": "An example CIED monitor for CIED connectivity example 2.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-monitor"
         ]
       },
       {
@@ -247,7 +247,7 @@
         "description": "An example CIED connectivity status for CIED connectivity example 2.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-connectivity-status"
         ]
       },
       {
@@ -258,7 +258,7 @@
         "description": "An example CIED device for CIED connectivity example 3.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-device"
         ]
       },
       {
@@ -269,7 +269,7 @@
         "description": "An example CIED patient for CIED connectivity example 3.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-patient"
         ]
       },
       {
@@ -280,7 +280,7 @@
         "description": "An example CIED monitor for CIED connectivity example 3.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-monitor"
         ]
       },
       {
@@ -291,7 +291,7 @@
         "description": "An example CIED connectivity status for CIED connectivity example 3.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-connectivity-status"
         ]
       },
       {
@@ -302,7 +302,7 @@
         "description": "An example CIED device for CIED connectivity example 4.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-device"
         ]
       },
       {
@@ -313,7 +313,7 @@
         "description": "An example CIED patient for CIED connectivity example 4.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-patient"
         ]
       },
       {
@@ -324,7 +324,7 @@
         "description": "An example CIED monitor for CIED connectivity example 4.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-monitor"
         ]
       },
       {
@@ -335,18 +335,7 @@
         "description": "An example CIED connectivity status for CIED connectivity example 4.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "Device/uc5ACMEMonitor"
-        },
-        "name": "uc5ACMEMonitor",
-        "description": "An example CIED monitor for CIED connectivity example 5.",
-        "isExample": true,
-        "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-connectivity-status"
         ]
       },
       {
@@ -357,7 +346,7 @@
         "description": "An example CIED device for CIED connectivity example 5.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-device"
         ]
       },
       {
@@ -368,7 +357,18 @@
         "description": "An example CIED patient for CIED connectivity example 5.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-patient"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Device/uc5CIEDMonitor"
+        },
+        "name": "uc5CIEDMonitor",
+        "description": "An example CIED monitor for CIED connectivity example 5.",
+        "isExample": true,
+        "profile": [
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-monitor"
         ]
       },
       {
@@ -379,7 +379,7 @@
         "description": "An example CIED connectivity status for CIED connectivity example 5.",
         "isExample": true,
         "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+          "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-connectivity-status"
         ]
       }
     ],
@@ -428,7 +428,7 @@
           "code": "releaselabel",
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
-        "value": "STU 1 Ballot"
+        "value": "ci-build"
       },
       {
         "code": {
@@ -457,13 +457,6 @@
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
         "value": "true"
-      },
-      {
-        "code": {
-          "code": "path-history",
-          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
-        },
-        "value": "http://hl7.org/fhir/uv/cardx-cied/history.html"
       }
     ]
   }

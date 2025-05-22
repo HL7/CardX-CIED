@@ -1,16 +1,16 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "cied-connectivity-dates",
   "id": "cied-connectivity-dates-vs",
   "title": "CIED Connectivity Dates and Timestamps",
   "description": "The relevant dates and times related to CIED connectivity, scheduling, and interrogation",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-dates-vs",
+  "url": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/cied-connectivity-dates-vs",
   "experimental": false,
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity",
+        "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity",
         "concept": [
           {
             "code": "last-cied-connectivity-time",
