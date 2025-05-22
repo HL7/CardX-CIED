@@ -32,22 +32,6 @@
     "endLine": 45
   },
   {
-    "outputFile": "Device-uc1ACMEMonitor.json",
-    "fshName": "uc1ACMEMonitor",
-    "fshType": "Instance",
-    "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 21,
-    "endLine": 31
-  },
-  {
-    "outputFile": "Device-uc2ACMEMonitor.json",
-    "fshName": "uc2ACMEMonitor",
-    "fshType": "Instance",
-    "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 33,
-    "endLine": 43
-  },
-  {
     "outputFile": "Device-uc2ACMEPacemaker.json",
     "fshName": "uc2ACMEPacemaker",
     "fshType": "Instance",
@@ -56,12 +40,12 @@
     "endLine": 58
   },
   {
-    "outputFile": "Device-uc3ACMEMonitor.json",
-    "fshName": "uc3ACMEMonitor",
+    "outputFile": "Device-uc2CIEDMonitor.json",
+    "fshName": "uc2CIEDMonitor",
     "fshType": "Instance",
     "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 45,
-    "endLine": 55
+    "startLine": 35,
+    "endLine": 45
   },
   {
     "outputFile": "Device-uc3ACMEPacemaker.json",
@@ -72,12 +56,12 @@
     "endLine": 71
   },
   {
-    "outputFile": "Device-uc4ACMEMonitor.json",
-    "fshName": "uc4ACMEMonitor",
+    "outputFile": "Device-uc3CIEDMonitor.json",
+    "fshName": "uc3CIEDMonitor",
     "fshType": "Instance",
     "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 57,
-    "endLine": 67
+    "startLine": 47,
+    "endLine": 57
   },
   {
     "outputFile": "Device-uc4ACMEPacemaker.json",
@@ -88,12 +72,20 @@
     "endLine": 84
   },
   {
+    "outputFile": "Device-uc4CIEDMonitor.json",
+    "fshName": "uc4CIEDMonitor",
+    "fshType": "Instance",
+    "fshFile": "SD_CIEDMonitor.fsh",
+    "startLine": 59,
+    "endLine": 69
+  },
+  {
     "outputFile": "Device-uc5ACMEMonitor.json",
     "fshName": "uc5ACMEMonitor",
     "fshType": "Instance",
     "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 69,
-    "endLine": 79
+    "startLine": 71,
+    "endLine": 81
   },
   {
     "outputFile": "Device-uc5ACMEPacemaker.json",

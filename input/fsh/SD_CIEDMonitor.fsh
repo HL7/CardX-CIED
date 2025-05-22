@@ -18,7 +18,8 @@ MDC_IDC_DEV_MFG
 * type MS
 * type from cied-monitor-types
 
-Instance: uc1ACMEMonitor
+/*
+Instance: uc1CIEDMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 1."
 * udiCarrier.deviceIdentifier = "12341234" 
@@ -29,8 +30,9 @@ Description: "An example CIED monitor for CIED connectivity example 1."
 * serialNumber = "uc1ACMEMonitor"
 * modelNumber = "Bedside Monitor 1"
 * type = cied-connectivity#bedside-device
+*/
 
-Instance: uc2ACMEMonitor
+Instance: uc2CIEDMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 2."
 * udiCarrier.deviceIdentifier = "12341234" 
@@ -42,7 +44,7 @@ Description: "An example CIED monitor for CIED connectivity example 2."
 * modelNumber = "SmartApp Monitor 1"
 * type = cied-connectivity#mobile-monitor
 
-Instance: uc3ACMEMonitor
+Instance: uc3CIEDMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 3."
 * udiCarrier.deviceIdentifier = "12341234" 
@@ -54,7 +56,7 @@ Description: "An example CIED monitor for CIED connectivity example 3."
 * modelNumber = "Bedside Monitor 3000"
 * type = cied-connectivity#bedside-device
 
-Instance: uc4ACMEMonitor
+Instance: uc4CIEDMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 4."
 * udiCarrier.deviceIdentifier = "12341234" 

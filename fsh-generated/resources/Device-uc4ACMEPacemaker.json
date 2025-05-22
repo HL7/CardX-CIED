@@ -27,7 +27,7 @@
   "gateway": [
     {
       "reference": {
-        "reference": "uc4CIEDMonitor"
+        "reference": "Device/uc4CIEDMonitor"
       }
     }
   ],
