@@ -59,6 +59,7 @@
       {
         "id": "Observation.note",
         "path": "Observation.note",
+        "short": "Text describing why the patient is listed at a given status and/or steps that can be taken to restore connectivity",
         "mustSupport": true
       },
       {
@@ -353,6 +354,37 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:connectionInterval",
+        "path": "Observation.component",
+        "sliceName": "connectionInterval",
+        "short": "The time interval in days between expected CIED and remote monitoring software communication",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:connectionInterval.code",
+        "path": "Observation.component.code",
+        "short": "The time interval in days between expected CIED and remote monitoring software communication",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "connection-interval",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:connectionInterval.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "integer"
           }
         ]
       }

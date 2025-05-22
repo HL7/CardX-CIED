@@ -62,8 +62,9 @@ entity "Observation - Connectivity Status" as Connectivity {
     lastMonitorConnectivityDate : BackboneElement (0..1)
     nextCiedConnectivityDate : BackboneElement (0..1)
     nextMonitorConnectivityDate : BackboneElement (0..1)
-    lastRemoteInterrogationSession : BackboneElement (0..1)
-    nextRemoteInterrogationSession : BackboneElement (0..1)
+    lastRemoteInterrogationDate : BackboneElement (0..1)
+    nextRemoteInterrogationDate : BackboneElement (0..1)
+    connectionInterval : BackboneElement (0..1)
 }
 /' - 3/19/25 remove encounter and device association from connectivity use case
 entity "Encounter" as Encounter {

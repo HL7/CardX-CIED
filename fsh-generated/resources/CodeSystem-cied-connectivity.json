@@ -104,9 +104,14 @@
       "code": "portable-device",
       "display": "Portable Device",
       "definition": "Standalone device, with battery capacity to provide monitoring while on the go"
+    },
+    {
+      "code": "connection-interval",
+      "display": "Connection Interval",
+      "definition": "The time interval in days between expected CIED and remote monitoring software communication."
     }
   ],
   "caseSensitive": true,
   "experimental": false,
-  "count": 20
+  "count": 21
 }

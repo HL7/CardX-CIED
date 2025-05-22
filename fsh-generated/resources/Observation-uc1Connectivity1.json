@@ -123,6 +123,17 @@
         ]
       },
       "valueDateTime": "2025-02-21"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "connection-interval",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+          }
+        ]
+      },
+      "valueInteger": 1
     }
   ],
   "code": {
