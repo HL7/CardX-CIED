@@ -94,7 +94,7 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 
 Instance: uc1ConnectivityACME
 InstanceOf: CIEDConnectivityStatus
-Description: "Use case 1 example"
+Description: "An example CIED connectivity status for CIED connectivity example 1."
 * code = cied-connectivity#observation-cied-connectivity
 * device = Reference(uc1ACMEICD)
 * effectiveDateTime = 2025-05-19T08:00:00.000Z
@@ -109,7 +109,7 @@ Description: "Use case 1 example"
 
 Instance: uc2ConnectivityACME
 InstanceOf: CIEDConnectivityStatus
-Description: "Use case 2 ACME"
+Description: "An example CIED connectivity status for CIED connectivity example 2."
 * code = cied-connectivity#observation-cied-connectivity
 * device = Reference(uc2ACMEPacemaker)
 * effectiveDateTime = 2025-05-19T08:00:00.000Z
@@ -137,7 +137,7 @@ Description: "Use case 2 ACME"
 
 Instance: uc3ConnectivityACME
 InstanceOf: CIEDConnectivityStatus
-Description: "Use case 3 ACME"
+Description: "An example CIED connectivity status for CIED connectivity example 3."
 * code = cied-connectivity#observation-cied-connectivity
 * device = Reference(uc3ACMEPacemaker)
 * effectiveDateTime = 2025-05-19T08:00:00.000Z
@@ -162,7 +162,7 @@ Description: "Use case 3 ACME"
 
 Instance: uc4ConnectivityACME
 InstanceOf: CIEDConnectivityStatus
-Description: "Use case 4 ACME"
+Description: "An example CIED connectivity status for CIED connectivity example 4."
 * code = cied-connectivity#observation-cied-connectivity
 * device = Reference(uc4ACMEPacemaker)
 * effectiveDateTime = 2025-05-19T08:00:00.000Z
@@ -190,7 +190,7 @@ Description: "Use case 4 ACME"
 
 Instance: uc5ConnectivityACME
 InstanceOf: CIEDConnectivityStatus
-Description: "Use case 5 ACME"
+Description: "An example CIED connectivity status for CIED connectivity example 5."
 * code = cied-connectivity#observation-cied-connectivity
 * device = Reference(uc5ACMEPacemaker)
 * effectiveDateTime = 2025-05-19T08:00:00.000Z

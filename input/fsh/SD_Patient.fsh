@@ -68,7 +68,7 @@ Description: "An example CIED patient for CIED connectivity example 2."
 
 Instance: uc3ACMEPatient
 InstanceOf: CIEDPatient
-Description: "An example CIED patient for CIED connectivity example 2."
+Description: "An example CIED patient for CIED connectivity example 3."
 * name
   * given[0] = "Jane"
   * given[1] = "ACME"
@@ -94,7 +94,7 @@ Description: "An example CIED patient for CIED connectivity example 2."
 
 Instance: uc4ACMEPatient
 InstanceOf: CIEDPatient
-Description: "An example CIED patient for CIED connectivity example 2."
+Description: "An example CIED patient for CIED connectivity example 4."
 * name
   * given[0] = "Jane"
   * given[1] = "ACME"
@@ -120,7 +120,7 @@ Description: "An example CIED patient for CIED connectivity example 2."
 
 Instance: uc5ACMEPatient
 InstanceOf: CIEDPatient
-Description: "An example CIED patient for CIED connectivity example 2."
+Description: "An example CIED patient for CIED connectivity example 5."
 * name
   * given[0] = "Jimmy"
   * given[1] = "ACME"
