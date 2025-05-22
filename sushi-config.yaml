@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.uv.cardx-cied
-canonical: http://build.fhir.org/ig/HL7/cardx-cied
+canonical: http://hl7.org/fhir/uv/cardx-cied
 name: CardX-CIED
 title: CardX - Cardiac Implantable Electronic Devices
 # description: Example Implementation Guide for getting started with SUSHI
