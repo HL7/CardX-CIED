@@ -44,7 +44,7 @@ This capability statement describes the requirements for systems that make CIED 
 * name = "CIEDConnectivityServerCapabilityStatement"
 * description = "CardX CIED Connectivity Server CapabilityStatement"
 * rest.mode = #server
-* status = #trial-use
+* status = #active
 * date = "2025-02-25"
 * kind = #requirements
 * fhirVersion = #5.0.0
