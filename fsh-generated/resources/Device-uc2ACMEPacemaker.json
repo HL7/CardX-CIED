@@ -3,7 +3,7 @@
   "id": "uc2ACMEPacemaker",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-device"
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
     ]
   },
   "udiCarrier": [
@@ -19,7 +19,7 @@
       "coding": [
         {
           "code": "753666",
-          "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/IDC"
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC"
         }
       ]
     }

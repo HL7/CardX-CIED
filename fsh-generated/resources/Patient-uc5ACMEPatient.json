@@ -3,7 +3,7 @@
   "id": "uc5ACMEPatient",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-patient"
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
     ]
   },
   "name": [

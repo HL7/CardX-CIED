@@ -3,7 +3,7 @@
   "id": "uc1ACMEPatient",
   "meta": {
     "profile": [
-      "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-patient"
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
     ]
   },
   "name": [
@@ -40,5 +40,6 @@
       "postalCode": "12345"
     }
   ],
-  "birthDate": "1958-01-01"
+  "birthDate": "1958-01-01",
+  "gender": "male"
 }

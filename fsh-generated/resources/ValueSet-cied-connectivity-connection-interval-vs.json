@@ -5,12 +5,12 @@
   "id": "cied-connectivity-connection-interval-vs",
   "title": "CIED Connectivity Connection Interval",
   "description": "The time interval in days between CIED and remote monitoring software communication",
-  "url": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/cied-connectivity-connection-interval-vs",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-connection-interval-vs",
   "experimental": false,
   "compose": {
     "include": [
       {
-        "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity",
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity",
         "concept": [
           {
             "code": "connection-interval",

@@ -18,7 +18,7 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * subject MS 
 * subject only Reference(CIEDPatient)
 * note MS
-* note ^short = "Text describing why the patient is listed at a given status and/or steps that can be taken to restore connectivity"
+* note ^short = "Text describing why the patient is listed at a given status and/or steps that can be taken to restore connectivity."
 * component MS
 * component.code MS
 * component.value[x] MS

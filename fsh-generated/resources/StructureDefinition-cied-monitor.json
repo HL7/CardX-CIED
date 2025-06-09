@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cied-monitor",
-  "url": "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-monitor",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor",
   "name": "CIEDMonitor",
   "title": "Device - CIED Monitor Profile",
   "status": "draft",
@@ -40,7 +40,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/cied-monitor-types-vs"
+          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-monitor-types-vs"
         }
       }
     ]
