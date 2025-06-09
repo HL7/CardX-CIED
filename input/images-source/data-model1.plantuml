@@ -11,6 +11,7 @@ entity "Patient" as Patient {
   identifier : Identifier: (0..*)
   name : HumanName (0..*)
   telecom: ContactPoint (0..*)
+  gender: code (0..1)
   birthDate: date (0..1)
   address : address (0..*)   
 }

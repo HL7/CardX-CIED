@@ -5,12 +5,12 @@
   "id": "11073-10103-SessionType",
   "title": "IEEE 11073-10103 Session Type",
   "description": "The type of session as defined by IEEE 11073-10103",
-  "url": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/11073-10103-SessionType",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/11073-10103-SessionType",
   "experimental": false,
   "compose": {
     "include": [
       {
-        "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/IDC",
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC",
         "concept": [
           {
             "code": "754049",

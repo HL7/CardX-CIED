@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cied-device",
-  "url": "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-device",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device",
   "name": "CIEDDevice",
   "title": "Device - Cardiovascular Implantable Electronic Device (CIED)",
   "status": "draft",

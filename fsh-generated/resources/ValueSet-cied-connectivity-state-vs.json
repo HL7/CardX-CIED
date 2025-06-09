@@ -5,12 +5,12 @@
   "id": "cied-connectivity-state-vs",
   "title": "CIED Connectivity Status Value Set",
   "description": "The overall system connectivity status as calculated by the CIED manufacturer",
-  "url": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/cied-connectivity-state-vs",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-vs",
   "experimental": false,
   "compose": {
     "include": [
       {
-        "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity",
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity",
         "concept": [
           {
             "code": "not-applicable",

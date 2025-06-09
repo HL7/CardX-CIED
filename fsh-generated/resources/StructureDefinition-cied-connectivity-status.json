@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cied-connectivity-status",
-  "url": "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-connectivity-status",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status",
   "name": "CIEDConnectivityStatus",
   "title": "Observation - CIED Connectivity",
   "status": "draft",
@@ -26,7 +26,7 @@
           "coding": [
             {
               "code": "observation-cied-connectivity",
-              "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         },
@@ -39,7 +39,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-patient"
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
             ]
           }
         ],
@@ -59,7 +59,7 @@
       {
         "id": "Observation.note",
         "path": "Observation.note",
-        "short": "Text describing why the patient is listed at a given status and/or steps that can be taken to restore connectivity",
+        "short": "Text describing why the patient is listed at a given status and/or steps that can be taken to restore connectivity.",
         "mustSupport": true
       },
       {
@@ -70,7 +70,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://build.fhir.org/ig/HL7/cardx-cied/StructureDefinition/cied-device"
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
             ]
           }
         ],
@@ -119,7 +119,7 @@
           "coding": [
             {
               "code": "connectivity-status",
-              "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }
@@ -134,7 +134,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/cied-connectivity-state-vs"
+          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-vs"
         }
       },
       {
@@ -153,7 +153,7 @@
           "coding": [
             {
               "code": "connectivity-modifier",
-              "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }
@@ -168,7 +168,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://build.fhir.org/ig/HL7/cardx-cied/ValueSet/cied-connectivity-state-modifier-vs"
+          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-connectivity-state-modifier-vs"
         }
       },
       {
@@ -188,7 +188,7 @@
           "coding": [
             {
               "code": "last-cied-connectivity-time",
-              "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }
@@ -219,7 +219,7 @@
           "coding": [
             {
               "code": "last-monitor-connectivity-time",
-              "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }
@@ -250,7 +250,7 @@
           "coding": [
             {
               "code": "next-cied-connectivity-date",
-              "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }
@@ -281,7 +281,7 @@
           "coding": [
             {
               "code": "next-monitor-connectivity-date",
-              "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }
@@ -312,7 +312,7 @@
           "coding": [
             {
               "code": "last-interrogation-date",
-              "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }
@@ -343,7 +343,7 @@
           "coding": [
             {
               "code": "next-interrogation-date",
-              "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }
@@ -374,7 +374,7 @@
           "coding": [
             {
               "code": "connection-interval",
-              "system": "http://build.fhir.org/ig/HL7/cardx-cied/CodeSystem/cied-connectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
         }

@@ -9,6 +9,7 @@ Description: "An CIED profile of the Patient resource."
 * telecom MS
 * birthDate MS
 * address MS
+* gender MS
 
 /*
 Mapping: fhir-patient-to-idco
@@ -33,6 +34,7 @@ Description: "An example CIED patient for CIED connectivity example 1."
 * address[0].state = https://www.usps.com#IL
 * address[0].postalCode = "12345"
 * birthDate = "1958-01-01"
+* gender = http://hl7.org/fhir/ValueSet/administrative-gender#male
 
 Instance: uc2ACMEPatient
 InstanceOf: CIEDPatient
