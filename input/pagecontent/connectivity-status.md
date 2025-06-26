@@ -42,7 +42,7 @@ Jane Doe, 61-year-old female. Dual chamber pacemaker placed for sinus bradycardi
 Jane Doe, 61-year-old female. Dual chamber pacemaker placed for sinus bradycardia. Last transmission date was 28-Feb-2025. Patient notified device clinic that they are going on vacation. Last CIED connectivity time was 25-Apr-2025. Last monitor connectivity (monitor = bedside device) was 19-May-2025 (connected as expected at home, patient did not bring along on vacation). Next scheduled remote interrogation is 30-May-2025.
 
 #### Case 5 - Patient is Disconnected
-Jimmy Doe, 73-year-old male with a dual chamber pacemaker placed for complete heart block. Last transmission date was 30-Mar-2025. Last CIED connectivity time was 04-May-2025. Last monitor connectivity (monitor = bedside device) was 04-May-2025. Next scheduled remote interrogation is 25-Jun-2025. The manufacturer shows Jimmy as being disconnected if communication has not occured in 10 days.
+Jimmy Doe, 73-year-old male with a dual chamber pacemaker placed for complete heart block. Last transmission date was on 30-Mar-2025. Last CIED connectivity time was 04-May-2025. Last monitor connectivity (monitor = bedside device) was 04-May-2025. Next scheduled remote interrogation is 25-Jun-2025. The manufacturer shows Jimmy as being disconnected if communication has not occured in 10 days.
 
 ### Actors
 #### Connectivity Data Producer
