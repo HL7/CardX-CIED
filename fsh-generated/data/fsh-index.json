@@ -20,8 +20,8 @@
     "fshName": "cied-connectivity",
     "fshType": "CodeSystem",
     "fshFile": "VS_connectivity.fsh",
-    "startLine": 51,
-    "endLine": 95
+    "startLine": 59,
+    "endLine": 107
   },
   {
     "outputFile": "Device-uc1ACMEICD.json",
@@ -100,40 +100,40 @@
     "fshName": "uc1ConnectivityACME",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 95,
-    "endLine": 108
+    "startLine": 109,
+    "endLine": 122
   },
   {
     "outputFile": "Observation-uc2ConnectivityACME.json",
     "fshName": "uc2ConnectivityACME",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 110,
-    "endLine": 136
+    "startLine": 124,
+    "endLine": 150
   },
   {
     "outputFile": "Observation-uc3ConnectivityACME.json",
     "fshName": "uc3ConnectivityACME",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 138,
-    "endLine": 161
+    "startLine": 152,
+    "endLine": 175
   },
   {
     "outputFile": "Observation-uc4ConnectivityACME.json",
     "fshName": "uc4ConnectivityACME",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 163,
-    "endLine": 189
+    "startLine": 177,
+    "endLine": 203
   },
   {
     "outputFile": "Observation-uc5ConnectivityACME.json",
     "fshName": "uc5ConnectivityACME",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 191,
-    "endLine": 215
+    "startLine": 205,
+    "endLine": 229
   },
   {
     "outputFile": "Patient-uc1ACMEPatient.json",
@@ -181,7 +181,7 @@
     "fshType": "Profile",
     "fshFile": "SD_Connectivity.fsh",
     "startLine": 1,
-    "endLine": 93
+    "endLine": 107
   },
   {
     "outputFile": "StructureDefinition-cied-device.json",
@@ -254,6 +254,14 @@
     "fshFile": "VS_connectivity.fsh",
     "startLine": 3,
     "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-cied-connectivity-status-annotation-vs.json",
+    "fshName": "cied-connectivity-status-annotations",
+    "fshType": "ValueSet",
+    "fshFile": "VS_connectivity.fsh",
+    "startLine": 51,
+    "endLine": 57
   },
   {
     "outputFile": "ValueSet-cied-monitor-types-vs.json",

@@ -27,7 +27,7 @@ Description: "The relevant dates and times related to CIED connectivity, schedul
 * ^experimental = false
 * cied-connectivity#last-cied-connectivity-time "The timestamp of the most recent communication between the CIED and monitor."   
 * cied-connectivity#last-monitor-connectivity-time "The timestamp of the most recent communication from the monitor to the remote monitoring platform."   
-* cied-connectivity#next-cied-connectivity-date "The date of the next expected communication between the CIED and monitor."   
+* cied-connectivity#next-cied-connectivity-date "The timestamp of the next expected communication between the CIED and monitor."   
 * cied-connectivity#next-monitor-connectivity-date "The date of the next expected communication from the monitor to the remote monitoring platform."   
 * cied-connectivity#last-interrogation-date "The date of the most recent remote device interrogation"
 * cied-connectivity#next-interrogation-date "The date of the next scheduled remote device interrogation"
@@ -47,6 +47,14 @@ Description: "The type of CIED monitor"
 * cied-connectivity#bedside-device "Standalone device, not intended to provide monitoring while on the go"  
 * cied-connectivity#mobile-monitor "App based monitor"
 * cied-connectivity#portable-device "Standalone device, with battery capacity to provide monitoring while on the go"
+
+ValueSet: cied-connectivity-status-annotations
+Id: cied-connectivity-status-annotation-vs
+Title: "CIED Connectivity Status Annotations"
+Description: "Annotations related to CIED connectivity status"
+* ^experimental = false
+* cied-connectivity#status-reason "Text describing reasons why the patient may be listed at a given status and/or modifier."
+* cied-connectivity#status-guidance "Text describing steps to get the patient to a connected status."
 
 CodeSystem: cied-connectivity
 Title: "CIED Connectivity Status Values"
@@ -76,10 +84,10 @@ Description: "Codes system for CIED connectivity and monitor device types"
     "The timestamp of the most recent communication between the CIED and monitor."   
 * #last-monitor-connectivity-time "Last Monitor to Remote Monitoring Software"
     "The timestamp of the most recent communication from the monitor to the remote monitoring platform."   
-* #next-cied-connectivity-date "Next CIED to monitor"
-    "The date of the next expected communication between the CIED and monitor."   
-* #next-monitor-connectivity-date "Next monitor to Remote Monitoring Software"
-    "The date of the next expected communication from the monitor to the remote monitoring platform."   
+* #next-cied-connectivity-date "Next CIED to monitor communication"
+    "The timestamp of the next expected communication between the CIED and monitor.."   
+* #next-monitor-connectivity-date "Next monitor to Remote Monitoring Software communication"
+    "The timestamp of the next expected communication from the monitor to the remote monitoring platform.."   
 * #last-interrogation-date "Date the last remote device interrogation"
     "The date of the most recent remote device interrogation with a personal montior"
 * #next-interrogation-date "Date of the next scheduled remote device interrogation"
@@ -93,5 +101,9 @@ Description: "Codes system for CIED connectivity and monitor device types"
     "Standalone device, with battery capacity to provide monitoring while on the go"
 * #connection-interval "Connection Interval"
     "The time interval in days between expected CIED and remote monitoring software communication."
+* #status-reason "Status Reason"
+    "Text describing reasons why the patient may be listed at a given status and/or modifier."
+* #status-guidance "Status Guidance"
+    "Text describing steps to get the patient to a connected status."
 
 

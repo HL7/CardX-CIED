@@ -22,7 +22,7 @@
           },
           {
             "code": "next-cied-connectivity-date",
-            "display": "The date of the next expected communication between the CIED and monitor."
+            "display": "The timestamp of the next expected communication between the CIED and monitor."
           },
           {
             "code": "next-monitor-connectivity-date",
