@@ -68,13 +68,13 @@
     },
     {
       "code": "next-cied-connectivity-date",
-      "display": "Next CIED to monitor",
-      "definition": "The date of the next expected communication between the CIED and monitor."
+      "display": "Next CIED to monitor communication",
+      "definition": "The timestamp of the next expected communication between the CIED and monitor.."
     },
     {
       "code": "next-monitor-connectivity-date",
-      "display": "Next monitor to Remote Monitoring Software",
-      "definition": "The date of the next expected communication from the monitor to the remote monitoring platform."
+      "display": "Next monitor to Remote Monitoring Software communication",
+      "definition": "The timestamp of the next expected communication from the monitor to the remote monitoring platform.."
     },
     {
       "code": "last-interrogation-date",
@@ -109,9 +109,19 @@
       "code": "connection-interval",
       "display": "Connection Interval",
       "definition": "The time interval in days between expected CIED and remote monitoring software communication."
+    },
+    {
+      "code": "status-reason",
+      "display": "Status Reason",
+      "definition": "Text describing reasons why the patient may be listed at a given status and/or modifier."
+    },
+    {
+      "code": "status-guidance",
+      "display": "Status Guidance",
+      "definition": "Text describing steps to get the patient to a connected status."
     }
   ],
   "caseSensitive": true,
   "experimental": false,
-  "count": 21
+  "count": 23
 }

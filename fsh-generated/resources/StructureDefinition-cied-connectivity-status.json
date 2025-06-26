@@ -237,7 +237,7 @@
         "id": "Observation.component:nextCiedConnectivityDate",
         "path": "Observation.component",
         "sliceName": "nextCiedConnectivityDate",
-        "short": "The timestamp of the next expected communication between the CIED and monitor.",
+        "short": "The timestamp of the next expected communication between the CIED and monitor..",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -276,7 +276,7 @@
       {
         "id": "Observation.component:nextMonitorConnectivityDate.code",
         "path": "Observation.component.code",
-        "short": "Next monitor to remote monitoring communication",
+        "short": "Next monitor to Remote Monitoring Software communication",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -385,6 +385,68 @@
         "type": [
           {
             "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:statusReason",
+        "path": "Observation.component",
+        "sliceName": "statusReason",
+        "short": "Text describing reasons why the patient may be listed at a given status and/or modifier",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:statusReason.code",
+        "path": "Observation.component.code",
+        "short": "Text describing reasons why the patient may be listed at a given status and/or modifier",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "status-reason",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:statusReason.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:statusGuidance",
+        "path": "Observation.component",
+        "sliceName": "statusGuidance",
+        "short": "Text describing steps to get the patient to a connected status",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:statusGuidance.code",
+        "path": "Observation.component.code",
+        "short": "Text describing steps to get the patient to a connected status",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "status-guidance",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:statusGuidance.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "string"
           }
         ]
       }

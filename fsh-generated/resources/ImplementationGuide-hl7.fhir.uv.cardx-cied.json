@@ -79,6 +79,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/cied-connectivity-status-annotation-vs"
+        },
+        "name": "CIED Connectivity Status Annotations",
+        "description": "Annotations related to CIED connectivity status",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/cied-connectivity-state-modifier-vs"
         },
         "name": "CIED Connectivity Status Modifier Value Set",

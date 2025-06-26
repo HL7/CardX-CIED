@@ -15,7 +15,7 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * device only Reference(CIEDDevice)
 * effective[x] only dateTime
 * effectiveDateTime 1..1 MS
-* subject MS 
+* subject 1..1 MS 
 * subject only Reference(CIEDPatient)
 * note MS
 * note ^short = "Text describing why the patient is listed at a given status and/or steps that can be taken to restore connectivity."
@@ -36,7 +36,9 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
     nextMonitorConnectivityDate 0..1 and
     lastRemoteInterrogationDate 0..1 and
     nextScheduledRemoteInterrogationDate 0..1 and
-    connectionInterval 0..1
+    connectionInterval 0..1 and
+    statusReason 0..1 and
+    statusGuidance 0..1
 * component[connectivityStatus] MS
 * component[connectivityStatus] ^short = "The overall system connectivity status as calculated by the CIED manufacturer"
 * component[connectivityStatus].code MS
@@ -62,7 +64,7 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
 * component[lastMonitorConnectivityDate].value[x] only dateTime
 * component[nextCiedConnectivityDate] MS
-* component[nextCiedConnectivityDate] ^short = "The timestamp of the next expected communication between the CIED and monitor."
+* component[nextCiedConnectivityDate] ^short = "The timestamp of the next expected communication between the CIED and monitor.."
 * component[nextCiedConnectivityDate].code MS
 * component[nextCiedConnectivityDate].code ^short = "Next CIED to monitor communication"
 * component[nextCiedConnectivityDate].code = cied-connectivity#next-cied-connectivity-date
@@ -70,7 +72,7 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * component[nextMonitorConnectivityDate] MS
 * component[nextMonitorConnectivityDate] ^short = "The timestamp of the next expected communication from the monitor to the remote monitoring platform."
 * component[nextMonitorConnectivityDate].code MS
-* component[nextMonitorConnectivityDate].code ^short = "Next monitor to remote monitoring communication"
+* component[nextMonitorConnectivityDate].code ^short = "Next monitor to Remote Monitoring Software communication"
 * component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
 * component[nextMonitorConnectivityDate].value[x] only dateTime
 * component[lastRemoteInterrogationDate] MS
@@ -91,6 +93,18 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * component[connectionInterval].code ^short = "The time interval in days between expected CIED and remote monitoring software communication"
 * component[connectionInterval].code = cied-connectivity#connection-interval
 * component[connectionInterval].value[x] only integer
+* component[statusReason] MS
+* component[statusReason] ^short = "Text describing reasons why the patient may be listed at a given status and/or modifier"
+* component[statusReason].code MS
+* component[statusReason].code ^short = "Text describing reasons why the patient may be listed at a given status and/or modifier"
+* component[statusReason].code = cied-connectivity#status-reason
+* component[statusReason].value[x] only string
+* component[statusGuidance] MS
+* component[statusGuidance] ^short = "Text describing steps to get the patient to a connected status"
+* component[statusGuidance].code MS
+* component[statusGuidance].code ^short = "Text describing steps to get the patient to a connected status"
+* component[statusGuidance].code = cied-connectivity#status-guidance
+* component[statusGuidance].value[x] only string
 
 Instance: uc1ConnectivityACME
 InstanceOf: CIEDConnectivityStatus
