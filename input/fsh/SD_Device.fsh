@@ -12,10 +12,14 @@ MDC_IDC_DEV_SERIAL
 MDC_IDC_DEV_MFG
 "
 * udiCarrier MS
-* manufacturer 1..1 MS
-* serialNumber 1..1 MS
-* modelNumber 1..1 MS
-* type 1..1 MS
+// * manufacturer 1..1 MS
+// * serialNumber 1..1 MS
+// * modelNumber 1..1 MS
+// * type 1..1 MS
+* manufacturer MS
+* serialNumber MS
+* modelNumber MS
+* type MS
 * gateway MS
 
 Mapping: device-to-ieee-11073-10103
