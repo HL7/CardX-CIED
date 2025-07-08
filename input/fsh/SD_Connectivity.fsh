@@ -7,6 +7,7 @@ Profile of the observation resource to present the most recent connectivity stat
 
 CIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. The connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. A single observation will be returned for every CIED/monitor pair.
 "
+// to do - check element order for each example
 * status MS
 * code MS
 * code = cied-connectivity#observation-cied-connectivity
@@ -30,15 +31,15 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * component contains
     connectivityStatus 1..1 and
     connectivityModifier 0..* and
+    statusReason 0..1 and
+    statusGuidance 0..1 and
     lastCiedConnectivityDate 0..1 and
     lastMonitorConnectivityDate 0..1 and
     nextCiedConnectivityDate 0..1 and
     nextMonitorConnectivityDate 0..1 and
     lastRemoteInterrogationDate 0..1 and
     nextScheduledRemoteInterrogationDate 0..1 and
-    connectionInterval 0..1 and
-    statusReason 0..1 and
-    statusGuidance 0..1
+    connectionInterval 0..1 
 * component[connectivityStatus] MS
 * component[connectivityStatus] ^short = "The overall system connectivity status as calculated by the CIED manufacturer"
 * component[connectivityStatus].code MS
@@ -51,6 +52,18 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * component[connectivityModifier].code = cied-connectivity#connectivity-modifier
 * component[connectivityModifier].value[x] only CodeableConcept
 * component[connectivityModifier].value[x] from cied-connectivity-state-modifier-vs
+* component[statusReason] MS
+* component[statusReason] ^short = "Text describing reasons why the patient may be listed at a given status and/or modifier"
+* component[statusReason].code MS
+* component[statusReason].code ^short = "Text describing reasons why the patient may be listed at a given status and/or modifier"
+* component[statusReason].code = cied-connectivity#status-reason
+* component[statusReason].value[x] only string
+* component[statusGuidance] MS
+* component[statusGuidance] ^short = "Text describing steps to get the patient to a connected status"
+* component[statusGuidance].code MS
+* component[statusGuidance].code ^short = "Text describing steps to get the patient to a connected status"
+* component[statusGuidance].code = cied-connectivity#status-guidance
+* component[statusGuidance].value[x] only string
 * component[lastCiedConnectivityDate] MS
 * component[lastCiedConnectivityDate] ^short = "The timestamp of the most recent communication between the CIED and monitor."
 * component[lastCiedConnectivityDate].code MS
@@ -93,18 +106,6 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * component[connectionInterval].code ^short = "The time interval in days between expected CIED and remote monitoring software communication"
 * component[connectionInterval].code = cied-connectivity#connection-interval
 * component[connectionInterval].value[x] only integer
-* component[statusReason] MS
-* component[statusReason] ^short = "Text describing reasons why the patient may be listed at a given status and/or modifier"
-* component[statusReason].code MS
-* component[statusReason].code ^short = "Text describing reasons why the patient may be listed at a given status and/or modifier"
-* component[statusReason].code = cied-connectivity#status-reason
-* component[statusReason].value[x] only string
-* component[statusGuidance] MS
-* component[statusGuidance] ^short = "Text describing steps to get the patient to a connected status"
-* component[statusGuidance].code MS
-* component[statusGuidance].code ^short = "Text describing steps to get the patient to a connected status"
-* component[statusGuidance].code = cied-connectivity#status-guidance
-* component[statusGuidance].value[x] only string
 
 Instance: uc1ConnectivityACME
 InstanceOf: CIEDConnectivityStatus

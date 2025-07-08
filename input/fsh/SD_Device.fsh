@@ -30,8 +30,6 @@ Description: "Mapping of the CIEDDevice resource to the IEEE 11073-10103 standar
 * modelNumber -> "MDC_IDC_DEV_MODEL"
 * type -> "MDC_IDC_DEV_TYPE"
 
-// 09-jan-2025 - device association resource will be used to associated CIED and patient. In the future it will be used for device/lead associations. Assumption as of date is that a profile is not needed
-
 Instance: uc1ACMEICD
 InstanceOf: CIEDDevice  
 Description: "An example CIED device for CIED connectivity example 1."
