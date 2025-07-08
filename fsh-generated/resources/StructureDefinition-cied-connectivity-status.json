@@ -60,7 +60,7 @@
       {
         "id": "Observation.note",
         "path": "Observation.note",
-        "short": "Text describing why the patient is listed at a given status and/or steps that can be taken to restore connectivity.",
+        "short": "Text describing why the patient is listed at a given status and / or steps that can be taken to restore connectivity.",
         "mustSupport": true
       },
       {
@@ -176,7 +176,7 @@
         "id": "Observation.component:statusReason",
         "path": "Observation.component",
         "sliceName": "statusReason",
-        "short": "Text describing reasons why the patient may be listed at a given status and/or modifier",
+        "short": "Text describing reasons why the patient may be listed at a given status and / or modifier",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -184,7 +184,7 @@
       {
         "id": "Observation.component:statusReason.code",
         "path": "Observation.component.code",
-        "short": "Text describing reasons why the patient may be listed at a given status and/or modifier",
+        "short": "Text describing reasons why the patient may be listed at a given status and / or modifier",
         "patternCodeableConcept": {
           "coding": [
             {

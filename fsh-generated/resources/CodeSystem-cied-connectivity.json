@@ -74,7 +74,7 @@
     {
       "code": "next-monitor-connectivity-date",
       "display": "Next monitor to Remote Monitoring Software communication",
-      "definition": "The timestamp of the next expected communication from the monitor to the remote monitoring platform.."
+      "definition": "The timestamp of the next expected communication from the monitor to the remote monitoring platform."
     },
     {
       "code": "last-interrogation-date",
@@ -113,7 +113,7 @@
     {
       "code": "status-reason",
       "display": "Status Reason",
-      "definition": "Text describing reasons why the patient may be listed at a given status and/or modifier."
+      "definition": "Text describing reasons why the patient may be listed at a given status and / or modifier."
     },
     {
       "code": "status-guidance",

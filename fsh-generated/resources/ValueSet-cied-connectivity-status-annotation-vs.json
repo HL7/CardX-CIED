@@ -14,7 +14,7 @@
         "concept": [
           {
             "code": "status-reason",
-            "display": "Text describing reasons why the patient may be listed at a given status and/or modifier."
+            "display": "Text describing reasons why the patient may be listed at a given status and / or modifier."
           },
           {
             "code": "status-guidance",
