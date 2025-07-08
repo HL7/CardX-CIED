@@ -18,6 +18,7 @@ MDC_IDC_DEV_MFG
 * type 1..1 MS
 * gateway MS
 
+/*
 Mapping: device-to-ieee-11073-10103
 Source: CIEDDevice
 Target: "IEEE-11073-10103"
@@ -29,6 +30,7 @@ Description: "Mapping of the CIEDDevice resource to the IEEE 11073-10103 standar
 * serialNumber -> "MDC_IDC_DEV_SERIAL"
 * modelNumber -> "MDC_IDC_DEV_MODEL"
 * type -> "MDC_IDC_DEV_TYPE"
+*/
 
 Instance: uc1ACMEICD
 InstanceOf: CIEDDevice  
