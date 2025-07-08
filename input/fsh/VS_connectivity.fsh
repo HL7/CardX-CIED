@@ -53,7 +53,7 @@ Id: cied-connectivity-status-annotation-vs
 Title: "CIED Connectivity Status Annotations"
 Description: "Annotations related to CIED connectivity status"
 * ^experimental = false
-* cied-connectivity#status-reason "Text describing reasons why the patient may be listed at a given status and/or modifier."
+* cied-connectivity#status-reason "Text describing reasons why the patient may be listed at a given status and / or modifier."
 * cied-connectivity#status-guidance "Text describing steps to get the patient to a connected status."
 
 CodeSystem: cied-connectivity
@@ -87,7 +87,7 @@ Description: "Codes system for CIED connectivity and monitor device types"
 * #next-cied-connectivity-date "Next CIED to monitor communication"
     "The timestamp of the next expected communication between the CIED and monitor.."   
 * #next-monitor-connectivity-date "Next monitor to Remote Monitoring Software communication"
-    "The timestamp of the next expected communication from the monitor to the remote monitoring platform.."   
+    "The timestamp of the next expected communication from the monitor to the remote monitoring platform."   
 * #last-interrogation-date "Date the last remote device interrogation"
     "The date of the most recent remote device interrogation with a personal montior"
 * #next-interrogation-date "Date of the next scheduled remote device interrogation"
@@ -102,8 +102,6 @@ Description: "Codes system for CIED connectivity and monitor device types"
 * #connection-interval "Connection Interval"
     "The time interval in days between expected CIED and remote monitoring software communication."
 * #status-reason "Status Reason"
-    "Text describing reasons why the patient may be listed at a given status and/or modifier."
+    "Text describing reasons why the patient may be listed at a given status and / or modifier."
 * #status-guidance "Status Guidance"
     "Text describing steps to get the patient to a connected status."
-
-
