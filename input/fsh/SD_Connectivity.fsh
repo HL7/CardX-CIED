@@ -19,7 +19,7 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * subject 1..1 MS 
 * subject only Reference(CIEDPatient)
 * note MS
-* note ^short = "Text describing why the patient is listed at a given status and/or steps that can be taken to restore connectivity."
+* note ^short = "Text describing why the patient is listed at a given status and / or steps that can be taken to restore connectivity."
 * component MS
 * component.code MS
 * component.value[x] MS
@@ -53,9 +53,9 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * component[connectivityModifier].value[x] only CodeableConcept
 * component[connectivityModifier].value[x] from cied-connectivity-state-modifier-vs
 * component[statusReason] MS
-* component[statusReason] ^short = "Text describing reasons why the patient may be listed at a given status and/or modifier"
+* component[statusReason] ^short = "Text describing reasons why the patient may be listed at a given status and / or modifier"
 * component[statusReason].code MS
-* component[statusReason].code ^short = "Text describing reasons why the patient may be listed at a given status and/or modifier"
+* component[statusReason].code ^short = "Text describing reasons why the patient may be listed at a given status and / or modifier"
 * component[statusReason].code = cied-connectivity#status-reason
 * component[statusReason].value[x] only string
 * component[statusGuidance] MS
