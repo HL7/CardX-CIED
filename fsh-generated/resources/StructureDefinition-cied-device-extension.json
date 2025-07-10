@@ -1,0 +1,59 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cied-device-extension",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode": "can-bind"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-extension",
+  "name": "CIEDDeviceExtension",
+  "title": "CIED Device Extension",
+  "status": "draft",
+  "description": "Extension to represent cardiac implantable device(s) which generated the observation.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CIED Device Extension",
+        "definition": "Extension to represent cardiac implantable device(s) which generated the observation."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-extension"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
