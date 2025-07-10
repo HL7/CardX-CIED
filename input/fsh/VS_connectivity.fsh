@@ -38,6 +38,7 @@ Title: "CIED Connectivity Connection Interval"
 Description: "The time interval in days between CIED and remote monitoring software communication"
 * ^experimental = false
 * cied-connectivity#connection-interval "The time interval in days between expected CIED and remote monitoring software communication"
+* cied-connectivity#expected-time-period "The time period in which successful communication must take place for the connectivity status to remain connected."
 
 ValueSet: cied-monitor-types
 Id: cied-monitor-types-vs
@@ -101,6 +102,8 @@ Description: "Codes system for CIED connectivity and monitor device types"
     "Standalone device, with battery capacity to provide monitoring while on the go"
 * #connection-interval "Connection Interval"
     "The time interval in days between expected CIED and remote monitoring software communication."
+* #expected-time-period "Expected Time Period"
+    "The time period in which successful communication must take place for the connectivity status to remain connected"
 * #status-reason "Status Reason"
     "Text describing reasons why the patient may be listed at a given status and / or modifier."
 * #status-guidance "Status Guidance"

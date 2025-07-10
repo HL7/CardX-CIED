@@ -434,7 +434,7 @@
       {
         "id": "Observation.component:nextScheduledRemoteInterrogationDate.code",
         "path": "Observation.component.code",
-        "short": "The date of the next scheduled remote device interrogation",
+        "short": "The date of the next scheduled remote device interrogation. This is the sceduled data for the primary clinic if the patient is dual managed.",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -446,6 +446,37 @@
       },
       {
         "id": "Observation.component:nextScheduledRemoteInterrogationDate.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:nextSecondaryScheduledRemoteInterrogationDate",
+        "path": "Observation.component",
+        "sliceName": "nextSecondaryScheduledRemoteInterrogationDate",
+        "short": "The date of the next scheduled remote device interrogation by the seconary clinic",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:nextSecondaryScheduledRemoteInterrogationDate.code",
+        "path": "Observation.component.code",
+        "short": "The date of the next scheduled remote device interrogation by the seconary clinic for patients who are dual managed.",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "next-interrogation-date",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:nextSecondaryScheduledRemoteInterrogationDate.value[x]",
         "path": "Observation.component.value[x]",
         "type": [
           {
@@ -477,6 +508,37 @@
       },
       {
         "id": "Observation.component:connectionInterval.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:expectedTimePeriod",
+        "path": "Observation.component",
+        "sliceName": "expectedTimePeriod",
+        "short": "The time period in which successful communication must take place for the connectivity status to remain connected.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:expectedTimePeriod.code",
+        "path": "Observation.component.code",
+        "short": "The time period in which successful communication must take place for the connectivity status to remain connected.",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "expected-time-period",
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:expectedTimePeriod.value[x]",
         "path": "Observation.component.value[x]",
         "type": [
           {

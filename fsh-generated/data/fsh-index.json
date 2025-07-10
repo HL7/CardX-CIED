@@ -20,8 +20,8 @@
     "fshName": "cied-connectivity",
     "fshType": "CodeSystem",
     "fshFile": "VS_connectivity.fsh",
-    "startLine": 59,
-    "endLine": 107
+    "startLine": 60,
+    "endLine": 110
   },
   {
     "outputFile": "Device-uc1ACMEICD.json",
@@ -141,7 +141,7 @@
     "fshType": "Profile",
     "fshFile": "SD_Connectivity.fsh",
     "startLine": 14,
-    "endLine": 125
+    "endLine": 139
   },
   {
     "outputFile": "StructureDefinition-cied-device-extension.json",
@@ -197,7 +197,7 @@
     "fshType": "ValueSet",
     "fshFile": "VS_connectivity.fsh",
     "startLine": 35,
-    "endLine": 40
+    "endLine": 41
   },
   {
     "outputFile": "ValueSet-cied-connectivity-dates-vs.json",
@@ -228,16 +228,16 @@
     "fshName": "cied-connectivity-status-annotations",
     "fshType": "ValueSet",
     "fshFile": "VS_connectivity.fsh",
-    "startLine": 51,
-    "endLine": 57
+    "startLine": 52,
+    "endLine": 58
   },
   {
     "outputFile": "ValueSet-cied-monitor-types-vs.json",
     "fshName": "cied-monitor-types",
     "fshType": "ValueSet",
     "fshFile": "VS_connectivity.fsh",
-    "startLine": 42,
-    "endLine": 49
+    "startLine": 43,
+    "endLine": 50
   },
   {
     "outputFile": "ValueSet-cied-patient-identifier.json",
