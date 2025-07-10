@@ -264,17 +264,16 @@
           "type": "Observation"
         }
       ],
-      "documentation": "A CardX CIED Connectivity Server **SHALL**:\n\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n",
+      "documentation": "A CardX CIED Connectivity Server **SHALL**:\n\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n",
       "mode": "server"
     }
   ],
   "format": [
-    "xml",
     "json"
   ],
   "name": "CIEDConnectivityServerCapabilityStatement",
   "status": "active",
-  "date": "2025-02-25",
+  "date": "2025-07-09",
   "kind": "requirements",
   "fhirVersion": "5.0.0"
 }

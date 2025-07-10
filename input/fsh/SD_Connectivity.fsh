@@ -1,3 +1,16 @@
+Extension: CIEDDeviceExtension
+Id: cied-device-extension
+Title: "CIED Device Extension"
+Description: "Extension to represent cardiac implantable device(s) which generated the observation."
+// * insert ExtensionContext(DomainResource)
+// * insert ExtensionContext(Extension)
+// * insert ExtensionContext(Observation)
+// * ^extension[FMM].valueInteger = 2
+* value[x] only Reference(CIEDDevice)
+// * value[x] 1..*
+// consider if this should include leads or if separate extension
+
+
 Profile: CIEDConnectivityStatus
 Parent: Observation
 Id: cied-connectivity-status
@@ -13,7 +26,11 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * code = cied-connectivity#observation-cied-connectivity
 // * status = http://hl7.org/fhir/ValueSet/observation-status#final
 * device 1..1 MS 
-* device only Reference(CIEDDevice)
+* device only Reference(CIEDMonitor)
+* extension contains CIEDDeviceExtension named ciedDevice 1..* MS
+// * extension[ciedDevice] only Reference(CIEDDevice)
+* extension[ciedDevice] ^short = "The cardiac implantable device(s) generating the observation."
+* extension[ciedDevice] ^definition = "A reference to one or more CIEDs that produce the observation."
 * effective[x] only dateTime
 * effectiveDateTime 1..1 MS
 * subject 1..1 MS 
@@ -107,6 +124,7 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * component[connectionInterval].code = cied-connectivity#connection-interval
 * component[connectionInterval].value[x] only integer
 
+/*
 Instance: uc1ConnectivityACME
 InstanceOf: CIEDConnectivityStatus
 Description: "An example CIED connectivity status for CIED connectivity example 1."
@@ -228,3 +246,5 @@ Description: "An example CIED connectivity status for CIED connectivity example 
 * component[lastRemoteInterrogationDate].valueDateTime = 2025-03-30T06:00:00.000Z
 * component[nextScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
 * component[nextScheduledRemoteInterrogationDate].valueDateTime = 2025-06-25
+
+*/

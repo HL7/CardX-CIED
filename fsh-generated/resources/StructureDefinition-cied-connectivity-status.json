@@ -15,6 +15,39 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.extension:ciedDevice",
+        "path": "Observation.extension",
+        "sliceName": "ciedDevice",
+        "short": "The cardiac implantable device(s) generating the observation.",
+        "definition": "A reference to one or more CIEDs that produce the observation.",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-extension"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "mustSupport": true
@@ -71,7 +104,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
             ]
           }
         ],

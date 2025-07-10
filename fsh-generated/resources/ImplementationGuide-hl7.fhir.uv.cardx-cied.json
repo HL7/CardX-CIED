@@ -111,6 +111,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cied-device-extension"
+        },
+        "name": "CIED Device Extension",
+        "description": "Extension to represent cardiac implantable device(s) which generated the observation.",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/cied-monitor-types-vs"
         },
         "name": "CIED Monitor Types",
@@ -205,17 +213,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/uc1ConnectivityACME"
-        },
-        "name": "uc1ConnectivityACME",
-        "description": "An example CIED connectivity status for CIED connectivity example 1.",
-        "isExample": true,
-        "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
-        ]
-      },
-      {
-        "reference": {
           "reference": "Device/uc2ACMEPacemaker"
         },
         "name": "uc2ACMEPacemaker",
@@ -245,17 +242,6 @@
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "Observation/uc2ConnectivityACME"
-        },
-        "name": "uc2ConnectivityACME",
-        "description": "An example CIED connectivity status for CIED connectivity example 2.",
-        "isExample": true,
-        "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
         ]
       },
       {
@@ -293,17 +279,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/uc3ConnectivityACME"
-        },
-        "name": "uc3ConnectivityACME",
-        "description": "An example CIED connectivity status for CIED connectivity example 3.",
-        "isExample": true,
-        "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
-        ]
-      },
-      {
-        "reference": {
           "reference": "Device/uc4ACMEPacemaker"
         },
         "name": "uc4ACMEPacemaker",
@@ -337,17 +312,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/uc4ConnectivityACME"
-        },
-        "name": "uc4ConnectivityACME",
-        "description": "An example CIED connectivity status for CIED connectivity example 4.",
-        "isExample": true,
-        "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
-        ]
-      },
-      {
-        "reference": {
           "reference": "Device/uc5ACMEPacemaker"
         },
         "name": "uc5ACMEPacemaker",
@@ -377,17 +341,6 @@
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "Observation/uc5ConnectivityACME"
-        },
-        "name": "uc5ConnectivityACME",
-        "description": "An example CIED connectivity status for CIED connectivity example 5.",
-        "isExample": true,
-        "profile": [
-          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
         ]
       }
     ],

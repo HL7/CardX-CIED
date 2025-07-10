@@ -39,17 +39,16 @@ Title: "CardX CIED Connectivity Server Capability Statement"
 Description: """
 This capability statement describes the requirements for systems that make CIED Connectivity data available.
 """
-* rest.documentation =  "A CardX CIED Connectivity Server **SHALL**:\n\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n"
+* rest.documentation =  "A CardX CIED Connectivity Server **SHALL**:\n\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n"
 * rest.security.description = "1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
 * name = "CIEDConnectivityServerCapabilityStatement"
 * description = "CardX CIED Connectivity Server CapabilityStatement"
 * rest.mode = #server
 * status = #active
-* date = "2025-02-25"
+* date = "2025-07-09"
 * kind = #requirements
 * fhirVersion = #5.0.0
-* format[0] = #xml
-* format[1] = #json
+* format[0] = #json
 
 // Patient requirements
 * insert SupportResource(Patient, #SHALL)
