@@ -15,6 +15,10 @@
           {
             "code": "connection-interval",
             "display": "The time interval in days between expected CIED and remote monitoring software communication"
+          },
+          {
+            "code": "expected-time-period",
+            "display": "The time period in which successful communication must take place for the connectivity status to remain connected."
           }
         ]
       }

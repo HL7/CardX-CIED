@@ -111,6 +111,11 @@
       "definition": "The time interval in days between expected CIED and remote monitoring software communication."
     },
     {
+      "code": "expected-time-period",
+      "display": "Expected Time Period",
+      "definition": "The time period in which successful communication must take place for the connectivity status to remain connected"
+    },
+    {
       "code": "status-reason",
       "display": "Status Reason",
       "definition": "Text describing reasons why the patient may be listed at a given status and / or modifier."
@@ -123,5 +128,5 @@
   ],
   "caseSensitive": true,
   "experimental": false,
-  "count": 23
+  "count": 24
 }

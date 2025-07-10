@@ -7,30 +7,28 @@ participant "FHIR Server" as FHIR
 con -> FHIR : login
 FHIR -> con : Auth token
 
-group Single Patient
-    con -> FHIR : Request observations: GET[base]/Observation?subject=patient.identifier={id}&code=observation-cied-connectivity
-    FHIR -> con : Return observation (device: Device (CIED))
-    con -> FHIR : Request patient infomation: GET[base]/Patient/{id}
-    FHIR -> con : Return patient information
-    con -> FHIR : Request device (CIED) information: GET[base]/Device/{id}
-    FHIR -> con : Return device (CIED) information (gateway: Device (Monitor))
-    con -> FHIR : Request device (Monitor) information: GET[base]/Device/{id}
-    FHIR -> con : Return device information    
-    end
-
 group All patients
     con -> FHIR : Request observations: GET[base]/Observation?code=observation-cied-connectivity
-    FHIR -> con : Return observation bundle (subject: Patient, device: Device (CIED))
+    FHIR -> con : Return observation bundle (subject: Patient, ciedDevice: Device (CIED), device: Device (Monitor))
 
     loop for each observation
         con -> FHIR : Request patient infomation: GET[base]/Patient/{id}
         FHIR -> con : Return patient information
         con -> FHIR : Request device (CIED) information: GET[base]/Device/{id}
-        FHIR -> con : Return device (CIED) information (gateway: Device (Monitor))
+        FHIR -> con : Return device (CIED) information
         con -> FHIR : Request device (Monitor) information: GET[base]/Device/{id}
         FHIR -> con : Return device information    
     end
 end
+
+group Single Patient
+    con -> FHIR : Request observation: GET[base]/Observation?subject=patient.identifier={id}&code=observation-cied-connectivity
+    FHIR -> con : Return observation (ciedDevice: Device (CIED), device: Device (Monitor))
+    con -> FHIR : Request device (CIED) information: GET[base]/Device/{id}
+    FHIR -> con : Return device (CIED) information (gateway: Device (Monitor))
+    con -> FHIR : Request device (Monitor) information: GET[base]/Device/{id}
+    FHIR -> con : Return device information    
+    end
 
 @enduml
 
