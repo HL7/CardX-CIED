@@ -39,7 +39,7 @@ Title: "CardX CIED Connectivity Server Capability Statement"
 Description: """
 This capability statement describes the requirements for systems that make CIED Connectivity data available.
 """
-* rest.documentation =  "A CardX CIED Connectivity Server **SHALL**:\n\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n"
+* rest.documentation =  "A CardX CIED Connectivity Server **SHALL**:\n\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n   - (Status 501): not implemented.\n"
 * rest.security.description = "1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
 * name = "CIEDConnectivityServerCapabilityStatement"
 * description = "CardX CIED Connectivity Server CapabilityStatement"
@@ -59,7 +59,7 @@ This capability statement describes the requirements for systems that make CIED 
 
 // Device requirements
 * insert SupportResource(Device, #SHALL)
-* insert SupportProfile(https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-device.html, #SHALL)
+* insert SupportProfile(https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-device.html, #SHOULD)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(manufacturer, http://hl7.org/fhir/SearchParameter/Device-manufacturer, #string, #SHOULD)
@@ -73,10 +73,8 @@ This capability statement describes the requirements for systems that make CIED 
 * insert SupportProfile(https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-connectivity-status.html, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHOULD)
 * insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHOULD)
 * insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
 * insert SupportSearchParam(combo-value-concept, http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept, #token, #SHOULD)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHOULD)
 
 // TO DO - go through and review token vs codeable concept etc.

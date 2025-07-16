@@ -20,6 +20,7 @@ Description: "Additional modifiers to connectivity status as calculated by the C
 * cied-connectivity#unenrolled "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
 * cied-connectivity#transferred "The patient has been transfered to another remote monitoring clinic."
 
+/*
 ValueSet: cied-connectivity-dates
 Id: cied-connectivity-dates-vs
 Title: "CIED Connectivity Dates and Timestamps"
@@ -31,6 +32,7 @@ Description: "The relevant dates and times related to CIED connectivity, schedul
 * cied-connectivity#next-monitor-connectivity-date "The date of the next expected communication from the monitor to the remote monitoring platform."   
 * cied-connectivity#last-interrogation-date "The date of the most recent remote device interrogation"
 * cied-connectivity#next-interrogation-date "The date of the next scheduled remote device interrogation"
+* cied-connectivity#next-secondary-interrogation-date "The date of the next scheduled remote device interrogation by the seconary clinic"
 
 ValueSet: cied-connectivity-connection-interval
 Id: cied-connectivity-connection-interval-vs
@@ -38,37 +40,40 @@ Title: "CIED Connectivity Connection Interval"
 Description: "The time interval in days between CIED and remote monitoring software communication"
 * ^experimental = false
 * cied-connectivity#connection-interval "The time interval in days between expected CIED and remote monitoring software communication"
-* cied-connectivity#expected-time-period "The time period in which successful communication must take place for the connectivity status to remain connected."
+* cied-connectivity#expected-time-period "The time period in days in which successful communication must take place for the connectivity status to remain connected."
+*/
 
 ValueSet: cied-monitor-types
 Id: cied-monitor-types-vs
 Title: "CIED Monitor Types"
 Description: "The type of CIED monitor"
 * ^experimental = false
-* cied-connectivity#bedside-device "Standalone device, not intended to provide monitoring while on the go"  
-* cied-connectivity#mobile-monitor "App based monitor"
-* cied-connectivity#portable-device "Standalone device, with battery capacity to provide monitoring while on the go"
-
+* cied-connectivity#bedside-device "Standalone device, not intended to provide monitoring while on the go."  
+* cied-connectivity#mobile-monitor "App based monitor."
+* cied-connectivity#portable-device "Standalone device, with battery capacity to provide monitoring while on the go."
+/*
 ValueSet: cied-connectivity-status-annotations
 Id: cied-connectivity-status-annotation-vs
 Title: "CIED Connectivity Status Annotations"
-Description: "Annotations related to CIED connectivity status"
+Description: "Annotations related to CIED connectivity status."
 * ^experimental = false
-* cied-connectivity#status-reason "Text describing reasons why the patient may be listed at a given status and / or modifier."
+* cied-connectivity#status-reason "Text describing reasons why the patient may be listed at a given status and/or modifier."
 * cied-connectivity#status-guidance "Text describing steps to get the patient to a connected status."
-
+*/
 CodeSystem: cied-connectivity
 Title: "CIED Connectivity Status Values"
 Description: "Codes system for CIED connectivity and monitor device types"
 * ^caseSensitive = true
 * ^experimental = false
 * ^status = #active
-* #connectivity-status "The overall system connectivity status as calculated by the CIED manufacturer"
-* #connectivity-modifier "Additional modifiers to connectivity status as calculated by the CIED manufacturer"
+* #connectivity-status "Connectivity status"
+    "The overall system connectivity status as calculated by the CIED manufacturer."
+* #connectivity-modifier "Connectivity modifier"
+    "Additional modifiers to connectivity status as calculated by the CIED manufacturer."
 * #setup-not-completed "Setup not completed"
-    "Device/monitor setup has not been completed. E.g. pending initial setup or there is no device/monitor association"
+    "Device/monitor setup has not been completed. E.g. pending initial setup or there is no device/monitor association."
 * #not-applicable "N/A"
-    "Connectivity states are not applicable for this device. E.g. device is not compatible with remote monitoring or requires patient initiated interrogations"
+    "Connectivity states are not applicable for this device. E.g. device is not compatible with remote monitoring or requires patient initiated interrogations."
 * #connected "Connected"
     "Communication has been successful within the expected time period."
 * #disconnected "Disconnected"
@@ -80,31 +85,34 @@ Description: "Codes system for CIED connectivity and monitor device types"
 * #unenrolled "Unenrolled"
     "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
 * #transferred "Transferred"
-    "The patient has been transfered to another remote monitoring clinic."
-* #last-cied-connectivity-time "Last CIED to monitor"
+    "The patient has been transferred to another remote monitoring clinic."
+* #last-cied-connectivity-time "Last CIED to monitor communication"
     "The timestamp of the most recent communication between the CIED and monitor."   
-* #last-monitor-connectivity-time "Last Monitor to Remote Monitoring Software"
+* #last-monitor-connectivity-time "Last monitor to remote monitoring software communication"
     "The timestamp of the most recent communication from the monitor to the remote monitoring platform."   
 * #next-cied-connectivity-date "Next CIED to monitor communication"
-    "The timestamp of the next expected communication between the CIED and monitor.."   
-* #next-monitor-connectivity-date "Next monitor to Remote Monitoring Software communication"
+    "The timestamp of the next expected communication between the CIED and monitor."   
+* #next-monitor-connectivity-date "Next monitor to remote monitoring software communication"
     "The timestamp of the next expected communication from the monitor to the remote monitoring platform."   
-* #last-interrogation-date "Date the last remote device interrogation"
-    "The date of the most recent remote device interrogation with a personal montior"
-* #next-interrogation-date "Date of the next scheduled remote device interrogation"
-    "The date of the next scheduled remote device interrogation"
-* #observation-cied-connectivity "FHIR CIED Connectivity Status Profile"
+* #last-interrogation-date "Last remote device interrogation date"
+    "The date of the most recent remote device interrogation with a personal monitor."
+* #next-interrogation-date "Next scheduled remote device interrogation date"
+    "The date of the next scheduled remote device interrogation."
+* #next-secondary-interrogation-date "Next scheduled remote device interrogation date, secondary clinic"
+    "The date of the next scheduled remote device interrogation by the secondary clinic for patients who are dual-managed."
+* #observation-cied-connectivity "CIED connectivity"
+    "FHIR observation constrained to the CardX CIED connectivity profile."
 * #bedside-device "Bedside Monitor"
-    "Standalone device, not intended to provide monitoring while on the go"	
-* #mobile-monitor "Mobile App"	
-    "App based monitor"	
-* #portable-device "Portable Device"	
-    "Standalone device, with battery capacity to provide monitoring while on the go"
-* #connection-interval "Connection Interval"
+    "Standalone device, not intended to provide monitoring while on the go." 
+* #mobile-monitor "Mobile App"  
+    "App based monitor." 
+* #portable-device "Portable Device"    
+    "Standalone device, with battery capacity to provide monitoring while on the go."
+* #connection-interval "Connection interval"
     "The time interval in days between expected CIED and remote monitoring software communication."
-* #expected-time-period "Expected Time Period"
-    "The time period in which successful communication must take place for the connectivity status to remain connected"
-* #status-reason "Status Reason"
-    "Text describing reasons why the patient may be listed at a given status and / or modifier."
-* #status-guidance "Status Guidance"
+* #expected-time-period "Expected time period"
+    "The time period in days in which successful communication must take place for the connectivity status to remain connected."
+* #status-reason "Status reason"
+    "Text describing reasons why the patient may be listed at a given status and/or modifier."
+* #status-guidance "Status guidance"
     "Text describing steps to get the patient to a connected status."

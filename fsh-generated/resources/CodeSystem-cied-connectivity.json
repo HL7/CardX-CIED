@@ -10,21 +10,23 @@
   "concept": [
     {
       "code": "connectivity-status",
-      "display": "The overall system connectivity status as calculated by the CIED manufacturer"
+      "display": "Connectivity status",
+      "definition": "The overall system connectivity status as calculated by the CIED manufacturer."
     },
     {
       "code": "connectivity-modifier",
-      "display": "Additional modifiers to connectivity status as calculated by the CIED manufacturer"
+      "display": "Connectivity modifier",
+      "definition": "Additional modifiers to connectivity status as calculated by the CIED manufacturer."
     },
     {
       "code": "setup-not-completed",
       "display": "Setup not completed",
-      "definition": "Device/monitor setup has not been completed. E.g. pending initial setup or there is no device/monitor association"
+      "definition": "Device/monitor setup has not been completed. E.g. pending initial setup or there is no device/monitor association."
     },
     {
       "code": "not-applicable",
       "display": "N/A",
-      "definition": "Connectivity states are not applicable for this device. E.g. device is not compatible with remote monitoring or requires patient initiated interrogations"
+      "definition": "Connectivity states are not applicable for this device. E.g. device is not compatible with remote monitoring or requires patient initiated interrogations."
     },
     {
       "code": "connected",
@@ -54,79 +56,85 @@
     {
       "code": "transferred",
       "display": "Transferred",
-      "definition": "The patient has been transfered to another remote monitoring clinic."
+      "definition": "The patient has been transferred to another remote monitoring clinic."
     },
     {
       "code": "last-cied-connectivity-time",
-      "display": "Last CIED to monitor",
+      "display": "Last CIED to monitor communication",
       "definition": "The timestamp of the most recent communication between the CIED and monitor."
     },
     {
       "code": "last-monitor-connectivity-time",
-      "display": "Last Monitor to Remote Monitoring Software",
+      "display": "Last monitor to remote monitoring software communication",
       "definition": "The timestamp of the most recent communication from the monitor to the remote monitoring platform."
     },
     {
       "code": "next-cied-connectivity-date",
       "display": "Next CIED to monitor communication",
-      "definition": "The timestamp of the next expected communication between the CIED and monitor.."
+      "definition": "The timestamp of the next expected communication between the CIED and monitor."
     },
     {
       "code": "next-monitor-connectivity-date",
-      "display": "Next monitor to Remote Monitoring Software communication",
+      "display": "Next monitor to remote monitoring software communication",
       "definition": "The timestamp of the next expected communication from the monitor to the remote monitoring platform."
     },
     {
       "code": "last-interrogation-date",
-      "display": "Date the last remote device interrogation",
-      "definition": "The date of the most recent remote device interrogation with a personal montior"
+      "display": "Last remote device interrogation date",
+      "definition": "The date of the most recent remote device interrogation with a personal monitor."
     },
     {
       "code": "next-interrogation-date",
-      "display": "Date of the next scheduled remote device interrogation",
-      "definition": "The date of the next scheduled remote device interrogation"
+      "display": "Next scheduled remote device interrogation date",
+      "definition": "The date of the next scheduled remote device interrogation."
+    },
+    {
+      "code": "next-secondary-interrogation-date",
+      "display": "Next scheduled remote device interrogation date, secondary clinic",
+      "definition": "The date of the next scheduled remote device interrogation by the secondary clinic for patients who are dual-managed."
     },
     {
       "code": "observation-cied-connectivity",
-      "display": "FHIR CIED Connectivity Status Profile"
+      "display": "CIED connectivity",
+      "definition": "FHIR observation constrained to the CardX CIED connectivity profile."
     },
     {
       "code": "bedside-device",
       "display": "Bedside Monitor",
-      "definition": "Standalone device, not intended to provide monitoring while on the go"
+      "definition": "Standalone device, not intended to provide monitoring while on the go."
     },
     {
       "code": "mobile-monitor",
       "display": "Mobile App",
-      "definition": "App based monitor"
+      "definition": "App based monitor."
     },
     {
       "code": "portable-device",
       "display": "Portable Device",
-      "definition": "Standalone device, with battery capacity to provide monitoring while on the go"
+      "definition": "Standalone device, with battery capacity to provide monitoring while on the go."
     },
     {
       "code": "connection-interval",
-      "display": "Connection Interval",
+      "display": "Connection interval",
       "definition": "The time interval in days between expected CIED and remote monitoring software communication."
     },
     {
       "code": "expected-time-period",
-      "display": "Expected Time Period",
-      "definition": "The time period in which successful communication must take place for the connectivity status to remain connected"
+      "display": "Expected time period",
+      "definition": "The time period in days in which successful communication must take place for the connectivity status to remain connected."
     },
     {
       "code": "status-reason",
-      "display": "Status Reason",
-      "definition": "Text describing reasons why the patient may be listed at a given status and / or modifier."
+      "display": "Status reason",
+      "definition": "Text describing reasons why the patient may be listed at a given status and/or modifier."
     },
     {
       "code": "status-guidance",
-      "display": "Status Guidance",
+      "display": "Status guidance",
       "definition": "Text describing steps to get the patient to a connected status."
     }
   ],
   "caseSensitive": true,
   "experimental": false,
-  "count": 24
+  "count": 25
 }

@@ -63,30 +63,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/cied-connectivity-connection-interval-vs"
-        },
-        "name": "CIED Connectivity Connection Interval",
-        "description": "The time interval in days between CIED and remote monitoring software communication",
-        "isExample": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/cied-connectivity-dates-vs"
-        },
-        "name": "CIED Connectivity Dates and Timestamps",
-        "description": "The relevant dates and times related to CIED connectivity, scheduling, and interrogation",
-        "isExample": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/cied-connectivity-status-annotation-vs"
-        },
-        "name": "CIED Connectivity Status Annotations",
-        "description": "Annotations related to CIED connectivity status",
-        "isExample": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/cied-connectivity-state-modifier-vs"
         },
         "name": "CIED Connectivity Status Modifier Value Set",
