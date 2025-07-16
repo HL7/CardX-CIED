@@ -19,19 +19,16 @@ entity "Patient" as Patient {
 entity "Device - CIED" as cied {
   id : string <<generated>>
   --
-  identifier: Identifier (0..*)
   udiCarrier: BackboneElement (0..1)
   manufacturer: String (0..1)
   serialNumber: String (0..1)
   modelNumber: String (0..1)
   type: CodeableConcept (0..1)
-  gateway: CodeableReference(Monitor) (0..*)
 }
 
 entity "Device - Monitor" as monitor {
   id : string <<generated>>
   --
-  identifier: Identifier (0..*)
   udiCarrier: BackboneElement (0..1)
   manufacturer: String (0..1)
   serialNumber: String (0..1)
@@ -51,46 +48,29 @@ entity "DeviceAssociation" as devassoc {
 
 entity "Observation - Connectivity Status" as Connectivity {
     id : string <<generated>> (0..*)
+    ciedDevice : Reference(CIED) (1..*)
     status : code (1..1)
     code : CodeableConcept (1..1)
     subject : Reference(Patient) (0..1)
     effective : dateTime (1..1)
-    note : Annotation (0..*)
     device : Reference(Monitor) (1..1)
-    ciedDevice : Reference(CIED) (1..*)
     connectivityStatus : BackboneElement (1..0)
     connectivityModifier : BackboneElement (0..1)
+    statusReason: BackboneElement (0..1)
+    statusGuidance: BackboneElement (0..1)
     lastCiedConnectivityDate : BackboneElement (0..1)
     lastMonitorConnectivityDate : BackboneElement (0..1)
     nextCiedConnectivityDate : BackboneElement (0..1)
     nextMonitorConnectivityDate : BackboneElement (0..1)
     lastRemoteInterrogationDate : BackboneElement (0..1)
-    nextRemoteInterrogationDate : BackboneElement (0..1)
+    nextScheduledRemoteInterrogationDate : BackboneElement (0..1)
+    nextSecondaryScheduledRemoteInterrogationDate : BackboneElement (0..1)
     connectionInterval : BackboneElement (0..1)
+    expectedTimePeriod: BackboneElement (0..1)
 }
-/' - 3/19/25 remove encounter and device association from connectivity use case
-entity "Encounter" as Encounter {
-  *id : string <<generated>>
-  --
-  identifier : Identifier: (1..*)
-  status : Code (1..1)
-  type: CodeableConcept (1..*)
-  subject: Reference(Patient) (1..1) 
-  participant: Reference(Device) (1..*)
-  actualPeriod: Period (0..1)
-  plannedStartDate (0..1)
-}
-'/
 
-Connectivity |o..|| Patient
-Connectivity ||..|| cied
-cied |o..|| monitor
-/' - 3/19/25 remove encounter and device association from connectivity
-devassoc ||..|| cied
-devassoc ||..o| Patient
-devassoc ||..o| monitor
-Encounter ||..|| Patient
-Encounter ||..|| cied
-Encounter ||..|| monitor
-'/
+Connectivity }|..|| Patient
+Connectivity }|..|{ cied
+Connectivity }|..o| monitor
+
 @enduml

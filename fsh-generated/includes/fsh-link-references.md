@@ -1,7 +1,4 @@
 [cied-data-sender]: CapabilityStatement-cied-data-sender.html
-[cied-connectivity-connection-interval]: ValueSet-cied-connectivity-connection-interval-vs.html
-[cied-connectivity-dates]: ValueSet-cied-connectivity-dates-vs.html
-[cied-connectivity-status-annotations]: ValueSet-cied-connectivity-status-annotation-vs.html
 [cied-connectivity-state-modifier]: ValueSet-cied-connectivity-state-modifier-vs.html
 [cied-connectivity-state]: ValueSet-cied-connectivity-state-vs.html
 [cied-connectivity]: CodeSystem-cied-connectivity.html

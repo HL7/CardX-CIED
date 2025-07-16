@@ -25,18 +25,16 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
 * code MS
 * code = cied-connectivity#observation-cied-connectivity
 // * status = http://hl7.org/fhir/ValueSet/observation-status#final
-* device 1..1 MS 
+* device MS 
 * device only Reference(CIEDMonitor)
 * extension contains CIEDDeviceExtension named ciedDevice 1..* MS
 // * extension[ciedDevice] only Reference(CIEDDevice)
-* extension[ciedDevice] ^short = "The cardiac implantable device(s) generating the observation."
-* extension[ciedDevice] ^definition = "A reference to one or more CIEDs that produce the observation."
+* extension[ciedDevice] ^short = "Cardiac implantable device(s)"
+* extension[ciedDevice] ^definition = "A reference to one or more CIEDs that generate the observation."
 * effective[x] only dateTime
 * effectiveDateTime 1..1 MS
 * subject 1..1 MS 
 * subject only Reference(CIEDPatient)
-* note MS
-* note ^short = "Text describing why the patient is listed at a given status and / or steps that can be taken to restore connectivity."
 * component MS
 * component.code MS
 * component.value[x] MS
@@ -60,81 +58,81 @@ CIEDs and monitors connect at regular intervals to exchange data ranging from ev
     connectionInterval 0..1 and
     expectedTimePeriod 0..1
 * component[connectivityStatus] MS
-* component[connectivityStatus] ^short = "The overall system connectivity status as calculated by the CIED manufacturer"
+* component[connectivityStatus] ^short = "The overall system connectivity status as calculated by the CIED manufacturer."
 * component[connectivityStatus].code MS
 * component[connectivityStatus].code = cied-connectivity#connectivity-status
 * component[connectivityStatus].value[x] only CodeableConcept
 * component[connectivityStatus].value[x] from cied-connectivity-state-vs 
 * component[connectivityModifier] MS
-* component[connectivityModifier] ^short = "Additional modifiers to connectivity status as calculated by the CIED manufacturer"
+* component[connectivityModifier] ^short = "Additional modifiers to connectivity status as calculated by the CIED manufacturer."
 * component[connectivityModifier].code MS
 * component[connectivityModifier].code = cied-connectivity#connectivity-modifier
 * component[connectivityModifier].value[x] only CodeableConcept
 * component[connectivityModifier].value[x] from cied-connectivity-state-modifier-vs
 * component[statusReason] MS
-* component[statusReason] ^short = "Text describing reasons why the patient may be listed at a given status and / or modifier"
+* component[statusReason] ^short = "Text describing reasons why the patient may be listed at a given status and/or modifier."
 * component[statusReason].code MS
-* component[statusReason].code ^short = "Text describing reasons why the patient may be listed at a given status and / or modifier"
+//* component[statusReason].code ^short = "Text describing reasons why the patient may be listed at a given status and / or modifier"
 * component[statusReason].code = cied-connectivity#status-reason
 * component[statusReason].value[x] only string
 * component[statusGuidance] MS
 * component[statusGuidance] ^short = "Text describing steps to get the patient to a connected status"
 * component[statusGuidance].code MS
-* component[statusGuidance].code ^short = "Text describing steps to get the patient to a connected status"
+//* component[statusGuidance].code ^short = "Text describing steps to get the patient to a connected status."
 * component[statusGuidance].code = cied-connectivity#status-guidance
 * component[statusGuidance].value[x] only string
 * component[lastCiedConnectivityDate] MS
 * component[lastCiedConnectivityDate] ^short = "The timestamp of the most recent communication between the CIED and monitor."
 * component[lastCiedConnectivityDate].code MS
-* component[lastCiedConnectivityDate].code ^short = "CIED to monitor communication"
+//* component[lastCiedConnectivityDate].code ^short = "CIED to monitor communication"
 * component[lastCiedConnectivityDate].code = cied-connectivity#last-cied-connectivity-time
 * component[lastCiedConnectivityDate].value[x] only dateTime
 * component[lastMonitorConnectivityDate] MS
-* component[lastMonitorConnectivityDate] ^short = "The timestamp of the most recent communication from the monitor to the remote monitoring platform."
+* component[lastMonitorConnectivityDate] ^short = "The timestamp of the most recent communication from the monitor to the remote monitoring platform." 
 * component[lastMonitorConnectivityDate].code MS
-* component[lastMonitorConnectivityDate].code ^short = "Monitor to remote monitoring communication"
+//* component[lastMonitorConnectivityDate].code ^short = "Monitor to remote monitoring communication"
 * component[lastMonitorConnectivityDate].code = cied-connectivity#last-monitor-connectivity-time
 * component[lastMonitorConnectivityDate].value[x] only dateTime
 * component[nextCiedConnectivityDate] MS
-* component[nextCiedConnectivityDate] ^short = "The timestamp of the next expected communication between the CIED and monitor.."
+* component[nextCiedConnectivityDate] ^short = "The timestamp of the next expected communication between the CIED and monitor." 
 * component[nextCiedConnectivityDate].code MS
-* component[nextCiedConnectivityDate].code ^short = "Next CIED to monitor communication"
+//* component[nextCiedConnectivityDate].code ^short = "Next CIED to monitor communication"
 * component[nextCiedConnectivityDate].code = cied-connectivity#next-cied-connectivity-date
 * component[nextCiedConnectivityDate].value[x] only dateTime
 * component[nextMonitorConnectivityDate] MS
-* component[nextMonitorConnectivityDate] ^short = "The timestamp of the next expected communication from the monitor to the remote monitoring platform."
+* component[nextMonitorConnectivityDate] ^short = "The timestamp of the next expected communication from the monitor to the remote monitoring platform." 
 * component[nextMonitorConnectivityDate].code MS
-* component[nextMonitorConnectivityDate].code ^short = "Next monitor to Remote Monitoring Software communication"
+//* component[nextMonitorConnectivityDate].code ^short = "Next monitor to Remote Monitoring Software communication"
 * component[nextMonitorConnectivityDate].code = cied-connectivity#next-monitor-connectivity-date
 * component[nextMonitorConnectivityDate].value[x] only dateTime
 * component[lastRemoteInterrogationDate] MS
-* component[lastRemoteInterrogationDate] ^short = "The date of the most recent remote device interrogation with a personal monitor"
+* component[lastRemoteInterrogationDate] ^short = "The date of the most recent remote device interrogation with a personal monitor."
 * component[lastRemoteInterrogationDate].code MS
-* component[lastRemoteInterrogationDate].code ^short = "The date of the most recent remote device interrogation with a personal monitor"
+//* component[lastRemoteInterrogationDate].code ^short = "The date of the most recent remote device interrogation with a personal monitor"
 * component[lastRemoteInterrogationDate].code = cied-connectivity#last-interrogation-date
 * component[lastRemoteInterrogationDate].value[x] only dateTime
 * component[nextScheduledRemoteInterrogationDate] MS
-* component[nextScheduledRemoteInterrogationDate] ^short = "The date of the next scheduled remote device interrogation"
+* component[nextScheduledRemoteInterrogationDate] ^short = "The date of the next scheduled remote device interrogation."
 * component[nextScheduledRemoteInterrogationDate].code MS
-* component[nextScheduledRemoteInterrogationDate].code ^short = "The date of the next scheduled remote device interrogation. This is the sceduled data for the primary clinic if the patient is dual managed."
+//* component[nextScheduledRemoteInterrogationDate].code ^short = "The date of the next scheduled remote device interrogation. This is the scheduled date for the primary clinic if the patient is dual managed."
 * component[nextScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
 * component[nextScheduledRemoteInterrogationDate].value[x] only dateTime
 * component[nextSecondaryScheduledRemoteInterrogationDate] MS
-* component[nextSecondaryScheduledRemoteInterrogationDate] ^short = "The date of the next scheduled remote device interrogation by the seconary clinic"
+* component[nextSecondaryScheduledRemoteInterrogationDate] ^short = "The date of the next scheduled remote device interrogation by the secondary clinic for patients who are dual-managed."
 * component[nextSecondaryScheduledRemoteInterrogationDate].code MS
-* component[nextSecondaryScheduledRemoteInterrogationDate].code ^short = "The date of the next scheduled remote device interrogation by the seconary clinic for patients who are dual managed."
-* component[nextSecondaryScheduledRemoteInterrogationDate].code = cied-connectivity#next-interrogation-date
+//* component[nextSecondaryScheduledRemoteInterrogationDate].code ^short = "The date of the next scheduled remote device interrogation by the seconary clinic for patients who are dual managed."
+* component[nextSecondaryScheduledRemoteInterrogationDate].code = cied-connectivity#next-secondary-interrogation-date
 * component[nextSecondaryScheduledRemoteInterrogationDate].value[x] only dateTime
 * component[connectionInterval] MS
-* component[connectionInterval] ^short = "The time interval in days between expected CIED and remote monitoring software communication"
+* component[connectionInterval] ^short = "The time interval in days between expected CIED and remote monitoring software communication."
 * component[connectionInterval].code MS
-* component[connectionInterval].code ^short = "The time interval in days between expected CIED and remote monitoring software communication"
+//* component[connectionInterval].code ^short = "The time interval in days between expected CIED and remote monitoring software communication"
 * component[connectionInterval].code = cied-connectivity#connection-interval
 * component[connectionInterval].value[x] only integer
 * component[expectedTimePeriod] MS
-* component[expectedTimePeriod] ^short = "The time period in which successful communication must take place for the connectivity status to remain connected."
+* component[expectedTimePeriod] ^short = "The time period in days in which successful communication must take place for the connectivity status to remain connected."
 * component[expectedTimePeriod].code MS
-* component[expectedTimePeriod].code ^short = "The time period in which successful communication must take place for the connectivity status to remain connected."
+//* component[expectedTimePeriod].code ^short = "The time period in days in which successful communication must take place for the connectivity status to remain connected."
 * component[expectedTimePeriod].code = cied-connectivity#expected-time-period
 * component[expectedTimePeriod].value[x] only integer
 

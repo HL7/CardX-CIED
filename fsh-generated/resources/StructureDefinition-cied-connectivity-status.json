@@ -33,8 +33,8 @@
         "id": "Observation.extension:ciedDevice",
         "path": "Observation.extension",
         "sliceName": "ciedDevice",
-        "short": "The cardiac implantable device(s) generating the observation.",
-        "definition": "A reference to one or more CIEDs that produce the observation.",
+        "short": "Cardiac implantable device(s)",
+        "definition": "A reference to one or more CIEDs that generate the observation.",
         "min": 1,
         "max": "*",
         "type": [
@@ -91,15 +91,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "short": "Text describing why the patient is listed at a given status and / or steps that can be taken to restore connectivity.",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.device",
         "path": "Observation.device",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -141,7 +134,7 @@
         "id": "Observation.component:connectivityStatus",
         "path": "Observation.component",
         "sliceName": "connectivityStatus",
-        "short": "The overall system connectivity status as calculated by the CIED manufacturer",
+        "short": "The overall system connectivity status as calculated by the CIED manufacturer.",
         "min": 1,
         "max": "1",
         "mustSupport": true
@@ -175,7 +168,7 @@
         "id": "Observation.component:connectivityModifier",
         "path": "Observation.component",
         "sliceName": "connectivityModifier",
-        "short": "Additional modifiers to connectivity status as calculated by the CIED manufacturer",
+        "short": "Additional modifiers to connectivity status as calculated by the CIED manufacturer.",
         "min": 0,
         "max": "*",
         "mustSupport": true
@@ -209,7 +202,7 @@
         "id": "Observation.component:statusReason",
         "path": "Observation.component",
         "sliceName": "statusReason",
-        "short": "Text describing reasons why the patient may be listed at a given status and / or modifier",
+        "short": "Text describing reasons why the patient may be listed at a given status and/or modifier.",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -217,7 +210,6 @@
       {
         "id": "Observation.component:statusReason.code",
         "path": "Observation.component.code",
-        "short": "Text describing reasons why the patient may be listed at a given status and / or modifier",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -248,7 +240,6 @@
       {
         "id": "Observation.component:statusGuidance.code",
         "path": "Observation.component.code",
-        "short": "Text describing steps to get the patient to a connected status",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -279,7 +270,6 @@
       {
         "id": "Observation.component:lastCiedConnectivityDate.code",
         "path": "Observation.component.code",
-        "short": "CIED to monitor communication",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -310,7 +300,6 @@
       {
         "id": "Observation.component:lastMonitorConnectivityDate.code",
         "path": "Observation.component.code",
-        "short": "Monitor to remote monitoring communication",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -333,7 +322,7 @@
         "id": "Observation.component:nextCiedConnectivityDate",
         "path": "Observation.component",
         "sliceName": "nextCiedConnectivityDate",
-        "short": "The timestamp of the next expected communication between the CIED and monitor..",
+        "short": "The timestamp of the next expected communication between the CIED and monitor.",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -341,7 +330,6 @@
       {
         "id": "Observation.component:nextCiedConnectivityDate.code",
         "path": "Observation.component.code",
-        "short": "Next CIED to monitor communication",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -372,7 +360,6 @@
       {
         "id": "Observation.component:nextMonitorConnectivityDate.code",
         "path": "Observation.component.code",
-        "short": "Next monitor to Remote Monitoring Software communication",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -395,7 +382,7 @@
         "id": "Observation.component:lastRemoteInterrogationDate",
         "path": "Observation.component",
         "sliceName": "lastRemoteInterrogationDate",
-        "short": "The date of the most recent remote device interrogation with a personal monitor",
+        "short": "The date of the most recent remote device interrogation with a personal monitor.",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -403,7 +390,6 @@
       {
         "id": "Observation.component:lastRemoteInterrogationDate.code",
         "path": "Observation.component.code",
-        "short": "The date of the most recent remote device interrogation with a personal monitor",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -426,7 +412,7 @@
         "id": "Observation.component:nextScheduledRemoteInterrogationDate",
         "path": "Observation.component",
         "sliceName": "nextScheduledRemoteInterrogationDate",
-        "short": "The date of the next scheduled remote device interrogation",
+        "short": "The date of the next scheduled remote device interrogation.",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -434,7 +420,6 @@
       {
         "id": "Observation.component:nextScheduledRemoteInterrogationDate.code",
         "path": "Observation.component.code",
-        "short": "The date of the next scheduled remote device interrogation. This is the sceduled data for the primary clinic if the patient is dual managed.",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -457,7 +442,7 @@
         "id": "Observation.component:nextSecondaryScheduledRemoteInterrogationDate",
         "path": "Observation.component",
         "sliceName": "nextSecondaryScheduledRemoteInterrogationDate",
-        "short": "The date of the next scheduled remote device interrogation by the seconary clinic",
+        "short": "The date of the next scheduled remote device interrogation by the secondary clinic for patients who are dual-managed.",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -465,11 +450,10 @@
       {
         "id": "Observation.component:nextSecondaryScheduledRemoteInterrogationDate.code",
         "path": "Observation.component.code",
-        "short": "The date of the next scheduled remote device interrogation by the seconary clinic for patients who are dual managed.",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "next-interrogation-date",
+              "code": "next-secondary-interrogation-date",
               "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity"
             }
           ]
@@ -488,7 +472,7 @@
         "id": "Observation.component:connectionInterval",
         "path": "Observation.component",
         "sliceName": "connectionInterval",
-        "short": "The time interval in days between expected CIED and remote monitoring software communication",
+        "short": "The time interval in days between expected CIED and remote monitoring software communication.",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -496,7 +480,6 @@
       {
         "id": "Observation.component:connectionInterval.code",
         "path": "Observation.component.code",
-        "short": "The time interval in days between expected CIED and remote monitoring software communication",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -519,7 +502,7 @@
         "id": "Observation.component:expectedTimePeriod",
         "path": "Observation.component",
         "sliceName": "expectedTimePeriod",
-        "short": "The time period in which successful communication must take place for the connectivity status to remain connected.",
+        "short": "The time period in days in which successful communication must take place for the connectivity status to remain connected.",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -527,7 +510,6 @@
       {
         "id": "Observation.component:expectedTimePeriod.code",
         "path": "Observation.component.code",
-        "short": "The time period in which successful communication must take place for the connectivity status to remain connected.",
         "patternCodeableConcept": {
           "coding": [
             {

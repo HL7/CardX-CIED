@@ -16,7 +16,7 @@ MDC_IDC_DEV_MFG
 * serialNumber 1..1 MS
 * modelNumber 1..1 MS
 * type 1..1 MS
-* gateway MS
+* type from 11073-10103-DeviceType
 
 /*
 Mapping: device-to-ieee-11073-10103
