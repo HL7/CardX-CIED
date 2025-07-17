@@ -18,7 +18,7 @@
             }
           ],
           "supportedProfile": [
-            "https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-patient.html"
+            "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
           ],
           "_supportedProfile": [
             {
@@ -73,14 +73,23 @@
             }
           ],
           "supportedProfile": [
-            "https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-device.html"
+            "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device",
+            "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
           ],
           "_supportedProfile": [
             {
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
                 }
               ]
             }
@@ -172,7 +181,7 @@
             }
           ],
           "supportedProfile": [
-            "https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-connectivity-status.html"
+            "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
           ],
           "_supportedProfile": [
             {

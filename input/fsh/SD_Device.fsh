@@ -16,9 +16,8 @@ MDC_IDC_DEV_MFG
 * serialNumber 1..1 MS
 * modelNumber 1..1 MS
 * type 1..1 MS
-* type from 11073-10103-DeviceType
+* type.coding from IDCDeviceTypeVS
 
-/*
 Mapping: device-to-ieee-11073-10103
 Source: CIEDDevice
 Target: "IEEE-11073-10103"
@@ -30,14 +29,13 @@ Description: "Mapping of the CIEDDevice resource to the IEEE 11073-10103 standar
 * serialNumber -> "MDC_IDC_DEV_SERIAL"
 * modelNumber -> "MDC_IDC_DEV_MODEL"
 * type -> "MDC_IDC_DEV_TYPE"
-*/
 
 Instance: uc1ACMEICD
 InstanceOf: CIEDDevice  
 Description: "An example CIED device for CIED connectivity example 1."
 * udiCarrier.deviceIdentifier = "123456789"
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
 * serialNumber = "uc1ACMEICD"
@@ -48,8 +46,8 @@ Instance: uc2ACMEPacemaker
 InstanceOf: CIEDDevice  
 Description: "An example CIED device for CIED connectivity example 2."
 * udiCarrier.deviceIdentifier = "123456789"
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
 * serialNumber = "uc2ACMEPacemaker"
@@ -61,8 +59,8 @@ Instance: uc3ACMEPacemaker
 InstanceOf: CIEDDevice  
 Description: "An example CIED device for CIED connectivity example 3."
 * udiCarrier.deviceIdentifier = "123456789"
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
 * serialNumber = "uc3ACMEPacemaker"
@@ -74,8 +72,8 @@ Instance: uc4ACMEPacemaker
 InstanceOf: CIEDDevice  
 Description: "An example CIED device for CIED connectivity example 4."
 * udiCarrier.deviceIdentifier = "123456789"
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
 * serialNumber = "uc4ACMEPacemaker"
@@ -87,8 +85,8 @@ Instance: uc5ACMEPacemaker
 InstanceOf: CIEDDevice  
 Description: "An example CIED device for CIED connectivity example 5."
 * udiCarrier.deviceIdentifier = "123456789"
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
 * serialNumber = "uc5ACMEPacemaker"

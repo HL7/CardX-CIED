@@ -52,14 +52,15 @@ This capability statement describes the requirements for systems that make CIED 
 
 // Patient requirements
 * insert SupportResource(Patient, #SHALL)
-* insert SupportProfile(https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-patient.html, #SHALL)
+* insert SupportProfile(http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Patient-identifier, #token, #SHALL)
 
 // Device requirements
 * insert SupportResource(Device, #SHALL)
-* insert SupportProfile(https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-device.html, #SHOULD)
+* insert SupportProfile(http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device, #SHALL)
+* insert SupportProfile(http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(manufacturer, http://hl7.org/fhir/SearchParameter/Device-manufacturer, #string, #SHOULD)
@@ -70,7 +71,7 @@ This capability statement describes the requirements for systems that make CIED 
 
 // Observation
 * insert SupportResource(Observation, #SHALL)
-* insert SupportProfile(https://build.fhir.org/ig/HL7/CardX-CIED/StructureDefinition-cied-connectivity-status.html, #SHALL)
+* insert SupportProfile(http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHOULD)

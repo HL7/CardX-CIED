@@ -4,7 +4,7 @@ Id: cied-patient
 Title: "Patient - CIED Patient Profile"
 Description: "An CIED profile of the Patient resource."
 * identifier 1..* MS
-* identifier.type from cied-patient-identifier (extensible)
+* identifier.type from CIEDPatientIdentifier (extensible)
 * name MS
 * telecom MS
 * birthDate MS

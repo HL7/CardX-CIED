@@ -2,11 +2,11 @@
   "resourceType": "CodeSystem",
   "status": "active",
   "content": "complete",
-  "name": "cied-connectivity",
-  "id": "cied-connectivity",
+  "name": "CIEDconnectivity",
+  "id": "CIEDconnectivity",
   "title": "CIED Connectivity Status Values",
   "description": "Codes system for CIED connectivity and monitor device types",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/cied-connectivity",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity",
   "concept": [
     {
       "code": "connectivity-status",

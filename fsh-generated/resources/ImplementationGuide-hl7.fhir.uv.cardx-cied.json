@@ -79,7 +79,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/cied-connectivity"
+          "reference": "CodeSystem/CIEDconnectivity"
         },
         "name": "CIED Connectivity Status Values",
         "description": "Codes system for CIED connectivity and monitor device types",
