@@ -1,15 +1,15 @@
 // To Do: add Context free code + display for:
 // Device Type
-ValueSet: ciedPatientIdentifier
+ValueSet: CIEDPatientIdentifier
 Id: cied-patient-identifier
 Title: "CIED Patient Identifier"
 Description: "Identifiers which can be used to identify CIED patients."
 * ^experimental = false
-* include codes from system http://hl7.org/fhir/ValueSet/identifier-type
+* include codes from system http://terminology.hl7.org/CodeSystem/v2-0203
 * IDC#idco-pid "Identifier used in IDCO PID HL7 Segment"
 
 
-ValueSet: 11073-10103-DeviceType
+ValueSet: IDCDeviceTypeVS
 Id: 11073-10103-DeviceType
 Title: "IEEE 11073-10103 Device Type"
 Description: "The type of device as defined by IEEE 11073-10103"
@@ -21,7 +21,7 @@ Description: "The type of device as defined by IEEE 11073-10103"
 * IDC#753669 "Implantable Diagnostic Monitor"
 * IDC#753670 "Other"
 
-ValueSet: 11073-10103-SessionType
+ValueSet: IDCSessionTypeVS
 Id: 11073-10103-SessionType
 Title: "IEEE 11073-10103 Session Type"
 Description: "The type of session as defined by IEEE 11073-10103"

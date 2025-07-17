@@ -16,7 +16,7 @@ MDC_IDC_DEV_MFG
 * serialNumber MS
 * modelNumber MS
 * type MS
-* type from cied-monitor-types
+* type from CIEDMonitorTypesVS
 
 /*
 Instance: uc1CIEDMonitor
@@ -29,7 +29,7 @@ Description: "An example CIED monitor for CIED connectivity example 1."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc1ACMEMonitor"
 * modelNumber = "Bedside Monitor 1"
-* type = cied-connectivity#bedside-device
+* type = CIEDconnectivity#bedside-device
 */
 
 Instance: uc2CIEDMonitor
@@ -42,7 +42,7 @@ Description: "An example CIED monitor for CIED connectivity example 2."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc2ACMEMonitor"
 * modelNumber = "SmartApp Monitor 1"
-* type = cied-connectivity#mobile-monitor
+* type = CIEDconnectivity#mobile-monitor
 
 Instance: uc3CIEDMonitor
 InstanceOf: CIEDMonitor   
@@ -54,7 +54,7 @@ Description: "An example CIED monitor for CIED connectivity example 3."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc3ACMEMonitor"
 * modelNumber = "Bedside Monitor 3000"
-* type = cied-connectivity#bedside-device
+* type = CIEDconnectivity#bedside-device
 
 Instance: uc4CIEDMonitor
 InstanceOf: CIEDMonitor   
@@ -66,7 +66,7 @@ Description: "An example CIED monitor for CIED connectivity example 4."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc4ACMEMonitor"
 * modelNumber = "Bedside Monitor 5000"
-* type = cied-connectivity#bedside-device
+* type = CIEDconnectivity#bedside-device
 
 Instance: uc5CIEDMonitor
 InstanceOf: CIEDMonitor   
@@ -78,4 +78,4 @@ Description: "An example CIED monitor for CIED connectivity example 5."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc5ACMEMonitor"
 * modelNumber = "Magic Bedside Monitor"
-* type = cied-connectivity#bedside-device
+* type = CIEDconnectivity#bedside-device
