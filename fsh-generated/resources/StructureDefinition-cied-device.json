@@ -7,13 +7,6 @@
   "status": "draft",
   "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
   "fhirVersion": "5.0.0",
-  "mapping": [
-    {
-      "identity": "device-to-ieee-11073-10103",
-      "uri": "IEEE-11073-10103",
-      "comment": "Mapping of the CIEDDevice resource to the IEEE 11073-10103 standard."
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Device",
@@ -27,73 +20,29 @@
         "mustSupport": true
       },
       {
-        "id": "Device.udiCarrier.deviceIdentifier",
-        "path": "Device.udiCarrier.deviceIdentifier",
-        "mapping": [
-          {
-            "identity": "device-to-ieee-11073-10103",
-            "map": "MDC_IDC_DEV_UNIQUE_ID"
-          }
-        ]
-      },
-      {
-        "id": "Device.udiCarrier.issuer",
-        "path": "Device.udiCarrier.issuer",
-        "mapping": [
-          {
-            "identity": "device-to-ieee-11073-10103",
-            "map": "MDC_IDC_DEV_UNIQUE_ID_ISSUER"
-          }
-        ]
-      },
-      {
         "id": "Device.manufacturer",
         "path": "Device.manufacturer",
         "min": 1,
-        "mustSupport": true,
-        "mapping": [
-          {
-            "identity": "device-to-ieee-11073-10103",
-            "map": "_MDC_IDC_ENUM_MFG.EnumerationCode"
-          }
-        ]
+        "mustSupport": true
       },
       {
         "id": "Device.serialNumber",
         "path": "Device.serialNumber",
         "min": 1,
-        "mustSupport": true,
-        "mapping": [
-          {
-            "identity": "device-to-ieee-11073-10103",
-            "map": "MDC_IDC_DEV_SERIAL"
-          }
-        ]
+        "mustSupport": true
       },
       {
         "id": "Device.modelNumber",
         "path": "Device.modelNumber",
         "min": 1,
-        "mustSupport": true,
-        "mapping": [
-          {
-            "identity": "device-to-ieee-11073-10103",
-            "map": "MDC_IDC_DEV_MODEL"
-          }
-        ]
+        "mustSupport": true
       },
       {
         "id": "Device.type",
         "path": "Device.type",
         "min": 1,
         "max": "1",
-        "mustSupport": true,
-        "mapping": [
-          {
-            "identity": "device-to-ieee-11073-10103",
-            "map": "MDC_IDC_DEV_TYPE"
-          }
-        ]
+        "mustSupport": true
       },
       {
         "id": "Device.type.coding",
