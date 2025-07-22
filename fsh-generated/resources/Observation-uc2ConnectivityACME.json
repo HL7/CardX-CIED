@@ -1,0 +1,196 @@
+{
+  "resourceType": "Observation",
+  "id": "uc2ConnectivityACME",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-connectivity-status"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-extension",
+      "valueReference": {
+        "reference": "Device/uc2ACMEPacemaker"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "The patient has been disconnected for more than 90 days and is listed as inactive."
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "observation-cied-connectivity",
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+        }
+      ]
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "connectivity-status",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "disconnected",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "connectivity-modifier",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "inactive",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "last-cied-connectivity-time",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-02-19T06:00:00.000Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "last-monitor-connectivity-time",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-02-19T06:00:00.000Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "next-cied-connectivity-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-05-20"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "next-monitor-connectivity-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-05-20"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "last-interrogation-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-02-08T06:00:00.000Z"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "next-interrogation-date",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueDateTime": "2025-05-30"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "connection-interval",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueInteger": 14
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "expected-time-period",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueInteger": 14
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "status-reason",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueString": "The patient has not connected for more than 90 days and is listed as inactive."
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "status-guidance",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          }
+        ]
+      },
+      "valueString": "The patient should be contacted to determine if they are still using the device and if they wish to continue remote monitoring."
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "observation-cied-connectivity",
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+      }
+    ]
+  },
+  "device": {
+    "reference": "Device/uc2CIEDMonitor"
+  },
+  "effectiveDateTime": "2025-05-19T08:00:00.000Z",
+  "subject": {
+    "reference": "Patient/uc2ACMEPatient"
+  },
+  "status": "final"
+}

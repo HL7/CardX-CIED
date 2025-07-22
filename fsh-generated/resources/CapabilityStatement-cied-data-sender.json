@@ -55,7 +55,7 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "SHOULD"
                 }
               ],
               "name": "identifier",
@@ -243,8 +243,8 @@
                   "valueCode": "SHOULD"
                 }
               ],
-              "name": "combo-value-concept",
-              "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept",
+              "name": "component-value-concept",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-value-concept",
               "type": "token"
             }
           ],
