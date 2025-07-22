@@ -55,7 +55,7 @@ This capability statement describes the requirements for systems that make CIED 
 * insert SupportProfile(http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
-* insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Patient-identifier, #token, #SHALL)
+* insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Patient-identifier, #token, #SHOULD)
 
 // Device requirements
 * insert SupportResource(Device, #SHALL)
@@ -76,6 +76,6 @@ This capability statement describes the requirements for systems that make CIED 
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHOULD)
 * insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(combo-value-concept, http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept, #token, #SHOULD)
+* insert SupportSearchParam(component-value-concept, http://hl7.org/fhir/SearchParameter/Observation-component-value-concept, #token, #SHOULD)
 
 // TO DO - go through and review token vs codeable concept etc.

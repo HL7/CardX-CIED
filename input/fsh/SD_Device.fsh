@@ -24,9 +24,7 @@ Source: CIEDDevice
 Target: "IEEE-11073-10103"
 Id: device-to-ieee-11073-10103
 Description: "Mapping of the CIEDDevice resource to the IEEE 11073-10103 standard."
-* udiCarrier.deviceIdentifier -> "MDC_IDC_DEV_UNIQUE_ID"
-* udiCarrier.issuer -> "MDC_IDC_DEV_UNIQUE_ID_ISSUER"
-* manufacturer -> "_MDC_IDC_ENUM_MFG.EnumerationCode"
+* manufacturer -> "MDC_IDC_ENUM_MFG.EnumerationCode"
 * serialNumber -> "MDC_IDC_DEV_SERIAL"
 * modelNumber -> "MDC_IDC_DEV_MODEL"
 * type -> "MDC_IDC_DEV_TYPE"
