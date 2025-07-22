@@ -2,14 +2,8 @@ Extension: CIEDDeviceExtension
 Id: cied-device-extension
 Title: "CIED Device Extension"
 Description: "Extension to represent cardiac implantable device(s) which generated the observation."
-// * insert ExtensionContext(DomainResource)
-// * insert ExtensionContext(Extension)
-// * insert ExtensionContext(Observation)
-// * ^extension[FMM].valueInteger = 2
+* insert ExtensionContext(Observation)
 * value[x] only Reference(CIEDDevice)
-// * value[x] 1..*
-// consider if this should include leads or if separate extension
-
 
 Profile: CIEDConnectivityStatus
 Parent: Observation

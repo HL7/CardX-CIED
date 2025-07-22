@@ -18,7 +18,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Element"
+      "expression": "Observation"
     }
   ],
   "type": "Extension",
