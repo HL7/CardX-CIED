@@ -25,7 +25,7 @@ group Single Patient
     con -> FHIR : Request observation: GET[base]/Observation?subject=patient.identifier={id}&code=observation-cied-connectivity
     FHIR -> con : Return observation (ciedDevice: Device (CIED), device: Device (Monitor))
     con -> FHIR : Request device (CIED) information: GET[base]/Device/{id}
-    FHIR -> con : Return device (CIED) information (gateway: Device (Monitor))
+    FHIR -> con : Return device (CIED) information
     con -> FHIR : Request device (Monitor) information: GET[base]/Device/{id}
     FHIR -> con : Return device information    
     end

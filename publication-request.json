@@ -1,10 +1,10 @@
 {
     "package-id" : "hl7.fhir.uv.cardx-cied",
-    "version" : "0.1.0",
+    "version" : "1.0.0-ballot",
     "path" : "http://build.fhir.org/ig/HL7/cardx-cied",
     "mode" : "working",
-    "status" : "release",
-    "sequence" : "Releases",
+    "status" : "ballot",
+    "sequence" : "STU 1",
     "first" : true,
     "title" : "CardX - Cardiac Implantable Electronic Devices",
     "ci-build" : "http://build.fhir.org/ig/HL7/cardx-cied",
