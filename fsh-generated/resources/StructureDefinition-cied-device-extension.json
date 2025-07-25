@@ -10,7 +10,7 @@
   "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-extension",
   "name": "CIEDDeviceExtension",
   "title": "CIED Device Extension",
-  "status": "draft",
+  "status": "active",
   "description": "Extension to represent cardiac implantable device(s) which generated the observation.",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",

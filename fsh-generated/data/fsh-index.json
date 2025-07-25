@@ -100,40 +100,40 @@
     "fshName": "uc1ConnectivityACME",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 129,
-    "endLine": 142
+    "startLine": 123,
+    "endLine": 136
   },
   {
     "outputFile": "Observation-uc2ConnectivityACME.json",
     "fshName": "uc2ConnectivityACME",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 144,
-    "endLine": 179
+    "startLine": 138,
+    "endLine": 173
   },
   {
     "outputFile": "Observation-uc3ConnectivityACME.json",
     "fshName": "uc3ConnectivityACME",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 181,
-    "endLine": 205
+    "startLine": 175,
+    "endLine": 199
   },
   {
     "outputFile": "Observation-uc4ConnectivityACME.json",
     "fshName": "uc4ConnectivityACME",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 207,
-    "endLine": 234
+    "startLine": 201,
+    "endLine": 228
   },
   {
     "outputFile": "Observation-uc5ConnectivityACME.json",
     "fshName": "uc5ConnectivityACME",
     "fshType": "Instance",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 236,
-    "endLine": 261
+    "startLine": 230,
+    "endLine": 255
   },
   {
     "outputFile": "Patient-uc1ACMEPatient.json",
@@ -180,8 +180,8 @@
     "fshName": "CIEDConnectivityStatus",
     "fshType": "Profile",
     "fshFile": "SD_Connectivity.fsh",
-    "startLine": 14,
-    "endLine": 126
+    "startLine": 8,
+    "endLine": 120
   },
   {
     "outputFile": "StructureDefinition-cied-device-extension.json",
@@ -189,7 +189,7 @@
     "fshType": "Extension",
     "fshFile": "SD_Connectivity.fsh",
     "startLine": 1,
-    "endLine": 9
+    "endLine": 6
   },
   {
     "outputFile": "StructureDefinition-cied-device.json",

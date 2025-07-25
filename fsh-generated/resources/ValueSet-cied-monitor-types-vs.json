@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "CIEDMonitorTypesVS",
   "id": "cied-monitor-types-vs",
   "title": "CIED Monitor Types",
