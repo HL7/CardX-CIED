@@ -1,5 +1,21 @@
 == Suppressed Messages ==
+# 01 Suppressing common warnings and warnings associated with core spec - Marc Deteau 7/22/2025
+The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (from https://tx.fhir.org/r5, see log)
+Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Device.name.type' binds to the value set 'http://hl7.org/fhir/ValueSet/device-nametype|5.0.0' which is experimental, but this structure is not labeled as experimental
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+# 02 Supressing warnings related to IG specific terminology. Will work with TSMG post-balloting, prior to implementation - Marc Duteau 7/22/2025
+Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+# 03 Supressing errors rated to UDI URLs included in core FHIR spec. https://chat.fhir.org/#reload:629091805607
+No definition could be found for URL value 'http://hl7.org/fhir/NamingSystem/gs1-di'
+No definition could be found for URL value 'http://hl7.org/fhir/NamingSystem/us-fda-udi'
+
+# 04 Observations have 1 or more devices generating the information and do not have a performer
+Best Practice Recommendation: In general, all observations should have a performer

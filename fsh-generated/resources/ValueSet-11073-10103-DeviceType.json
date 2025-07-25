@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "IDCDeviceTypeVS",
   "id": "11073-10103-DeviceType",
   "title": "IEEE 11073-10103 Device Type",

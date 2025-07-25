@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "IDCSessionTypeVS",
   "id": "11073-10103-SessionType",
   "title": "IEEE 11073-10103 Session Type",
