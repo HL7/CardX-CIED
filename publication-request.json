@@ -1,13 +1,12 @@
 {
     "package-id" : "hl7.fhir.uv.cardx-cied",
     "version" : "1.0.0-ballot",
-    "path" : "http://build.fhir.org/ig/HL7/cardx-cied",
+    "path" : "http://hl7.org/fhir/uv/cardx-cied/2025Sep",
     "mode" : "working",
     "status" : "ballot",
     "sequence" : "STU 1",
+    "desc": "STU 1 for CardX - Cardiac Implantable Electronic Devices, includes managing patient connectivity use case",
     "first" : true,
     "title" : "CardX - Cardiac Implantable Electronic Devices",
-    "ci-build" : "http://build.fhir.org/ig/HL7/cardx-cied",
-    "category" : "Care Management",
-    "introduction" : "Implementation guide to communicate cardiac implantable electronic devices connectivity status."
+    "ci-build" : "http://build.fhir.org/ig/HL7/cardx-cied"
   }
