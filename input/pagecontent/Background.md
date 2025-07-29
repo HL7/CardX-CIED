@@ -25,3 +25,19 @@
 - Enable the collection of computable data at the point of care integrated with clinical workflows while reducing clinician burden
 - Support the needs of all stakeholders and communities: patients, clinicians, registries, payers, regulators, researchers, information systems
 - Provide the foundation for innovation and transformation of cardiovascular care
+
+### Dependencies
+ 
+{% include dependency-table.xhtml %}
+ 
+### Cross Version Analysis
+ 
+{% include cross-version-analysis.xhtml %}
+ 
+### Global Profiles
+ 
+{% include globals-table.xhtml %}
+ 
+### IP Statements
+ 
+{% include ip-statements.xhtml %}

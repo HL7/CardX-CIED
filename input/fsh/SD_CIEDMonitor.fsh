@@ -36,8 +36,8 @@ Instance: uc2CIEDMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 2."
 * udiCarrier.deviceIdentifier = "12341234" 
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
 * serialNumber = "uc2ACMEMonitor"
@@ -48,8 +48,8 @@ Instance: uc3CIEDMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 3."
 * udiCarrier.deviceIdentifier = "12341234" 
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
 * serialNumber = "uc3ACMEMonitor"
@@ -60,8 +60,8 @@ Instance: uc4CIEDMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 4."
 * udiCarrier.deviceIdentifier = "12341234" 
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
 * serialNumber = "uc4ACMEMonitor"
@@ -72,8 +72,8 @@ Instance: uc5CIEDMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 5."
 * udiCarrier.deviceIdentifier = "12341234" 
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/us-fda-udi"
 * udiCarrier.carrierHRF = "123456"
 * manufacturer = "ACME Devices"
 * serialNumber = "uc5ACMEMonitor"
