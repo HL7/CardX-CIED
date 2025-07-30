@@ -6,11 +6,10 @@ The definition for the element 'Observation.category' binds to the value set 'ht
 The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Device.name.type' binds to the value set 'http://hl7.org/fhir/ValueSet/device-nametype|5.0.0' which is experimental, but this structure is not labeled as experimental
 
-# 02 Supressing warnings related to IG specific terminology. Will work with TSMG post-balloting, prior to implementation - Marc Duteau 7/22/2025
-Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+# 02 Supressing warnings related to IG specific terminology. Will work with TSMG post-balloting, prior to implementation
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# 03 Supressing errors rated to UDI URLs included in core FHIR spec. https://chat.fhir.org/#reload:629091805607
+# 03 Supressing errors rated to UDI URLs included in core FHIR spec. https://chat.fhir.org/#narrow/channel/179199-devices/topic/Device.20naming.20systems
 No definition could be found for URL value 'http://hl7.org/fhir/NamingSystem/gs1-di'
 No definition could be found for URL value 'http://hl7.org/fhir/NamingSystem/us-fda-udi'
 
