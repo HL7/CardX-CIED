@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied",
-  "version": "1.0.0",
+  "version": "1.0.0-ballot",
   "name": "CardXCIED",
   "title": "CardX - Cardiac Implantable Electronic Devices",
   "status": "active",
@@ -420,7 +420,7 @@
           "code": "releaselabel",
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
-        "value": "trial-use"
+        "value": "STU 1 - Ballot"
       },
       {
         "code": {
