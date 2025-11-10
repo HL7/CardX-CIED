@@ -404,12 +404,6 @@
           "generation": "markdown",
           "name": "connectivity-status.html",
           "sourceUrl": "connectivity-status.html"
-        },
-        {
-          "title": "User Stories",
-          "generation": "markdown",
-          "name": "user-stories.html",
-          "sourceUrl": "user-stories.html"
         }
       ],
       "name": "toc.html",
