@@ -20,8 +20,8 @@
     "fshName": "IDC",
     "fshType": "CodeSystem",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 38,
-    "endLine": 74
+    "startLine": 47,
+    "endLine": 83
   },
   {
     "outputFile": "Device-uc1ACMEICD.json",
@@ -220,16 +220,24 @@
     "fshName": "IDCDeviceTypeVS",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 12,
-    "endLine": 22
+    "startLine": 21,
+    "endLine": 31
   },
   {
     "outputFile": "ValueSet-11073-10103-SessionType.json",
     "fshName": "IDCSessionTypeVS",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 24,
-    "endLine": 36
+    "startLine": 33,
+    "endLine": 45
+  },
+  {
+    "outputFile": "ValueSet-MDCValueSet.json",
+    "fshName": "MDCValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "VS_11073-10103.fsh",
+    "startLine": 3,
+    "endLine": 10
   },
   {
     "outputFile": "ValueSet-cied-connectivity-state-modifier-vs.json",
@@ -260,7 +268,7 @@
     "fshName": "CIEDPatientIdentifier",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 3,
-    "endLine": 9
+    "startLine": 12,
+    "endLine": 18
   }
 ]
