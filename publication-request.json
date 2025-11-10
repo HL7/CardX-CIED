@@ -3,7 +3,7 @@
     "version" : "1.0.0",
     "path" : "http://hl7.org/fhir/uv/cardx-cied",
     "mode" : "working",
-    "status" : "release",
+    "status" : "trial-use",
     "sequence" : "STU 1",
     "desc": "STU 1 for CardX - Cardiac Implantable Electronic Devices, includes managing patient connectivity use case",
     "first" : true,
