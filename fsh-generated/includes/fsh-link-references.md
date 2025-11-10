@@ -10,6 +10,7 @@
 [IDCDeviceTypeVS]: ValueSet-11073-10103-DeviceType.html
 [IDCSessionTypeVS]: ValueSet-11073-10103-SessionType.html
 [IDC]: CodeSystem-IDC.html
+[MDCValueSet]: ValueSet-MDCValueSet.html
 [CIEDConnectivityStatus]: StructureDefinition-cied-connectivity-status.html
 [CIEDPatient]: StructureDefinition-cied-patient.html
 [uc1ACMEICD]: Device-uc1ACMEICD.html

@@ -151,6 +151,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/MDCValueSet"
+        },
+        "name": "MDC Value Set",
+        "description": "ValueSet for the MDC CodeSystem.",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cied-connectivity-status"
         },
         "name": "Observation - CIED Connectivity",
