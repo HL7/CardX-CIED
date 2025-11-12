@@ -1,6 +1,6 @@
 ### Introduction
 
-High quality, effective and safe remote monitoring relies on patient connectivity.  The rapid management of disconnected patients is vital to ensure continuity of routine follow-up and to timely measure alerts that signal unexpected device behavior or important clinical events. The responsibility to maintain a connected status primarily lies with both the patient and the device clinic. It is essential that every reasonable effort is made by the clinic to contact disconnected patients and restore their connection to RM.
+High quality, effective and safe remote monitoring relies on patient connectivity.  The rapid management of disconnected patients is vital to ensure continuity of routine follow-up and monitor alerts that signal unexpected device behavior or important clinical events. The responsibility to maintain a connected status primarily lies with both the patient and the device clinic. It is essential that every reasonable effort is made by the clinic to contact disconnected patients and restore their connection to remote monitoring.
 Cardiac implantable electronic device (CIED) manufacturers serve as collaborative partners, potentially offering assistance by notifying patients directly about disconnections and providing technical support to help restore the connection. This process is time-intensive. Establishing reconnection involves contacting the patient and troubleshooting any issues. This can be effectively carried out by adequately trained clinical or non-clinical staff; however, those staff need time allocated to that task and need readily available data to know who is disconnected, why they may be disconnected and to prioritize which patients need to be reconnected most urgently. 
 
 Patient connectivity can be disrupted for a variety of reasons including:
@@ -14,7 +14,7 @@ The task of managing disconnected patients is further complicated by the varying
 
 ### Approach
 
-In the current state, there is no reliable method for device clinics, CIED data management systems, or CIED manufacturers to effective manage patients who are disconnected from remote monitoring. Through this use case, we plan to develop FHIR profiles to allow device clinics, CIED data management systems, and CIED manufacturers to calculate a devices connectivity status and provide supporting context on-the-fly using FHIR servers. This will also enable support for various software workflows and approaches by clinicians.
+In the current state, there is no reliable method for device clinics, CIED data management systems, or CIED manufacturers to effective manage patients who are disconnected from remote monitoring. Through this use case, we plan to develop FHIR profiles to allow device clinics, CIED data management systems, and CIED manufacturers to calculate a device's connectivity status and provide supporting context on-the-fly using FHIR servers. This will also enable support for various software workflows and approaches by clinicians.
 This use case focuses on optimizing workflows to reconnect patients to remote monitoring. The FHIR profiles are designed to provide the user with comprehensive context and information available from the manufacturer systems, enabling efficient management of patient connectivity 
 
 This use case is centered around facilitating workflows to get patients connected to remote monitoring. The FHIR profiles are meant to provide the user with as much context and information as is available in the manufacturer systems. 
@@ -27,10 +27,10 @@ This use case is centered around facilitating workflows to get patients connecte
 * Free text containing any additional information the manufacturer might have about the patient, device, or guidance to reestablish connectivity 
 
 ### User Stories
-The following user stories have associated Example Instances included in the Implementation Guide and are representative of a 19-May-2025 query of a manufacturers FHIR server which supports the connectivity profiles.
+The following user stories have associated Example Instances included in the Implementation Guide and are representative of a 19-May-2025 query of a manufacturer's FHIR server which supports the connectivity profiles.
 
 #### Case 1 - Patient Receives a New Monitor That Has Not Been Setup
-Jim Doe is a 67-year-old male with a dual chamber ICD. The device was implanted for primary prevention for sudden cardiac death. Jim received a bedside monitor in the mail from his device manufacturer but he has not plugged the device in yet.
+Jim Doe is a 67-year-old male with a dual chamber ICD. The device was implanted for primary prevention for sudden cardiac death. Jim received a bedside monitor in the mail from his device manufacturer but he has not plugged the monitor in yet.
 
 #### Case 2 - Patient is Inactive Due to Lack of Connectivity
 John Doe, 71-year-old male with an ICD placed for secondary prevention. His last transmission date was 08-Feb-2025, last CIED connectivity time was 19-Feb-2025, and last monitor connectivity (monitor = portable device) connection was 19-Feb-2025. His next scheduled remote interrogation is 30-May-2025.
@@ -46,7 +46,7 @@ Jimmy Doe, 73-year-old male with a dual chamber pacemaker placed for complete he
 
 ### Actors
 #### Connectivity Data Producer
-The data producer is a manufacturers CIED remote monitoring platform. The manufacturer typically manages an IoT platform to connect cardiac monitors with the remote monitoring platform and manufacturers CIED devices.
+The data producer is a manufacturer's CIED remote monitoring platform. The manufacturer typically manages an IoT platform to connect cardiac monitors with the remote monitoring platform and manufacturer's CIED devices.
 
 A secondary use case is a middleware vendor who consumes the data from a manufacturer and passes that information through to another software system such as an Electronic Health Record.
 
