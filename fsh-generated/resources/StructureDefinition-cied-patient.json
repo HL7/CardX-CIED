@@ -5,7 +5,7 @@
   "name": "CIEDPatient",
   "title": "Patient - CIED Patient Profile",
   "status": "active",
-  "description": "An CIED profile of the Patient resource.",
+  "description": "The CardX CIED patient profile is interoperable with the PID segment of the IHE Patient Care Device Technical Framework, Vol. 2,\nSection 3.9 - Communicate IDC Observations. The data elements in the FHIR profile are aligned, including allowing for the use of a concatenated Device Model and Serial Number \nto represent a unique patient identifier.",
   "fhirVersion": "5.0.0",
   "kind": "resource",
   "abstract": false,
@@ -17,7 +17,6 @@
       {
         "id": "Patient.identifier",
         "path": "Patient.identifier",
-        "min": 1,
         "mustSupport": true
       },
       {

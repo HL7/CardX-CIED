@@ -5,7 +5,7 @@
   "name": "CIEDMonitor",
   "title": "Device - CIED Monitor Profile",
   "status": "active",
-  "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
+  "description": "\nThe CardX Device - CIED Monitor profile inherits characteristics from ISO/IEEE 11073-10103 - Implantable device, cardiac. \nThe same CIED Device data elements that are included in ISO/IEEE 11073-10103, are must support for CIED Monitors in the FHIR profile. \n",
   "fhirVersion": "5.0.0",
   "kind": "resource",
   "abstract": false,

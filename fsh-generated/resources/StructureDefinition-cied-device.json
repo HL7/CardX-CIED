@@ -5,7 +5,7 @@
   "name": "CIEDDevice",
   "title": "Device - Cardiovascular Implantable Electronic Device (CIED)",
   "status": "active",
-  "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
+  "description": "\nThe CardX CIED Device profile is interoperable with ISO/IEEE 11073-10103 - Implantable device, cardiac. The cardinality of the profile aligns with the\noptionality of the ISO/IEEE 11073/10103 terms.\n\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). \nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE,\nMDC_IDC_DEV_MODEL,\nMDC_IDC_DEV_SERIAL,\nMDC_IDC_DEV_MFG\n",
   "fhirVersion": "5.0.0",
   "kind": "resource",
   "abstract": false,
@@ -49,7 +49,7 @@
         "path": "Device.type.coding",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/11073-10103-DeviceType"
+          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/MDCIDCDeviceTypes"
         }
       }
     ]
