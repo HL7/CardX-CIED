@@ -7,7 +7,8 @@ Description: "ValueSet for the MDC CodeSystem."
 // * ^status = #draft
 * ^version = "1.0.0"
 * ^experimental = false
-* include codes from system Mdc
+// * include codes from system Mdc
+* include codes from system Mdc where partition = "11"
 
 ValueSet: MDCIDCDeviceTypes
 Id: MDCIDCDeviceTypes
