@@ -2,8 +2,10 @@ Profile: CIEDPatient
 Parent: Patient
 Id: cied-patient
 Title: "Patient - CIED Patient Profile"
-Description: "An CIED profile of the Patient resource."
-* identifier 1..* MS
+Description: "The CardX CIED patient profile is interoperable with the PID segment of the IHE Patient Care Device Technical Framework, Vol. 2,
+Section 3.9 - Communicate IDC Observations. The data elements in the FHIR profile are aligned, including allowing for the use of a concatenated Device Model and Serial Number 
+to represent a unique patient identifier."
+* identifier 0..* MS
 * identifier.type from CIEDPatientIdentifier (extensible)
 * name MS
 * telecom MS

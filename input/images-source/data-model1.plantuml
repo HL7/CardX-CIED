@@ -19,17 +19,17 @@ entity "Patient" as Patient {
 entity "Device - CIED" as cied {
   id : string <<generated>>
   --
-  udiCarrier: BackboneElement (0..1)
-  manufacturer: String (0..1)
-  serialNumber: String (0..1)
-  modelNumber: String (0..1)
-  type: CodeableConcept (0..1)
+  udiCarrier: BackboneElement (0..*)
+  manufacturer: String (1..1)
+  serialNumber: String (1..1)
+  modelNumber: String (1..1)
+  type: CodeableConcept (1..1)
 }
 
 entity "Device - Monitor" as monitor {
   id : string <<generated>>
   --
-  udiCarrier: BackboneElement (0..1)
+  udiCarrier: BackboneElement (0..*)
   manufacturer: String (0..1)
   serialNumber: String (0..1)
   modelNumber: String (0..1)
@@ -51,11 +51,11 @@ entity "Observation - Connectivity Status" as Connectivity {
     ciedDevice : Reference(CIED) (1..*)
     status : code (1..1)
     code : CodeableConcept (1..1)
-    subject : Reference(Patient) (0..1)
+    subject : Reference(Patient) (1..1)
     effective : dateTime (1..1)
-    device : Reference(Monitor) (1..1)
-    connectivityStatus : BackboneElement (1..0)
-    connectivityModifier : BackboneElement (0..1)
+    device : Reference(Monitor) (0..1)
+    connectivityStatus : BackboneElement (1..1)
+    connectivityModifier : BackboneElement (0..*)
     statusReason: BackboneElement (0..1)
     statusGuidance: BackboneElement (0..1)
     lastCiedConnectivityDate : BackboneElement (0..1)

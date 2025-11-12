@@ -10,9 +10,17 @@ Parent: Observation
 Id: cied-connectivity-status
 Title: "Observation - CIED Connectivity"
 Description: "
-Profile of the observation resource to present the most recent connectivity status and associated information for a CIED/Monitor pair.
+Profile of the observation resource to present the most recent connectivity status and associated information for a CIED/Monitor combination.
+In most instances there will be one observation per CIED/monitor pair per patient, however some manufacturers may allow multiple CIEDs implanted in a patient to connect to a single monitor and have a single connectivity status for the entire system of devices.
 
-CIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. The connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. A single observation will be returned for every CIED/monitor pair.
+CIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. 
+The connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. 
+A single observation will be returned for every CIED/monitor pair.
+
+Connectivity status is based on the actual time difference between the most recent successful communication and the present date. 
+To manage disconnected patients, manufacturers have implemented additional functionality in their platforms. The connectivity modifier is included to represent an action performed by the user or business logic applied by the manufacturer.
+Examples of these are a user suspending a patient from appearing on the disconnected list in the remote monitoring system or the system automatically marking a patient as inactive after a prolonged disconnection period to remove them from
+appearing on the disconnected list in the user interface.  
 "
 // to do - check element order for each example
 * status MS
