@@ -18,7 +18,7 @@ MDC_IDC_DEV_MFG
 * serialNumber 1..1 MS
 * modelNumber 1..1 MS
 * type 1..1 MS
-* type.coding from IDCDeviceTypeVS
+* type.coding from MDCIDCDeviceTypes
 
 /*
 Mapping: device-to-ieee-11073-10103

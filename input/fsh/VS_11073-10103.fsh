@@ -9,6 +9,18 @@ Description: "ValueSet for the MDC CodeSystem."
 * ^experimental = false
 * include codes from system Mdc
 
+ValueSet: MDCIDCDeviceTypes
+Id: MDCIDCDeviceTypes
+Title: "MDC IDC Device Types"
+Description: "ValueSet for the ISO/IEEE 11073-10103 Nomenclature Codes for Device Type"
+* ^experimental = false
+* Mdc#753665 "Pacemaker"
+* Mdc#753666 "Defibrillator"
+* Mdc#753667 "Cardiac Resynchronization Therapy - Defibrillator"
+* Mdc#753668 "Cardiac Resynchronization Therapy - Pacemaker"
+* Mdc#753669 "Implantable Diagnostic Monitor"
+* Mdc#753670 "Other"
+
 ValueSet: CIEDPatientIdentifier
 Id: cied-patient-identifier
 Title: "CIED Patient Identifier"

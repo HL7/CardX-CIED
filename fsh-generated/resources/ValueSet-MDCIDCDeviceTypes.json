@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MDCIDCDeviceTypes",
+  "id": "MDCIDCDeviceTypes",
+  "title": "MDC IDC Device Types",
+  "description": "ValueSet for the ISO/IEEE 11073-10103 Nomenclature Codes for Device Type",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/MDCIDCDeviceTypes",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "concept": [
+          {
+            "code": "753665",
+            "display": "Pacemaker"
+          },
+          {
+            "code": "753666",
+            "display": "Defibrillator"
+          },
+          {
+            "code": "753667",
+            "display": "Cardiac Resynchronization Therapy - Defibrillator"
+          },
+          {
+            "code": "753668",
+            "display": "Cardiac Resynchronization Therapy - Pacemaker"
+          },
+          {
+            "code": "753669",
+            "display": "Implantable Diagnostic Monitor"
+          },
+          {
+            "code": "753670",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

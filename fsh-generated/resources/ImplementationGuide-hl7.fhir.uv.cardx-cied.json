@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied",
-  "version": "1.0.0-ballot",
+  "version": "1.0.0",
   "name": "CardXCIED",
   "title": "CardX - Cardiac Implantable Electronic Devices",
   "status": "active",
@@ -114,7 +114,7 @@
           "reference": "StructureDefinition/cied-device"
         },
         "name": "Device - Cardiovascular Implantable Electronic Device (CIED)",
-        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
+        "description": "\nThe CardX CIED Device profile is interoperable with ISO/IEEE 11073-10103 - Implantable device, cardiac. The cardinality of the profile aligns with the\noptionality of the ISO/IEEE 11073/10103 terms.\n\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). \nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE,\nMDC_IDC_DEV_MODEL,\nMDC_IDC_DEV_SERIAL,\nMDC_IDC_DEV_MFG\n",
         "isExample": false
       },
       {
@@ -122,7 +122,7 @@
           "reference": "StructureDefinition/cied-monitor"
         },
         "name": "Device - CIED Monitor Profile",
-        "description": "\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The Formal Profile Definition below provides the formal summary, definitions, and terminology requirements.\n\nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE\nMDC_IDC_DEV_MODEL\nMDC_IDC_DEV_SERIAL\nMDC_IDC_DEV_MFG\n",
+        "description": "\nThe CardX Device - CIED Monitor profile inherits characteristics from ISO/IEEE 11073-10103 - Implantable device, cardiac. \nThe same CIED Device data elements that are included in ISO/IEEE 11073-10103, are must support for CIED Monitors in the FHIR profile. \n",
         "isExample": false
       },
       {
@@ -151,6 +151,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/MDCIDCDeviceTypes"
+        },
+        "name": "MDC IDC Device Types",
+        "description": "ValueSet for the ISO/IEEE 11073-10103 Nomenclature Codes for Device Type",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/MDCValueSet"
         },
         "name": "MDC Value Set",
@@ -162,7 +170,7 @@
           "reference": "StructureDefinition/cied-connectivity-status"
         },
         "name": "Observation - CIED Connectivity",
-        "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a CIED/Monitor pair.\n\nCIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. The connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. A single observation will be returned for every CIED/monitor pair.\n",
+        "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a CIED/Monitor combination.\nIn most instances there will be one observation per CIED/monitor pair per patient, however some manufacturers may allow multiple CIEDs implanted in a patient to connect to a single monitor and have a single connectivity status for the entire system of devices.\n\nCIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. \nThe connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. \nA single observation will be returned for every CIED/monitor pair.\n\nConnectivity status is based on the actual time difference between the most recent successful communication and the present date. \nTo manage disconnected patients, manufacturers have implemented additional functionality in their platforms. The connectivity modifier is included to represent an action performed by the user or business logic applied by the manufacturer.\nExamples of these are a user suspending a patient from appearing on the disconnected list in the remote monitoring system or the system automatically marking a patient as inactive after a prolonged disconnection period to remove them from\nappearing on the disconnected list in the user interface.  \n",
         "isExample": false
       },
       {
@@ -170,7 +178,7 @@
           "reference": "StructureDefinition/cied-patient"
         },
         "name": "Patient - CIED Patient Profile",
-        "description": "An CIED profile of the Patient resource.",
+        "description": "The CardX CIED patient profile is interoperable with the PID segment of the IHE Patient Care Device Technical Framework, Vol. 2,\nSection 3.9 - Communicate IDC Observations. The data elements in the FHIR profile are aligned, including allowing for the use of a concatenated Device Model and Serial Number \nto represent a unique patient identifier.",
         "isExample": false
       },
       {
@@ -422,7 +430,7 @@
           "code": "releaselabel",
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
-        "value": "STU 1 - Ballot"
+        "value": "ci-build"
       },
       {
         "code": {
