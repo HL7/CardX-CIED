@@ -8,20 +8,20 @@
     "endLine": 79
   },
   {
-    "outputFile": "CodeSystem-CIEDconnectivity.json",
-    "fshName": "CIEDconnectivity",
+    "outputFile": "CodeSystem-CardXCIED.json",
+    "fshName": "CardXCIED",
     "fshType": "CodeSystem",
-    "fshFile": "VS_connectivity.fsh",
-    "startLine": 63,
-    "endLine": 118
+    "fshFile": "VS_CardX-CIED.fsh",
+    "startLine": 38,
+    "endLine": 95
   },
   {
     "outputFile": "CodeSystem-IDC.json",
     "fshName": "IDC",
     "fshType": "CodeSystem",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 59,
-    "endLine": 95
+    "startLine": 38,
+    "endLine": 71
   },
   {
     "outputFile": "Device-uc1ACMEICD.json",
@@ -44,8 +44,8 @@
     "fshName": "uc2CIEDMonitor",
     "fshType": "Instance",
     "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 30,
-    "endLine": 40
+    "startLine": 16,
+    "endLine": 26
   },
   {
     "outputFile": "Device-uc3ACMEPacemaker.json",
@@ -60,8 +60,8 @@
     "fshName": "uc3CIEDMonitor",
     "fshType": "Instance",
     "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 42,
-    "endLine": 52
+    "startLine": 28,
+    "endLine": 38
   },
   {
     "outputFile": "Device-uc4ACMEPacemaker.json",
@@ -76,8 +76,8 @@
     "fshName": "uc4CIEDMonitor",
     "fshType": "Instance",
     "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 54,
-    "endLine": 64
+    "startLine": 40,
+    "endLine": 50
   },
   {
     "outputFile": "Device-uc5ACMEPacemaker.json",
@@ -92,8 +92,8 @@
     "fshName": "uc5CIEDMonitor",
     "fshType": "Instance",
     "fshFile": "SD_CIEDMonitor.fsh",
-    "startLine": 66,
-    "endLine": 76
+    "startLine": 52,
+    "endLine": 62
   },
   {
     "outputFile": "Observation-uc1ConnectivityACME.json",
@@ -216,67 +216,43 @@
     "endLine": 14
   },
   {
-    "outputFile": "ValueSet-11073-10103-DeviceType.json",
-    "fshName": "IDCDeviceTypeVS",
-    "fshType": "ValueSet",
-    "fshFile": "VS_11073-10103.fsh",
-    "startLine": 33,
-    "endLine": 43
-  },
-  {
-    "outputFile": "ValueSet-11073-10103-SessionType.json",
-    "fshName": "IDCSessionTypeVS",
-    "fshType": "ValueSet",
-    "fshFile": "VS_11073-10103.fsh",
-    "startLine": 45,
-    "endLine": 57
-  },
-  {
     "outputFile": "ValueSet-MDCIDCDeviceTypes.json",
     "fshName": "MDCIDCDeviceTypes",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 12,
-    "endLine": 22
-  },
-  {
-    "outputFile": "ValueSet-MDCValueSet.json",
-    "fshName": "MDCValueSet",
-    "fshType": "ValueSet",
-    "fshFile": "VS_11073-10103.fsh",
-    "startLine": 3,
-    "endLine": 10
+    "startLine": 26,
+    "endLine": 36
   },
   {
     "outputFile": "ValueSet-cied-connectivity-state-modifier-vs.json",
     "fshName": "CIEDConnectivityStateModifierVS",
     "fshType": "ValueSet",
-    "fshFile": "VS_connectivity.fsh",
-    "startLine": 12,
-    "endLine": 21
+    "fshFile": "VS_CardX-CIED.fsh",
+    "startLine": 10,
+    "endLine": 19
   },
   {
     "outputFile": "ValueSet-cied-connectivity-state-vs.json",
     "fshName": "CIEDConnectivityStateVS",
     "fshType": "ValueSet",
-    "fshFile": "VS_connectivity.fsh",
-    "startLine": 3,
-    "endLine": 10
+    "fshFile": "VS_CardX-CIED.fsh",
+    "startLine": 1,
+    "endLine": 8
   },
   {
     "outputFile": "ValueSet-cied-monitor-types-vs.json",
     "fshName": "CIEDMonitorTypesVS",
     "fshType": "ValueSet",
-    "fshFile": "VS_connectivity.fsh",
-    "startLine": 46,
-    "endLine": 53
+    "fshFile": "VS_CardX-CIED.fsh",
+    "startLine": 21,
+    "endLine": 28
   },
   {
     "outputFile": "ValueSet-cied-patient-identifier.json",
     "fshName": "CIEDPatientIdentifier",
     "fshType": "ValueSet",
-    "fshFile": "VS_11073-10103.fsh",
-    "startLine": 24,
-    "endLine": 30
+    "fshFile": "VS_CardX-CIED.fsh",
+    "startLine": 30,
+    "endLine": 36
   }
 ]

@@ -13,20 +13,6 @@ The same CIED Device data elements that are included in ISO/IEEE 11073-10103, ar
 * type MS
 * type from CIEDMonitorTypesVS
 
-/*
-Instance: uc1CIEDMonitor
-InstanceOf: CIEDMonitor   
-Description: "An example CIED monitor for CIED connectivity example 1."
-* udiCarrier.deviceIdentifier = "12341234" 
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
-* udiCarrier.carrierHRF = "123456"
-* manufacturer = "ACME Devices"
-* serialNumber = "uc1ACMEMonitor"
-* modelNumber = "Bedside Monitor 1"
-* type = CIEDconnectivity#bedside-device
-*/
-
 Instance: uc2CIEDMonitor
 InstanceOf: CIEDMonitor   
 Description: "An example CIED monitor for CIED connectivity example 2."
@@ -37,7 +23,7 @@ Description: "An example CIED monitor for CIED connectivity example 2."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc2ACMEMonitor"
 * modelNumber = "SmartApp Monitor 1"
-* type = CIEDconnectivity#mobile-monitor
+* type = CardXCIED#mobile-monitor
 
 Instance: uc3CIEDMonitor
 InstanceOf: CIEDMonitor   
@@ -49,7 +35,7 @@ Description: "An example CIED monitor for CIED connectivity example 3."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc3ACMEMonitor"
 * modelNumber = "Bedside Monitor 3000"
-* type = CIEDconnectivity#bedside-device
+* type = CardXCIED#bedside-device
 
 Instance: uc4CIEDMonitor
 InstanceOf: CIEDMonitor   
@@ -61,7 +47,7 @@ Description: "An example CIED monitor for CIED connectivity example 4."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc4ACMEMonitor"
 * modelNumber = "Bedside Monitor 5000"
-* type = CIEDconnectivity#bedside-device
+* type = CardXCIED#bedside-device
 
 Instance: uc5CIEDMonitor
 InstanceOf: CIEDMonitor   
@@ -73,4 +59,4 @@ Description: "An example CIED monitor for CIED connectivity example 5."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc5ACMEMonitor"
 * modelNumber = "Magic Bedside Monitor"
-* type = CIEDconnectivity#bedside-device
+* type = CardXCIED#bedside-device

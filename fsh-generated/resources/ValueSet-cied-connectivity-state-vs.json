@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity",
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED",
         "concept": [
           {
             "code": "not-applicable",

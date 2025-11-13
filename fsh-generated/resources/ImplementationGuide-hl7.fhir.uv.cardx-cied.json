@@ -63,6 +63,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/CardXCIED"
+        },
+        "name": "CardX CIED FHIR IG Code System",
+        "description": "Codes system for CardX CIED FHIR Implementation Guide Codes.",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/cied-connectivity-state-modifier-vs"
         },
         "name": "CIED Connectivity Status Modifier Value Set",
@@ -75,14 +83,6 @@
         },
         "name": "CIED Connectivity Status Value Set",
         "description": "The overall system connectivity status as calculated by the CIED manufacturer",
-        "isExample": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/CIEDconnectivity"
-        },
-        "name": "CIED Connectivity Status Values",
-        "description": "Codes system for CIED connectivity and monitor device types",
         "isExample": false
       },
       {
@@ -127,22 +127,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/11073-10103-DeviceType"
-        },
-        "name": "IEEE 11073-10103 Device Type",
-        "description": "The type of device as defined by IEEE 11073-10103",
-        "isExample": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/11073-10103-SessionType"
-        },
-        "name": "IEEE 11073-10103 Session Type",
-        "description": "The type of session as defined by IEEE 11073-10103",
-        "isExample": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/IDC"
         },
         "name": "ISO/IEEE-11073-10103",
@@ -154,15 +138,7 @@
           "reference": "ValueSet/MDCIDCDeviceTypes"
         },
         "name": "MDC IDC Device Types",
-        "description": "ValueSet for the ISO/IEEE 11073-10103 Nomenclature Codes for Device Type",
-        "isExample": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/MDCValueSet"
-        },
-        "name": "MDC Value Set",
-        "description": "ValueSet for the MDC CodeSystem.",
+        "description": "ValueSet for ISO/IEEE 11073-10103 Nomenclature Codes for MDC_IDC_ENUM_DEV_TYPE (Device Type).",
         "isExample": false
       },
       {
