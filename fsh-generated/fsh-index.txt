@@ -1,7 +1,6 @@
 Output File                                        Name                             Type        FSH File                     Lines
 CapabilityStatement-cied-data-sender.json          cied-data-sender                 Instance    DEF_CapabilityStatement.fsh  35 - 79
 CodeSystem-CardXCIED.json                          CardXCIED                        CodeSystem  VS_CardX-CIED.fsh            38 - 95
-CodeSystem-IDC.json                                IDC                              CodeSystem  VS_11073-10103.fsh           38 - 71
 Device-uc1ACMEICD.json                             uc1ACMEICD                       Instance    SD_Device.fsh                35 - 45
 Device-uc2ACMEPacemaker.json                       uc2ACMEPacemaker                 Instance    SD_Device.fsh                47 - 58
 Device-uc2CIEDMonitor.json                         uc2CIEDMonitor                   Instance    SD_CIEDMonitor.fsh           16 - 26

@@ -6,20 +6,12 @@
       "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
     ]
   },
-  "udiCarrier": [
-    {
-      "deviceIdentifier": "123456789",
-      "issuer": "http://hl7.org/fhir/NamingSystem/gs1-di",
-      "jurisdiction": "http://hl7.org/fhir/NamingSystem/us-fda-udi",
-      "carrierHRF": "123456"
-    }
-  ],
   "type": [
     {
       "coding": [
         {
           "code": "753666",
-          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/IDC"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       ]
     }
