@@ -30,7 +30,7 @@ Description: "The type of CIED monitor"
 ValueSet: CIEDPatientIdentifier
 Id: cied-patient-identifier
 Title: "CIED Patient Identifier"
-Description: "Identifiers which can be used to identify CIED patients."
+Description: "Identifier which can be used to identify CIED patients."
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0203
 * CardXCIED#idco-pid "Identifier used in IDCO PID HL7 Segment"
