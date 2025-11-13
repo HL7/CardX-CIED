@@ -19,7 +19,7 @@
       "coding": [
         {
           "code": "bedside-device",
-          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+          "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
         }
       ]
     }

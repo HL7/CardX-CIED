@@ -59,7 +59,7 @@
           "coding": [
             {
               "code": "observation-cied-connectivity",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         },
@@ -146,7 +146,7 @@
           "coding": [
             {
               "code": "connectivity-status",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -180,7 +180,7 @@
           "coding": [
             {
               "code": "connectivity-modifier",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -214,7 +214,7 @@
           "coding": [
             {
               "code": "status-reason",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -244,7 +244,7 @@
           "coding": [
             {
               "code": "status-guidance",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -274,7 +274,7 @@
           "coding": [
             {
               "code": "last-cied-connectivity-time",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -304,7 +304,7 @@
           "coding": [
             {
               "code": "last-monitor-connectivity-time",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -334,7 +334,7 @@
           "coding": [
             {
               "code": "next-cied-connectivity-date",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -364,7 +364,7 @@
           "coding": [
             {
               "code": "next-monitor-connectivity-date",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -394,7 +394,7 @@
           "coding": [
             {
               "code": "last-interrogation-date",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -424,7 +424,7 @@
           "coding": [
             {
               "code": "next-interrogation-date",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -454,7 +454,7 @@
           "coding": [
             {
               "code": "next-secondary-interrogation-date",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -484,7 +484,7 @@
           "coding": [
             {
               "code": "connection-interval",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }
@@ -514,7 +514,7 @@
           "coding": [
             {
               "code": "expected-time-period",
-              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity"
+              "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
             }
           ]
         }

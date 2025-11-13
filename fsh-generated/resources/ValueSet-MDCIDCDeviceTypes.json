@@ -4,7 +4,7 @@
   "name": "MDCIDCDeviceTypes",
   "id": "MDCIDCDeviceTypes",
   "title": "MDC IDC Device Types",
-  "description": "ValueSet for the ISO/IEEE 11073-10103 Nomenclature Codes for Device Type",
+  "description": "ValueSet for ISO/IEEE 11073-10103 Nomenclature Codes for MDC_IDC_ENUM_DEV_TYPE (Device Type).",
   "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/MDCIDCDeviceTypes",
   "experimental": false,
   "compose": {
@@ -14,27 +14,27 @@
         "concept": [
           {
             "code": "753665",
-            "display": "Pacemaker"
+            "display": "MDC_IDC_ENUM_DEV_TYPE_IPG"
           },
           {
             "code": "753666",
-            "display": "Defibrillator"
+            "display": "MDC_IDC_ENUM_DEV_TYPE_ICD"
           },
           {
             "code": "753667",
-            "display": "Cardiac Resynchronization Therapy - Defibrillator"
+            "display": "MDC_IDC_ENUM_DEV_TYPE_CRT_D"
           },
           {
             "code": "753668",
-            "display": "Cardiac Resynchronization Therapy - Pacemaker"
+            "display": "MDC_IDC_ENUM_DEV_TYPE_CRT_P"
           },
           {
             "code": "753669",
-            "display": "Implantable Diagnostic Monitor"
+            "display": "MDC_IDC_ENUM_DEV_TYPE_Monitor"
           },
           {
             "code": "753670",
-            "display": "Other"
+            "display": "MDC_IDC_ENUM_DEV_TYPE_Other"
           }
         ]
       }

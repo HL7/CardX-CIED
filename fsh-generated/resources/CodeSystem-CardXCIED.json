@@ -2,11 +2,11 @@
   "resourceType": "CodeSystem",
   "status": "active",
   "content": "complete",
-  "name": "CIEDconnectivity",
-  "id": "CIEDconnectivity",
-  "title": "CIED Connectivity Status Values",
-  "description": "Codes system for CIED connectivity and monitor device types",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CIEDconnectivity",
+  "name": "CardXCIED",
+  "id": "CardXCIED",
+  "title": "CardX CIED FHIR IG Code System",
+  "description": "Codes system for CardX CIED FHIR Implementation Guide Codes.",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED",
   "concept": [
     {
       "code": "connectivity-status",
@@ -132,9 +132,14 @@
       "code": "status-guidance",
       "display": "Status guidance",
       "definition": "Text describing steps to get the patient to a connected status."
+    },
+    {
+      "code": "idco-pid",
+      "display": "Identifier used in IDCO PID HL7 Segment",
+      "definition": "IDCO specifies a combination of model and serial number as model:model-number/serial:serial-number"
     }
   ],
   "caseSensitive": true,
   "experimental": false,
-  "count": 25
+  "count": 26
 }
