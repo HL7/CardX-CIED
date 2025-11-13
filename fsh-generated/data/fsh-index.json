@@ -16,14 +16,6 @@
     "endLine": 95
   },
   {
-    "outputFile": "CodeSystem-IDC.json",
-    "fshName": "IDC",
-    "fshType": "CodeSystem",
-    "fshFile": "VS_11073-10103.fsh",
-    "startLine": 38,
-    "endLine": 71
-  },
-  {
     "outputFile": "Device-uc1ACMEICD.json",
     "fshName": "uc1ACMEICD",
     "fshType": "Instance",

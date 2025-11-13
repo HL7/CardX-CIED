@@ -6,14 +6,6 @@
       "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-monitor"
     ]
   },
-  "udiCarrier": [
-    {
-      "deviceIdentifier": "12341234",
-      "issuer": "http://hl7.org/fhir/NamingSystem/gs1-di",
-      "jurisdiction": "http://hl7.org/fhir/NamingSystem/us-fda-udi",
-      "carrierHRF": "123456"
-    }
-  ],
   "type": [
     {
       "coding": [

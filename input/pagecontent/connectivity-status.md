@@ -30,19 +30,19 @@ This use case is centered around facilitating workflows to get patients connecte
 The following user stories have associated Example Instances included in the Implementation Guide and are representative of a 19-May-2025 query of a manufacturer's FHIR server which supports the connectivity profiles.
 
 #### Case 1 - Patient Receives a New Monitor That Has Not Been Setup
-Jim Doe is a 67-year-old male with a dual chamber ICD. The device was implanted for primary prevention for sudden cardiac death. Jim received a bedside monitor in the mail from his device manufacturer but he has not plugged the monitor in yet.
+Jim Doe is a 67-year-old male with a dual chamber ICD. The device was implanted for primary prevention for sudden cardiac death. Jim received a bedside monitor in the mail from his device manufacturer, but he has not plugged the monitor in yet.
 
 #### Case 2 - Patient is Inactive Due to Lack of Connectivity
-John Doe, 71-year-old male with an ICD placed for secondary prevention. His last transmission date was 08-Feb-2025, last CIED connectivity time was 19-Feb-2025, and last monitor connectivity (monitor = portable device) connection was 19-Feb-2025. His next scheduled remote interrogation is 30-May-2025.
+John Doe is a 71-year-old male with an ICD placed for secondary prevention. His last transmission date was 08-Feb-2025, last CIED connectivity time was 19-Feb-2025, and last monitor connectivity (monitor = portable device) connection was 19-Feb-2025. His next scheduled remote interrogation is 30-May-2025.
 
 #### Case 3 - Patient is Connected
-Jane Doe, 61-year-old female. Dual chamber pacemaker placed for sinus bradycardia. Last transmission date was 28-Feb-2025. Last CIED connectivity time was 18-May-2025. Last monitor connectivity (monitor = bedside device) was 19-May-2025 (connected as expected). Next scheduled remote interrogation is 30-May-2025.
+Jane Doe is a 61-year-old female with a dual chamber pacemaker placed for sinus bradycardia. Her last transmission date was 28-Feb-2025, last CIED connectivity time was 18-May-2025, and last monitor connectivity (monitor = bedside device) was 19-May-2025 (connected as expected). Her next scheduled remote interrogation is 30-May-2025.
 
 #### Case 4 - Patient Informs Clinic They Will be Away From Their Monitor
-Jane Doe, 61-year-old female. Dual chamber pacemaker placed for sinus bradycardia. Last transmission date was 28-Feb-2025. Patient notified device clinic that they are going on vacation. Last CIED connectivity time was 25-Apr-2025. Last monitor connectivity (monitor = bedside device) was 19-May-2025 (connected as expected at home, patient did not bring along on vacation). Next scheduled remote interrogation is 30-May-2025.
+Jane Doe is a 61-year-old female with a dual chamber pacemaker placed for sinus bradycardia. Her last transmission date was 28-Feb-2025. The patient notified her device clinic that she is going on vacation without her bedside monitor. The last CIED connectivity time was 25-Apr-2025, last monitor connectivity (monitor = bedside device) was 19-May-2025 (connected as expected at home, patient did not bring along on vacation), and the next scheduled remote interrogation is 30-May-2025.
 
 #### Case 5 - Patient is Disconnected
-Jimmy Doe, 73-year-old male with a dual chamber pacemaker placed for complete heart block. Last transmission date was on 30-Mar-2025. Last CIED connectivity time was 04-May-2025. Last monitor connectivity (monitor = bedside device) was 04-May-2025. Next scheduled remote interrogation is 25-Jun-2025. The manufacturer shows Jimmy as being disconnected if communication has not occured in 10 days.
+Jimmy Doe is a73-year-old male with a dual chamber pacemaker placed for complete heart block. His last transmission date was on 30-Mar-2025, last CIED connectivity time was 04-May-2025, and last monitor connectivity (monitor = bedside device) was 04-May-2025. His next scheduled remote interrogation is 25-Jun-2025. The manufacturer shows Jimmy as being disconnected if communication has not occurred in 10 days.
 
 ### Actors
 #### Connectivity Data Producer

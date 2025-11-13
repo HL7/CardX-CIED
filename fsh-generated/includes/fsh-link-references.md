@@ -7,7 +7,6 @@
 [CIEDPatientIdentifier]: ValueSet-cied-patient-identifier.html
 [CIEDDevice]: StructureDefinition-cied-device.html
 [CIEDMonitor]: StructureDefinition-cied-monitor.html
-[IDC]: CodeSystem-IDC.html
 [MDCIDCDeviceTypes]: ValueSet-MDCIDCDeviceTypes.html
 [CIEDConnectivityStatus]: StructureDefinition-cied-connectivity-status.html
 [CIEDPatient]: StructureDefinition-cied-patient.html
