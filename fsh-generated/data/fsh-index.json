@@ -208,14 +208,6 @@
     "endLine": 14
   },
   {
-    "outputFile": "ValueSet-MDCIDCDeviceTypes.json",
-    "fshName": "MDCIDCDeviceTypes",
-    "fshType": "ValueSet",
-    "fshFile": "VS_11073-10103.fsh",
-    "startLine": 26,
-    "endLine": 36
-  },
-  {
     "outputFile": "ValueSet-cied-connectivity-state-modifier-vs.json",
     "fshName": "CIEDConnectivityStateModifierVS",
     "fshType": "ValueSet",

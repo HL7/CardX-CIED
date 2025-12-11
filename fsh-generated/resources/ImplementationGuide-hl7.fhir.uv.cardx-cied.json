@@ -106,7 +106,7 @@
           "reference": "ValueSet/cied-patient-identifier"
         },
         "name": "CIED Patient Identifier",
-        "description": "Identifiers which can be used to identify CIED patients.",
+        "description": "Identifier which can be used to identify CIED patients.",
         "isExample": false
       },
       {
@@ -123,14 +123,6 @@
         },
         "name": "Device - CIED Monitor Profile",
         "description": "\nThe CardX Device - CIED Monitor profile inherits characteristics from ISO/IEEE 11073-10103 - Implantable device, cardiac. \nThe same CIED Device data elements that are included in ISO/IEEE 11073-10103, are must support for CIED Monitors in the FHIR profile. \n",
-        "isExample": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/MDCIDCDeviceTypes"
-        },
-        "name": "MDC IDC Device Types",
-        "description": "ValueSet for ISO/IEEE 11073-10103 Nomenclature Codes for MDC_IDC_ENUM_DEV_TYPE (Device Type).",
         "isExample": false
       },
       {
