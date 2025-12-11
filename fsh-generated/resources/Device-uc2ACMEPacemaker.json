@@ -6,6 +6,16 @@
       "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
     ]
   },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "753666",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      ]
+    }
+  ],
   "gateway": [
     {
       "reference": {
