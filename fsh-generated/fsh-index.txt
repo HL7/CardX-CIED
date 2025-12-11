@@ -25,7 +25,6 @@ StructureDefinition-cied-device-extension.json     CIEDDeviceExtension          
 StructureDefinition-cied-device.json               CIEDDevice                       Profile     SD_Device.fsh                1 - 21
 StructureDefinition-cied-monitor.json              CIEDMonitor                      Profile     SD_CIEDMonitor.fsh           1 - 14
 StructureDefinition-cied-patient.json              CIEDPatient                      Profile     SD_Patient.fsh               1 - 14
-ValueSet-MDCIDCDeviceTypes.json                    MDCIDCDeviceTypes                ValueSet    VS_11073-10103.fsh           26 - 36
 ValueSet-cied-connectivity-state-modifier-vs.json  CIEDConnectivityStateModifierVS  ValueSet    VS_CardX-CIED.fsh            10 - 19
 ValueSet-cied-connectivity-state-vs.json           CIEDConnectivityStateVS          ValueSet    VS_CardX-CIED.fsh            1 - 8
 ValueSet-cied-monitor-types-vs.json                CIEDMonitorTypesVS               ValueSet    VS_CardX-CIED.fsh            21 - 28
