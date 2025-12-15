@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MDCIDCDeviceTypes",
+  "id": "MDCIDCDeviceTypes",
+  "title": "MDC IDC Device Types",
+  "description": "ValueSet for ISO/IEEE 11073-10103 Nomenclature Codes for MDC_IDC_ENUM_DEV_TYPE (Device Type).",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/MDCIDCDeviceTypes",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "concept": [
+          {
+            "code": "753665",
+            "display": "MDC_IDC_ENUM_DEV_TYPE_IPG"
+          },
+          {
+            "code": "753666",
+            "display": "MDC_IDC_ENUM_DEV_TYPE_ICD"
+          },
+          {
+            "code": "753667",
+            "display": "MDC_IDC_ENUM_DEV_TYPE_CRT_D"
+          },
+          {
+            "code": "753668",
+            "display": "MDC_IDC_ENUM_DEV_TYPE_CRT_P"
+          },
+          {
+            "code": "753669",
+            "display": "MDC_IDC_ENUM_DEV_TYPE_Monitor"
+          },
+          {
+            "code": "753670",
+            "display": "MDC_IDC_ENUM_DEV_TYPE_Other"
+          }
+        ]
+      }
+    ]
+  }
+}

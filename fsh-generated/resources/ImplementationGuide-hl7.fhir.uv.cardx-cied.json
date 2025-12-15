@@ -127,6 +127,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/MDCIDCDeviceTypes"
+        },
+        "name": "MDC IDC Device Types",
+        "description": "ValueSet for ISO/IEEE 11073-10103 Nomenclature Codes for MDC_IDC_ENUM_DEV_TYPE (Device Type).",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cied-connectivity-status"
         },
         "name": "Observation - CIED Connectivity",
