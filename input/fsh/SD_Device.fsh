@@ -42,7 +42,7 @@ Description: "An example CIED device for CIED connectivity example 1."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc1ACMEICD"
 * modelNumber = "ICDExample1"
-* type = Mdc#753666
+* type = $Mdc#753666
 
 Instance: uc2ACMEPacemaker
 InstanceOf: CIEDDevice  
@@ -54,7 +54,7 @@ Description: "An example CIED device for CIED connectivity example 2."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc2ACMEPacemaker"
 * modelNumber = "PacemakerExample2"
-* type = Mdc#753666
+* type = $Mdc#753666
 * gateway = Reference(uc2CIEDMonitor)
 
 Instance: uc3ACMEPacemaker
@@ -67,7 +67,7 @@ Description: "An example CIED device for CIED connectivity example 3."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc3ACMEPacemaker"
 * modelNumber = "PacemakerExample3"
-* type = Mdc#753665
+* type = $Mdc#753665
 * gateway = Reference(uc3CIEDMonitor)
 
 Instance: uc4ACMEPacemaker
@@ -80,7 +80,7 @@ Description: "An example CIED device for CIED connectivity example 4."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc4ACMEPacemaker"
 * modelNumber = "PacemakerExample4"
-* type = Mdc#753665
+* type = $Mdc#753665
 * gateway = Reference(uc4CIEDMonitor)
 
 Instance: uc5ACMEPacemaker
@@ -93,5 +93,5 @@ Description: "An example CIED device for CIED connectivity example 5."
 * manufacturer = "ACME Devices"
 * serialNumber = "uc5ACMEPacemaker"
 * modelNumber = "PacemakerExample5"
-* type = Mdc#753665
+* type = $Mdc#753665
 * gateway = Reference(uc5CIEDMonitor)

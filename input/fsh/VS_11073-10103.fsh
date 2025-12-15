@@ -22,16 +22,16 @@ Description: "The type of session as defined by IEEE 11073-10103"
 * IDC#754055 "Other"
 * IDC#754056 "Unknown"
 */
-
+Alias: $Mdc = urn:iso:std:iso:11073:10101
 ValueSet: MDCIDCDeviceTypes
 Id: MDCIDCDeviceTypes
 Title: "MDC IDC Device Types"
 Description: "ValueSet for ISO/IEEE 11073-10103 Nomenclature Codes for MDC_IDC_ENUM_DEV_TYPE (Device Type)."
 * ^experimental = false
-* Mdc#753665 "MDC_IDC_ENUM_DEV_TYPE_IPG"
-* Mdc#753666 "MDC_IDC_ENUM_DEV_TYPE_ICD"
-* Mdc#753667 "MDC_IDC_ENUM_DEV_TYPE_CRT_D"
-* Mdc#753668 "MDC_IDC_ENUM_DEV_TYPE_CRT_P"
-* Mdc#753669 "MDC_IDC_ENUM_DEV_TYPE_Monitor"
-* Mdc#753670 "MDC_IDC_ENUM_DEV_TYPE_Other"
+* $Mdc#753665 "MDC_IDC_ENUM_DEV_TYPE_IPG"
+* $Mdc#753666 "MDC_IDC_ENUM_DEV_TYPE_ICD"
+* $Mdc#753667 "MDC_IDC_ENUM_DEV_TYPE_CRT_D"
+* $Mdc#753668 "MDC_IDC_ENUM_DEV_TYPE_CRT_P"
+* $Mdc#753669 "MDC_IDC_ENUM_DEV_TYPE_Monitor"
+* $Mdc#753670 "MDC_IDC_ENUM_DEV_TYPE_Other"
 
