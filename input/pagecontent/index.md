@@ -11,28 +11,6 @@ In September 2023, HRS, the European Heart Rhythm Association (EHRA), the Asia P
 
 Recognizing the need to develop new interoperability solutions, a global group of clinicians, manufacturers, and third parties developed a strategy to develop FHIR profiles and implementation guides as part of the CardX FHIR accelerator. This text was published as the [2024 HRS perspective on advancing workflows for CIED remote monitoring](https://www.heartrhythmopen.com/article/S2666-5018(24)00315-5/fulltext#fig2). The paper identifies use cases throughout the total lifecycle of data usage for the care of CIED patients which would benefit from interoperability. These use cases are being used as scope and guidance by the CardX CIED Working group to sequentially develop as part of balloting and release cycles in this implementation guide.
 
-<!-- To Satisfy the QA warnings "An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide", "The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide", and "The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide" -->
-
-### IG Dependencies
-
-This guide is based on the FHIR R4 specification and relies on other implementation guides, including:
-
-{% include dependency-table-short.xhtml %} 
-
-Refer to the [Validation Page](qa.html) for the complete list of dependencies.
-
-### Global Profiles
-
-{% include globals-table.xhtml %} 
-
-### Copyrights
-
-{% include ip-statements.xhtml %} 
-
-### Package Downloads
-
-{% include cross-version-analysis.xhtml %}
-
 <div style="text-align: left;">
 <img src="use-cases.jpg" width="700" >
 </div>
