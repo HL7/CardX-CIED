@@ -5,10 +5,8 @@
     "mode" : "milestone",
     "status" : "trial-use",
     "sequence" : "STU 1",
-    "desc": "CardX - Cardiac Implantable Electronic Devices STU1",
+    "desc": "This is the first version of the CardX - Cardiac Implantable Electronic Devices Implementation Guide",
     "first" : false,
     "title" : "CardX - Cardiac Implantable Electronic Devices",
-    "ci-build" : "http://build.fhir.org/ig/HL7/cardx-cied",
-    "category" : "Care Management",
-    "introduction" : "Implementation guide to support Cardiac Implantable Electronic Device interoperability."
+    "ci-build" : "http://build.fhir.org/ig/HL7/cardx-cied"
   }
