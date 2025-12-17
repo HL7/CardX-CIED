@@ -13,6 +13,25 @@ Recognizing the need to develop new interoperability solutions, a global group o
 
 <!-- To Satisfy the QA warnings "An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide", "The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide", and "The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide" -->
 
+### IG Dependencies
+
+This guide is based on the FHIR R4 specification and relies on other implementation guides, including:
+
+{% include dependency-table-short.xhtml %} 
+
+Refer to the [Validation Page](qa.html) for the complete list of dependencies.
+
+### Global Profiles
+
+{% include globals-table.xhtml %} 
+
+### Copyrights
+
+{% include ip-statements.xhtml %} 
+
+### Package Downloads
+
+{% include cross-version-analysis.xhtml %}
 
 <div style="text-align: left;">
 <img src="use-cases.jpg" width="700" >
