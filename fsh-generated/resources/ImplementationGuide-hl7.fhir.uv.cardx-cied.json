@@ -106,7 +106,7 @@
           "reference": "ValueSet/cied-patient-identifier"
         },
         "name": "CIED Patient Identifier",
-        "description": "Identifier which can be used to identify CIED patients.",
+        "description": "Identifiers which can be used to identify CIED patients.",
         "isExample": false
       },
       {
