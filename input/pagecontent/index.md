@@ -29,13 +29,9 @@ Refer to the [Validation Page](qa.html) for the complete list of dependencies.
 
 {% include ip-statements.xhtml %} 
 
-<!-- ==================================== -->
-
 ### Package Downloads
 
 {% include cross-version-analysis.xhtml %}
-
----
 
 <div style="text-align: left;">
 <img src="use-cases.jpg" width="700" >
