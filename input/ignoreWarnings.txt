@@ -1,17 +1,13 @@
 == Suppressed Messages ==
-# 01 Suppressing common warnings and warnings associated with core spec
+# 01 Suppressing common warnings and warnings inherited from core spec
 Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Device.name.type' binds to the value set 'http://hl7.org/fhir/ValueSet/device-nametype|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 
 # 02 Supressing warnings related to CardX-CIED specific terminology.
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# 03 Supressing errors rated to UDI URLs included in core FHIR spec. https://chat.fhir.org/#narrow/channel/179199-devices/topic/Device.20naming.20systems
-No definition could be found for URL value 'http://hl7.org/fhir/NamingSystem/gs1-di'
-No definition could be found for URL value 'http://hl7.org/fhir/NamingSystem/us-fda-udi'
-
-# 04 Observations have 1 or more devices generating the information and do not have a performer
+# 03 Observations have 1 or more devices generating the information and do not have a performer
 Best Practice Recommendation: In general, all observations should have a performer
