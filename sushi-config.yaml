@@ -79,6 +79,7 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
   apply-version: true
+  globals-in-artifacts: true
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
