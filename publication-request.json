@@ -1,10 +1,11 @@
 {
     "package-id" : "hl7.fhir.uv.cardx-cied",
     "version" : "1.0.0",
+    "milestone" : true,
     "path" : "http://hl7.org/fhir/uv/cardx-cied/STU1",
     "mode" : "milestone",
     "status" : "trial-use",
-    "sequence" : "STU 1",
-    "desc": "This is the first version of the CardX - Cardiac Implantable Electronic Devices Implementation Guide",
-    "descmd": "This is the first version of the CardX - Cardiac Implantable Electronic Devices Implementation Guide"
+    "sequence" : "STU1",
+    "desc": "CardX: CIED Implementation Guide STU1",
+    "descmd": "CardX: CIED Implementation Guide STU1"
   }
