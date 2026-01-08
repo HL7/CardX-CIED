@@ -20,12 +20,15 @@ Patient-uc2ACMEPatient.json                        uc2ACMEPatient               
 Patient-uc3ACMEPatient.json                        uc3ACMEPatient                   Instance    SD_Patient.fsh               62 - 80
 Patient-uc4ACMEPatient.json                        uc4ACMEPatient                   Instance    SD_Patient.fsh               82 - 100
 Patient-uc5ACMEPatient.json                        uc5ACMEPatient                   Instance    SD_Patient.fsh               102 - 120
+StructureDefinition-IdcoObservation.json           IdcoObservation                  Profile     SD_CIEDObservation.fsh       8 - 25
 StructureDefinition-cied-connectivity-status.json  CIEDConnectivityStatus           Profile     SD_Connectivity.fsh          8 - 128
 StructureDefinition-cied-device-extension.json     CIEDDeviceExtension              Extension   SD_Connectivity.fsh          1 - 6
 StructureDefinition-cied-device.json               CIEDDevice                       Profile     SD_Device.fsh                1 - 21
 StructureDefinition-cied-monitor.json              CIEDMonitor                      Profile     SD_CIEDMonitor.fsh           1 - 14
 StructureDefinition-cied-patient.json              CIEDPatient                      Profile     SD_Patient.fsh               1 - 14
-ValueSet-MDCIDCDeviceTypes.json                    MDCIDCDeviceTypes                ValueSet    VS_11073-10103.fsh           26 - 36
+StructureDefinition-instance-idco.json             ObservationInstance              Extension   SD_CIEDObservation.fsh       1 - 6
+ValueSet-IDCvalues.json                            MDCidc                           ValueSet    VS_11073-10103.fsh           14 - 20
+ValueSet-MDCIDCDeviceTypes.json                    MDCIDCDeviceTypes                ValueSet    VS_11073-10103.fsh           2 - 12
 ValueSet-cied-connectivity-state-modifier-vs.json  CIEDConnectivityStateModifierVS  ValueSet    VS_CardX-CIED.fsh            10 - 19
 ValueSet-cied-connectivity-state-vs.json           CIEDConnectivityStateVS          ValueSet    VS_CardX-CIED.fsh            1 - 8
 ValueSet-cied-monitor-types-vs.json                CIEDMonitorTypesVS               ValueSet    VS_CardX-CIED.fsh            21 - 28

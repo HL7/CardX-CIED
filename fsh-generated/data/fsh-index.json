@@ -168,6 +168,14 @@
     "endLine": 120
   },
   {
+    "outputFile": "StructureDefinition-IdcoObservation.json",
+    "fshName": "IdcoObservation",
+    "fshType": "Profile",
+    "fshFile": "SD_CIEDObservation.fsh",
+    "startLine": 8,
+    "endLine": 25
+  },
+  {
     "outputFile": "StructureDefinition-cied-connectivity-status.json",
     "fshName": "CIEDConnectivityStatus",
     "fshType": "Profile",
@@ -208,12 +216,28 @@
     "endLine": 14
   },
   {
+    "outputFile": "StructureDefinition-instance-idco.json",
+    "fshName": "ObservationInstance",
+    "fshType": "Extension",
+    "fshFile": "SD_CIEDObservation.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-IDCvalues.json",
+    "fshName": "MDCidc",
+    "fshType": "ValueSet",
+    "fshFile": "VS_11073-10103.fsh",
+    "startLine": 14,
+    "endLine": 20
+  },
+  {
     "outputFile": "ValueSet-MDCIDCDeviceTypes.json",
     "fshName": "MDCIDCDeviceTypes",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 26,
-    "endLine": 36
+    "startLine": 2,
+    "endLine": 12
   },
   {
     "outputFile": "ValueSet-cied-connectivity-state-modifier-vs.json",

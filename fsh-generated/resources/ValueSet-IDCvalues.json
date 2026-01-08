@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MDCidc",
+  "id": "IDCvalues",
+  "title": "MDC IDC Value Set",
+  "description": "ValueSet for the MDC IDC partition.",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/IDCvalues",
+  "version": "1.0.0",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "filter": [
+          {
+            "property": "partition",
+            "op": "=",
+            "value": "11"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "name": "CardXCIED",
   "title": "CardX - Cardiac Implantable Electronic Devices",
   "status": "active",
@@ -128,10 +128,34 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/IdcoObservation"
+        },
+        "name": "Implantable Device Cardiac Observation",
+        "description": "Observation profile to support implantable cardiac device measurements, settings, statistics, episodes, notifications, and nomenclature",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/instance-idco"
+        },
+        "name": "Instance of repeatable element",
+        "description": "Extentension to support expanding number of reportable data beyond constrained number defined in nomenclature.",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/MDCIDCDeviceTypes"
         },
         "name": "MDC IDC Device Types",
         "description": "ValueSet for ISO/IEEE 11073-10103 Nomenclature Codes for MDC_IDC_ENUM_DEV_TYPE (Device Type).",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/IDCvalues"
+        },
+        "name": "MDC IDC Value Set",
+        "description": "ValueSet for the MDC IDC partition.",
         "isExample": false
       },
       {
@@ -383,6 +407,12 @@
           "sourceUrl": "connectivity-status.html"
         },
         {
+          "title": "Device Observations",
+          "generation": "markdown",
+          "name": "device-observations.html",
+          "sourceUrl": "device-observations.html"
+        },
+        {
           "title": "History",
           "generation": "markdown",
           "name": "history.html",
@@ -405,7 +435,7 @@
           "code": "releaselabel",
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
-        "value": "STU 1"
+        "value": "ci-build"
       },
       {
         "code": {

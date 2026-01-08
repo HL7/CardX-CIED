@@ -1,0 +1,96 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IdcoObservation",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/IdcoObservation",
+  "name": "IdcoObservation",
+  "title": "Implantable Device Cardiac Observation",
+  "status": "active",
+  "description": "Observation profile to support implantable cardiac device measurements, settings, statistics, episodes, notifications, and nomenclature",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "max": "1"
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "patternCode": "final",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Nomenclature version",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.extension",
+        "path": "Observation.component.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component.extension:observationInstance",
+        "path": "Observation.component.extension",
+        "sliceName": "observationInstance",
+        "short": "Instance number of the observation",
+        "definition": "Extentension to support expanding number of reportable data beyond constrained number defined in nomenclature.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/instance-idco"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.code",
+        "path": "Observation.component.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/IDCvalues"
+        }
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "mustSupport": true
+      }
+    ]
+  }
+}

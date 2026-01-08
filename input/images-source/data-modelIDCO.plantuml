@@ -1,0 +1,62 @@
+@startuml
+title IDCO Information Model - 1 Diagnostic Report
+
+hide circle
+
+skinparam linetype ortho
+
+entity "Patient" as Patient {
+  id : string <<generated>>
+  --
+  identifier : Identifier: (0..*)
+  name : HumanName (0..*)
+  telecom: ContactPoint (0..*)
+  gender: code (0..1)
+  birthDate: date (0..1)
+  address : address (0..*)   
+}
+
+entity "Diagnostic Report" as diag {
+  id : string <<generated>>
+  --
+  identifier : Identifier: (0..*)
+  status : code (1..1)
+  category : CodeableConcept (0..1)
+  code : CodeableConcept (1..1)
+  subject : Reference(Patient) (1..1)
+  effective : dateTime (1..1)
+  issued : instant (0..1)
+  result : Reference(Observation) (0..*)
+  note : Annotation (0..*)
+  presentedForm : Attachment (0..*)
+}
+
+entity "Device - CIED" as cied {
+  id : string <<generated>>
+  --
+  udiCarrier: BackboneElement (0..1)
+  manufacturer: String (0..1)
+  serialNumber: String (0..1)
+  modelNumber: String (0..1)
+  type: CodeableConcept (0..1)
+  deviceVersion: BackboneElement (0..*)
+}
+
+
+entity "Observation - IDCO" as IDCO {
+    id : string <<generated>> (0..*)
+    ciedDevice : Reference(CIED) (1..*)
+    status : code (1..1)
+    code : CodeableConcept (1..1)
+    subject : Reference(Patient) (1..1)
+    effective : dateTime (1..1)
+    component : BackboneElement (0..*)
+
+}
+
+IDCO }|--|| Patient
+IDCO }|--|{ cied
+diag ||--|| Patient
+diag ||--|{ IDCO
+
+@enduml
