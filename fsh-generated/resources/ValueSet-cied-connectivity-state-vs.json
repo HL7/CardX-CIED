@@ -14,15 +14,15 @@
         "concept": [
           {
             "code": "not-applicable",
-            "display": "Connectivity states are not applicable for this device. E.g. device is not compatible with remote monitoring or requires patient initiated interrogations"
+            "display": "N/A"
           },
           {
             "code": "connected",
-            "display": "Communication has been successful within the expected time period."
+            "display": "Connected"
           },
           {
             "code": "disconnected",
-            "display": "Communication has not occurred within the expected time period."
+            "display": "Disconnected"
           }
         ]
       }

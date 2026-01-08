@@ -3,7 +3,7 @@ Id: cied-connectivity-state-vs
 Title: "CIED Connectivity Status Value Set"
 Description: "The overall system connectivity status as calculated by the CIED manufacturer"
 * ^experimental = false
-* CardXCIED##not-applicable "N/A"
+* CardXCIED#not-applicable "N/A"
 * CardXCIED#connected "Connected"
 * CardXCIED#disconnected "Disconnected"
 

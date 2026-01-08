@@ -14,23 +14,23 @@
         "concept": [
           {
             "code": "setup-not-completed",
-            "display": "Device/monitor setup has not been completed. E.g. pending initial setup or there is no device/monitor association"
+            "display": "Setup not completed"
           },
           {
             "code": "suspended",
-            "display": "Patient has been temporarily removed from the disconnected state. This is not intended to be an actionable status."
+            "display": "Suspended"
           },
           {
             "code": "inactive",
-            "display": "Patient has been permanently removed from disconnected status."
+            "display": "Inactive"
           },
           {
             "code": "unenrolled",
-            "display": "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
+            "display": "Unenrolled"
           },
           {
             "code": "transferred",
-            "display": "The patient has been transfered to another remote monitoring clinic."
+            "display": "Transferred"
           }
         ]
       }

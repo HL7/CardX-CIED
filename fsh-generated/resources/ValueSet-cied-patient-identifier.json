@@ -4,7 +4,7 @@
   "name": "CIEDPatientIdentifier",
   "id": "cied-patient-identifier",
   "title": "CIED Patient Identifier",
-  "description": "Identifiers which can be used to identify CIED patients.",
+  "description": "Identifier which can be used to identify CIED patients.",
   "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/cied-patient-identifier",
   "experimental": false,
   "compose": {

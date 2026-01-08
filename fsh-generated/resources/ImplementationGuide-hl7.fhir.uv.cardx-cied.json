@@ -48,6 +48,7 @@
     }
   ],
   "packageId": "hl7.fhir.uv.cardx-cied",
+  "license": "CC0-1.0",
   "fhirVersion": [
     "5.0.0"
   ],
@@ -106,7 +107,7 @@
           "reference": "ValueSet/cied-patient-identifier"
         },
         "name": "CIED Patient Identifier",
-        "description": "Identifiers which can be used to identify CIED patients.",
+        "description": "Identifier which can be used to identify CIED patients.",
         "isExample": false
       },
       {
@@ -380,6 +381,12 @@
           "generation": "markdown",
           "name": "connectivity-status.html",
           "sourceUrl": "connectivity-status.html"
+        },
+        {
+          "title": "History",
+          "generation": "markdown",
+          "name": "history.html",
+          "sourceUrl": "history.html"
         }
       ],
       "name": "toc.html",
@@ -398,7 +405,7 @@
           "code": "releaselabel",
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
-        "value": "ci-build"
+        "value": "STU 1"
       },
       {
         "code": {
@@ -424,6 +431,13 @@
       {
         "code": {
           "code": "apply-version",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "true"
+      },
+      {
+        "code": {
+          "code": "globals-in-artifacts",
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
         "value": "true"
