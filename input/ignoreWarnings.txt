@@ -14,4 +14,3 @@ Best Practice Recommendation: In general, all observations should have a perform
 
 # 04 Supressing messages realted to standard terminology
 Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
-Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0 (from https://tx.fhir.org/r5)
