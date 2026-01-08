@@ -13,4 +13,4 @@ Most code systems defined in HL7 IGs will need to move to THO later during the p
 Best Practice Recommendation: In general, all observations should have a performer
 
 # 04 Supressing messages realted to standard terminology
-Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05
