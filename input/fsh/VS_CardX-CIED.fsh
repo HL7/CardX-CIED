@@ -3,29 +3,29 @@ Id: cied-connectivity-state-vs
 Title: "CIED Connectivity Status Value Set"
 Description: "The overall system connectivity status as calculated by the CIED manufacturer"
 * ^experimental = false
-* CardXCIED#not-applicable "Connectivity states are not applicable for this device. E.g. device is not compatible with remote monitoring or requires patient initiated interrogations"
-* CardXCIED#connected "Communication has been successful within the expected time period."
-* CardXCIED#disconnected "Communication has not occurred within the expected time period."
+* CardXCIED##not-applicable "N/A"
+* CardXCIED#connected "Connected"
+* CardXCIED#disconnected "Disconnected"
 
 ValueSet: CIEDConnectivityStateModifierVS
 Id: cied-connectivity-state-modifier-vs
 Title: "CIED Connectivity Status Modifier Value Set"
 Description: "Additional modifiers to connectivity status as calculated by the CIED manufacturer"
 * ^experimental = false
-* CardXCIED#setup-not-completed "Device/monitor setup has not been completed. E.g. pending initial setup or there is no device/monitor association"
-* CardXCIED#suspended "Patient has been temporarily removed from the disconnected state. This is not intended to be an actionable status."
-* CardXCIED#inactive "Patient has been permanently removed from disconnected status."
-* CardXCIED#unenrolled "Patient has been unenrolled from remote monitoring or remote monitoring has been discontinued."
-* CardXCIED#transferred "The patient has been transfered to another remote monitoring clinic."
+* CardXCIED#setup-not-completed "Setup not completed"
+* CardXCIED#suspended "Suspended"
+* CardXCIED#inactive "Inactive"
+* CardXCIED#unenrolled "Unenrolled"
+* CardXCIED#transferred "Transferred"
 
 ValueSet: CIEDMonitorTypesVS
 Id: cied-monitor-types-vs
 Title: "CIED Monitor Types"
 Description: "The type of CIED monitor"
 * ^experimental = false
-* CardXCIED#bedside-device "Standalone device, not intended to provide monitoring while on the go."  
-* CardXCIED#mobile-monitor "App based monitor."
-* CardXCIED#portable-device "Standalone device, with battery capacity to provide monitoring while on the go."
+* CardXCIED#bedside-device "Bedside Monitor" 
+* CardXCIED#mobile-monitor "Mobile App"
+* CardXCIED#portable-device "Portable Device"
 
 ValueSet: CIEDPatientIdentifier
 Id: cied-patient-identifier

@@ -5,7 +5,7 @@
     "path" : "http://hl7.org/fhir/uv/cardx-cied/STU1",
     "mode" : "milestone",
     "status" : "trial-use",
-    "sequence" : "STU1",
+    "sequence" : "STU 1",
     "desc": "CardX: CIED Implementation Guide STU1",
     "descmd": "CardX: CIED Implementation Guide STU1"
   }
