@@ -3,12 +3,15 @@
 [CIEDConnectivityStateModifierVS]: ValueSet-cied-connectivity-state-modifier-vs.html
 [CIEDConnectivityStateVS]: ValueSet-cied-connectivity-state-vs.html
 [CIEDDeviceExtension]: StructureDefinition-cied-device-extension.html
+[CIEDDiagnosticReport]: StructureDefinition-cied-diagnostic-report.html
 [CIEDMonitorTypesVS]: ValueSet-cied-monitor-types-vs.html
 [CIEDPatientIdentifier]: ValueSet-cied-patient-identifier.html
 [CIEDDevice]: StructureDefinition-cied-device.html
 [CIEDMonitor]: StructureDefinition-cied-monitor.html
+[IDCOExample2]: Observation-IDCOExample2.html
 [IdcoObservation]: StructureDefinition-IdcoObservation.html
 [ObservationInstance]: StructureDefinition-instance-idco.html
+[MdcDisplayName]: StructureDefinition-ext-mdc-display-name.html
 [MDCIDCDeviceTypes]: ValueSet-MDCIDCDeviceTypes.html
 [MDCidc]: ValueSet-IDCvalues.html
 [CIEDConnectivityStatus]: StructureDefinition-cied-connectivity-status.html

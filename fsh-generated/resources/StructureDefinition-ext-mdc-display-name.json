@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-mdc-display-name",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode": "can-bind"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/ext-mdc-display-name",
+  "name": "MdcDisplayName",
+  "title": "MDC Display Name",
+  "status": "active",
+  "description": "Extension to capture the MDC Display Name for an IDC Observation Component Code",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MDC Display Name",
+        "definition": "Extension to capture the MDC Display Name for an IDC Observation Component Code"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/ext-mdc-display-name"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

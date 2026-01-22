@@ -78,6 +78,23 @@
         ]
       },
       {
+        "id": "Observation.component.extension:mdcDisplayName",
+        "path": "Observation.component.extension",
+        "sliceName": "mdcDisplayName",
+        "short": "MDC Display Name",
+        "definition": "Extension to capture the MDC Display Name for an IDC Observation Component Code",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/ext-mdc-display-name"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.component.code",
         "path": "Observation.component.code",
         "mustSupport": true,

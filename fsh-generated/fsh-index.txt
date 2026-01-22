@@ -10,6 +10,7 @@ Device-uc4ACMEPacemaker.json                       uc4ACMEPacemaker             
 Device-uc4CIEDMonitor.json                         uc4CIEDMonitor                   Instance    SD_CIEDMonitor.fsh           40 - 50
 Device-uc5ACMEPacemaker.json                       uc5ACMEPacemaker                 Instance    SD_Device.fsh                86 - 97
 Device-uc5CIEDMonitor.json                         uc5CIEDMonitor                   Instance    SD_CIEDMonitor.fsh           52 - 62
+Observation-IDCOExample2.json                      IDCOExample2                     Instance    SD_CIEDObservation.fsh       55 - 200
 Observation-uc1ConnectivityACME.json               uc1ConnectivityACME              Instance    SD_Connectivity.fsh          131 - 144
 Observation-uc2ConnectivityACME.json               uc2ConnectivityACME              Instance    SD_Connectivity.fsh          146 - 181
 Observation-uc3ConnectivityACME.json               uc3ConnectivityACME              Instance    SD_Connectivity.fsh          183 - 207
@@ -20,12 +21,14 @@ Patient-uc2ACMEPatient.json                        uc2ACMEPatient               
 Patient-uc3ACMEPatient.json                        uc3ACMEPatient                   Instance    SD_Patient.fsh               62 - 80
 Patient-uc4ACMEPatient.json                        uc4ACMEPatient                   Instance    SD_Patient.fsh               82 - 100
 Patient-uc5ACMEPatient.json                        uc5ACMEPatient                   Instance    SD_Patient.fsh               102 - 120
-StructureDefinition-IdcoObservation.json           IdcoObservation                  Profile     SD_CIEDObservation.fsh       8 - 25
+StructureDefinition-IdcoObservation.json           IdcoObservation                  Profile     SD_CIEDObservation.fsh       15 - 35
 StructureDefinition-cied-connectivity-status.json  CIEDConnectivityStatus           Profile     SD_Connectivity.fsh          8 - 128
 StructureDefinition-cied-device-extension.json     CIEDDeviceExtension              Extension   SD_Connectivity.fsh          1 - 6
 StructureDefinition-cied-device.json               CIEDDevice                       Profile     SD_Device.fsh                1 - 21
+StructureDefinition-cied-diagnostic-report.json    CIEDDiagnosticReport             Profile     SD_CIEDDiagnosticReport.fsh  1 - 20
 StructureDefinition-cied-monitor.json              CIEDMonitor                      Profile     SD_CIEDMonitor.fsh           1 - 14
 StructureDefinition-cied-patient.json              CIEDPatient                      Profile     SD_Patient.fsh               1 - 14
+StructureDefinition-ext-mdc-display-name.json      MdcDisplayName                   Extension   SD_CIEDObservation.fsh       8 - 13
 StructureDefinition-instance-idco.json             ObservationInstance              Extension   SD_CIEDObservation.fsh       1 - 6
 ValueSet-IDCvalues.json                            MDCidc                           ValueSet    VS_11073-10103.fsh           14 - 20
 ValueSet-MDCIDCDeviceTypes.json                    MDCIDCDeviceTypes                ValueSet    VS_11073-10103.fsh           2 - 12

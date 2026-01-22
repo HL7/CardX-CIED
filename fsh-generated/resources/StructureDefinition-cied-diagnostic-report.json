@@ -1,0 +1,71 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cied-diagnostic-report",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-diagnostic-report",
+  "name": "CIEDDiagnosticReport",
+  "title": "CIED Diagnostic Report Profile",
+  "status": "active",
+  "description": "\nTo Do\n",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.status",
+        "path": "DiagnosticReport.status",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code",
+        "path": "DiagnosticReport.code",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.effective[x]",
+        "path": "DiagnosticReport.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DiagnosticReport.effective[x]:effectiveDateTime",
+        "path": "DiagnosticReport.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.presentedForm",
+        "path": "DiagnosticReport.presentedForm",
+        "mustSupport": true
+      }
+    ]
+  }
+}

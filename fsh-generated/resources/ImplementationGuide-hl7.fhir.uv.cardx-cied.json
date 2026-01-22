@@ -96,6 +96,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cied-diagnostic-report"
+        },
+        "name": "CIED Diagnostic Report Profile",
+        "description": "\nTo Do\n",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/cied-monitor-types-vs"
         },
         "name": "CIED Monitor Types",
@@ -128,6 +136,17 @@
       },
       {
         "reference": {
+          "reference": "Observation/IDCOExample2"
+        },
+        "name": "IDCOExample2",
+        "description": "Example IDCO",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/IdcoObservation"
+        ]
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/IdcoObservation"
         },
         "name": "Implantable Device Cardiac Observation",
@@ -140,6 +159,14 @@
         },
         "name": "Instance of repeatable element",
         "description": "Extentension to support expanding number of reportable data beyond constrained number defined in nomenclature.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-mdc-display-name"
+        },
+        "name": "MDC Display Name",
+        "description": "Extension to capture the MDC Display Name for an IDC Observation Component Code",
         "isExample": false
       },
       {

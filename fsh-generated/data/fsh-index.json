@@ -88,6 +88,14 @@
     "endLine": 62
   },
   {
+    "outputFile": "Observation-IDCOExample2.json",
+    "fshName": "IDCOExample2",
+    "fshType": "Instance",
+    "fshFile": "SD_CIEDObservation.fsh",
+    "startLine": 55,
+    "endLine": 200
+  },
+  {
     "outputFile": "Observation-uc1ConnectivityACME.json",
     "fshName": "uc1ConnectivityACME",
     "fshType": "Instance",
@@ -172,8 +180,8 @@
     "fshName": "IdcoObservation",
     "fshType": "Profile",
     "fshFile": "SD_CIEDObservation.fsh",
-    "startLine": 8,
-    "endLine": 25
+    "startLine": 15,
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-cied-connectivity-status.json",
@@ -200,6 +208,14 @@
     "endLine": 21
   },
   {
+    "outputFile": "StructureDefinition-cied-diagnostic-report.json",
+    "fshName": "CIEDDiagnosticReport",
+    "fshType": "Profile",
+    "fshFile": "SD_CIEDDiagnosticReport.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
     "outputFile": "StructureDefinition-cied-monitor.json",
     "fshName": "CIEDMonitor",
     "fshType": "Profile",
@@ -214,6 +230,14 @@
     "fshFile": "SD_Patient.fsh",
     "startLine": 1,
     "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-ext-mdc-display-name.json",
+    "fshName": "MdcDisplayName",
+    "fshType": "Extension",
+    "fshFile": "SD_CIEDObservation.fsh",
+    "startLine": 8,
+    "endLine": 13
   },
   {
     "outputFile": "StructureDefinition-instance-idco.json",
