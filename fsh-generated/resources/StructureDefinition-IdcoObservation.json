@@ -107,6 +107,14 @@
         "id": "Observation.component.value[x]",
         "path": "Observation.component.value[x]",
         "mustSupport": true
+      },
+      {
+        "id": "Observation.component.interpretation",
+        "path": "Observation.component.interpretation",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/idco-abnormal-flags"
+        }
       }
     ]
   }

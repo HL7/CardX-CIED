@@ -34,6 +34,7 @@ Description: "Observation profile to support implantable cardiac device measurem
 * component.extension[mdcDisplayName] ^short = "MDC Display Name"
 * component.extension[mdcDisplayName] ^definition = "Extension to capture the MDC Display Name for an IDC Observation Component Code"
 // DateTimes where hours/minutes are specified must use timezone offset e.g "effectiveDateTime" : "2013-04-02T09:30:10+01:00",
+* component.interpretation from IDCOAbnormalFlags
 
 
 /*

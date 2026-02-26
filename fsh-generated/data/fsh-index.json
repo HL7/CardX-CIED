@@ -92,8 +92,8 @@
     "fshName": "IDCOExample2",
     "fshType": "Instance",
     "fshFile": "SD_CIEDObservation.fsh",
-    "startLine": 55,
-    "endLine": 200
+    "startLine": 56,
+    "endLine": 201
   },
   {
     "outputFile": "Observation-uc1ConnectivityACME.json",
@@ -181,7 +181,7 @@
     "fshType": "Profile",
     "fshFile": "SD_CIEDObservation.fsh",
     "startLine": 15,
-    "endLine": 35
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-cied-connectivity-status.json",
