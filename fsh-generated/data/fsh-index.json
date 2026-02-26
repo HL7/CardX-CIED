@@ -12,8 +12,8 @@
     "fshName": "CardXCIED",
     "fshType": "CodeSystem",
     "fshFile": "VS_CardX-CIED.fsh",
-    "startLine": 38,
-    "endLine": 95
+    "startLine": 62,
+    "endLine": 124
   },
   {
     "outputFile": "Device-uc1ACMEICD.json",
@@ -268,31 +268,39 @@
     "fshName": "CIEDConnectivityStateModifierVS",
     "fshType": "ValueSet",
     "fshFile": "VS_CardX-CIED.fsh",
-    "startLine": 10,
-    "endLine": 19
+    "startLine": 24,
+    "endLine": 33
   },
   {
     "outputFile": "ValueSet-cied-connectivity-state-vs.json",
     "fshName": "CIEDConnectivityStateVS",
     "fshType": "ValueSet",
     "fshFile": "VS_CardX-CIED.fsh",
-    "startLine": 1,
-    "endLine": 8
+    "startLine": 15,
+    "endLine": 22
   },
   {
     "outputFile": "ValueSet-cied-monitor-types-vs.json",
     "fshName": "CIEDMonitorTypesVS",
     "fshType": "ValueSet",
     "fshFile": "VS_CardX-CIED.fsh",
-    "startLine": 21,
-    "endLine": 28
+    "startLine": 35,
+    "endLine": 42
   },
   {
     "outputFile": "ValueSet-cied-patient-identifier.json",
     "fshName": "CIEDPatientIdentifier",
     "fshType": "ValueSet",
     "fshFile": "VS_CardX-CIED.fsh",
-    "startLine": 30,
-    "endLine": 36
+    "startLine": 44,
+    "endLine": 50
+  },
+  {
+    "outputFile": "ValueSet-idco-abnormal-flags.json",
+    "fshName": "IDCOAbnormalFlags",
+    "fshType": "ValueSet",
+    "fshFile": "VS_CardX-CIED.fsh",
+    "startLine": 52,
+    "endLine": 60
   }
 ]

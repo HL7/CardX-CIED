@@ -56,6 +56,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "ValueSet/idco-abnormal-flags"
+        },
+        "name": "Abnormal Flags Included in IHE PCD TF",
+        "description": "Abnormal Flags Included in the IHE PCD Technical Framework to communicate IDC Observations",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/cied-data-sender"
         },
         "name": "CardX CIED Connectivity Server Capability Statement",

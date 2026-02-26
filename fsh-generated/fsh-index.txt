@@ -1,6 +1,6 @@
 Output File                                        Name                             Type        FSH File                     Lines
 CapabilityStatement-cied-data-sender.json          cied-data-sender                 Instance    DEF_CapabilityStatement.fsh  35 - 79
-CodeSystem-CardXCIED.json                          CardXCIED                        CodeSystem  VS_CardX-CIED.fsh            38 - 95
+CodeSystem-CardXCIED.json                          CardXCIED                        CodeSystem  VS_CardX-CIED.fsh            62 - 124
 Device-uc1ACMEICD.json                             uc1ACMEICD                       Instance    SD_Device.fsh                35 - 45
 Device-uc2ACMEPacemaker.json                       uc2ACMEPacemaker                 Instance    SD_Device.fsh                47 - 58
 Device-uc2CIEDMonitor.json                         uc2CIEDMonitor                   Instance    SD_CIEDMonitor.fsh           16 - 26
@@ -32,7 +32,8 @@ StructureDefinition-ext-mdc-display-name.json      MdcDisplayName               
 StructureDefinition-instance-idco.json             ObservationInstance              Extension   SD_CIEDObservation.fsh       1 - 6
 ValueSet-IDCvalues.json                            MDCidc                           ValueSet    VS_11073-10103.fsh           14 - 20
 ValueSet-MDCIDCDeviceTypes.json                    MDCIDCDeviceTypes                ValueSet    VS_11073-10103.fsh           2 - 12
-ValueSet-cied-connectivity-state-modifier-vs.json  CIEDConnectivityStateModifierVS  ValueSet    VS_CardX-CIED.fsh            10 - 19
-ValueSet-cied-connectivity-state-vs.json           CIEDConnectivityStateVS          ValueSet    VS_CardX-CIED.fsh            1 - 8
-ValueSet-cied-monitor-types-vs.json                CIEDMonitorTypesVS               ValueSet    VS_CardX-CIED.fsh            21 - 28
-ValueSet-cied-patient-identifier.json              CIEDPatientIdentifier            ValueSet    VS_CardX-CIED.fsh            30 - 36
+ValueSet-cied-connectivity-state-modifier-vs.json  CIEDConnectivityStateModifierVS  ValueSet    VS_CardX-CIED.fsh            24 - 33
+ValueSet-cied-connectivity-state-vs.json           CIEDConnectivityStateVS          ValueSet    VS_CardX-CIED.fsh            15 - 22
+ValueSet-cied-monitor-types-vs.json                CIEDMonitorTypesVS               ValueSet    VS_CardX-CIED.fsh            35 - 42
+ValueSet-cied-patient-identifier.json              CIEDPatientIdentifier            ValueSet    VS_CardX-CIED.fsh            44 - 50
+ValueSet-idco-abnormal-flags.json                  IDCOAbnormalFlags                ValueSet    VS_CardX-CIED.fsh            52 - 60
