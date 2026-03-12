@@ -107,7 +107,15 @@
           "reference": "StructureDefinition/cied-diagnostic-report"
         },
         "name": "CIED Diagnostic Report Profile",
-        "description": "\nTo Do\n",
+        "description": "\nThe CIED Diagnostic Report Profile contains the metadata, device references,observation references, and attachments for an interrogated device transmission. Several device\nand observation references may exist depending on the number of devices implanted in a patient and how the observation data are associated with the devices. Separate observations may\nalso be created during additional post-processing by the remote monitoring software or other processing systems used to interrogate the device data.\n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-interrogation-procedure"
+        },
+        "name": "CIED Interrogation Procedure Profile",
+        "description": "\nThe CIED Interrogation Procedure profile contains the session information for a device interrogation.\n",
         "isExample": false
       },
       {
@@ -124,6 +132,14 @@
         },
         "name": "CIED Patient Identifier",
         "description": "Identifier which can be used to identify CIED patients.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-practioner"
+        },
+        "name": "CIED Practioner Profile",
+        "description": "\nThe CIED Practioner profile contains the metadata for a healthcare provider associated with a device interrogation.\n",
         "isExample": false
       },
       {
@@ -148,6 +164,14 @@
         },
         "name": "Device - CIED Monitor Profile",
         "description": "\nThe CardX Device - CIED Monitor profile inherits characteristics from ISO/IEEE 11073-10103 - Implantable device, cardiac. \nThe same CIED Device data elements that are included in ISO/IEEE 11073-10103, are must support for CIED Monitors in the FHIR profile. \n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-device-association"
+        },
+        "name": "Device Association - Cardiovascular Implantable Electronic Device (CIED)",
+        "description": "\nDevice association contains to relationship between the CIED, leads, and other devices associated with a patient. The resource may contain both active\nand historical associations.\n",
         "isExample": false
       },
       {
@@ -207,6 +231,14 @@
         },
         "name": "Observation - CIED Connectivity",
         "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a CIED/Monitor combination.\nIn most instances there will be one observation per CIED/monitor pair per patient, however some manufacturers may allow multiple CIEDs implanted in a patient to connect to a single monitor and have a single connectivity status for the entire system of devices.\n\nCIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. \nThe connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. \nA single observation will be returned for every CIED/monitor pair.\n\nConnectivity status is based on the actual time difference between the most recent successful communication and the present date. \nTo manage disconnected patients, manufacturers have implemented additional functionality in their platforms. The connectivity modifier is included to represent an action performed by the user or business logic applied by the manufacturer.\nExamples of these are a user suspending a patient from appearing on the disconnected list in the remote monitoring system or the system automatically marking a patient as inactive after a prolonged disconnection period to remove them from\nappearing on the disconnected list in the user interface.  \n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-organization"
+        },
+        "name": "Organization - Cardiovascular Implantable Electronic Device (CIED)",
+        "description": "\nThe CIED Organization profile contains the metadata for an organization associated with a device interrogation.\n",
         "isExample": false
       },
       {

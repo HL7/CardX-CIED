@@ -5,7 +5,7 @@
   "name": "CIEDDiagnosticReport",
   "title": "CIED Diagnostic Report Profile",
   "status": "active",
-  "description": "\nTo Do\n",
+  "description": "\nThe CIED Diagnostic Report Profile contains the metadata, device references,observation references, and attachments for an interrogated device transmission. Several device\nand observation references may exist depending on the number of devices implanted in a patient and how the observation data are associated with the devices. Separate observations may\nalso be created during additional post-processing by the remote monitoring software or other processing systems used to interrogate the device data.\n",
   "fhirVersion": "5.0.0",
   "kind": "resource",
   "abstract": false,
@@ -27,6 +27,14 @@
       {
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -59,6 +67,14 @@
       {
         "id": "DiagnosticReport.result",
         "path": "DiagnosticReport.result",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/IdcoObservation"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

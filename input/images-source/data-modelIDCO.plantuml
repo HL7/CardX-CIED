@@ -42,6 +42,16 @@ entity "Device - CIED" as cied {
   deviceVersion: BackboneElement (0..*)
 }
 
+entity "Device - Lead" as lead {
+  id : string <<generated>>
+  --
+  udiCarrier: BackboneElement (0..1)
+  manufacturer: String (0..1)
+  serialNumber: String (0..1)
+  modelNumber: String (0..1)
+  parent: Reference(CIED) (1..1)
+}
+
 
 entity "Observation - IDCO" as IDCO {
     id : string <<generated>> (0..*)
@@ -54,9 +64,46 @@ entity "Observation - IDCO" as IDCO {
 
 }
 
+entity "Organization" as org {
+  id : string <<generated>>
+  --
+  identifier : Identifier: (0..*)
+  name : String (0..1)
+}
+
+entity "Pracitioner" as prac {
+  id : string <<generated>>
+  --
+  identifier : Identifier: (0..*)
+  name : HumanName (0..*)
+  telecom: ContactPoint (0..*)
+}
+
+entity "Device Association" as assoc {
+  id : string <<generated>>
+  --
+  device : Reference(CIED) (1..1)
+  associatedDevice : Reference(CIED) (1..1)
+  associationType : CodeableConcept (0..1)
+}
+
+entity "Procedure" as proc {
+  id : string <<generated>>
+  --
+  identifier : Identifier: (0..*)
+  status : code (1..1)
+  code : CodeableConcept (1..1)
+  subject : Reference(Patient) (1..1)
+  performed : dateTime (1..1)
+}
+
 IDCO }|--|| Patient
 IDCO }|--|{ cied
 diag ||--|| Patient
 diag ||--|{ IDCO
+lead |o--|| cied
+assoc ||--|| cied 
+assoc ||--|| Patient
+proc ||--|| prac
 
 @enduml

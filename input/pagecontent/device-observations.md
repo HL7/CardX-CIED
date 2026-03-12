@@ -21,3 +21,6 @@ Under Construction
 
 ### Data Structure
 {% include img.html img="data-modelIDCO.png" caption="Cardiac Device Observations Data Model" %} 
+
+### Mappings
+11073-10103 Reference ID | FHIR Resource | FHIR Data Element

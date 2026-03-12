@@ -17,3 +17,4 @@ MDC_IDC_LEAD_ADVISORY_INFO_STATUS
 * manufacturer 1..1 MS
 * serialNumber 1..1 MS
 * modelNumber 1..1 MS
+* parent only Reference(CIEDDevice)

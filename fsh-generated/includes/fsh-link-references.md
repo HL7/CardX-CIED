@@ -5,11 +5,14 @@
 [CIEDConnectivityStateVS]: ValueSet-cied-connectivity-state-vs.html
 [CIEDDeviceExtension]: StructureDefinition-cied-device-extension.html
 [CIEDDiagnosticReport]: StructureDefinition-cied-diagnostic-report.html
+[CIEDInterrogationProcedure]: StructureDefinition-cied-interrogation-procedure.html
 [CIEDMonitorTypesVS]: ValueSet-cied-monitor-types-vs.html
 [CIEDPatientIdentifier]: ValueSet-cied-patient-identifier.html
+[CIEDPractioner]: StructureDefinition-cied-practioner.html
 [CIEDDevice]: StructureDefinition-cied-device.html
 [CIEDDeviceLead]: StructureDefinition-cied-device-lead.html
 [CIEDMonitor]: StructureDefinition-cied-monitor.html
+[CIEDDeviceAssociation]: StructureDefinition-cied-device-association.html
 [IDCOExample2]: Observation-IDCOExample2.html
 [IdcoObservation]: StructureDefinition-IdcoObservation.html
 [ObservationInstance]: StructureDefinition-instance-idco.html
@@ -17,6 +20,7 @@
 [MDCIDCDeviceTypes]: ValueSet-MDCIDCDeviceTypes.html
 [MDCidc]: ValueSet-IDCvalues.html
 [CIEDConnectivityStatus]: StructureDefinition-cied-connectivity-status.html
+[CIEDOrganization]: StructureDefinition-cied-organization.html
 [CIEDPatient]: StructureDefinition-cied-patient.html
 [uc1ACMEICD]: Device-uc1ACMEICD.html
 [uc1ACMEPatient]: Patient-uc1ACMEPatient.html
