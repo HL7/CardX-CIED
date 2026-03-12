@@ -8,6 +8,7 @@
 [CIEDMonitorTypesVS]: ValueSet-cied-monitor-types-vs.html
 [CIEDPatientIdentifier]: ValueSet-cied-patient-identifier.html
 [CIEDDevice]: StructureDefinition-cied-device.html
+[CIEDDeviceLead]: StructureDefinition-cied-device-lead.html
 [CIEDMonitor]: StructureDefinition-cied-monitor.html
 [IDCOExample2]: Observation-IDCOExample2.html
 [IdcoObservation]: StructureDefinition-IdcoObservation.html

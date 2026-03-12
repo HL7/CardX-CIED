@@ -136,6 +136,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cied-device-lead"
+        },
+        "name": "Device - Cardiovascular Implantable Electronic Device (CIED) Lead",
+        "description": "\nThe CardX CIED Device Lead profile is interoperable with ISO/IEEE 11073-10103 - Implantable device, cardiac. The cardinality of the profile aligns with the\noptionality of the ISO/IEEE 11073/10103 terms.\n\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). \nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_LEAD_MODEL,\nMDC_IDC_LEAD_SERIAL,\nMDC_IDC_LEAD_MFG,\nMDC_IDC_LEAD_ADVISORY_INFO_STATUS\n",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cied-monitor"
         },
         "name": "Device - CIED Monitor Profile",

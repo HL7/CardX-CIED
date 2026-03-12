@@ -20,16 +20,16 @@
     "fshName": "uc1ACMEICD",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 35,
-    "endLine": 45
+    "startLine": 34,
+    "endLine": 44
   },
   {
     "outputFile": "Device-uc2ACMEPacemaker.json",
     "fshName": "uc2ACMEPacemaker",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 47,
-    "endLine": 58
+    "startLine": 46,
+    "endLine": 57
   },
   {
     "outputFile": "Device-uc2CIEDMonitor.json",
@@ -44,8 +44,8 @@
     "fshName": "uc3ACMEPacemaker",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 60,
-    "endLine": 71
+    "startLine": 59,
+    "endLine": 70
   },
   {
     "outputFile": "Device-uc3CIEDMonitor.json",
@@ -60,8 +60,8 @@
     "fshName": "uc4ACMEPacemaker",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 73,
-    "endLine": 84
+    "startLine": 72,
+    "endLine": 83
   },
   {
     "outputFile": "Device-uc4CIEDMonitor.json",
@@ -76,8 +76,8 @@
     "fshName": "uc5ACMEPacemaker",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 86,
-    "endLine": 97
+    "startLine": 85,
+    "endLine": 96
   },
   {
     "outputFile": "Device-uc5CIEDMonitor.json",
@@ -198,6 +198,14 @@
     "fshFile": "SD_Connectivity.fsh",
     "startLine": 1,
     "endLine": 6
+  },
+  {
+    "outputFile": "StructureDefinition-cied-device-lead.json",
+    "fshName": "CIEDDeviceLead",
+    "fshType": "Profile",
+    "fshFile": "SD_DeviceLead.fsh",
+    "startLine": 1,
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-cied-device.json",
