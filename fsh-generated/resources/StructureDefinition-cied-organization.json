@@ -1,0 +1,24 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cied-organization",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-organization",
+  "name": "CIEDOrganization",
+  "title": "Organization - Cardiovascular Implantable Electronic Device (CIED)",
+  "status": "active",
+  "description": "\nThe CIED Organization profile contains the metadata for an organization associated with a device interrogation.\n",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -137,9 +137,29 @@
       "code": "idco-pid",
       "display": "Identifier used in IDCO PID HL7 Segment",
       "definition": "IDCO specifies a combination of model and serial number as model:model-number/serial:serial-number"
+    },
+    {
+      "code": "NI",
+      "display": "No information. There is no information which can be inferred from this exceptional value."
+    },
+    {
+      "code": "NAV",
+      "display": "Temporarily not available. Information is not available at this time but it is expected that it will be available later."
+    },
+    {
+      "code": "OFF",
+      "display": "Numeric measurement function is available but has been deactivated by user."
+    },
+    {
+      "code": ">",
+      "display": "Above absolute high-off instrument scale."
+    },
+    {
+      "code": "<",
+      "display": "Below absolute low-off instrument scale."
     }
   ],
   "caseSensitive": true,
   "experimental": false,
-  "count": 26
+  "count": 31
 }

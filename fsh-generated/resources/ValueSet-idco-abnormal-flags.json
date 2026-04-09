@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "IDCOAbnormalFlags",
+  "id": "idco-abnormal-flags",
+  "title": "Abnormal Flags Included in IHE PCD TF",
+  "description": "Abnormal Flags Included in the IHE PCD Technical Framework to communicate IDC Observations",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/idco-abnormal-flags",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED",
+        "concept": [
+          {
+            "code": "NI",
+            "display": "No information. There is no information which can be inferred from this exceptional value."
+          },
+          {
+            "code": "NAV",
+            "display": "Temporarily not available. Information is not available at this time but it is expected that it will be available later."
+          },
+          {
+            "code": "OFF",
+            "display": "Numeric measurement function is available but has been deactivated by user."
+          },
+          {
+            "code": ">",
+            "display": "Above absolute high-off instrument scale."
+          },
+          {
+            "code": "<",
+            "display": "Below absolute low-off instrument scale."
+          }
+        ]
+      }
+    ]
+  }
+}

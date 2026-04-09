@@ -12,24 +12,24 @@
     "fshName": "CardXCIED",
     "fshType": "CodeSystem",
     "fshFile": "VS_CardX-CIED.fsh",
-    "startLine": 38,
-    "endLine": 95
+    "startLine": 62,
+    "endLine": 124
   },
   {
     "outputFile": "Device-uc1ACMEICD.json",
     "fshName": "uc1ACMEICD",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 35,
-    "endLine": 45
+    "startLine": 36,
+    "endLine": 46
   },
   {
     "outputFile": "Device-uc2ACMEPacemaker.json",
     "fshName": "uc2ACMEPacemaker",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 47,
-    "endLine": 58
+    "startLine": 48,
+    "endLine": 59
   },
   {
     "outputFile": "Device-uc2CIEDMonitor.json",
@@ -44,8 +44,8 @@
     "fshName": "uc3ACMEPacemaker",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 60,
-    "endLine": 71
+    "startLine": 61,
+    "endLine": 72
   },
   {
     "outputFile": "Device-uc3CIEDMonitor.json",
@@ -60,8 +60,8 @@
     "fshName": "uc4ACMEPacemaker",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 73,
-    "endLine": 84
+    "startLine": 74,
+    "endLine": 85
   },
   {
     "outputFile": "Device-uc4CIEDMonitor.json",
@@ -76,8 +76,8 @@
     "fshName": "uc5ACMEPacemaker",
     "fshType": "Instance",
     "fshFile": "SD_Device.fsh",
-    "startLine": 86,
-    "endLine": 97
+    "startLine": 87,
+    "endLine": 98
   },
   {
     "outputFile": "Device-uc5CIEDMonitor.json",
@@ -86,6 +86,14 @@
     "fshFile": "SD_CIEDMonitor.fsh",
     "startLine": 52,
     "endLine": 62
+  },
+  {
+    "outputFile": "Observation-IDCOExample2.json",
+    "fshName": "IDCOExample2",
+    "fshType": "Instance",
+    "fshFile": "SD_CIEDObservation.fsh",
+    "startLine": 56,
+    "endLine": 201
   },
   {
     "outputFile": "Observation-uc1ConnectivityACME.json",
@@ -168,12 +176,28 @@
     "endLine": 120
   },
   {
+    "outputFile": "StructureDefinition-IdcoObservation.json",
+    "fshName": "IdcoObservation",
+    "fshType": "Profile",
+    "fshFile": "SD_CIEDObservation.fsh",
+    "startLine": 15,
+    "endLine": 37
+  },
+  {
     "outputFile": "StructureDefinition-cied-connectivity-status.json",
     "fshName": "CIEDConnectivityStatus",
     "fshType": "Profile",
     "fshFile": "SD_Connectivity.fsh",
     "startLine": 8,
     "endLine": 128
+  },
+  {
+    "outputFile": "StructureDefinition-cied-device-association.json",
+    "fshName": "CIEDDeviceAssociation",
+    "fshType": "Profile",
+    "fshFile": "SD_CIEDDeviceAssociation.fsh",
+    "startLine": 1,
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-cied-device-extension.json",
@@ -184,12 +208,36 @@
     "endLine": 6
   },
   {
+    "outputFile": "StructureDefinition-cied-device-lead.json",
+    "fshName": "CIEDDeviceLead",
+    "fshType": "Profile",
+    "fshFile": "SD_DeviceLead.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
     "outputFile": "StructureDefinition-cied-device.json",
     "fshName": "CIEDDevice",
     "fshType": "Profile",
     "fshFile": "SD_Device.fsh",
     "startLine": 1,
     "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-cied-diagnostic-report.json",
+    "fshName": "CIEDDiagnosticReport",
+    "fshType": "Profile",
+    "fshFile": "SD_CIEDDiagnosticReport.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-cied-interrogation-procedure.json",
+    "fshName": "CIEDInterrogationProcedure",
+    "fshType": "Profile",
+    "fshFile": "SD_InterrogrationProcedure.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-cied-monitor.json",
@@ -200,6 +248,14 @@
     "endLine": 14
   },
   {
+    "outputFile": "StructureDefinition-cied-organization.json",
+    "fshName": "CIEDOrganization",
+    "fshType": "Profile",
+    "fshFile": "SD_Organization.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
     "outputFile": "StructureDefinition-cied-patient.json",
     "fshName": "CIEDPatient",
     "fshType": "Profile",
@@ -208,43 +264,83 @@
     "endLine": 14
   },
   {
+    "outputFile": "StructureDefinition-cied-practioner.json",
+    "fshName": "CIEDPractioner",
+    "fshType": "Profile",
+    "fshFile": "SD_CIEDPractioner.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-ext-mdc-display-name.json",
+    "fshName": "MdcDisplayName",
+    "fshType": "Extension",
+    "fshFile": "SD_CIEDObservation.fsh",
+    "startLine": 8,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-instance-idco.json",
+    "fshName": "ObservationInstance",
+    "fshType": "Extension",
+    "fshFile": "SD_CIEDObservation.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-IDCvalues.json",
+    "fshName": "MDCidc",
+    "fshType": "ValueSet",
+    "fshFile": "VS_11073-10103.fsh",
+    "startLine": 14,
+    "endLine": 20
+  },
+  {
     "outputFile": "ValueSet-MDCIDCDeviceTypes.json",
     "fshName": "MDCIDCDeviceTypes",
     "fshType": "ValueSet",
     "fshFile": "VS_11073-10103.fsh",
-    "startLine": 26,
-    "endLine": 36
+    "startLine": 2,
+    "endLine": 12
   },
   {
     "outputFile": "ValueSet-cied-connectivity-state-modifier-vs.json",
     "fshName": "CIEDConnectivityStateModifierVS",
     "fshType": "ValueSet",
     "fshFile": "VS_CardX-CIED.fsh",
-    "startLine": 10,
-    "endLine": 19
+    "startLine": 24,
+    "endLine": 33
   },
   {
     "outputFile": "ValueSet-cied-connectivity-state-vs.json",
     "fshName": "CIEDConnectivityStateVS",
     "fshType": "ValueSet",
     "fshFile": "VS_CardX-CIED.fsh",
-    "startLine": 1,
-    "endLine": 8
+    "startLine": 15,
+    "endLine": 22
   },
   {
     "outputFile": "ValueSet-cied-monitor-types-vs.json",
     "fshName": "CIEDMonitorTypesVS",
     "fshType": "ValueSet",
     "fshFile": "VS_CardX-CIED.fsh",
-    "startLine": 21,
-    "endLine": 28
+    "startLine": 35,
+    "endLine": 42
   },
   {
     "outputFile": "ValueSet-cied-patient-identifier.json",
     "fshName": "CIEDPatientIdentifier",
     "fshType": "ValueSet",
     "fshFile": "VS_CardX-CIED.fsh",
-    "startLine": 30,
-    "endLine": 36
+    "startLine": 44,
+    "endLine": 50
+  },
+  {
+    "outputFile": "ValueSet-idco-abnormal-flags.json",
+    "fshName": "IDCOAbnormalFlags",
+    "fshType": "ValueSet",
+    "fshFile": "VS_CardX-CIED.fsh",
+    "startLine": 52,
+    "endLine": 60
   }
 ]

@@ -1,3 +1,17 @@
+/*
+Alias: $Abr = http://hl7.org/fhir/ValueSet/observation-interpretation
+ValueSet: MDCIDCAbnormalFlags
+Id: MDCIDCAbnormalFlags
+Title: "MDC IDC Abnormal Flags"
+Description: "ValueSet to constrain observation interpretation to set of codes defined in IDCO."
+* ^experimental = false
+// No Information is missing, do we need?
+// Not available is missing, do we need?
+
+
+* $Mdc#753665 "MDC_IDC_ENUM_DEV_TYPE_IPG"
+*/
+
 ValueSet: CIEDConnectivityStateVS
 Id: cied-connectivity-state-vs
 Title: "CIED Connectivity Status Value Set"
@@ -35,6 +49,15 @@ Description: "Identifier which can be used to identify CIED patients."
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0203
 * CardXCIED#idco-pid "Identifier used in IDCO PID HL7 Segment"
 
+ValueSet: IDCOAbnormalFlags
+Id: idco-abnormal-flags
+Title: "Abnormal Flags Included in IHE PCD TF"
+Description: "Abnormal Flags Included in the IHE PCD Technical Framework to communicate IDC Observations"
+* CardXCIED#NI "No information. There is no information which can be inferred from this exceptional value."
+* CardXCIED#NAV "Temporarily not available. Information is not available at this time but it is expected that it will be available later."
+* CardXCIED#OFF "Numeric measurement function is available but has been deactivated by user."
+* CardXCIED#> "Above absolute high-off instrument scale."
+* CardXCIED#< "Below absolute low-off instrument scale."
 
 CodeSystem: CardXCIED
 Title: "CardX CIED FHIR IG Code System"
@@ -94,3 +117,8 @@ Description: "Codes system for CardX CIED FHIR Implementation Guide Codes."
     "Text describing steps to get the patient to a connected status."
 * #idco-pid "Identifier used in IDCO PID HL7 Segment"
     "IDCO specifies a combination of model and serial number as model:model-number/serial:serial-number"
+* #NI "No information. There is no information which can be inferred from this exceptional value."
+* #NAV "Temporarily not available. Information is not available at this time but it is expected that it will be available later."
+* #OFF "Numeric measurement function is available but has been deactivated by user."
+* #> "Above absolute high-off instrument scale."
+* #< "Below absolute low-off instrument scale."

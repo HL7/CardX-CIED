@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cied-device-association",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-association",
+  "name": "CIEDDeviceAssociation",
+  "title": "Device Association - Cardiovascular Implantable Electronic Device (CIED)",
+  "status": "active",
+  "description": "\nDevice association contains to relationship between the CIED, leads, and other devices associated with a patient. The resource may contain both active\nand historical associations.\n",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceAssociation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DeviceAssociation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceAssociation.device",
+        "path": "DeviceAssociation.device",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceAssociation.status",
+        "path": "DeviceAssociation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceAssociation.statusReason",
+        "path": "DeviceAssociation.statusReason",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceAssociation.subject",
+        "path": "DeviceAssociation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceAssociation.period",
+        "path": "DeviceAssociation.period",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cied-interrogation-procedure",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-interrogation-procedure",
+  "name": "CIEDInterrogationProcedure",
+  "title": "CIED Interrogation Procedure Profile",
+  "status": "active",
+  "description": "\nThe CIED Interrogation Procedure profile contains the session information for a device interrogation.\n",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performer",
+        "path": "Procedure.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.outcome",
+        "path": "Procedure.outcome",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.report",
+        "path": "Procedure.report",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-diagnostic-report"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.focalDevice.manipulated",
+        "path": "Procedure.focalDevice.manipulated",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

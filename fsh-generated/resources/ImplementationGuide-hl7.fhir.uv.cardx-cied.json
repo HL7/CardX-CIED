@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/cardx-cied/ImplementationGuide/hl7.fhir.uv.cardx-cied",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "name": "CardXCIED",
   "title": "CardX - Cardiac Implantable Electronic Devices",
   "status": "active",
@@ -54,6 +54,14 @@
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "ValueSet/idco-abnormal-flags"
+        },
+        "name": "Abnormal Flags Included in IHE PCD TF",
+        "description": "Abnormal Flags Included in the IHE PCD Technical Framework to communicate IDC Observations",
+        "isExample": false
+      },
       {
         "reference": {
           "reference": "CapabilityStatement/cied-data-sender"
@@ -96,6 +104,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cied-diagnostic-report"
+        },
+        "name": "CIED Diagnostic Report Profile",
+        "description": "\nThe CIED Diagnostic Report Profile contains the metadata, device references,observation references, and attachments for an interrogated device transmission. Several device\nand observation references may exist depending on the number of devices implanted in a patient and how the observation data are associated with the devices. Separate observations may\nalso be created during additional post-processing by the remote monitoring software or other processing systems used to interrogate the device data.\n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-interrogation-procedure"
+        },
+        "name": "CIED Interrogation Procedure Profile",
+        "description": "\nThe CIED Interrogation Procedure profile contains the session information for a device interrogation.\n",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/cied-monitor-types-vs"
         },
         "name": "CIED Monitor Types",
@@ -112,10 +136,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cied-practioner"
+        },
+        "name": "CIED Practioner Profile",
+        "description": "\nThe CIED Practioner profile contains the metadata for a healthcare provider associated with a device interrogation.\n",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cied-device"
         },
         "name": "Device - Cardiovascular Implantable Electronic Device (CIED)",
         "description": "\nThe CardX CIED Device profile is interoperable with ISO/IEEE 11073-10103 - Implantable device, cardiac. The cardinality of the profile aligns with the\noptionality of the ISO/IEEE 11073/10103 terms.\n\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). \nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_DEV_TYPE,\nMDC_IDC_DEV_MODEL,\nMDC_IDC_DEV_SERIAL,\nMDC_IDC_DEV_MFG\n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-device-lead"
+        },
+        "name": "Device - Cardiovascular Implantable Electronic Device (CIED) Lead",
+        "description": "\nThe CardX CIED Device Lead profile is interoperable with ISO/IEEE 11073-10103 - Implantable device, cardiac. The cardinality of the profile aligns with the\noptionality of the ISO/IEEE 11073/10103 terms.\n\nThe following data-elements must always be present (Mandatory definition) or must be supported if the data is present in the sending system (Must Support definition). \nWithin IEEE 11073-10103, MDC_IDC_DEV contains the following data elements:\nMDC_IDC_LEAD_MODEL,\nMDC_IDC_LEAD_SERIAL,\nMDC_IDC_LEAD_MFG,\nMDC_IDC_LEAD_ADVISORY_INFO_STATUS\n",
         "isExample": false
       },
       {
@@ -128,6 +168,49 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/cied-device-association"
+        },
+        "name": "Device Association - Cardiovascular Implantable Electronic Device (CIED)",
+        "description": "\nDevice association contains to relationship between the CIED, leads, and other devices associated with a patient. The resource may contain both active\nand historical associations.\n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/IDCOExample2"
+        },
+        "name": "IDCOExample2",
+        "description": "Example IDCO",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/IdcoObservation"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdcoObservation"
+        },
+        "name": "Implantable Device Cardiac Observation",
+        "description": "Observation profile to support implantable cardiac device measurements, settings, statistics, episodes, notifications, and nomenclature",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/instance-idco"
+        },
+        "name": "Instance of repeatable element",
+        "description": "Extentension to support expanding number of reportable data beyond constrained number defined in nomenclature.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-mdc-display-name"
+        },
+        "name": "MDC Display Name",
+        "description": "Extension to capture the MDC Display Name for an IDC Observation Component Code",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/MDCIDCDeviceTypes"
         },
         "name": "MDC IDC Device Types",
@@ -136,10 +219,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/IDCvalues"
+        },
+        "name": "MDC IDC Value Set",
+        "description": "ValueSet for the MDC IDC partition.",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cied-connectivity-status"
         },
         "name": "Observation - CIED Connectivity",
         "description": "\nProfile of the observation resource to present the most recent connectivity status and associated information for a CIED/Monitor combination.\nIn most instances there will be one observation per CIED/monitor pair per patient, however some manufacturers may allow multiple CIEDs implanted in a patient to connect to a single monitor and have a single connectivity status for the entire system of devices.\n\nCIEDs and monitors connect at regular intervals to exchange data ranging from every few minutes to every other week depending on the device/monitor configuration and manufacturer. \nThe connectivity observation profile is a snapshot in time and is not intended to be used to query historical log information that may have been captured by the remote monitoring IoT platform. \nA single observation will be returned for every CIED/monitor pair.\n\nConnectivity status is based on the actual time difference between the most recent successful communication and the present date. \nTo manage disconnected patients, manufacturers have implemented additional functionality in their platforms. The connectivity modifier is included to represent an action performed by the user or business logic applied by the manufacturer.\nExamples of these are a user suspending a patient from appearing on the disconnected list in the remote monitoring system or the system automatically marking a patient as inactive after a prolonged disconnection period to remove them from\nappearing on the disconnected list in the user interface.  \n",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cied-organization"
+        },
+        "name": "Organization - Cardiovascular Implantable Electronic Device (CIED)",
+        "description": "\nThe CIED Organization profile contains the metadata for an organization associated with a device interrogation.\n",
         "isExample": false
       },
       {
@@ -383,6 +482,12 @@
           "sourceUrl": "connectivity-status.html"
         },
         {
+          "title": "Device Observations",
+          "generation": "markdown",
+          "name": "device-observations.html",
+          "sourceUrl": "device-observations.html"
+        },
+        {
           "title": "History",
           "generation": "markdown",
           "name": "history.html",
@@ -405,7 +510,7 @@
           "code": "releaselabel",
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
-        "value": "STU 1"
+        "value": "ci-build"
       },
       {
         "code": {
