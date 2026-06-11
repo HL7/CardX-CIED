@@ -64,6 +64,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/association-status-extension"
+        },
+        "name": "Association Status Extension",
+        "description": "Extension to represent the state of the association between the device/patient/lead.",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/cied-data-sender"
         },
         "name": "CardX CIED Connectivity Server Capability Statement",
@@ -176,6 +184,14 @@
       },
       {
         "reference": {
+          "reference": "SubscriptionTopic/IDCOObservationSubscriptionTopic"
+        },
+        "name": "IDCO Observation Subscription Topic",
+        "description": "Subscription topic for Implantable Device Cardiac Observations (IDCO)",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "Observation/IDCOExample2"
         },
         "name": "IDCOExample2",
@@ -191,6 +207,14 @@
         },
         "name": "Implantable Device Cardiac Observation",
         "description": "Observation profile to support implantable cardiac device measurements, settings, statistics, episodes, notifications, and nomenclature",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/idco-bundle"
+        },
+        "name": "Implantable Device Cardiac Observation (IDCO) Bundle",
+        "description": "Once a manufacturer processes a device transmission, they can packing the observation date, report, patient, and device demographics\nas a Collection Bundle\n\nThe Bundle 'entry' will contain a combination of the following resources:\n\n*list of resources and links to profiles",
         "isExample": false
       },
       {

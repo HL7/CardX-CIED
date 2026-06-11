@@ -1,0 +1,210 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "idco-bundle",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/idco-bundle",
+  "name": "IDCOBundle",
+  "title": "Implantable Device Cardiac Observation (IDCO) Bundle",
+  "status": "active",
+  "description": "Once a manufacturer processes a device transmission, they can packing the observation date, report, patient, and device demographics\nas a Collection Bundle\n\nThe Bundle 'entry' will contain a combination of the following resources:\n\n*list of resources and links to profiles",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "patternCode": "collection"
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "short": "Instant the bundle was created",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resource"
+            },
+            {
+              "type": "value",
+              "path": "resource.ofType(Observation).code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:CIEDDeviceAssociation",
+        "path": "Bundle.entry",
+        "sliceName": "CIEDDeviceAssociation",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:CIEDDeviceAssociation.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "DeviceAssociation",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-association"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:CIEDDevice",
+        "path": "Bundle.entry",
+        "sliceName": "CIEDDevice",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:CIEDDevice.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Device",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:CIEDDeviceLead",
+        "path": "Bundle.entry",
+        "sliceName": "CIEDDeviceLead",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:CIEDDeviceLead.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Device",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-lead"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:CIEDDiagnosticReport",
+        "path": "Bundle.entry",
+        "sliceName": "CIEDDiagnosticReport",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:CIEDDiagnosticReport.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "DiagnosticReport",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-diagnostic-report"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:IdcoObservation",
+        "path": "Bundle.entry",
+        "sliceName": "IdcoObservation",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:IdcoObservation.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/IdcoObservation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:CIEDPatient",
+        "path": "Bundle.entry",
+        "sliceName": "CIEDPatient",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:CIEDPatient.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:CIEDOrganization",
+        "path": "Bundle.entry",
+        "sliceName": "CIEDOrganization",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:CIEDOrganization.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Organization",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:CIEDPractioner",
+        "path": "Bundle.entry",
+        "sliceName": "CIEDPractioner",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:CIEDPractioner.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Practitioner",
+            "profile": [
+              "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-practioner"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

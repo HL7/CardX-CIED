@@ -87,16 +87,6 @@ entity "Device Association" as assoc {
   associationType : CodeableConcept (0..1)
 }
 
-entity "Procedure" as proc {
-  id : string <<generated>>
-  --
-  identifier : Identifier: (0..*)
-  status : code (1..1)
-  code : CodeableConcept (1..1)
-  subject : Reference(Patient) (1..1)
-  performed : dateTime (1..1)
-}
-
 IDCO }|--|| Patient
 IDCO }|--|{ cied
 diag ||--|| Patient
@@ -104,6 +94,7 @@ diag ||--|{ IDCO
 lead |o--|| cied
 assoc ||--|| cied 
 assoc ||--|| Patient
-proc ||--|| prac
+diag ||--|| prac
+diag ||--|| org
 
 @enduml

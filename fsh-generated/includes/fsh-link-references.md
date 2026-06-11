@@ -1,4 +1,5 @@
 [IDCOAbnormalFlags]: ValueSet-idco-abnormal-flags.html
+[AssociationStatus]: StructureDefinition-association-status-extension.html
 [cied-data-sender]: CapabilityStatement-cied-data-sender.html
 [CardXCIED]: CodeSystem-CardXCIED.html
 [CIEDConnectivityStateModifierVS]: ValueSet-cied-connectivity-state-modifier-vs.html
@@ -13,8 +14,10 @@
 [CIEDDeviceLead]: StructureDefinition-cied-device-lead.html
 [CIEDMonitor]: StructureDefinition-cied-monitor.html
 [CIEDDeviceAssociation]: StructureDefinition-cied-device-association.html
+[IDCOObservationSubscriptionTopic]: SubscriptionTopic-IDCOObservationSubscriptionTopic.html
 [IDCOExample2]: Observation-IDCOExample2.html
 [IdcoObservation]: StructureDefinition-IdcoObservation.html
+[IDCOBundle]: StructureDefinition-idco-bundle.html
 [ObservationInstance]: StructureDefinition-instance-idco.html
 [MdcDisplayName]: StructureDefinition-ext-mdc-display-name.html
 [MDCIDCDeviceTypes]: ValueSet-MDCIDCDeviceTypes.html
