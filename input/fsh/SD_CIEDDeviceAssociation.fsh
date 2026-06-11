@@ -1,3 +1,11 @@
+Extension: AssociationStatus
+Id: association-status-extension
+Title: "Association Status Extension"
+Description: "Extension to represent the state of the association between the device/patient/lead."
+* insert ExtensionContext(DeviceAssociation)
+* valueCodeableConcept MS
+* valueCodeableConcept from http://hl7.org/fhir/ValueSet/deviceassociation-association-status
+
 Profile: CIEDDeviceAssociation
 Parent: DeviceAssociation
 Id: cied-device-association
@@ -9,7 +17,7 @@ and historical associations.
 * identifier
 * device MS
 * status MS
+* extension contains AssociationStatus named associationStatus 1..1 MS
 * statusReason MS
 * subject MS
-* subject only Reference(CIEDPatient)
 * period MS

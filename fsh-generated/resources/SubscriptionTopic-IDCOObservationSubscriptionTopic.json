@@ -1,0 +1,22 @@
+{
+  "resourceType": "SubscriptionTopic",
+  "id": "IDCOObservationSubscriptionTopic",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/SubscriptionTopic/idco-observation",
+  "title": "IDCO Observation Subscription Topic",
+  "description": "Subscription topic for Implantable Device Cardiac Observations (IDCO)",
+  "eventTrigger": [
+    {
+      "event": {
+        "coding": [
+          {
+            "code": "IDCO",
+            "system": "http://hl7.org/fhir/uv/cardx-cied/CodeSystem/CardXCIED"
+          }
+        ]
+      },
+      "resource": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/idco-bundle"
+    }
+  ],
+  "version": "1.0.0",
+  "status": "active"
+}

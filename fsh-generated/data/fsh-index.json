@@ -13,7 +13,7 @@
     "fshType": "CodeSystem",
     "fshFile": "VS_CardX-CIED.fsh",
     "startLine": 62,
-    "endLine": 124
+    "endLine": 125
   },
   {
     "outputFile": "Device-uc1ACMEICD.json",
@@ -184,6 +184,14 @@
     "endLine": 37
   },
   {
+    "outputFile": "StructureDefinition-association-status-extension.json",
+    "fshName": "AssociationStatus",
+    "fshType": "Extension",
+    "fshFile": "SD_CIEDDeviceAssociation.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
     "outputFile": "StructureDefinition-cied-connectivity-status.json",
     "fshName": "CIEDConnectivityStatus",
     "fshType": "Profile",
@@ -196,8 +204,8 @@
     "fshName": "CIEDDeviceAssociation",
     "fshType": "Profile",
     "fshFile": "SD_CIEDDeviceAssociation.fsh",
-    "startLine": 1,
-    "endLine": 15
+    "startLine": 9,
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-cied-device-extension.json",
@@ -280,12 +288,28 @@
     "endLine": 13
   },
   {
+    "outputFile": "StructureDefinition-idco-bundle.json",
+    "fshName": "IDCOBundle",
+    "fshType": "Profile",
+    "fshFile": "SD_IDCOBundle.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
     "outputFile": "StructureDefinition-instance-idco.json",
     "fshName": "ObservationInstance",
     "fshType": "Extension",
     "fshFile": "SD_CIEDObservation.fsh",
     "startLine": 1,
     "endLine": 6
+  },
+  {
+    "outputFile": "SubscriptionTopic-IDCOObservationSubscriptionTopic.json",
+    "fshName": "IDCOObservationSubscriptionTopic",
+    "fshType": "Instance",
+    "fshFile": "SD_IDCOSubscription.fsh",
+    "startLine": 3,
+    "endLine": 14
   },
   {
     "outputFile": "ValueSet-IDCvalues.json",
