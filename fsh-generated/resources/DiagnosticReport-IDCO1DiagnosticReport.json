@@ -1,0 +1,35 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "IDCO1DiagnosticReport",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-diagnostic-report"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://example.org",
+      "value": "ACME-DR-001"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/IDCOExample2"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "10191-5",
+        "system": "http://loinc.org",
+        "display": "Cardiac electrophysiology procedure note"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/uc1ACMEPatient"
+  },
+  "effectiveDateTime": "2024-01-15T10:30:00-05:00"
+}

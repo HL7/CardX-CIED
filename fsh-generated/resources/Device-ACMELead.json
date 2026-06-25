@@ -1,0 +1,15 @@
+{
+  "resourceType": "Device",
+  "id": "ACMELead",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-lead"
+    ]
+  },
+  "manufacturer": "ACME Devices",
+  "serialNumber": "ACMELead",
+  "modelNumber": "LeadExample1",
+  "parent": {
+    "reference": "Device/uc1ACMEICD"
+  }
+}

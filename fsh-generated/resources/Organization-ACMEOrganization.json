@@ -1,0 +1,17 @@
+{
+  "resourceType": "Organization",
+  "id": "ACMEOrganization",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-organization"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://example.org",
+      "value": "ACME-ORG-001"
+    }
+  ],
+  "name": "ACME Medical Center"
+}

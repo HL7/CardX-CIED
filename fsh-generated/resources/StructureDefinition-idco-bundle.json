@@ -42,14 +42,14 @@
           ],
           "rules": "open"
         },
-        "min": 2,
+        "min": 4,
         "mustSupport": true
       },
       {
         "id": "Bundle.entry:CIEDDeviceAssociation",
         "path": "Bundle.entry",
         "sliceName": "CIEDDeviceAssociation",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "mustSupport": true
       },
@@ -69,7 +69,7 @@
         "id": "Bundle.entry:CIEDDevice",
         "path": "Bundle.entry",
         "sliceName": "CIEDDevice",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "mustSupport": true
       },

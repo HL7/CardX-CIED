@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "Bundle-uc1ACMEBundle.json",
+    "fshName": "uc1ACMEBundle",
+    "fshType": "Instance",
+    "fshFile": "SD_IDCOBundle.fsh",
+    "startLine": 41,
+    "endLine": 55
+  },
+  {
     "outputFile": "CapabilityStatement-cied-data-sender.json",
     "fshName": "cied-data-sender",
     "fshType": "Instance",
@@ -14,6 +22,14 @@
     "fshFile": "VS_CardX-CIED.fsh",
     "startLine": 62,
     "endLine": 125
+  },
+  {
+    "outputFile": "Device-ACMELead.json",
+    "fshName": "ACMELead",
+    "fshType": "Instance",
+    "fshFile": "SD_DeviceLead.fsh",
+    "startLine": 22,
+    "endLine": 29
   },
   {
     "outputFile": "Device-uc1ACMEICD.json",
@@ -88,6 +104,30 @@
     "endLine": 62
   },
   {
+    "outputFile": "DeviceAssociation-ACMEDeviceLeadAssociation.json",
+    "fshName": "ACMEDeviceLeadAssociation",
+    "fshType": "Instance",
+    "fshFile": "SD_CIEDDeviceAssociation.fsh",
+    "startLine": 35,
+    "endLine": 43
+  },
+  {
+    "outputFile": "DeviceAssociation-ACMEDevicePatientAssociation.json",
+    "fshName": "ACMEDevicePatientAssociation",
+    "fshType": "Instance",
+    "fshFile": "SD_CIEDDeviceAssociation.fsh",
+    "startLine": 25,
+    "endLine": 33
+  },
+  {
+    "outputFile": "DiagnosticReport-IDCO1DiagnosticReport.json",
+    "fshName": "IDCO1DiagnosticReport",
+    "fshType": "Instance",
+    "fshFile": "SD_CIEDDiagnosticReport.fsh",
+    "startLine": 23,
+    "endLine": 34
+  },
+  {
     "outputFile": "Observation-IDCOExample2.json",
     "fshName": "IDCOExample2",
     "fshType": "Instance",
@@ -136,6 +176,14 @@
     "endLine": 263
   },
   {
+    "outputFile": "Organization-ACMEOrganization.json",
+    "fshName": "ACMEOrganization",
+    "fshType": "Instance",
+    "fshFile": "SD_Organization.fsh",
+    "startLine": 11,
+    "endLine": 17
+  },
+  {
     "outputFile": "Patient-uc1ACMEPatient.json",
     "fshName": "uc1ACMEPatient",
     "fshType": "Instance",
@@ -174,6 +222,14 @@
     "fshFile": "SD_Patient.fsh",
     "startLine": 102,
     "endLine": 120
+  },
+  {
+    "outputFile": "Practitioner-ExamplePractitioner.json",
+    "fshName": "ExamplePractitioner",
+    "fshType": "Instance",
+    "fshFile": "SD_CIEDPractioner.fsh",
+    "startLine": 13,
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-IdcoObservation.json",
