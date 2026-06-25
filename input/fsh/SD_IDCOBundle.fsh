@@ -21,8 +21,8 @@ The Bundle 'entry' will contain a combination of the following resources:
   * ^slicing.rules = #open
 * entry 1..* MS
 * entry contains
-    CIEDDeviceAssociation 0..* MS and
-    CIEDDevice 0..* MS and
+    CIEDDeviceAssociation 1..* MS and
+    CIEDDevice 1..* MS and
     CIEDDeviceLead 0..* MS and
     CIEDDiagnosticReport 1..1 MS and
     IdcoObservation 0..* MS and
@@ -37,3 +37,19 @@ The Bundle 'entry' will contain a combination of the following resources:
 * entry[CIEDPatient].resource only CIEDPatient
 * entry[CIEDOrganization].resource only CIEDOrganization
 * entry[CIEDPractioner].resource only CIEDPractioner
+
+Instance: uc1ACMEBundle
+InstanceOf: IDCOBundle
+Description: "An example IDCO Bundle."
+Usage: #example
+* type = #collection
+* timestamp = "2024-01-15T10:30:00-05:00"
+* entry[CIEDPatient].resource = uc1ACMEPatient
+* entry[CIEDDevice].resource = uc1ACMEICD
+* entry[CIEDDeviceLead].resource = ACMELead
+* entry[CIEDDeviceAssociation][+].resource = ACMEDevicePatientAssociation
+* entry[CIEDDeviceAssociation][+].resource = ACMEDeviceLeadAssociation
+* entry[CIEDDiagnosticReport].resource = IDCO1DiagnosticReport
+* entry[IdcoObservation].resource = IDCOExample2
+* entry[CIEDOrganization].resource = ACMEOrganization
+* entry[CIEDPractioner].resource = ExamplePractitioner

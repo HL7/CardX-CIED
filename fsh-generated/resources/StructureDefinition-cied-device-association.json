@@ -56,11 +56,6 @@
         "mustSupport": true
       },
       {
-        "id": "DeviceAssociation.statusReason",
-        "path": "DeviceAssociation.statusReason",
-        "mustSupport": true
-      },
-      {
         "id": "DeviceAssociation.subject",
         "path": "DeviceAssociation.subject",
         "mustSupport": true
@@ -68,6 +63,11 @@
       {
         "id": "DeviceAssociation.period",
         "path": "DeviceAssociation.period",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceAssociation.operation.status",
+        "path": "DeviceAssociation.operation.status",
         "mustSupport": true
       }
     ]

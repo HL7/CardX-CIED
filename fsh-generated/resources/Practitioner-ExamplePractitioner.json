@@ -1,0 +1,45 @@
+{
+  "resourceType": "Practitioner",
+  "id": "ExamplePractitioner",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-practioner"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1234567890"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Jane"
+      ],
+      "prefix": [
+        "Dr."
+      ],
+      "family": "Smith"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-867-5309",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "1234 Main Street"
+      ],
+      "use": "work",
+      "city": "Springfield",
+      "state": "IL",
+      "postalCode": "12345"
+    }
+  ]
+}

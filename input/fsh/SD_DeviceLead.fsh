@@ -18,3 +18,12 @@ MDC_IDC_LEAD_ADVISORY_INFO_STATUS
 * serialNumber 1..1 MS
 * modelNumber 1..1 MS
 * parent only Reference(CIEDDevice)
+
+Instance: ACMELead
+InstanceOf: CIEDDeviceLead
+Description: "An example CIED device lead for CIED connectivity example 1."
+Usage: #example
+* manufacturer = "ACME Devices"
+* serialNumber = "ACMELead"
+* modelNumber = "LeadExample1"
+* parent = Reference(uc1ACMEICD)

@@ -1,4 +1,8 @@
 [IDCOAbnormalFlags]: ValueSet-idco-abnormal-flags.html
+[ACMEDeviceLeadAssociation]: DeviceAssociation-ACMEDeviceLeadAssociation.html
+[ACMEDevicePatientAssociation]: DeviceAssociation-ACMEDevicePatientAssociation.html
+[ACMELead]: Device-ACMELead.html
+[ACMEOrganization]: Organization-ACMEOrganization.html
 [AssociationStatus]: StructureDefinition-association-status-extension.html
 [cied-data-sender]: CapabilityStatement-cied-data-sender.html
 [CardXCIED]: CodeSystem-CardXCIED.html
@@ -14,7 +18,9 @@
 [CIEDDeviceLead]: StructureDefinition-cied-device-lead.html
 [CIEDMonitor]: StructureDefinition-cied-monitor.html
 [CIEDDeviceAssociation]: StructureDefinition-cied-device-association.html
+[ExamplePractitioner]: Practitioner-ExamplePractitioner.html
 [IDCOObservationSubscriptionTopic]: SubscriptionTopic-IDCOObservationSubscriptionTopic.html
+[IDCO1DiagnosticReport]: DiagnosticReport-IDCO1DiagnosticReport.html
 [IDCOExample2]: Observation-IDCOExample2.html
 [IdcoObservation]: StructureDefinition-IdcoObservation.html
 [IDCOBundle]: StructureDefinition-idco-bundle.html
@@ -25,6 +31,7 @@
 [CIEDConnectivityStatus]: StructureDefinition-cied-connectivity-status.html
 [CIEDOrganization]: StructureDefinition-cied-organization.html
 [CIEDPatient]: StructureDefinition-cied-patient.html
+[uc1ACMEBundle]: Bundle-uc1ACMEBundle.html
 [uc1ACMEICD]: Device-uc1ACMEICD.html
 [uc1ACMEPatient]: Patient-uc1ACMEPatient.html
 [uc1ConnectivityACME]: Observation-uc1ConnectivityACME.html

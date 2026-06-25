@@ -1,0 +1,39 @@
+{
+  "resourceType": "DeviceAssociation",
+  "id": "ACMEDevicePatientAssociation",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-association"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/association-status-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "implanted",
+            "system": "http://hl7.org/fhir/device-association-status"
+          }
+        ]
+      }
+    }
+  ],
+  "period": {
+    "start": "2020-06-01"
+  },
+  "device": {
+    "reference": "Device/uc1ACMEICD"
+  },
+  "status": {
+    "coding": [
+      {
+        "code": "implanted",
+        "system": "http://hl7.org/fhir/device-association-status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/uc1ACMEPatient"
+  }
+}

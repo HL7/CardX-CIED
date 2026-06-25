@@ -64,6 +64,50 @@
       },
       {
         "reference": {
+          "reference": "DeviceAssociation/ACMEDeviceLeadAssociation"
+        },
+        "name": "ACMEDeviceLeadAssociation",
+        "description": "An example device association between a CIED and a lead.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-association"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "DeviceAssociation/ACMEDevicePatientAssociation"
+        },
+        "name": "ACMEDevicePatientAssociation",
+        "description": "An example device association between a CIED and a patient.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-association"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Device/ACMELead"
+        },
+        "name": "ACMELead",
+        "description": "An example CIED device lead for CIED connectivity example 1.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-device-lead"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Organization/ACMEOrganization"
+        },
+        "name": "ACMEOrganization",
+        "description": "An example organization for CIED connectivity example 1.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-organization"
+        ]
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/association-status-extension"
         },
         "name": "Association Status Extension",
@@ -184,11 +228,33 @@
       },
       {
         "reference": {
+          "reference": "Practitioner/ExamplePractitioner"
+        },
+        "name": "ExamplePractitioner",
+        "description": "An example CIED practitioner for CIED connectivity example 1.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-practioner"
+        ]
+      },
+      {
+        "reference": {
           "reference": "SubscriptionTopic/IDCOObservationSubscriptionTopic"
         },
         "name": "IDCO Observation Subscription Topic",
         "description": "Subscription topic for Implantable Device Cardiac Observations (IDCO)",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/IDCO1DiagnosticReport"
+        },
+        "name": "IDCO1DiagnosticReport",
+        "description": "An example CIED Diagnostic Report.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/cied-diagnostic-report"
+        ]
       },
       {
         "reference": {
@@ -272,6 +338,17 @@
         "name": "Patient - CIED Patient Profile",
         "description": "The CardX CIED patient profile is interoperable with the PID segment of the IHE Patient Care Device Technical Framework, Vol. 2,\nSection 3.9 - Communicate IDC Observations. The data elements in the FHIR profile are aligned, including allowing for the use of a concatenated Device Model and Serial Number \nto represent a unique patient identifier.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Bundle/uc1ACMEBundle"
+        },
+        "name": "uc1ACMEBundle",
+        "description": "An example IDCO Bundle.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/cardx-cied/StructureDefinition/idco-bundle"
+        ]
       },
       {
         "reference": {

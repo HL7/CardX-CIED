@@ -20,3 +20,16 @@ also be created during additional post-processing by the remote monitoring softw
 * note
 * presentedForm MS
 
+Instance: IDCO1DiagnosticReport
+InstanceOf: CIEDDiagnosticReport
+Description: "An example CIED Diagnostic Report."
+Usage: #example
+* identifier[0].use = #official
+* identifier[0].system = "http://example.org"
+* identifier[0].value = "ACME-DR-001"
+* status = #final
+* code = http://loinc.org#10191-5 "Cardiac electrophysiology procedure note"
+* subject = Reference(uc1ACMEPatient)
+* effectiveDateTime = "2024-01-15T10:30:00-05:00"
+* result[0] = Reference(IDCOExample2)
+

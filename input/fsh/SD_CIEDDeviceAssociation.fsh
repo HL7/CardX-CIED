@@ -18,6 +18,26 @@ and historical associations.
 * device MS
 * status MS
 * extension contains AssociationStatus named associationStatus 1..1 MS
-* statusReason MS
 * subject MS
+* operation.status MS
 * period MS
+
+Instance: ACMEDevicePatientAssociation
+InstanceOf: CIEDDeviceAssociation
+Description: "An example device association between a CIED and a patient."
+Usage: #example
+* extension[associationStatus].valueCodeableConcept = http://hl7.org/fhir/device-association-status#implanted
+* device = Reference(uc1ACMEICD)
+* status = http://hl7.org/fhir/device-association-status#implanted
+* subject = Reference(uc1ACMEPatient)
+* period.start = "2020-06-01"
+
+Instance: ACMEDeviceLeadAssociation
+InstanceOf: CIEDDeviceAssociation
+Description: "An example device association between a CIED and a lead."
+Usage: #example
+* extension[associationStatus].valueCodeableConcept = http://hl7.org/fhir/device-association-status#implanted
+* device = Reference(ACMELead)
+* status = http://hl7.org/fhir/device-association-status#implanted
+* subject = Reference(uc1ACMEPatient)
+* period.start = "2020-06-01"
