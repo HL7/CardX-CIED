@@ -58,144 +58,144 @@ InstanceOf: IdcoObservation
 Description: "Example IDCO"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code[+] = $Mdc#720908 "Implantable Device Cardiac Observation - TEMPORARY CODE."
+* code[+] = CardXCIED#IDCO "Implantable Device Cardiac Observation"
 // MDC_IDC_MSMT_BATTERY
-* component[+].code = $Mdc#721216 "Battery Date Time of Measurements"
+* component[+].code = $Mdc#721216 "MDC_IDC_MSMT_BATTERY_DTM"
 * component[=].valueDateTime = "2019-10-16T12:12:29-09:00"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#721280 "Battery Status"
-* component[=].valueCodeableConcept = $Mdc#754113 "Beginning of Service"
+* component[+].code = $Mdc#721280 "MDC_IDC_MSMT_BATTERY_STATUS"
+* component[=].valueCodeableConcept = $Mdc#754113 "MDC_IDC_ENUM_BATTERY_STATUS_BOS"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#721344 "Battery Voltage"
+* component[+].code = $Mdc#721344 "MDC_IDC_MSMT_BATTERY_VOLTAGE"
 * component[=].valueQuantity.value = 6.2
 * component[=].valueQuantity = 'V' "V" 
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#721408 "Battery Impedance"
+* component[+].code = $Mdc#721408 "MDC_IDC_MSMT_BATTERY_IMPEDANCE"
 * component[=].valueQuantity.value = 2450
 * component[=].valueQuantity = 'Ohm' "Ohm"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#721472 "Battery Remaining Longevity"
+* component[+].code = $Mdc#721472 "MDC_IDC_MSMT_BATTERY_REMAINING_LONGEVITY"
 * component[=].valueQuantity.value = 38
 * component[=].valueQuantity = 'mo' "mo"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#721536 "Battery Remaining Percentage"
+* component[+].code = $Mdc#721536 "MDC_IDC_MSMT_BATTERY_REMAINING_PERCENTAGE"
 * component[=].valueQuantity.value = 75
 * component[=].valueQuantity = '%' "%"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#721600 "Battery RRT Trigger"
+* component[+].code = $Mdc#721600 "MDC_IDC_MSMT_BATTERY_RRT_TRIGGER"
 * component[=].valueString = "Battery capacity < limit for 3 months"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#721601 "Battery Remaining Longevity Timeframe"
+* component[+].code = $Mdc#721601 "MDC_IDC_MSMT_BATTERY_REMAINING_LONGEVITY_TIMEFRAME"
 * component[=].valueCodeableConcept = $Mdc#754115 "RRT"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#721602 "Battery Remaining Percentage Timeframe"
+* component[+].code = $Mdc#721602 "MDC_IDC_MSMT_BATTERY_REMAINING_PERCENTAGE_TIMEFRAME"
 * component[=].valueCodeableConcept = $Mdc#754115 "RRT"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#721603 "Battery RRT Reached Date Time"
+* component[+].code = $Mdc#721603 "MDC_IDC_MSMT_BATTERY_RRT_REACHED_DATE_TIME"
 * component[=].valueDateTime = "2025-03-21T12:12:29-09:00"
 * component[=].extension[observationInstance].valueInteger = 1
 // MDC_IDC_MSMT_CAP
-* component[+].code = $Mdc#721664 "Capacitor Last Charge Date Time"
+* component[+].code = $Mdc#721664 "MDC_IDC_MSMT_CAP_DTM"
 * component[=].valueDateTime = "2018-03-21T12:12:29-09:00"
-* component[+].code = $Mdc#721728 "Capacitor Charge Time"
+* component[+].code = $Mdc#721728 "MDC_IDC_MSMT_CAP_STATUS"
 * component[=].valueQuantity.value = 9.4
 * component[=].valueQuantity = 's' "s"
-* component[+].code = $Mdc#721792 "Capacitor Charge Energy"
+* component[+].code = $Mdc#721792 "MDC_IDC_MSMT_CAP_CHARGE_TIME"
 * component[=].valueQuantity.value = 30
 * component[=].valueQuantity = 'J' "J"
-* component[+].code = $Mdc#721856 "Capacitor Charge Type"
+* component[+].code = $Mdc#721856 "MDC_IDC_MSMT_CAP_CHARGE_TYPE"
 * component[=].valueCodeableConcept = $Mdc#754177 "Shock"
 // MDC_IDC_MSMT_LEADCHNL_[CHAMBER]
 // should MDC_IDC_MSMT_LEADCHNL_RA_DTM be included or just start/end?
-* component[+].code = $Mdc#721921 "Lead Channel Measurements Date and Time MDC_IDC_MSMT_LEADCHNL_RA_DTM_START"
+* component[+].code = $Mdc#721921 "MDC_IDC_MSMT_LEADCHNL_RA_DTM_START"
 * component[=].valueDateTime = "2019-03-21T12:12:29-09:00"
-* component[+].code = $Mdc#721922 "Lead Channel Measurements Date and Time MDC_IDC_MSMT_LEADCHNL_RA_DTM_END"
+* component[+].code = $Mdc#721922 "MDC_IDC_MSMT_LEADCHNL_RA_DTM_END"
 * component[=].valueDateTime = "2020-03-21T12:12:29-09:00"
-* component[+].code = $Mdc#721984 "Lead Channel Status MDC_IDC_MSMT_LEADCHNL_RA_LEAD_CHANNEL_STATUS"
+* component[+].code = $Mdc#721984 "MDC_IDC_MSMT_LEADCHNL_RA_LEAD_CHANNEL_STATUS"
 * component[=].valueCodeableConcept = $Mdc#754241 "Check Lead"
-* component[+].code = $Mdc#722049 "Lead Channel Sensing Intrinsic Amplitude MDC_IDC_MSMT_LEADCHNL_RA_SENSING_INTR_AMPL_MAX"
+* component[+].code = $Mdc#722049 "MDC_IDC_MSMT_LEADCHNL_RA_SENSING_INTR_AMPL_MAX"
 * component[=].valueQuantity.value = 2.6
 * component[=].valueQuantity = 'mV' "mV"
-* component[+].code = $Mdc#722050 "Lead Channel Sensing Intrinsic Amplitude MDC_IDC_MSMT_LEADCHNL_RA_SENSING_INTR_AMPL_MIN"
+* component[+].code = $Mdc#722050 "MDC_IDC_MSMT_LEADCHNL_RA_SENSING_INTR_AMPL_MIN"
 * component[=].valueQuantity.value = 2.2
 * component[=].valueQuantity = 'mV' "mV"
-* component[+].code = $Mdc#722051 "Lead Channel Sensing Intrinsic Amplitude MDC_IDC_MSMT_LEADCHNL_RA_SENSING_INTR_AMPL_MEAN"
+* component[+].code = $Mdc#722051 "MDC_IDC_MSMT_LEADCHNL_RA_SENSING_INTR_AMPL_MEAN"
 * component[=].valueQuantity.value = 2.5
 * component[=].valueQuantity = 'mV' "mV"
-* component[+].code = $Mdc#722112 "Lead Channel Sensing Polarity MDC_IDC_MSMT_LEADCHNL_RA_SENSING_POLARITY"
+* component[+].code = $Mdc#722112 "MDC_IDC_MSMT_LEADCHNL_RA_SENSING_POLARITY"
 * component[=].valueCodeableConcept = $Mdc#754305 "Unipolar"
-* component[+].code = $Mdc#722176 "Lead Channel Pacing Threshold Amplitude MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_AMPLITUDE"
+* component[+].code = $Mdc#722176 "MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_AMPLITUDE"
 * component[=].valueQuantity.value = 0.7
 * component[=].valueQuantity = 'V' "V" 
-* component[+].code = $Mdc#722240 "Lead Channel Pacing Threshold Pulse Width MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_PULSEWIDTH"
+* component[+].code = $Mdc#722240 "MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_PULSEWIDTH"
 * component[=].valueQuantity.value = 0.5
 * component[=].valueQuantity = 'ms' "ms"
-* component[+].code = $Mdc#722304 "Lead Channel Pacing Threshold Measurement Method MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_MEASUREMENT_METHOD"
+* component[+].code = $Mdc#722304 "MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_MEASUREMENT_METHOD"
 * component[=].valueCodeableConcept = $Mdc#754371 "Device Automatic"
-* component[+].code = $Mdc#722368 "Lead Channel Pacing Threshold Polarity MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_POLARITY"
+* component[+].code = $Mdc#722368 "MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_POLARITY"
 * component[=].valueCodeableConcept = $Mdc#754306 "Bipolar"
-* component[+].code = $Mdc#722432 "Lead Channel Impedance Value MDC_IDC_MSMT_LEADCHNL_RA_IMPEDANCE_VALUE"
+* component[+].code = $Mdc#722432 "MDC_IDC_MSMT_LEADCHNL_RA_IMPEDANCE_VALUE"
 * component[=].valueQuantity.value = 530 
 * component[=].valueQuantity = 'Ohm' "Ohm"
-* component[+].code = $Mdc#722496 "Lead Channel Impedance Polarity MDC_IDC_MSMT_LEADCHNL_RA_IMPEDANCE_POLARITY"
-* component[=].valueCodeableConcept = $Mdc#754306 "Bipolar"
+* component[+].code = $Mdc#722496 "MDC_IDC_MSMT_LEADCHNL_RA_IMPEDANCE_POLARITY"
+* component[=].valueCodeableConcept = $Mdc#754306 "MDC_IDC_ENUM_POLARITY_BI"
 // RV and LV leads to be added later
 // several sections skipped...
-* component[+].code = $Mdc#731520 "Tachy Therapy Setting Ventricular Status"
-* component[=].valueCodeableConcept = $Mdc#754817 "On"
-* component[+].code = $Mdc#731648 "Zone Setting Type Category"
-* component[=].valueCodeableConcept = $Mdc#754945 "VF"
+* component[+].code = $Mdc#731520 
+* component[=].valueCodeableConcept = $Mdc#754817 
+* component[+].code = $Mdc#731648 
+* component[=].valueCodeableConcept = $Mdc#754945 
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#731712 "Zone Setting Vendor Type Category"
-* component[=].valueCodeableConcept = $Mdc#772161 "A Medtronic zone subclassification of ventricular fibrillation."
+* component[+].code = $Mdc#731712 
+* component[=].valueCodeableConcept = $Mdc#772161 
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#731776 "Zone Setting Status"
-* component[=].valueCodeableConcept = $Mdc#755009 "Active"
+* component[+].code = $Mdc#731776 
+* component[=].valueCodeableConcept = $Mdc#755009 
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#731840 "Zone Setting Detection Interval"
+* component[+].code = $Mdc#731840 
 * component[=].valueQuantity.value = 300 
 * component[=].valueQuantity = 'ms' "ms"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#732097 "Zone Setting ATP Type MDC_IDC_SET_ZONE_TYPE_ATP_1"
+* component[+].code = $Mdc#732097 "MDC_IDC_SET_ZONE_TYPE_ATP_1"
 * component[=].valueCodeableConcept = $Mdc#755073 "Burst"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#732097 "Zone Setting ATP Type MDC_IDC_SET_ZONE_TYPE_ATP_1"
+* component[+].code = $Mdc#732097 "MDC_IDC_SET_ZONE_TYPE_ATP_1"
 * component[=].valueCodeableConcept = $Mdc#755073 "Burst"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#732161 "Zone Setting Number of ATP Sequences MDC_IDC_SET_ZONE_NUM_ATP_SEQS_1"
+* component[+].code = $Mdc#732161 "MDC_IDC_SET_ZONE_NUM_ATP_SEQS_1"
 * component[=].valueQuantity.value = 1 
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#732225 "The shock energy delivered at a particular sequence of a zone therapy. MDC_IDC_SET_ZONE_SHOCK_ENERGY_1"
+* component[+].code = $Mdc#732225 "MDC_IDC_SET_ZONE_SHOCK_ENERGY_1"
 * component[=].valueQuantity.value = 0.6 
 * component[=].valueQuantity = 'J' "J"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#732289 "Zone Setting Number of Shocks MDC_IDC_SET_ZONE_NUM_SHOCKS_1"
+* component[+].code = $Mdc#732289 "MDC_IDC_SET_ZONE_NUM_SHOCKS_1"
 * component[=].valueQuantity.value = 1 
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#732226 "The shock energy delivered at a particular sequence of a zone therapy. MDC_IDC_SET_ZONE_SHOCK_ENERGY_2"
+* component[+].code = $Mdc#732226 "MDC_IDC_SET_ZONE_SHOCK_ENERGY_2"
 * component[=].valueQuantity.value = 0.6 
 * component[=].valueQuantity = 'J' "J"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#732290 "Zone Setting Number of Shocks MDC_IDC_SET_ZONE_NUM_SHOCKS_2"
+* component[+].code = $Mdc#732290 "MDC_IDC_SET_ZONE_NUM_SHOCKS_2"
 * component[=].valueQuantity.value = 1 
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#732227 "The shock energy delivered at a particular sequence of a zone therapy. MDC_IDC_SET_ZONE_SHOCK_ENERGY_3"
+* component[+].code = $Mdc#732227 "MDC_IDC_SET_ZONE_SHOCK_ENERGY_3"
 * component[=].valueQuantity.value = 41 
 * component[=].valueQuantity = 'J' "J"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#732291 "Zone Setting Number of Shocks MDC_IDC_SET_ZONE_NUM_SHOCKS_3"
+* component[+].code = $Mdc#732291 "MDC_IDC_SET_ZONE_NUM_SHOCKS_3"
 * component[=].valueQuantity.value = 1 
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#731648 "Zone Setting Type Category"
+* component[+].code = $Mdc#731648 
 * component[=].valueCodeableConcept = $Mdc#754946 "VT"
 * component[=].extension[observationInstance].valueInteger = 2
-* component[+].code = $Mdc#731712 "Zone Setting Vendor Type Category"
-* component[=].valueCodeableConcept = $Mdc#772161 "A Medtronic zone subclassification of ventricular fibrillation."
+* component[+].code = $Mdc#731712 
+* component[=].valueCodeableConcept = $Mdc#772161 
 * component[=].extension[observationInstance].valueInteger = 2
-* component[+].code = $Mdc#731776 "Zone Setting Status"
-* component[=].valueCodeableConcept = $Mdc#755011 "Monitor"
+* component[+].code = $Mdc#731776 
+* component[=].valueCodeableConcept = $Mdc#755011 
 * component[=].extension[observationInstance].valueInteger = 2
-* component[+].code = $Mdc#731840 "Zone Setting Detection Interval"
+* component[+].code = $Mdc#731840 
 * component[=].valueQuantity.value = 375 
 * component[=].valueQuantity = 'ms' "ms"
 * component[=].extension[observationInstance].valueInteger = 2
