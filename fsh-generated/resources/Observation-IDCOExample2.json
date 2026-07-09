@@ -182,7 +182,7 @@
           {
             "code": "754115",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "RRT"
+            "display": "MDC_IDC_ENUM_BATTERY_STATUS_RRT"
           }
         ]
       }
@@ -208,7 +208,7 @@
           {
             "code": "754115",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "RRT"
+            "display": "MDC_IDC_ENUM_BATTERY_STATUS_RRT"
           }
         ]
       }
@@ -225,7 +225,7 @@
           {
             "code": "721603",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "MDC_IDC_MSMT_BATTERY_RRT_REACHED_DATE_TIME"
+            "display": "MDC_IDC_MSMT_BATTERY_RRT_REACHED_DTM"
           }
         ]
       },
@@ -237,7 +237,7 @@
           {
             "code": "721664",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "MDC_IDC_MSMT_CAP_DTM"
+            "display": "MDC_IDC_MSMT_CAP_CHARGE_DTM"
           }
         ]
       },
@@ -255,7 +255,7 @@
           {
             "code": "721728",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "MDC_IDC_MSMT_CAP_STATUS"
+            "display": "MDC_IDC_MSMT_CAP_CHARGE_TIME"
           }
         ]
       }
@@ -272,7 +272,7 @@
           {
             "code": "721792",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "MDC_IDC_MSMT_CAP_CHARGE_TIME"
+            "display": "MDC_IDC_MSMT_CAP_CHARGE_ENERGY"
           }
         ]
       }
@@ -292,7 +292,7 @@
           {
             "code": "754177",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "Shock"
+            "display": "MDC_IDC_ENUM_CHARGE_TYPE_Shock"
           }
         ]
       }
@@ -336,7 +336,7 @@
           {
             "code": "754241",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "Check Lead"
+            "display": "MDC_IDC_ENUM_CHANNEL_STATUS_CheckLead"
           }
         ]
       }
@@ -407,7 +407,7 @@
           {
             "code": "754305",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "Unipolar"
+            "display": "MDC_IDC_ENUM_POLARITY_UNI"
           }
         ]
       }
@@ -461,7 +461,7 @@
           {
             "code": "754371",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "Device Automatic"
+            "display": "MDC_IDC_ENUM_MEASUREMENT_METHOD_DeviceAutomatic"
           }
         ]
       }
@@ -481,7 +481,7 @@
           {
             "code": "754306",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "Bipolar"
+            "display": "MDC_IDC_ENUM_POLARITY_BI"
           }
         ]
       }
@@ -656,7 +656,7 @@
           {
             "code": "755073",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "Burst"
+            "display": "MDC_IDC_ENUM_ATP_TYPE_Burst"
           }
         ]
       }
@@ -682,7 +682,7 @@
           {
             "code": "755073",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "Burst"
+            "display": "MDC_IDC_ENUM_ATP_TYPE_Burst"
           }
         ]
       }
@@ -856,7 +856,7 @@
           {
             "code": "754946",
             "system": "urn:iso:std:iso:11073:10101",
-            "display": "VT"
+            "display": "MDC_IDC_ENUM_ZONE_TYPE_Zone_VT"
           }
         ]
       }

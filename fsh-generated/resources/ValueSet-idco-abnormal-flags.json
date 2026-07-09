@@ -6,6 +6,7 @@
   "title": "Abnormal Flags Included in IHE PCD TF",
   "description": "Abnormal Flags Included in the IHE PCD Technical Framework to communicate IDC Observations",
   "url": "http://hl7.org/fhir/uv/cardx-cied/ValueSet/idco-abnormal-flags",
+  "experimental": false,
   "compose": {
     "include": [
       {
