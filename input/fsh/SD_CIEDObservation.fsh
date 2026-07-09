@@ -86,25 +86,25 @@ Usage: #example
 * component[=].valueString = "Battery capacity < limit for 3 months"
 * component[=].extension[observationInstance].valueInteger = 1
 * component[+].code = $Mdc#721601 "MDC_IDC_MSMT_BATTERY_REMAINING_LONGEVITY_TIMEFRAME"
-* component[=].valueCodeableConcept = $Mdc#754115 "RRT"
+* component[=].valueCodeableConcept = $Mdc#754115 "MDC_IDC_ENUM_BATTERY_STATUS_RRT"
 * component[=].extension[observationInstance].valueInteger = 1
 * component[+].code = $Mdc#721602 "MDC_IDC_MSMT_BATTERY_REMAINING_PERCENTAGE_TIMEFRAME"
-* component[=].valueCodeableConcept = $Mdc#754115 "RRT"
+* component[=].valueCodeableConcept = $Mdc#754115 "MDC_IDC_ENUM_BATTERY_STATUS_RRT"
 * component[=].extension[observationInstance].valueInteger = 1
-* component[+].code = $Mdc#721603 "MDC_IDC_MSMT_BATTERY_RRT_REACHED_DATE_TIME"
+* component[+].code = $Mdc#721603 "MDC_IDC_MSMT_BATTERY_RRT_REACHED_DTM"
 * component[=].valueDateTime = "2025-03-21T12:12:29-09:00"
 * component[=].extension[observationInstance].valueInteger = 1
 // MDC_IDC_MSMT_CAP
-* component[+].code = $Mdc#721664 "MDC_IDC_MSMT_CAP_DTM"
+* component[+].code = $Mdc#721664 "MDC_IDC_MSMT_CAP_CHARGE_DTM"
 * component[=].valueDateTime = "2018-03-21T12:12:29-09:00"
-* component[+].code = $Mdc#721728 "MDC_IDC_MSMT_CAP_STATUS"
+* component[+].code = $Mdc#721728 "MDC_IDC_MSMT_CAP_CHARGE_TIME"
 * component[=].valueQuantity.value = 9.4
 * component[=].valueQuantity = 's' "s"
-* component[+].code = $Mdc#721792 "MDC_IDC_MSMT_CAP_CHARGE_TIME"
+* component[+].code = $Mdc#721792 "MDC_IDC_MSMT_CAP_CHARGE_ENERGY"
 * component[=].valueQuantity.value = 30
 * component[=].valueQuantity = 'J' "J"
 * component[+].code = $Mdc#721856 "MDC_IDC_MSMT_CAP_CHARGE_TYPE"
-* component[=].valueCodeableConcept = $Mdc#754177 "Shock"
+* component[=].valueCodeableConcept = $Mdc#754177 "MDC_IDC_ENUM_CHARGE_TYPE_Shock"
 // MDC_IDC_MSMT_LEADCHNL_[CHAMBER]
 // should MDC_IDC_MSMT_LEADCHNL_RA_DTM be included or just start/end?
 * component[+].code = $Mdc#721921 "MDC_IDC_MSMT_LEADCHNL_RA_DTM_START"
@@ -112,7 +112,7 @@ Usage: #example
 * component[+].code = $Mdc#721922 "MDC_IDC_MSMT_LEADCHNL_RA_DTM_END"
 * component[=].valueDateTime = "2020-03-21T12:12:29-09:00"
 * component[+].code = $Mdc#721984 "MDC_IDC_MSMT_LEADCHNL_RA_LEAD_CHANNEL_STATUS"
-* component[=].valueCodeableConcept = $Mdc#754241 "Check Lead"
+* component[=].valueCodeableConcept = $Mdc#754241 "MDC_IDC_ENUM_CHANNEL_STATUS_CheckLead"
 * component[+].code = $Mdc#722049 "MDC_IDC_MSMT_LEADCHNL_RA_SENSING_INTR_AMPL_MAX"
 * component[=].valueQuantity.value = 2.6
 * component[=].valueQuantity = 'mV' "mV"
@@ -123,7 +123,7 @@ Usage: #example
 * component[=].valueQuantity.value = 2.5
 * component[=].valueQuantity = 'mV' "mV"
 * component[+].code = $Mdc#722112 "MDC_IDC_MSMT_LEADCHNL_RA_SENSING_POLARITY"
-* component[=].valueCodeableConcept = $Mdc#754305 "Unipolar"
+* component[=].valueCodeableConcept = $Mdc#754305 "MDC_IDC_ENUM_POLARITY_UNI"
 * component[+].code = $Mdc#722176 "MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_AMPLITUDE"
 * component[=].valueQuantity.value = 0.7
 * component[=].valueQuantity = 'V' "V" 
@@ -131,9 +131,9 @@ Usage: #example
 * component[=].valueQuantity.value = 0.5
 * component[=].valueQuantity = 'ms' "ms"
 * component[+].code = $Mdc#722304 "MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_MEASUREMENT_METHOD"
-* component[=].valueCodeableConcept = $Mdc#754371 "Device Automatic"
+* component[=].valueCodeableConcept = $Mdc#754371 "MDC_IDC_ENUM_MEASUREMENT_METHOD_DeviceAutomatic"
 * component[+].code = $Mdc#722368 "MDC_IDC_MSMT_LEADCHNL_RA_PACING_THRESHOLD_POLARITY"
-* component[=].valueCodeableConcept = $Mdc#754306 "Bipolar"
+* component[=].valueCodeableConcept = $Mdc#754306 "MDC_IDC_ENUM_POLARITY_BI"
 * component[+].code = $Mdc#722432 "MDC_IDC_MSMT_LEADCHNL_RA_IMPEDANCE_VALUE"
 * component[=].valueQuantity.value = 530 
 * component[=].valueQuantity = 'Ohm' "Ohm"
@@ -157,10 +157,10 @@ Usage: #example
 * component[=].valueQuantity = 'ms' "ms"
 * component[=].extension[observationInstance].valueInteger = 1
 * component[+].code = $Mdc#732097 "MDC_IDC_SET_ZONE_TYPE_ATP_1"
-* component[=].valueCodeableConcept = $Mdc#755073 "Burst"
+* component[=].valueCodeableConcept = $Mdc#755073 "MDC_IDC_ENUM_ATP_TYPE_Burst"
 * component[=].extension[observationInstance].valueInteger = 1
 * component[+].code = $Mdc#732097 "MDC_IDC_SET_ZONE_TYPE_ATP_1"
-* component[=].valueCodeableConcept = $Mdc#755073 "Burst"
+* component[=].valueCodeableConcept = $Mdc#755073 "MDC_IDC_ENUM_ATP_TYPE_Burst"
 * component[=].extension[observationInstance].valueInteger = 1
 * component[+].code = $Mdc#732161 "MDC_IDC_SET_ZONE_NUM_ATP_SEQS_1"
 * component[=].valueQuantity.value = 1 
@@ -187,7 +187,7 @@ Usage: #example
 * component[=].valueQuantity.value = 1 
 * component[=].extension[observationInstance].valueInteger = 1
 * component[+].code = $Mdc#731648 
-* component[=].valueCodeableConcept = $Mdc#754946 "VT"
+* component[=].valueCodeableConcept = $Mdc#754946 "MDC_IDC_ENUM_ZONE_TYPE_Zone_VT"
 * component[=].extension[observationInstance].valueInteger = 2
 * component[+].code = $Mdc#731712 
 * component[=].valueCodeableConcept = $Mdc#772161 

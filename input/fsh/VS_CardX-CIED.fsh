@@ -53,6 +53,7 @@ ValueSet: IDCOAbnormalFlags
 Id: idco-abnormal-flags
 Title: "Abnormal Flags Included in IHE PCD TF"
 Description: "Abnormal Flags Included in the IHE PCD Technical Framework to communicate IDC Observations"
+* ^experimental = false
 * CardXCIED#NI "No information. There is no information which can be inferred from this exceptional value."
 * CardXCIED#NAV "Temporarily not available. Information is not available at this time but it is expected that it will be available later."
 * CardXCIED#OFF "Numeric measurement function is available but has been deactivated by user."

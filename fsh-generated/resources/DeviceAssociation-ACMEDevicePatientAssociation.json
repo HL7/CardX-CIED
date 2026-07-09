@@ -13,7 +13,7 @@
         "coding": [
           {
             "code": "implanted",
-            "system": "http://hl7.org/fhir/device-association-status"
+            "system": "http://hl7.org/fhir/deviceassociation-status"
           }
         ]
       }
@@ -29,7 +29,7 @@
     "coding": [
       {
         "code": "implanted",
-        "system": "http://hl7.org/fhir/device-association-status"
+        "system": "http://hl7.org/fhir/deviceassociation-status"
       }
     ]
   },

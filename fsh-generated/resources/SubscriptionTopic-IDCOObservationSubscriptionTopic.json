@@ -1,7 +1,7 @@
 {
   "resourceType": "SubscriptionTopic",
   "id": "IDCOObservationSubscriptionTopic",
-  "url": "http://hl7.org/fhir/uv/cardx-cied/SubscriptionTopic/idco-observation",
+  "url": "http://hl7.org/fhir/uv/cardx-cied/SubscriptionTopic/IDCOObservationSubscriptionTopic",
   "title": "IDCO Observation Subscription Topic",
   "description": "Subscription topic for Implantable Device Cardiac Observations (IDCO)",
   "eventTrigger": [
