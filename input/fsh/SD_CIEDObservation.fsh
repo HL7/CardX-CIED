@@ -5,13 +5,6 @@ Description: "Extentension to support expanding number of reportable data beyond
 * insert ExtensionContext(Observation)
 * value[x] only integer
 
-Extension: MdcDisplayName
-Id: ext-mdc-display-name
-Title: "MDC Display Name"
-Description: "Extension to capture the MDC Display Name for an IDC Observation Component Code"
-* insert ExtensionContext(Observation)
-* value[x] only string
-
 Profile: IdcoObservation
 Parent: Observation
 Title: "Implantable Device Cardiac Observation"
@@ -30,9 +23,6 @@ Description: "Observation profile to support implantable cardiac device measurem
 * component.extension contains ObservationInstance named observationInstance 0..1 
 * component.extension[observationInstance] ^short = "Instance number of the observation"
 * component.extension[observationInstance] ^definition = "Extentension to support expanding number of reportable data beyond constrained number defined in nomenclature."
-* component.extension contains MdcDisplayName named mdcDisplayName 0..1
-* component.extension[mdcDisplayName] ^short = "MDC Display Name"
-* component.extension[mdcDisplayName] ^definition = "Extension to capture the MDC Display Name for an IDC Observation Component Code"
 // DateTimes where hours/minutes are specified must use timezone offset e.g "effectiveDateTime" : "2013-04-02T09:30:10+01:00",
 * component.interpretation from IDCOAbnormalFlags
 
